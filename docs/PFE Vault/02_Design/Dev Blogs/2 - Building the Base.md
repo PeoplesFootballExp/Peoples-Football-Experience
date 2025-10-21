@@ -60,7 +60,6 @@ Takes a lot of work to simply set up an open source project. I am currently on v
 - Finish Setting up Github Repo (including Contributing Guide, ReadMe)
 - Figure out Github better (branching, asset storage, etc)
 - Set up New Godot Project with Rust and add guides to docs
-- 
 
 
 

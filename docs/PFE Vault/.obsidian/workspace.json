@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Design/Dev Blogs/2 - Building the Base.md",
+                "file": "01_Development/Contribution Guide.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2 - Building the Base"
+              "title": "Contribution Guide"
             }
           }
         ]
@@ -198,8 +198,9 @@
   },
   "active": "0e0d9e40e5696b89",
   "lastOpenFiles": [
-    "02_Design/Dev Blogs/1 - Laying the Foundations Again.md",
     "02_Design/Dev Blogs/2 - Building the Base.md",
+    "01_Development/Contribution Guide.md",
+    "02_Design/Dev Blogs/1 - Laying the Foundations Again.md",
     "01_Development/ReadMe.md",
     "01_Development/Licensing Philosophy.md",
     "05_Tasks/01_ReadMe.md",
@@ -237,7 +238,6 @@
     "07_Localization/ReadMe.md",
     "06_Assets/ReadME.md",
     "05_Data Structures/ReadME.md",
-    "04_Scripting Notes/ReadMe.md",
     "01_Planning/Untitled.canvas"
   ]
 }
