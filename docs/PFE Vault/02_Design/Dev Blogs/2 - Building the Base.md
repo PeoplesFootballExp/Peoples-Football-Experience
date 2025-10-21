@@ -24,7 +24,8 @@ Continued to work on building the tools and resources needed for a successful op
 - Created the Code of Conduct Page on Github
 - Created Templates for Bug Reports, Issue, Task, and Pull Request under the .github page
 - Added short description for Github Repo
-- 
+- Added Documentation (this Obsidian Vault) to the Github Repo
+-
 
 
 ---
@@ -49,10 +50,17 @@ Continued to work on building the tools and resources needed for a successful op
 ## 💭 Thoughts / Reflections
 *Share lessons learned, future ideas, or design decisions.*
 
+Takes a lot of work to simply set up an open source project. I am currently on vacation visiting my girlfriend, so work may be slower this following week or two. 
+
 
 ---
 ## 🔮 Next Steps
 *Outline what’s coming next in development.*
+
+- Finish Setting up Github Repo (including Contributing Guide, ReadMe)
+- Figure out Github better (branching, asset storage, etc)
+- Set up New Godot Project with Rust and add guides to docs
+- 
 
 
 
