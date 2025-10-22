@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "5b96e797812ff4fd",
+        "id": "fa4748e90ba5e736",
         "type": "tabs",
         "children": [
           {
-            "id": "0e0d9e40e5696b89",
+            "id": "937041c243e9f96c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Development/Contribution Guide.md",
+                "file": "00_Inbox/Contributing Set Up.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Contribution Guide"
+              "title": "Contributing Set Up"
             }
           }
         ]
@@ -196,15 +196,24 @@
       "obsidian-kanban:Create new board": false
     }
   },
-  "active": "0e0d9e40e5696b89",
+  "active": "937041c243e9f96c",
   "lastOpenFiles": [
-    "02_Design/Dev Blogs/2 - Building the Base.md",
-    "01_Development/Contribution Guide.md",
-    "02_Design/Dev Blogs/1 - Laying the Foundations Again.md",
-    "01_Development/ReadMe.md",
-    "01_Development/Licensing Philosophy.md",
+    "00_Inbox/Contributing Set Up.md",
+    "00_Inbox/Githhub Repo ReadMe.md",
+    "00_Inbox/ReadMe.md",
+    "godotengine.org.md",
+    "06_Assets/ReadMe.md",
     "05_Tasks/01_ReadMe.md",
+    "04_Wiki/ReadMe.md",
+    "03_Guides/ReadMe.md",
+    "02_Design/ReadMe.md",
+    "01_Development/ReadMe.md",
     "01_Development/Pillars of People's Football Experience.md",
+    "01_Development/CONTRIBUTING.md.md",
+    "Resources/PFE Full Logo SVG.png",
+    "01_Development/Licensing Philosophy.md",
+    "02_Design/Dev Blogs/2 - Building the Base.md",
+    "02_Design/Dev Blogs/1 - Laying the Foundations Again.md",
     "Resources/PFE Only Logo SVG.svg",
     "Resources/PFE Logo.png",
     "Resources/PFE Full Logo SVG.svg",
@@ -212,19 +221,14 @@
     "Resources",
     "Templates/Dev Blog Template.md",
     "Templates/Task Template.md",
-    "02_Design/ReadMe.md",
     "05_Tasks/Implement Player Movement.md",
     "05_Tasks/00_Football Game Tasks.md",
-    "03_Guides/ReadMe.md",
-    "06_Assets/ReadMe.md",
     "02_Design/Dev Blogs",
     "05_Tasks/Untitled.md",
     "Untitled 1.base",
     "Untitled.base",
     "Implement Player Movement critical.md",
-    "04_Wiki/ReadMe.md",
     "Untitled.md",
-    "00_Inbox/ReadMe.md",
     "00_Inbox/Queue/What is the Queue.md",
     "Plugins",
     "Templates",
@@ -235,9 +239,6 @@
     "09_Dev Journal/ReadMe.md",
     "10_Templates/ReadMe.md",
     "08_Knowledge Base/ReadME.md",
-    "07_Localization/ReadMe.md",
-    "06_Assets/ReadME.md",
-    "05_Data Structures/ReadME.md",
     "01_Planning/Untitled.canvas"
   ]
 }

@@ -1,30 +1,28 @@
 
-## **Free to Play**
+## **1. Free to Play**
 
 ### Free to all players
 
-This game will be free to all players. This was done to hopefully ensure that all players can access the game regardless of their financial standing. Free means that anyone in the world can download the game and play it. This also translates to the future too as this game will remain FREE FOREVER
+This game will be free to all players. This was done to hopefully ensure that all players can access the game regardless of their financial standing. Free means that anyone in the world can download the game and play it. 
 
-### No Yearly Releases
+### Free Updates and Future Games
 
-In addition to the game being free forever, the game will also not have yearly releases. This means that this game is not planned to have a new version every year. Instead, the game will receive FREE UPDATES and FREE DLC to ensure the game continues to get better.
-
-Even if there is a need to release a Global XI Football Maestro 2, perhaps due to change of game engine or entire rework, the new game will also be free. Yes, ALL FUTURE INSTALLMENTS WILL ALSO BE FREE. This ensures that at no point will this game charge users to begin playing
+The game will be updated regularly and any future installations will also be free. No more of the expensive yearly release that sports games are infamous for, these games will be free forever with a focus on quality over quantity.
 
 ### No ADs
 
-There will also be no Ads in the game as well. This is true for mobile, pc, and website. This is mostly due to my own hatred of Ads but also because not charging money to play but then spamming ads every minute feels disingenuous. Therefore, all installments of this game will include NO ADS
+There will be no in-game advertisements. Any advertisements in-game, such as stadium advertising banners or football kit sponsorships, will all be from fake in-universe companies.  
 
 ### No In-Game Purchases
 
-There will be no form of in-game purchases. This follows the same principle as making the game free but also ensuring there is absolutely NO PAYWALL to any player. This also means any added content in the form of DLC will also be free. This also means there will be NO PAY-TO-WIN in the game at all. (especially true even when multiplayer is introduced). This game is meant to be fair to all players so no player will gain an advantage based on how much money they have to spare.
+There will be no form of in-game purchases.  This also means there will be NO PAY-TO-WIN in the game at all. This game is meant to be fair to all players so no player will gain an advantage based on how much money they have to spare.
 
-> Money will never be the priority, the beautiful game comes first! - Global XI Football Maestro
+> Money will never be the priority, the beautiful game comes first! - People's Football Experience
 
-## **Open Source**
+## **2. Open Source**
 ### Openly Available Source Code
 
-The game’s entire source code will be publicly available. This ensures that everyone will know what they are installing. This also helps to foster more positive things that will be discussed on more later.
+The game’s source code will be publicly available under the GNU General Public License v3.0. 
 
 ### Collaboration and Contribution
 
@@ -32,15 +30,15 @@ By being open source, this allows everyone to help contribute to this game. If y
 
 ### Learning and Education
 
-Open Source means that anyone can take this time to LEARN more about Godot, coding, art, and Game Development as a whole. Even once the game is released, the game can still be a useful resource for other aspiring game designers to offshoot off this game and create their own football manager game.
+Open Source means that anyone can take this time to LEARN more about Godot, Rust, coding, art, and Game Development as a whole. Even once the game is released, the game can still be a useful resource for other aspiring game designers to offshoot off this game and create their own football manager game.
 
 ### Longevity
 
 Being Open Source also ensures that the game has more longevity outside of a gaming company. Company based games rely on that company to stay afloat which often translates to paywalls, in-game purchases, and subscription models. Since anyone and everyone can help make this game, this game doesn’t rely on one company to survive. As long as a small number of people, even one person, continues to work on this game - then this game can LIVE FOREVER
 
-> A community of contributors ensures this game stays free, reliable, and fun forever - Global XI Football Maestro
+> A community of contributors ensures this game stays free, reliable, and fun forever - People's Football Experience
 
-## **Fully Customizable**
+## **3. Fully Customizable**
 
 ### In-Game Customization
 
@@ -68,24 +66,22 @@ While the In-Game editors will focus on changing small details (or even starting
 
 ### Mod Friendly
 
-The only issue with Mods for creating a custom experience is that often two mods don’t work with each other. In other words, everyone creating their own ideas leads to a lot of mods incompatible with other mods. To avoid this, open source allows for all additions to be enjoyed by everyone. However, if an idea doesn’t align with the vision of the game (ex. Database focusing on only football in England and no other country) then mods are a great way to get that custom experience and share it with the world. For that reason, and the fact that the game is open source, the game will attempt to be as mod friendly as can be
+The open source nature allows any addition that the community wants to be added to the game. However, if an idea doesn’t align with the Pillars of the Game, then mods are a great way to get that custom experience and share it with the world. For that reason, and the fact that the game is open source, the game will attempt to be as mod friendly as can be
 
-> Truly owning a game means being able to customize it any way you see fit - Global XI Football Maestro
+> Truly owning a game means being able to customize it any way you see fit - People's Football Experience
 
-## **World Inclusive**
+## **4. World Inclusive**
 
 ### All Territories Included
 
-For international football, this game aims to have every single territory on the planet. This includes all ~200 countries but also includes dependencies that have a strong football scene. The full and up to date list of territories can be found on the [notion page](https://globalxifootballmaestro.notion.site/90fd9fd355124f0da50b2a1a58c55ba9?v=39b5567107c744f9bc20aa83aa648e43) for this game
-
-Of course, there will be double or even triple national players, especially with dependencies. If I have missed any territory please let me know 🙂
+For international football, this game aims to have every single territory on the planet. This includes all ~200 countries but also includes dependencies that have a strong football scene.
 
 ### More League Depth
 
 Not only will every territory have a domestic league (if they have one in real life) but they will go as deep into the league pyramid as I can find. And with the help of individuals across the globe, these league pyramids can be made even deeper. Of course, the teams will be fake but follow the real life leagues as closely as can be
 
-> The Beauty of Football exists in every corner of the World - Global XI Football Maestro
+> The Beauty of Football exists in every corner of the World - People's Football Experience
 
-## **Single Player**
+## **5. Single Player First**
 
-This game, upon first release, is planned to be a single player experience. There are plans for future updates to allow for 1v1 multiplayer but the first release will fully focus on single player experience. My hope is that one day there can be multiplayer manager modes where each player controls one team or 11 v 11 multiplayer football matches. This is still to be decided but please expect the first release to be single player only for now.
+While multiplayer may be an addition in the future, single player will always come first as a priority. Single player priority means the game has better longevity and control by the player.  
