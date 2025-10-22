@@ -14,7 +14,7 @@ PFE is still **very early in development**. For now, the following list of featu
 - ⚙️ Choose your country and an AI opponent
 - 📊 Team Formation and Tactics management
 
-Future releases will include many more planned features all dependent on the wishes of the community. As long as the features follow the [[Pillars of People's Football Experience]], any feature can be added. Some features may include:
+Future releases will include many more planned features all dependent on the wishes of the community. As long as the features follow the , any feature can be added. Some features may include:
 
 - Player management and transfers
 - Coaching staff management and transfer
@@ -42,6 +42,6 @@ And many more! Again, this game is focused on being community run so the possibi
 
 The source code for the game will always be **open source** under the **GNU General Public License v3.0**. Some things, such as assets and documentation/wiki are under different licences.
 
-By contributing, you agree that your work will be distributed under the project’s open-source license (see `LICENSE.md` file). This ensures the project remains **free, open, and community-powered project** for everyone.
+By contributing, you agree that your work will be distributed under the project’s open-source license (see [License](LICENSE.md). This ensures the project remains **free, open, and community-powered project** for everyone.
 
 ## ❤️ 10. Credits & Acknowledgements
