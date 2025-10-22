@@ -6,8 +6,26 @@ kanban-plugin: board
 
 ## Backlog
 
-- [ ] [[Implement Player Movement]]
-	#critical #help
+- [ ] Create Main Menu Scene
+- [ ] Create Country Selection Scene
+- [ ] Create Team Class in Rust
+- [ ] Create Player Class in Rust
+- [ ] Implement Tactics adjustment screen
+- [ ] Create Match Scene
+- [ ] Spawn Players
+- [ ] Implement Player Input
+- [ ] Implement AI for other players
+- [ ] Basic Movement, passing, shooting
+- [ ] Implement soccer rules
+- [ ] Simulate Timer counting to 90 minutes
+- [ ] Handles Draws, implement extra time and penalties
+- [ ] Track score and match stats
+- [ ] Show match summary scene
+- [ ] Implement Buttons to Replay Same Teams or select new ones
+- [ ] Implement Transitions/loading scenes
+- [ ] Add placeholder graphics/sprites for players and field
+- [ ] Basic sound effects (kick, whistle, crowd)
+- [ ] Implement Unit testing
 
 
 ## To Do

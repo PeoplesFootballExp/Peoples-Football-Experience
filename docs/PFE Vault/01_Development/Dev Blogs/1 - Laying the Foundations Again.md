@@ -17,7 +17,7 @@ Started the project up again, I attempted to address the large pitfalls from pre
 *List the new features, updates, or fixes. Include visuals if possible.*
 
 - Created the Pillars of the Game, so any future features or new additions MUST follow these pillars to ensure the vision of the game continues. [[Pillars of People's Football Experience]]
-- Created the system for the Kanban Board, as well as creating the template for each Tasks to go in depth and allow future reference. [[00_Football Game Tasks]] and [[Task Template]]
+- Created the system for the Kanban Board, as well as creating the template for each Tasks to go in depth and allow future reference. [[00_PFE_Kanban_Board]] and [[Task Template]]
 - Created this vault, folder structure, and tagging system for now. Attempting to maintain organization from the start, so joining the project should be as seamless as possible
 - Created the Dev Blog template that is going to be used in every Dev Blog. The dev blog will occur whenever new features or work for this project is done [[Dev Blog Template]]
 - Created a BlueSky Account, need to make more social media accounts and a creative logo for the game. 
