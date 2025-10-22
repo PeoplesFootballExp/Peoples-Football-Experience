@@ -2,6 +2,12 @@ use godot::prelude::*;
 use godot::classes::Sprite2D;
 use godot::classes::ISprite2D;
 
+struct MyExtension;
+
+#[gdextension]
+unsafe impl ExtensionLibrary for MyExtension {}
+
+
 #[derive(GodotClass)]
 #[class(base=Sprite2D)]
 struct Player {
@@ -10,7 +16,6 @@ struct Player {
 
     base: Base<Sprite2D>
 }
-
 
 #[godot_api]
 impl ISprite2D for Player {
@@ -24,7 +29,7 @@ impl ISprite2D for Player {
         }
     }
 
-    fn physics_process(&mut self, delta: f64) {
+     fn physics_process(&mut self, delta: f64) {
         // In GDScript, this would be: 
         // rotation += angular_speed * delta
         

@@ -1,9 +1,0 @@
-[configuration]
-entry_symbol = "gdext_rust_init"
-compatibility_minimum = 4.1
-reloadable = true
-
-[libraries]
-windows.debug.x86_64 =   "res://rust/pfe_rust/target/release/pfe_rust.dll"
-windows.release.x86_64 = "res://rust/pfe_rust/target/release/pfe_rust.dll"
-
