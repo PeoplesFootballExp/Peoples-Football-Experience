@@ -42,6 +42,6 @@ And many more! Again, this game is focused on being community run so the possibi
 
 The source code for the game will always be **open source** under the **GNU General Public License v3.0**. Some things, such as assets and documentation/wiki are under different licences.
 
-By contributing, you agree that your work will be distributed under the project’s open-source license (see [License](LICENSE.md). This ensures the project remains **free, open, and community-powered project** for everyone.
+By contributing, you agree that your work will be distributed under the project’s open-source license (see [License](LICENSE.md) file). This ensures the project remains **free, open, and community-powered project** for everyone.
 
 ## ❤️ 10. Credits & Acknowledgements
