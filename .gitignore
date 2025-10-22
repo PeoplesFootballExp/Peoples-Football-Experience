@@ -1,16 +1,87 @@
-# Godot 4+ specific ignores
-.godot/
-.nomedia
+# ===============================
+#  PEOPLE'S FOOTBALL EXPERIENCE
+#  Godot + Rust project
+# ===============================
 
-# Godot-specific ignores
+# -------------------------------
+# GODOT ENGINE
+# -------------------------------
+
+# Godot-specific generated files
 .import/
-export.cfg
-export_credentials.cfg
+.export/
+.cache/
+.godot/
+mono_temp/
+data_*/        # temporary data directories (e.g. data_001)
+godot_tmp*/    # temporary files created during export
+*.translation  # auto-generated translation cache
 
-# Imported translations (automatically generated from CSV files)
-*.translation
+# Exported game builds
+export/
+builds/
+bin/
+*.pck
+*.zip
+*.exe
+*.apk
+*.dmg
+*.app
 
-# Mono-specific ignores
-.mono/
-data_*/
-mono_crash.*.json
+# User-specific editor settings (never commit)
+.editor_settings-3.tres
+.editor_settings-4.tres
+
+# -------------------------------
+# RUST (Cargo + target builds)
+# -------------------------------
+
+# Compiled output
+/target/
+**/*.rs.bk
+
+# Backup files
+*.rs.bk
+
+# Cargo-related
+Cargo.lock         # if you’re building a library, not an app
+!Cargo.lock        # (optional: uncomment if this is a binary)
+.cargo/
+.cargo-ok
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# -------------------------------
+# OS / Misc
+# -------------------------------
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# -------------------------------
+# OTHER / TEMP
+# -------------------------------
+
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# If using GDNative or Godot-Rust intermediate builds
+*.so
+*.dll
+*.dylib
+
+# End of .gitignore
