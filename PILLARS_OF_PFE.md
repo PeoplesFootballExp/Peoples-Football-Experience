@@ -1,6 +1,8 @@
 
 # Pillars of People's Football Experience
 
+The following pillars are what make the game free and open to everyone. Following these pillars (or at least not going against them) is **necessary** for any new features to be added into the game. Please ensure any new ideas or feature requests **follow** or **don't break** the pillars outlined here.
+
 ## **1. Free to Play**
 
 ### Free to all players
