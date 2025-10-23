@@ -1,6 +1,6 @@
 # Peoples-Football-Experience
 
-![[PFE Full Logo.png]]
+![People's Football Experience Logo](docs/PFE_Vault/Resources/PFE%20Logo.png)
 
 **People’s Football Experience (PFE)** is a free and open-source football game where the community drives development.  
 Play, manage, and shape the future of football — together.
