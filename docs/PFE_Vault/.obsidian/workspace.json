@@ -4,29 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "1664c8afc6dd4ac5",
+        "id": "810149a88806fa67",
         "type": "tabs",
         "children": [
           {
-            "id": "08dddc4c330face2",
+            "id": "3c8bf5a2f46c1a6f",
             "type": "leaf",
             "state": {
-              "type": "kanban",
-              "state": {
-                "file": "05_Tasks/00_PFE_Kanban_Board.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    false
-                  ]
-                }
-              },
-              "icon": "lucide-trello",
-              "title": "00_PFE_Kanban_Board"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -201,13 +189,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "08dddc4c330face2",
+  "active": "3c8bf5a2f46c1a6f",
   "lastOpenFiles": [
+    "01_Development/Dev Blogs/3 - Github Repo Created.md",
+    "05_Tasks/00_PFE_Kanban_Board.md",
     "04_Wiki/ReadMe.md",
     "03_Guides/ReadMe.md",
     "02_Design/ReadMe.md",
     "01_Development/Tools Used.md",
-    "01_Development/Dev Blogs/3 - Github Repo Created.md",
     "Resources/penpot_logo.png",
     "Resources/aseprite_logo.png",
     "Resources/blender_logo.png",
@@ -219,7 +208,6 @@
     "godot_logo.png",
     "Untitled.base",
     "Resources/Obsidian_Logo.png",
-    "05_Tasks/00_PFE_Kanban_Board.md",
     "05_Tasks/Implement Player Movement.md",
     "01_Development/Licensing Philosophy.md",
     "00_Inbox/Githhub Repo ReadMe.md",

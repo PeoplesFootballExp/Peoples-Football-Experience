@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bl32p46fp2x5o" path="res://assets/textures/IMG_4744.jpeg" id="1_sd5it"]
 
-[node name="Main Node" type="Control"]
+[node name="MainNode" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -10,7 +10,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="Background" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -20,7 +20,7 @@ grow_vertical = 2
 texture = ExtResource("1_sd5it")
 flip_h = true
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
+[node name="HBox" type="HBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -28,7 +28,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Margin Container" type="MarginContainer" parent="HBoxContainer"]
+[node name="MarginCon" type="MarginContainer" parent="HBox"]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/margin_left = 50
@@ -36,35 +36,39 @@ theme_override_constants/margin_top = 200
 theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 200
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/Margin Container"]
+[node name="ButtonVBox" type="VBoxContainer" parent="HBox/MarginCon"]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="HBoxContainer/Margin Container/VBoxContainer"]
+[node name="PlayMatchButton" type="Button" parent="HBox/MarginCon/ButtonVBox"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Play Match"
 
-[node name="Button2" type="Button" parent="HBoxContainer/Margin Container/VBoxContainer"]
+[node name="SettingsButton" type="Button" parent="HBox/MarginCon/ButtonVBox"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Settings"
 
-[node name="Button3" type="Button" parent="HBoxContainer/Margin Container/VBoxContainer"]
+[node name="CreditsButton" type="Button" parent="HBox/MarginCon/ButtonVBox"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Credits"
 
-[node name="Button4" type="Button" parent="HBoxContainer/Margin Container/VBoxContainer"]
+[node name="ExitGameButton" type="Button" parent="HBox/MarginCon/ButtonVBox"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
 text = "Exit Game
 "
 
-[node name="Label" type="Label" parent="HBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="HBox"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 0
 size_flags_stretch_ratio = 2.0
+theme_override_constants/margin_top = 20
+
+[node name="Title" type="Label" parent="HBox/MarginContainer"]
+layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 40
 text = "People's Football Experience"
