@@ -5,6 +5,7 @@ For the most part, since this project is open source and free, development will 
 
 ### Obsidian
 
+
 ![[Obsidian_Logo.png|125x125]]
 
 Reasons:

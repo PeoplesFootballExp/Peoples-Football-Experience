@@ -6,8 +6,6 @@ kanban-plugin: board
 
 ## Backlog
 
-- [ ] Create Main Menu Scene
-- [ ] Create Country Selection Scene
 - [ ] Create Team Class in Rust
 - [ ] Create Player Class in Rust
 - [ ] Implement Tactics adjustment screen
@@ -34,6 +32,8 @@ kanban-plugin: board
 
 ## In Progress
 
+- [ ] Create Main Menu Scene
+- [ ] Create Country Selection Scene
 
 
 ## Review
