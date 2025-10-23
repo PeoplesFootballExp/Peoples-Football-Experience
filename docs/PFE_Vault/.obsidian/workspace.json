@@ -172,10 +172,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "pdf-plus:PDF++: Toggle auto-copy": false,
-      "pdf-plus:PDF++: Toggle auto-focus": false,
-      "pdf-plus:PDF++: Toggle auto-paste": false,
       "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -185,12 +181,7 @@
       "command-palette:Open command palette": false,
       "audio-recorder:Start/stop recording": false,
       "markdown-importer:Open format converter": false,
-      "publish:Publish changes...": false,
-      "obsidian-kanban:Create new board": false,
-      "omnisearch:Omnisearch": false,
-      "wikipedia-search:Open Article": false,
-      "obsidian-full-calendar:Open Full Calendar": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "publish:Publish changes...": false
     }
   },
   "active": "08dddc4c330face2",
