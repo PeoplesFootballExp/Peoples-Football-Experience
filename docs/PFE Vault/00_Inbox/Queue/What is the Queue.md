@@ -1,2 +1,0 @@
-
-This folder is meant for new pages that will be added to any other section. This is mostly meant for first drafts of new pages before they are added to the brain. This is NOT meant for new or revised sections of already existing pages but rather completely new pages that will then be moved into other sections of the brain. This is essentially the place where first drafts will be placed and slightly edited before being added to the brain. Where the new pages will be placed will be decided on by the administration. 
