@@ -4,29 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "fa4748e90ba5e736",
+        "id": "1664c8afc6dd4ac5",
         "type": "tabs",
         "children": [
           {
-            "id": "937041c243e9f96c",
+            "id": "08dddc4c330face2",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "markdown",
               "state": {
-                "file": "05_Tasks/00_PFE_Kanban_Board.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false,
-                    false,
-                    false
-                  ]
-                }
+                "file": "01_Development/Dev Blogs/3 - Github Repo Created.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-trello",
-              "title": "00_PFE_Kanban_Board"
+              "icon": "lucide-file",
+              "title": "3 - Github Repo Created"
             }
           }
         ]
@@ -159,16 +151,6 @@
             }
           },
           {
-            "id": "d464a9f7cf1e12b1",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
-            }
-          },
-          {
             "id": "bebf38ceac1e04c4",
             "type": "leaf",
             "state": {
@@ -190,6 +172,10 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "pdf-plus:PDF++: Toggle auto-copy": false,
+      "pdf-plus:PDF++: Toggle auto-focus": false,
+      "pdf-plus:PDF++: Toggle auto-paste": false,
       "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
@@ -200,12 +186,28 @@
       "audio-recorder:Start/stop recording": false,
       "markdown-importer:Open format converter": false,
       "publish:Publish changes...": false,
-      "obsidian-git:Open Git source control": false,
-      "obsidian-kanban:Create new board": false
+      "obsidian-kanban:Create new board": false,
+      "omnisearch:Omnisearch": false,
+      "wikipedia-search:Open Article": false,
+      "obsidian-full-calendar:Open Full Calendar": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "74815dfdd15768a7",
+  "active": "08dddc4c330face2",
   "lastOpenFiles": [
+    "01_Development/Tools Used.md",
+    "Resources/penpot_logo.png",
+    "Resources/aseprite_logo.png",
+    "Resources/blender_logo.png",
+    "Resources/inkscape_logo.png",
+    "Resources/krita_logo.png",
+    "Resources/rust_programming_logo.png",
+    "Resources/rust_mascot.png",
+    "Resources/godot_logo-1.png",
+    "godot_logo.png",
+    "Untitled.base",
+    "Resources/Obsidian_Logo.png",
+    "05_Tasks/00_PFE_Kanban_Board.md",
     "05_Tasks/Implement Player Movement.md",
     "02_Design/ReadMe.md",
     "01_Development/Licensing Philosophy.md",
@@ -222,20 +224,13 @@
     "01_Development/ReadMe.md",
     "01_Development/Pillars of People's Football Experience.md",
     "01_Development/CONTRIBUTING.md.md",
-    "Resources/PFE Full Logo SVG.png",
     "01_Development/Dev Blogs/1 - Laying the Foundations Again.md",
-    "Resources/PFE Only Logo SVG.svg",
-    "Resources/PFE Logo.png",
-    "Resources/PFE Full Logo SVG.svg",
-    "Resources/PFE Full Logo.png",
     "Resources",
     "Templates/Dev Blog Template.md",
     "Templates/Task Template.md",
-    "05_Tasks/00_PFE_Kanban_Board.md",
     "01_Development/Dev Blogs",
     "05_Tasks/Untitled.md",
     "Untitled 1.base",
-    "Untitled.base",
     "Implement Player Movement critical.md",
     "Untitled.md",
     "00_Inbox/Queue/What is the Queue.md",
@@ -245,8 +240,6 @@
     "05_Tasks",
     "04_Wiki",
     "03_Guides",
-    "09_Dev Journal/ReadMe.md",
-    "10_Templates/ReadMe.md",
     "01_Planning/Untitled.canvas"
   ]
 }
