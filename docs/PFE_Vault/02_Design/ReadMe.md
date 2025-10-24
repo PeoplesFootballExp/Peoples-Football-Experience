@@ -12,6 +12,7 @@ It’s where _ideas become features_ and _features become systems._
 3. **Design Concepts:** theoretical or planned ideas (player morale, career mode)
 4. **Game Balance:** number tuning, difficulty, parameters
 5. **Technical Design:** implementation details, algorithm outlines
+6. Technical documentation (architecture, dependencies, scripts)
 
 ### 🔗 Connections
 

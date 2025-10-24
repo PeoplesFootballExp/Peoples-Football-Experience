@@ -3,21 +3,19 @@
 
 This section documents **how** you’re building the game:
 
-- Dev logs
+- Dev Blogs
 - Roadmaps
 - Build notes
-- Technical architecture
 - Tools & workflows
 
 This is where you track the **meta-layer of development** — your journey, updates, and infrastructure.
 
 ### 🧠 What Goes Here
 
-- DevLogs (like a development diary)
+- DevBlogs (like a development diary)
 - Roadmaps and milestone planning
 - Patch/build release notes
 - Notes on development tools (Unity setup, Git, version control)
-- Technical documentation (architecture, dependencies, scripts)
 
 ### 🔗 Connections
 

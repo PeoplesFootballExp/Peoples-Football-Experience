@@ -11,10 +11,14 @@
             "id": "3c8bf5a2f46c1a6f",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "02_Design/Team Selection Menu Element.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Team Selection Menu Element"
             }
           }
         ]
@@ -191,11 +195,17 @@
   },
   "active": "3c8bf5a2f46c1a6f",
   "lastOpenFiles": [
+    "02_Design/Main Menu.md",
+    "02_Design/Team Selection Menu Element.md",
+    "02_Design/ReadMe.md",
+    "01_Development/ReadMe.md",
+    "01_Development/Dev Blogs/4 - Started Godot Project.md",
+    "01_Development/Dev Blogs/1 - Laying the Foundations Again.md",
+    "01_Development/Dev Blogs/2 - Building the Base.md",
     "01_Development/Dev Blogs/3 - Github Repo Created.md",
     "05_Tasks/00_PFE_Kanban_Board.md",
     "04_Wiki/ReadMe.md",
     "03_Guides/ReadMe.md",
-    "02_Design/ReadMe.md",
     "01_Development/Tools Used.md",
     "Resources/penpot_logo.png",
     "Resources/aseprite_logo.png",
@@ -212,15 +222,12 @@
     "01_Development/Licensing Philosophy.md",
     "00_Inbox/Githhub Repo ReadMe.md",
     "00_Inbox/Contributing Set Up.md",
-    "01_Development/Dev Blogs/2 - Building the Base.md",
     "00_Inbox/ReadMe.md",
     "godotengine.org.md",
     "06_Assets/ReadMe.md",
     "05_Tasks/01_ReadMe.md",
-    "01_Development/ReadMe.md",
     "01_Development/Pillars of People's Football Experience.md",
     "01_Development/CONTRIBUTING.md.md",
-    "01_Development/Dev Blogs/1 - Laying the Foundations Again.md",
     "Resources",
     "Templates/Dev Blog Template.md",
     "Templates/Task Template.md",
@@ -228,8 +235,6 @@
     "05_Tasks/Untitled.md",
     "Untitled 1.base",
     "Implement Player Movement critical.md",
-    "Untitled.md",
-    "00_Inbox/Queue/What is the Queue.md",
     "Plugins",
     "Templates",
     "06_Assets",
