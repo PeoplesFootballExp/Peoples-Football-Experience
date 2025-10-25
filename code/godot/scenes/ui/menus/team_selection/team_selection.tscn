@@ -1,4 +1,9 @@
-[gd_scene format=3 uid="uid://cajnq2r74qtnh"]
+[gd_scene load_steps=5 format=3 uid="uid://cajnq2r74qtnh"]
+
+[ext_resource type="Script" uid="uid://b1av1c8gixxm1" path="res://scenes/ui/menus/team_selection/select_confed.gd" id="1_jsmfm"]
+[ext_resource type="Script" uid="uid://glwiu5rdfitt" path="res://scenes/ui/menus/team_selection/team_selection.gd" id="1_ly1mq"]
+[ext_resource type="Script" uid="uid://ctyhox4ofonx8" path="res://scenes/ui/menus/team_selection/v_box_container.gd" id="1_nhjno"]
+[ext_resource type="FoldableGroup" uid="uid://yin2yqfxqhtu" path="res://scenes/ui/menus/team_selection/team_selection_foldable_group.tres" id="2_ly1mq"]
 
 [node name="TeamSelection" type="Control"]
 layout_mode = 3
@@ -7,3 +12,104 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ly1mq")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 6.0
+script = ExtResource("1_nhjno")
+
+[node name="BackButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "Go Back ^
+"
+
+[node name="SelectConfed" type="FoldableContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 32
+title = "Select Confederation"
+foldable_group = ExtResource("2_ly1mq")
+script = ExtResource("1_jsmfm")
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/SelectConfed"]
+layout_mode = 2
+columns = 4
+
+[node name="SelectTerr" type="FoldableContainer" parent="VBoxContainer"]
+layout_mode = 2
+folded = true
+title = "Select Territory"
+foldable_group = ExtResource("2_ly1mq")
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/SelectTerr"]
+visible = false
+layout_mode = 2
+columns = 4
+
+[node name="SelectGender" type="FoldableContainer" parent="VBoxContainer"]
+layout_mode = 2
+folded = true
+title = "Select Gender"
+foldable_group = ExtResource("2_ly1mq")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/SelectGender"]
+visible = false
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/SelectGender/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 20
+
+[node name="MenTeamOption" type="Button" parent="VBoxContainer/SelectGender/HBoxContainer/MarginContainer"]
+layout_mode = 2
+text = "Men Teams"
+
+[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer/SelectGender/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 20
+
+[node name="WomenTeamOption" type="Button" parent="VBoxContainer/SelectGender/HBoxContainer/MarginContainer2"]
+layout_mode = 2
+text = "Women Teams"
+
+[node name="SelectLeagueLevel" type="FoldableContainer" parent="VBoxContainer"]
+layout_mode = 2
+folded = true
+title = "Select League Level"
+foldable_group = ExtResource("2_ly1mq")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/SelectLeagueLevel"]
+visible = false
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/SelectLeagueLevel/ScrollContainer"]
+layout_mode = 2
+
+[node name="SelectTeam" type="FoldableContainer" parent="VBoxContainer"]
+layout_mode = 2
+folded = true
+title = "Select Team"
+foldable_group = ExtResource("2_ly1mq")
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/SelectTeam"]
+visible = false
+layout_mode = 2
+columns = 4
+
+[connection signal="folding_changed" from="VBoxContainer/SelectConfed" to="VBoxContainer/SelectConfed" method="_on_folding_changed"]
