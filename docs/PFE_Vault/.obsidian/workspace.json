@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Design/Team Selection Menu Element.md",
+                "file": "01_Development/Pillars of People's Football Experience.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Team Selection Menu Element"
+              "title": "Pillars of People's Football Experience"
             }
           }
         ]
@@ -195,8 +195,8 @@
   },
   "active": "3c8bf5a2f46c1a6f",
   "lastOpenFiles": [
-    "02_Design/Main Menu.md",
     "02_Design/Team Selection Menu Element.md",
+    "02_Design/Main Menu.md",
     "02_Design/ReadMe.md",
     "01_Development/ReadMe.md",
     "01_Development/Dev Blogs/4 - Started Godot Project.md",

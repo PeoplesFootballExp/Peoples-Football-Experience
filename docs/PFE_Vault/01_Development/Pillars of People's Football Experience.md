@@ -70,7 +70,7 @@ The open source nature allows any addition that the community wants to be added 
 
 > Truly owning a game means being able to customize it any way you see fit - People's Football Experience
 
-## **4. World Inclusive**
+## **4. Inclusive and Accessibile** 
 
 ### All Territories Included
 
@@ -80,7 +80,17 @@ For international football, this game aims to have every single territory on the
 
 Not only will every territory have a domestic league (if they have one in real life) but they will go as deep into the league pyramid as I can find. And with the help of individuals across the globe, these league pyramids can be made even deeper. Of course, the teams will be fake but follow the real life leagues as closely as can be
 
+### Controller Support
+
+While this game main focus is Mobile and PC, controller support is still very important to maintain. Not only does it expand the input options for the players, but it allows a new way to play the game. Controller Support also means that more accessible options such as using the Xbox Adaptive Controller is supported as well as Steam supported controller focused platforms like Steam Deck. This also means that console support may be a possibility in the future but it is currently not a major focus. 
+
+### Device Inclusivity
+
+The ideal game is perfectly optimized to allow gameplay on Mobile as well. While not every type of phone may be supported, Mobile gameplay is still important as it expands the game to be playable by a wider audience. PC gameplay is also improved by a game optimized for Mobile performance as it opens the door for way more added features.
+
 > The Beauty of Football exists in every corner of the World - People's Football Experience
+
+
 
 ## **5. Single Player First**
 
