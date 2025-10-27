@@ -4,14 +4,12 @@
 [ext_resource type="Texture2D" uid="uid://cy5vdtw47lble" path="res://scenes/ui/elements/selection_tile/Manchester City F.C..png" id="1_tqxeu"]
 
 [node name="Control" type="Control"]
+custom_minimum_size = Vector2(240, 240)
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+anchors_preset = 0
+offset_right = 240.0
+offset_bottom = 240.0
 size_flags_horizontal = 3
-size_flags_vertical = 3
 script = ExtResource("1_4yma0")
 
 [node name="TeamButton" type="Button" parent="."]
@@ -37,26 +35,51 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_top = 20
-theme_override_constants/margin_bottom = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_bottom = 10
 
 [node name="VBox" type="VBoxContainer" parent="TeamButton/MarginContainer"]
 layout_mode = 2
 
-[node name="AspectRatioContainer" type="AspectRatioContainer" parent="TeamButton/MarginContainer/VBox"]
+[node name="ColorRect" type="ColorRect" parent="TeamButton/MarginContainer/VBox"]
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 8.0
+color = Color(0.5669666, 0.5669666, 0.5669666, 1)
 
-[node name="TeamLogo" type="TextureRect" parent="TeamButton/MarginContainer/VBox/AspectRatioContainer"]
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="TeamButton/MarginContainer/VBox/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 8.0
+
+[node name="Icon" type="TextureRect" parent="TeamButton/MarginContainer/VBox/ColorRect/AspectRatioContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 texture = ExtResource("1_tqxeu")
 expand_mode = 1
 
-[node name="TeamName" type="Label" parent="TeamButton/MarginContainer/VBox"]
+[node name="Text" type="Label" parent="TeamButton/MarginContainer/VBox"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 3
+theme_override_font_sizes/font_size = 20
 text = "Manchester City FC"
+horizontal_alignment = 1
+vertical_alignment = 1
+text_overrun_behavior = 3
+max_lines_visible = 1
+
+[node name="SubText" type="Label" parent="TeamButton/MarginContainer/VBox"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+text = "26 Teams"
 horizontal_alignment = 1
 vertical_alignment = 1
 text_overrun_behavior = 3
@@ -69,6 +92,7 @@ size_flags_vertical = 3
 [node name="AttackSection" type="Label" parent="TeamButton/MarginContainer/VBox/OutfieldSection"]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 16
 text = "ATT"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -78,6 +102,7 @@ max_lines_visible = 1
 [node name="MidSection" type="Label" parent="TeamButton/MarginContainer/VBox/OutfieldSection"]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 16
 text = "MID"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -87,6 +112,7 @@ max_lines_visible = 1
 [node name="DefenseSection" type="Label" parent="TeamButton/MarginContainer/VBox/OutfieldSection"]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 16
 text = "DEF"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -98,16 +124,20 @@ layout_mode = 2
 size_flags_vertical = 3
 
 [node name="AttackAverage" type="Label" parent="TeamButton/MarginContainer/VBox/SectionAverages"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 16
 text = "85"
 horizontal_alignment = 1
 vertical_alignment = 1
 max_lines_visible = 1
 
 [node name="MidAverage" type="Label" parent="TeamButton/MarginContainer/VBox/SectionAverages"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 16
 text = "83
 "
 horizontal_alignment = 1
@@ -115,8 +145,10 @@ vertical_alignment = 1
 max_lines_visible = 1
 
 [node name="DefenseAverage" type="Label" parent="TeamButton/MarginContainer/VBox/SectionAverages"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 16
 text = "84"
 horizontal_alignment = 1
 vertical_alignment = 1

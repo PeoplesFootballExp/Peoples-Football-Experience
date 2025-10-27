@@ -1,24 +1,54 @@
 extends Control
 
-# Base width you designed for (desktop reference)
-@export var base_screen_width : int = 1920
-@export var base_font_size : int = 24
+@onready
+var ICON: TextureRect = %Icon;
+@onready 
+var TEXT: Label = %Text;
+@onready
+var SUBTEXT: Label = %SubText
 
-# Optional clamp for min/max font size
-@export var min_font_size : int = 14
-@export var max_font_size : int = 32
+@onready
+var ATTACK_AVERAGE: Label = %AttackAverage
+@onready
+var MID_AVERAGE: Label = %MidAverage
+@onready
+var DEF_AVERAGE: Label = %DefenseAverage
 
-func _ready():
-	_scale_fonts(self)
+@onready
+var OUTFIELD_SECTIONS: HBoxContainer = $TeamButton/MarginContainer/VBox/OutfieldSection
 
-# Recursive function to scale fonts in all children
-func _scale_fonts(node: Node):
-	for child in node.get_children():
-		if child is Label:
-			var screen_width = DisplayServer.screen_get_size().x
-			var scaled_font_size = int(base_font_size * (float(screen_width) / base_screen_width))
-			scaled_font_size = clamp(scaled_font_size, min_font_size, max_font_size)
-			child.add_theme_font_size_override("font_size", scaled_font_size)
-		elif child is Control:
-			# Recursively scale labels in children
-			_scale_fonts(child)
+@onready 
+var SECTION_AVERAGES: HBoxContainer = $TeamButton/MarginContainer/VBox/SectionAverages
+
+
+
+var grid_index: int = -1;
+
+
+
+func set_tile(input_text: String, input_texture: Texture, input_subtext:= "") -> void:
+	# We simply put these images and text into the Tile
+	ICON.texture = input_texture;
+	TEXT.text = input_text;
+	SUBTEXT.text = input_subtext;
+	
+	
+func set_averages(attack: int, mid: int, defense: int) -> void:
+	# First validate values input
+	attack = clamp(attack, 1, 99);
+	mid = clamp(mid, 1, 99);
+	defense = clamp(defense, 1, 99);
+	
+	# Now, we set the text as the values
+	ATTACK_AVERAGE.text = str(attack);
+	MID_AVERAGE.text = str(mid);
+	DEF_AVERAGE.text = str(defense);
+
+	# Now, we make both the outfield sections and section averages visible
+	OUTFIELD_SECTIONS.visible = true;
+	SECTION_AVERAGES.visible = true;
+	
+	return
+	
+
+	

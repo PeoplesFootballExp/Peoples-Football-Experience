@@ -1,0 +1,69 @@
+[gd_scene load_steps=4 format=3 uid="uid://crf4wys3melce"]
+
+[ext_resource type="Script" uid="uid://b02u75uyc0ecp" path="res://scenes/ui/elements/selection_panel/selection_panel.gd" id="1_06jaf"]
+[ext_resource type="PackedScene" uid="uid://dkw7cmhd50wfc" path="res://scenes/ui/elements/selection_tile/selection_tile.tscn" id="2_06jaf"]
+
+[sub_resource type="GDScript" id="GDScript_ewq5u"]
+
+[node name="SelectionPanel" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 20
+script = ExtResource("1_06jaf")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 32
+text = "Select Team"
+clip_text = true
+max_lines_visible = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 8.0
+follow_focus = true
+
+[node name="SelectionGrid" type="GridContainer" parent="VBoxContainer/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 4
+script = SubResource("GDScript_ewq5u")
+
+[node name="Control" parent="VBoxContainer/ScrollContainer/SelectionGrid" instance=ExtResource("2_06jaf")]
+layout_mode = 2
+
+[node name="Control2" parent="VBoxContainer/ScrollContainer/SelectionGrid" instance=ExtResource("2_06jaf")]
+layout_mode = 2
+
+[node name="Control3" parent="VBoxContainer/ScrollContainer/SelectionGrid" instance=ExtResource("2_06jaf")]
+layout_mode = 2
+
+[node name="Control4" parent="VBoxContainer/ScrollContainer/SelectionGrid" instance=ExtResource("2_06jaf")]
+layout_mode = 2
+
+[node name="Control5" parent="VBoxContainer/ScrollContainer/SelectionGrid" instance=ExtResource("2_06jaf")]
+layout_mode = 2
+
+[node name="ExitButton" type="Button" parent="VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 20
+text = "Exit Selection"
