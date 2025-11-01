@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Development/Pillars of People's Football Experience.md",
+                "file": "02_Design/PFE Database documentation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Pillars of People's Football Experience"
+              "title": "PFE Database documentation"
             }
           }
         ]
@@ -195,6 +195,10 @@
   },
   "active": "3c8bf5a2f46c1a6f",
   "lastOpenFiles": [
+    "02_Design/Untitled.md",
+    "01_Development/Tools Used.md",
+    "02_Design/PFE Database documentation.md",
+    "01_Development/Pillars of People's Football Experience.md",
     "02_Design/Team Selection Menu Element.md",
     "02_Design/Main Menu.md",
     "02_Design/ReadMe.md",
@@ -206,7 +210,6 @@
     "05_Tasks/00_PFE_Kanban_Board.md",
     "04_Wiki/ReadMe.md",
     "03_Guides/ReadMe.md",
-    "01_Development/Tools Used.md",
     "Resources/penpot_logo.png",
     "Resources/aseprite_logo.png",
     "Resources/blender_logo.png",
@@ -226,15 +229,12 @@
     "godotengine.org.md",
     "06_Assets/ReadMe.md",
     "05_Tasks/01_ReadMe.md",
-    "01_Development/Pillars of People's Football Experience.md",
     "01_Development/CONTRIBUTING.md.md",
     "Resources",
     "Templates/Dev Blog Template.md",
     "Templates/Task Template.md",
     "01_Development/Dev Blogs",
-    "05_Tasks/Untitled.md",
     "Untitled 1.base",
-    "Implement Player Movement critical.md",
     "Plugins",
     "Templates",
     "06_Assets",

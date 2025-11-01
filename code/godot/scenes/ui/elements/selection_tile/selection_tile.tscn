@@ -86,6 +86,7 @@ text_overrun_behavior = 3
 max_lines_visible = 1
 
 [node name="OutfieldSection" type="HBoxContainer" parent="TeamButton/MarginContainer/VBox"]
+visible = false
 layout_mode = 2
 size_flags_vertical = 3
 
@@ -120,6 +121,7 @@ uppercase = true
 max_lines_visible = 1
 
 [node name="SectionAverages" type="HBoxContainer" parent="TeamButton/MarginContainer/VBox"]
+visible = false
 layout_mode = 2
 size_flags_vertical = 3
 

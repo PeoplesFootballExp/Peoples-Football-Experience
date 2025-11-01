@@ -59,6 +59,7 @@ Reasons:
 - Great for simple UI mechanisms or add-ons
 - Fast enough for simple games, improvements with using Rust after working prototype
 
+
 ## Art
 
 ### Krita
@@ -113,3 +114,51 @@ Reasons:
 
 Not sure for now, but likely to use free and open source software like audacity
 
+
+## Database Management
+
+### SQLite
+
+Reasons:
+- Light weight database system supported across many platforms
+- Relational Model Database
+- ACID transactions are the default, allowing multi-threaded transactions
+- Takes care of storage, memory optimizations, query system, and query optimizations
+- Expandable to other non-local versions of SQL like MySQL or PostgresSQL
+- Strongly tested and trusted code, used for years and likely to be supported till 2050
+- Free to use and open source, following principles of game
+
+### DB Browser
+
+Reasons:
+- Light weight application able to view, edit, and quickly prototype with SQLite databases
+- Allows for testing of databases
+- Multi database support
+- Free
+
+### SQLite Studio
+
+Reasons:
+- Light weight application able to view, edit, and quickly prototype with SQLite databases
+- Allows for testing of databases
+- Multi database support
+- Free and Open Source
+
+### Google Sheets
+
+Reasons:
+- Free alternative to Microsoft Excel
+- Allows for complex CSV files of data collections and analysis 
+- Quick Prototyping of SQL like tables
+- Automatically saved to the cloud and downloadable to offline use
+- Shareable sheets, allows for collaboration with teams
+- Con: Owned by Google, so access can be lost at any time
+
+### LibreOffice
+
+Reasons:
+- Free and open source alternative to Microsoft Excel
+- Allows for complex CSV files of data collections and analysis
+- Quick Prototyping of SQL like tables
+- Offline, data is completely owned and accessible 
+- Allows for team collaboration
