@@ -1,0 +1,28 @@
+id,logo_path,parent_id,name_official,code,level
+1,"""res://assets/textures/confed_logos/1.png",NULL,Global Football Union,GFU,0
+2,"""res://assets/textures/confed_logos/2.png",1,Union of European Football Associations,UEFA,1
+3,"""res://assets/textures/confed_logos/3.png",1,South American Football Confederation,CONMEBOL,1
+4,"""res://assets/textures/confed_logos/4.png",1,"Confederation of North, Central America and Caribbean Association Football",CONCACAF,1
+5,"""res://assets/textures/confed_logos/5.png",1,Confederation of African Football,CAF,1
+6,"""res://assets/textures/confed_logos/6.png",1,Asian Football Confederation,AFC,1
+7,"""res://assets/textures/confed_logos/7.png",1,Oceania Football Confederation,OFC,1
+8,,2,Northern Europe,,2
+9,,2,Central and Eastern Europe,,2
+10,,2,Southern Europe,,2
+11,,2,Western Europe,,2
+12,,4,Caribbean Zone,,2
+13,,4,Central America,,2
+14,,4,North America,,2
+15,,5,Central Africa,,2
+16,,5,North Africa,,2
+17,,5,East Africa,,2
+18,,5,South Africa,,2
+19,,5,West Africa,,2
+20,,6,Central Asia,,2
+21,,6,East Asia,,2
+22,,6,South Asia,,2
+23,,6,South East Asia,,2
+24,,6,West Asia,,2
+25,,7,Melanesia,,2
+26,,7,Polynesia,,2
+27,,7,Micronesia,,2
