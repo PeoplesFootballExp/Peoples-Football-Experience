@@ -66,10 +66,12 @@ theme = ExtResource("1_jsmfm")
 [node name="ConfedSelection" type="OptionButton" parent="UI/FilterPanel"]
 layout_mode = 2
 size_flags_horizontal = 3
+expand_icon = true
 
 [node name="TerritorySelection" type="OptionButton" parent="UI/FilterPanel"]
 layout_mode = 2
 size_flags_horizontal = 3
+expand_icon = true
 
 [node name="GenderSelection" type="CheckButton" parent="UI/FilterPanel"]
 layout_mode = 2
@@ -81,6 +83,7 @@ alignment = 1
 [node name="LeagueSelection" type="OptionButton" parent="UI/FilterPanel"]
 layout_mode = 2
 size_flags_horizontal = 3
+expand_icon = true
 
 [node name="SearchBox" type="LineEdit" parent="UI/FilterPanel"]
 layout_mode = 2
