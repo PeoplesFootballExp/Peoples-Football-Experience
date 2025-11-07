@@ -21,6 +21,9 @@ func _ready() -> void:
 	load_territories_button()
 
 func load_confederations_button() -> void:
+	var popm: PopupMenu = confed_selection.get_popup();
+	
+	
 	SaveManager.activate_save(1);
 	DBManager.init_db(SaveManager.get_active_db_path());
 	
@@ -43,10 +46,12 @@ func load_confederations_button() -> void:
 			push_error("Failed to load texture: %s" % confed["logo_path"])
 		
 			
-			
+		popm.set_item_icon_max_width(index, 50)
 		index += 1;
 		
 func load_territories_button() -> void:
+	
+	var popm: PopupMenu = confed_selection.get_popup();
 	SaveManager.activate_save(1);
 	DBManager.init_db(SaveManager.get_active_db_path());
 	
@@ -69,7 +74,7 @@ func load_territories_button() -> void:
 			push_error("Failed to load texture: %s" % terr["logo_path"])
 		
 			
-			
+		popm.set_item_icon_max_width(index, 50)
 		index += 1;
 	
 	
