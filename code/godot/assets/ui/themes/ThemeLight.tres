@@ -2,4 +2,6 @@
 
 [resource]
 HBoxContainer/constants/separation = 20
+OptionButton/constants/icon_max_width = 50
+PopupMenu/constants/icon_max_width = 64
 VBoxContainer/constants/separation = 20

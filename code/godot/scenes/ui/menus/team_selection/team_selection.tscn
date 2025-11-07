@@ -66,11 +66,16 @@ theme = ExtResource("1_jsmfm")
 [node name="ConfedSelection" type="OptionButton" parent="UI/FilterPanel"]
 layout_mode = 2
 size_flags_horizontal = 3
+theme = ExtResource("1_jsmfm")
+text_overrun_behavior = 3
+clip_text = true
 expand_icon = true
+fit_to_longest_item = false
 
 [node name="TerritorySelection" type="OptionButton" parent="UI/FilterPanel"]
 layout_mode = 2
 size_flags_horizontal = 3
+theme = ExtResource("1_jsmfm")
 expand_icon = true
 
 [node name="GenderSelection" type="CheckButton" parent="UI/FilterPanel"]

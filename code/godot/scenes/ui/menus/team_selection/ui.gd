@@ -20,10 +20,8 @@ func _ready() -> void:
 	load_confederations_button()
 	load_territories_button()
 
-func load_confederations_button() -> void:
+func load_confederations_button(confed_filter: String) -> void:
 	var popm: PopupMenu = confed_selection.get_popup();
-	popm.add_theme_constant_override("icon_max_width", 50)
-	
 	
 	SaveManager.activate_save(1);
 	DBManager.init_db(SaveManager.get_active_db_path());
@@ -31,51 +29,22 @@ func load_confederations_button() -> void:
 	# Get all confederations
 	var confeds: Array = DBManager.query_rows("SELECT * FROM Confederation")
 	
-	# Example: print each confed's info
-	for confed in confeds:
-		# Add Text Item
-		confed_selection.add_item(confed["name_official"]);
+	# Fill the option button
+	Utils.populate_option_button(confed_selection, confeds, "name_official", "logo_path")
 		
-		# Add Icon
-		var logo_path = "res://icon.svg" if confed["logo_path"] == null else confed["logo_path"]
-		var tex = load(logo_path)
-		if tex and tex is Texture2D:
 
-			confed_selection.set_item_icon(-1, tex)     # assign the texture as icon
-		else:
-			push_error("Failed to load texture: %s" % confed["logo_path"])
-		
-			
-	
-		
 func load_territories_button() -> void:
 	
 	var popm: PopupMenu = confed_selection.get_popup();
-	popm.add_theme_constant_override("icon_max_width", 50)
 	SaveManager.activate_save(1);
 	DBManager.init_db(SaveManager.get_active_db_path());
 	
 	# Get all confederations
 	var terrs: Array = DBManager.query_rows("SELECT * FROM Territory")
 	
-	# Example: print each confed's info
-	for terr in terrs:
-		# Add Text Item
-		terr_selection.add_item(terr["name"]);
+	# Fill Option Button
+	Utils.populate_option_button(terr_selection, terrs, "name", "logo_path")
 		
-		# Add Icon
-		var logo_path = "res://icon.svg" if terr["logo_path"] == null else terr["logo_path"]
-		var tex = load(logo_path)
-		if tex and tex is Texture2D:     # add the label
-			terr_selection.set_item_icon(-1, tex)     # assign the texture as icon
-		else:
-			push_error("Failed to load texture: %s" % terr["logo_path"])
-		
-			
-	
-	
-	
-
 
 ## Go Back to Previous Scene
 func _on_back_button_pressed() -> void:
