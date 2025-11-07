@@ -1,0 +1,13 @@
+formulas:
+  Untitled: ""
+views:
+  - type: table
+    name: Table
+    order:
+      - Scene Name
+      - Godot Path
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: cards
+    name: View

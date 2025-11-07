@@ -1,3 +1,6 @@
+---
+Scene Name: Team Selection
+---
 
 **Date:** 2025-10-27
 **Author(s):** Eddie  

@@ -11,14 +11,13 @@
             "id": "e5d67d577a22d316",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "01_Development/Dev Blogs/5 - Database Work.md",
-                "mode": "source",
-                "source": false
+                "file": "02_Design/UI Scenes Index.base",
+                "viewName": "Table"
               },
-              "icon": "lucide-file",
-              "title": "5 - Database Work"
+              "icon": "lucide-table",
+              "title": "UI Scenes Index"
             }
           }
         ]
@@ -78,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "50dcf7b17daf14d0",
@@ -195,8 +195,20 @@
   },
   "active": "e5d67d577a22d316",
   "lastOpenFiles": [
-    "02_Design/Wikidata Queries.md",
+    "Untitled.md",
+    "02_Design/UI Scenes Index.md",
+    "02_Design/UI Scenes Index.base",
+    "02_Design/Main Menu.md",
+    "Templates/Scene Template.md",
+    "Templates/Task Template.md",
+    "02_Design/Signal Reference.md",
+    "02_Design/Signal Naming Convention.md",
+    "02_Design/Team Table Documentation.md",
+    "02_Design/Team Selection Menu.md",
+    "02_Design/PFE Database documentation.md",
+    "02_Design/ReadMe.md",
     "01_Development/Dev Blogs/5 - Database Work.md",
+    "02_Design/Wikidata Queries.md",
     "01_Development/Licensing Philosophy.md",
     "01_Development/CONTRIBUTING.md.md",
     "01_Development/ReadMe.md",
@@ -208,12 +220,6 @@
     "Resources/libre_office_logo.png",
     "Resources/sqlite_logo.png",
     "01_Development/Dev Blogs/4 - Started Godot Project.md",
-    "02_Design/PFE Database documentation.md",
-    "02_Design/Team Table Documentation.md",
-    "02_Design/Untitled.md",
-    "02_Design/Team Selection Menu Element.md",
-    "02_Design/Main Menu.md",
-    "02_Design/ReadMe.md",
     "01_Development/Dev Blogs/1 - Laying the Foundations Again.md",
     "01_Development/Dev Blogs/2 - Building the Base.md",
     "01_Development/Dev Blogs/3 - Github Repo Created.md",
@@ -227,11 +233,6 @@
     "Resources/krita_logo.png",
     "Untitled.base",
     "05_Tasks/Implement Player Movement.md",
-    "00_Inbox/Githhub Repo ReadMe.md",
-    "00_Inbox/Contributing Set Up.md",
-    "00_Inbox/ReadMe.md",
-    "godotengine.org.md",
-    "06_Assets/ReadMe.md",
     "Resources",
     "01_Development/Dev Blogs",
     "Untitled 1.base",
@@ -240,7 +241,6 @@
     "06_Assets",
     "05_Tasks",
     "04_Wiki",
-    "03_Guides",
     "01_Planning/Untitled.canvas"
   ]
 }

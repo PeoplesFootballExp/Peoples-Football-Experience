@@ -1,7 +1,7 @@
 ---
-
 kanban-plugin: board
-
+Scene Name: Main Menu
+Godot Path: res://ui
 ---
 
 ## Backlog

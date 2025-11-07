@@ -1,3 +1,6 @@
+---
+Scene Name: Selection Tile
+---
 ### 🎯 Purpose
 
 This is your **execution layer** — where strategy becomes action.  
