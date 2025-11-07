@@ -1,30 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://cajnq2r74qtnh"]
+[gd_scene load_steps=4 format=3 uid="uid://cajnq2r74qtnh"]
+
+[ext_resource type="Theme" uid="uid://dmjkkbdbwavds" path="res://assets/ui/themes/ThemeLight.tres" id="1_jsmfm"]
+[ext_resource type="Script" uid="uid://d1nmo0qdi84lh" path="res://scenes/ui/menus/team_selection/ui.gd" id="2_00fsc"]
 
 [sub_resource type="GDScript" id="GDScript_ambex"]
 script/source = "extends Control
-
-# Base width you designed for (desktop reference)
-@export var base_screen_width : int = 1920
-@export var base_font_size : int = 24
-
-# Optional clamp for min/max font size
-@export var min_font_size : int = 14
-@export var max_font_size : int = 32
-
-func _ready():
-	_scale_fonts(self)
-
-# Recursive function to scale fonts in all children
-func _scale_fonts(node: Node):
-	for child in node.get_children():
-		if child is Label:
-			var screen_width = DisplayServer.screen_get_size().x
-			var scaled_font_size = int(base_font_size * (screen_width / base_screen_width))
-			scaled_font_size = clamp(scaled_font_size, min_font_size, max_font_size)
-			child.add_theme_font_size_override(\"font_size\", scaled_font_size)
-		elif child is Control:
-			# Recursively scale labels in children
-			_scale_fonts(child)
 "
 
 [node name="TeamSelection" type="Control"]
@@ -34,4 +14,99 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 script = SubResource("GDScript_ambex")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.46423507, 0.46423507, 0.46423507, 1)
+
+[node name="UI" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+theme = ExtResource("1_jsmfm")
+script = ExtResource("2_00fsc")
+
+[node name="HeaderPanel" type="HBoxContainer" parent="UI"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("1_jsmfm")
+
+[node name="BackButton" type="Button" parent="UI/HeaderPanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_jsmfm")
+text = "<- Go Back to Main Menu"
+
+[node name="TitleLabel" type="Label" parent="UI/HeaderPanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+size_flags_stretch_ratio = 9.0
+text = "Select Your Team..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FilterPanel" type="HBoxContainer" parent="UI"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("1_jsmfm")
+
+[node name="ConfedSelection" type="OptionButton" parent="UI/FilterPanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="TerritorySelection" type="OptionButton" parent="UI/FilterPanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GenderSelection" type="CheckButton" parent="UI/FilterPanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.5
+text = "Men"
+alignment = 1
+
+[node name="LeagueSelection" type="OptionButton" parent="UI/FilterPanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SearchBox" type="LineEdit" parent="UI/FilterPanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="UI"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 10.0
+
+[node name="GridContainer" type="GridContainer" parent="UI/ScrollContainer"]
+layout_mode = 2
+
+[node name="FooterPanel" type="HBoxContainer" parent="UI"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("1_jsmfm")
+
+[node name="ConfirmButton" type="Button" parent="UI/FooterPanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Confirm Team"
+
+[node name="Button" type="Button" parent="UI/FooterPanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Reselect Team"
+
+[connection signal="pressed" from="UI/HeaderPanel/BackButton" to="UI" method="_on_back_button_pressed"]

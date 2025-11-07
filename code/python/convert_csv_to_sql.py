@@ -25,7 +25,7 @@ def csv_to_sqlite(csv_path: str, db_path: str, table_name: str, if_exists: str =
         raise ValueError("if_exists must be 'replace', 'append', or 'fail'.")
 
     # --- Load CSV using Polars (fast + type inference) ---
-    print(f"📂 Loading CSV: {csv_path}")
+    print(f"Loading CSV: {csv_path}")
     df = pl.read_csv(csv_path)
 
     # --- Connect to SQLite ---
@@ -49,7 +49,7 @@ def csv_to_sqlite(csv_path: str, db_path: str, table_name: str, if_exists: str =
 
     conn.commit()
     conn.close()
-    print(f"✅ Table '{table_name}' successfully written to {db_path}")
+    print(f"Table '{table_name}' successfully written to {db_path}")
 
 
 

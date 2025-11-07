@@ -59,6 +59,16 @@ Reasons:
 - Great for simple UI mechanisms or add-ons
 - Fast enough for simple games, improvements with using Rust after working prototype
 
+### Python
+![[python_logo.png|144x144]]
+Reasons:
+- Great for creating automated programs to collect data from online sources
+- Easy and fast prototyping
+- Most people know how to program simple python programs
+- Extensive data libraries
+- Integrates perfectly with SQL databases
+- Useful for other meta tooling, outside of the Godot game and for users/players to potentially run themselves
+
 
 ## Art
 
@@ -109,6 +119,13 @@ Reasons:
 - Scaling feature, useful for Mobile and Computer prototyping
 - Free for personal use and open source
 - Only browser option for now, but desktop app may be coming soon
+## Affinity
+
+![[affinity_logo.png|200x200]]
+Reasons:
+- Recently became a free software tool
+- Useful for creating regular images and vector images all in one tool
+- Soon to become widely used amongst professional designers
 
 ## Music
 
@@ -118,7 +135,7 @@ Not sure for now, but likely to use free and open source software like audacity
 ## Database Management
 
 ### SQLite
-
+![[sqlite_logo.png|252x119]]
 Reasons:
 - Light weight database system supported across many platforms
 - Relational Model Database
@@ -145,7 +162,7 @@ Reasons:
 - Free and Open Source
 
 ### Google Sheets
-
+![[google_sheets_logo.png|183x183]]
 Reasons:
 - Free alternative to Microsoft Excel
 - Allows for complex CSV files of data collections and analysis 
@@ -155,7 +172,7 @@ Reasons:
 - Con: Owned by Google, so access can be lost at any time
 
 ### LibreOffice
-
+![[libre_office_logo.png|176x129]]
 Reasons:
 - Free and open source alternative to Microsoft Excel
 - Allows for complex CSV files of data collections and analysis

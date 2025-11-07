@@ -246,15 +246,193 @@ def get_teams_in_league(league_qid: str) -> pl.DataFrame:
     return df
 
 
+import requests
+import polars as pl
+
+def parse_wikidata_dates(df: pl.DataFrame, cols: list[str]) -> pl.DataFrame:
+    """Safely parse Wikidata date strings into naive UTC datetimes."""
+    for col in cols:
+        if col in df.columns:
+            try:
+                df = df.with_columns(
+                    pl.col(col)
+                    .str.to_datetime(format=None, time_zone="UTC", strict=False)
+                    .dt.convert_time_zone(None)
+                )
+            except Exception:
+                pass
+    return df
+
+
+def get_team_data_latest(team_qid: str) -> pl.DataFrame:
+    """
+    Fetches data for a single football club (team) from Wikidata
+    and returns a DataFrame with only the *latest* data entries
+    for each temporal property (e.g., venue, league, coach).
+    """
+
+    query = f"""
+    SELECT ?club ?clubLabel
+           ?nameEn
+           ?officialNameEn ?officialNameStart ?officialNameEnd
+           ?inception
+           ?country ?countryLabel
+           ?headCoach ?headCoachLabel ?coachStart ?coachEnd
+           ?league ?leagueLabel ?leagueStart ?leagueEnd
+           ?venue ?venueLabel ?venueStart ?venueEnd
+           ?owner ?ownerLabel ?ownershipShare
+           ?flag
+           ?color ?colorLabel
+           ?fbrefID
+           ?optaID
+           ?transfermarktID
+           ?worldfootballID
+    WHERE {{
+      VALUES ?club {{ wd:{team_qid} }}
+
+      OPTIONAL {{ ?club wdt:P2561 ?nameEn. FILTER(LANG(?nameEn) = 'en') }}
+
+      OPTIONAL {{
+        ?club p:P1448 ?officialNameStatement.
+        ?officialNameStatement ps:P1448 ?officialNameEn.
+        FILTER(LANG(?officialNameEn) = 'en')
+        OPTIONAL {{ ?officialNameStatement pq:P580 ?officialNameStart. }}
+        OPTIONAL {{ ?officialNameStatement pq:P582 ?officialNameEnd. }}
+      }}
+
+      OPTIONAL {{ ?club wdt:P571 ?inception. }}
+      OPTIONAL {{ ?club wdt:P17 ?country. }}
+
+      OPTIONAL {{
+        ?club p:P286 ?coachStatement.
+        ?coachStatement ps:P286 ?headCoach.
+        OPTIONAL {{ ?coachStatement pq:P580 ?coachStart. }}
+        OPTIONAL {{ ?coachStatement pq:P582 ?coachEnd. }}
+      }}
+
+      OPTIONAL {{
+        ?club p:P118 ?leagueStatement.
+        ?leagueStatement ps:P118 ?league.
+        OPTIONAL {{ ?leagueStatement pq:P580 ?leagueStart. }}
+        OPTIONAL {{ ?leagueStatement pq:P582 ?leagueEnd. }}
+      }}
+
+      OPTIONAL {{
+        ?club p:P115 ?venueStatement.
+        ?venueStatement ps:P115 ?venue.
+        OPTIONAL {{ ?venueStatement pq:P580 ?venueStart. }}
+        OPTIONAL {{ ?venueStatement pq:P582 ?venueEnd. }}
+      }}
+
+      OPTIONAL {{
+        ?club p:P127 ?ownerStatement.
+        ?ownerStatement ps:P127 ?owner.
+        OPTIONAL {{ ?ownerStatement pq:P1107 ?ownershipShare. }}
+      }}
+
+      OPTIONAL {{ ?club wdt:P41 ?flag. }}
+      OPTIONAL {{ ?club wdt:P6364 ?color. }}
+      OPTIONAL {{ ?club wdt:P8642 ?fbrefID. }}
+      OPTIONAL {{ ?club wdt:P8737 ?optaID. }}
+      OPTIONAL {{ ?club wdt:P7223 ?transfermarktID. }}
+      OPTIONAL {{ ?club wdt:P7287 ?worldfootballID. }}
+
+      SERVICE wikibase:label {{ bd:serviceParam wikibase:language 'en'. }}
+    }}
+    """
+
+    url = "https://query.wikidata.org/sparql"
+    headers = {"Accept": "application/sparql-results+json", "User-Agent": "PFEDataCollector/1.0"}
+
+    response = requests.get(url, params={"query": query}, headers=headers)
+    response.raise_for_status()
+    results = response.json()["results"]["bindings"]
+
+    if not results:
+        return pl.DataFrame()
+
+    data = []
+    for item in results:
+        def g(field): return item.get(field, {}).get("value")
+        data.append({
+            "club": g("club").split("/")[-1],
+            "clubLabel": g("clubLabel"),
+            "nameEn": g("nameEn"),
+            "officialNameEn": g("officialNameEn"),
+            "officialNameStart": g("officialNameStart"),
+            "officialNameEnd": g("officialNameEnd"),
+            "inception": g("inception"),
+            "country": g("country").split("/")[-1] if g("country") else None,
+            "countryLabel": g("countryLabel"),
+            "headCoach": g("headCoach"),
+            "headCoachLabel": g("headCoachLabel"),
+            "coachStart": g("coachStart"),
+            "coachEnd": g("coachEnd"),
+            "league": g("league"),
+            "leagueLabel": g("leagueLabel"),
+            "leagueStart": g("leagueStart"),
+            "leagueEnd": g("leagueEnd"),
+            "venue": g("venue"),
+            "venueLabel": g("venueLabel"),
+            "venueStart": g("venueStart"),
+            "venueEnd": g("venueEnd"),
+            "owner": g("owner"),
+            "ownerLabel": g("ownerLabel"),
+            "ownershipShare": g("ownershipShare"),
+            "flag": g("flag"),
+            "color": g("color"),
+            "colorLabel": g("colorLabel"),
+            "fbrefID": g("fbrefID"),
+            "optaID": g("optaID"),
+            "transfermarktID": g("transfermarktID"),
+            "worldfootballID": g("worldfootballID"),
+        })
+
+    df = pl.DataFrame(data)
+
+    # Parse time columns safely
+    df = parse_wikidata_dates(df, [
+        "venueStart", "venueEnd",
+        "leagueStart", "leagueEnd",
+        "coachStart", "coachEnd",
+        "officialNameStart", "officialNameEnd"
+    ])
+
+    # Select latest row per property (venue, league, coach) using end date if available
+    def latest(df, start_col, end_col):
+        if start_col in df.columns or end_col in df.columns:
+            return df.sort([pl.col(end_col).fill_null(pl.col(start_col)), pl.col(start_col)], descending=True).head(1)
+        return df
+
+    latest_venue = latest(df, "venueStart", "venueEnd")
+    latest_league = latest(df, "leagueStart", "leagueEnd")
+    latest_coach = latest(df, "coachStart", "coachEnd")
+
+    # Merge all relevant data together (avoiding duplicate columns)
+    latest_df = (
+        latest_venue
+        .join(latest_league, on="club", how="outer", suffix="_league")
+        .join(latest_coach, on="club", how="outer", suffix="_coach")
+    )
+
+    return latest_df.unique(subset=["club"], keep="first")
+
+
+
+
+
+
 if __name__ == "__main__":
     # leagues = get_football_leagues()
 
     # save_leagues_to_sql_upsert(df=leagues, db_path="data_collection/data_collected/wikidata_football.db")
 
-    teams = get_teams_in_league("Q793457")
+    team_data = get_team_data_latest(team_qid="Q11945")
 
     # For Python 3.7+ you can set stdout encoding
     sys.stdout.reconfigure(encoding='utf-8')
 
-    print(teams)
+    for row in team_data.iter_rows(named=True):
+        print(row)
+
 
