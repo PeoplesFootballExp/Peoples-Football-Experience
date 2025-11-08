@@ -102,10 +102,10 @@ func option_selection_made(option_type: String, new_id: int) -> void:
 					_load_terrs()
 				"League":
 					# Load leagues
-					return
+					_load_leagues()
 				"Team":
 					#load team
-					return
+					_load_teams()
 
 func _reset_lower_option(from_option: String) -> void:
 	match from_option:
@@ -167,6 +167,9 @@ func _load_terrs() -> void:
 		
 		
 func _load_leagues() -> void:
+	pass
+	
+func _load_teams() -> void:
 	pass
 
 ## Go Back to Previous Scene
