@@ -64,6 +64,7 @@ size_flags_vertical = 3
 theme = ExtResource("1_jsmfm")
 
 [node name="ConfedSelection" type="OptionButton" parent="UI/FilterPanel"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("1_jsmfm")
@@ -73,6 +74,7 @@ expand_icon = true
 fit_to_longest_item = false
 
 [node name="TerritorySelection" type="OptionButton" parent="UI/FilterPanel"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("1_jsmfm")
@@ -86,6 +88,7 @@ text = "Men"
 alignment = 1
 
 [node name="LeagueSelection" type="OptionButton" parent="UI/FilterPanel"]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 expand_icon = true
@@ -118,3 +121,7 @@ size_flags_horizontal = 3
 text = "Reselect Team"
 
 [connection signal="pressed" from="UI/HeaderPanel/BackButton" to="UI" method="_on_back_button_pressed"]
+[connection signal="item_selected" from="UI/FilterPanel/ConfedSelection" to="UI" method="_on_confed_selection_item_selected"]
+[connection signal="item_selected" from="UI/FilterPanel/TerritorySelection" to="UI" method="_on_territory_selection_item_selected"]
+[connection signal="toggled" from="UI/FilterPanel/GenderSelection" to="UI" method="_on_gender_selection_toggled"]
+[connection signal="pressed" from="UI/FooterPanel/ConfirmButton" to="UI" method="_on_confirm_button_pressed"]

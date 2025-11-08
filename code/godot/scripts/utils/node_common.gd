@@ -26,7 +26,7 @@ static func populate_option_button(button: OptionButton, data: Array[Dictionary]
 				push_error("Failed to load texture: %s" % icon_path)
 				
 		# Set Metadata
-		button.set_item_metadata(-1, row)
+		button.set_item_metadata(-1, row["id"])
 			
 		
 		
