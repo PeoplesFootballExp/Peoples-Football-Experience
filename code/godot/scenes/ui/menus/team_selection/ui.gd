@@ -42,11 +42,11 @@ var selected_options: Dictionary[String, int] = {
 	"OppTeam": -1, # -1 means none selected
 }
 
-const HIERARCHY: Dictionary[String, Array] = {
-	"Confed": ["Terr"],
-	"Terr": ["League"],
-	"Gender": ["League"],
-	"League": ["Team"],
+const HIERARCHY: Dictionary[String, String] = {
+	"Confed": "Terr",
+	"Terr": "League",
+	"Gender": "League",
+	"League": "Team",
 }
 
 
@@ -71,11 +71,128 @@ const TERRITORY_QUERY: String = """
 		"""
 const CONFED_QUERY: String = "SELECT * FROM Confederation WHERE Confederation.level = 1"
 
+const TOUR_QUERY: String = "
+	WITH RECURSIVE
+	    -- 1. Get the target confederation and all its children/descendants
+	confed_tree (confed_id) AS (
+	        -- Anchor Member: Start with the selected confederation
+	        -- Uses the placeholder :confed_id
+	        SELECT C.id FROM Confederation C WHERE C.id = {confed_id} 
+
+	        UNION ALL
+
+	        -- Recursive Member: Find children (uses parent_id from your schema)
+	        SELECT c_child.id
+	        FROM Confederation c_child
+	        JOIN confed_tree ct ON c_child.parent_id = ct.confed_id
+    )
+    
+	SELECT
+	    T.*
+	FROM
+	    Tournament T
+	INNER JOIN
+	    Territory TR ON T.territory_id = TR.id -- Tournaments link to Territories
+	WHERE
+	    -- 3. Always filter by Gender
+	    -- Note: T.gender is an INTEGER, so 'men' or 'women' might need to be replaced with 0 or 1.
+	    T.gender = {gender}
+	    
+	    -- 2. Conditional filter based on territory/confederation priority
+	    AND (
+	        -- CASE A: Territory is selected (Highest Priority)
+	        -- Filter by the specific territory ID and ignore confed logic entirely.
+	        ({terr_id} IS NOT NULL AND T.territory_id = {terr_id})
+	        
+	        OR
+	        
+	        -- CASE B & C: Territory is NOT selected (Confederation logic applies)
+	        ({terr_id} IS NULL AND (
+	            -- CASE C: World Confed (ID 1) selected, no geographic filter needed.
+	            {confed_id} = 1 
+	            OR
+	            -- CASE B: Specific Confed selected, filter by recursive tree.
+	            -- CORRECTED: Checks the Territory's confed_id against the recursive list.
+	            TR.confed_id IN (SELECT confed_id FROM confed_tree)
+	        ))
+	    )
+	ORDER BY
+	    T.id;
+"
+
+const TEAM_QUERY: String = "WITH RECURSIVE
+    -- 1. Get the target confederation and all its children/descendants
+    confed_tree (confed_id) AS (
+        -- Anchor Member
+        SELECT C.id FROM Confederation C WHERE C.id = :confed_id
+
+        UNION ALL
+
+        -- Recursive Member
+        SELECT c_child.id
+        FROM Confederation c_child
+        JOIN confed_tree ct ON c_child.parent_id = ct.confed_id
+    )
+    
+SELECT
+    TM.*
+FROM
+    Team TM
+INNER JOIN
+    Territory TR ON TM.territory_id = TR.id -- Team to Territory link
+LEFT JOIN 
+    Team_Tournament TT ON TM.id = TT.team_id -- ASSUMPTION: Team to Tournament link (required for :league_id filter)
+WHERE
+    -- 5. Always filter by Gender
+    TM.gender = :gender
+    
+    -- 1-4. Conditional filter block enforcing priority
+    AND (
+        -- --- PRIORITY 1: SEARCH FILTER (Overrides all other geographic/league filters) ---
+        -- If search term is provided, filter by name LIKE and ignore the rest of the block.
+        (:team_search_term IS NOT NULL AND TM.name LIKE '%' || :team_search_term || '%')
+        
+        OR 
+        
+        -- --- PRIORITY 2-4: NO SEARCH TERM SELECTED (Execute if :team_search_term IS NULL) ---
+        (:team_search_term IS NULL AND (
+        
+            -- --- PRIORITY 2: LEAGUE FILTER ---
+            -- If :league_id is provided, filter by tournament_id.
+            (:league_id IS NOT NULL AND TT.tournament_id = :league_id)
+            
+            OR
+            
+            -- --- PRIORITY 3/4: NO LEAGUE SELECTED (Execute if :league_id IS NULL) ---
+            (:league_id IS NULL AND (
+                
+                -- --- PRIORITY 3: TERRITORY FILTER ---
+                -- If :territory_id is provided, filter by territory.
+                (:territory_id IS NOT NULL AND TM.territory_id = :territory_id)
+                
+                OR
+                
+                -- --- PRIORITY 4: CONFEDERATION FILTER (NO TERRITORY/LEAGUE) ---
+                -- Execute this block ONLY if :territory_id IS NULL
+                (:territory_id IS NULL AND (
+                    -- CASE A: World Confed (ID 1) selected, no geographic filter.
+                    :confed_id = 1 
+                    OR
+                    -- CASE B: Specific Confed selected, filter by recursive tree.
+                    TR.confed_id IN (SELECT confed_id FROM confed_tree)
+                ))
+            ))
+        ))
+    )
+ORDER BY
+    TM.id;
+"
+
 
 func _ready() -> void:
 	# Create a new save, only for testing
 	# TODO: Move this to save file selection and creation scene
-	#SaveManager.create_new_save(1, "Testing");
+	SaveManager.create_new_save(1, "Testing");
 	
 	# Activat the current save file, for now just use slot 1
 	# TODO: Move to a save file selection scene
@@ -87,6 +204,7 @@ func _ready() -> void:
 	# Populate the confed and terr option buttons with all options
 	_load_confeds()
 	_load_terrs()
+	_load_leagues()
 
 
 func option_selection_made(option_type: String, new_id: int) -> void:
@@ -95,29 +213,19 @@ func option_selection_made(option_type: String, new_id: int) -> void:
 	
 	# Carry out options resets
 	if HIERARCHY.has(option_type):
-		for dependent_option in HIERARCHY[option_type]:
-			_reset_lower_option(dependent_option)
-			match dependent_option:
+			#_reset_lower_option(dependent_option)
+			match HIERARCHY[option_type]:
 				"Terr":
 					_load_terrs()
+					option_selection_made("Terr", -1);
 				"League":
 					# Load leagues
 					_load_leagues()
+					option_selection_made("Team", -1);
 				"Team":
 					#load team
 					_load_teams()
 
-func _reset_lower_option(from_option: String) -> void:
-	match from_option:
-		"Terr":
-			selected_options["Terr"] = -1
-			selected_options["League"] = -1
-			selected_options["Team"] = -1
-		"League":
-			selected_options["League"] = -1
-			selected_options["Team"] = -1
-		"Team":
-			selected_options["Team"] = -1
 
 func _update_team_grid() -> void:
 	var confed_id = selected_options["Confed"]
@@ -155,7 +263,7 @@ func _load_confeds() -> void:
 	var confeds: Array[Dictionary] = DBManager.query_rows(CONFED_QUERY)
 	
 	# Fill the option button
-	Utils.populate_option_button(confed_button, confeds, "name_official", "logo_path")
+	Utils.populate_option_button(confed_button, confeds, "name", "logo_path")
 		
 
 func _load_terrs() -> void:
@@ -167,7 +275,17 @@ func _load_terrs() -> void:
 		
 		
 func _load_leagues() -> void:
-	pass
+	# Get All Tournaments
+	var tours: Array[Dictionary] = DBManager.query_rows(TOUR_QUERY.format({
+		"confed_id": selected_options["Confed"], 
+		"gender": "'men'" if selected_options["Gender"] == 0 else "'women'",
+		"terr_id": selected_options["Terr"] if selected_options["Terr"] > 0 else "NULL",
+	}))
+	
+	# Fill Option Button
+	Utils.populate_option_button(league_button, tours, "name", "logo_path")
+		
+		
 	
 func _load_teams() -> void:
 	pass

@@ -1,0 +1,27 @@
+id,name,logo_path,territory_id,confed_id,official_name,code,gender,type,level,is_active
+1,Champions League,res://assets/textures/tournament_logo/1.png,2,20,Afghanistan Champions League,,men,League,1,yes
+2,Superliga,res://assets/textures/tournament_logo/2.png,5,9,Kategoria Superiore,,men,League,1,yes
+3,First Division,res://assets/textures/tournament_logo/3.png,5,9,Kategoria e Parë,,men,League,2,yes
+4,Second Division,res://assets/textures/tournament_logo/4.png,5,9,Kategoria e Dytë,,men,League,3,yes
+5,Ligue 1,res://assets/textures/tournament_logo/5.png,6,16,Algerian Ligue Professionnelle 1,,men,League,1,yes
+6,Ligue 2,res://assets/textures/tournament_logo/6.png,6,16,Algerian Ligue Professionnelle 2,,men,League,2,yes
+7,FFAS Senior League,res://assets/textures/tournament_logo/7.png,7,26,ASFA Soccer League,,men,League,1,yes
+8,Primera Divisió,res://assets/textures/tournament_logo/8.png,8,11,Lliga Nacional de Fútbol,,men,League,1,yes
+9,Segona Divisió,res://assets/textures/tournament_logo/9.png,8,11,Andorran Segona Divisió,,men,League,2,yes
+10,Girabola,res://assets/textures/tournament_logo/10.png,9,18,Campeonato Nacional de Futebol em Séniores Masculinos,,men,League,1,yes
+11,Senior League,res://assets/textures/tournament_logo/11.png,10,12,AFA Senior Male League,,men,League,1,yes
+12,Premier Division,res://assets/textures/tournament_logo/12.png,11,12,Antigua and Barbuda Premier Division,,men,League,1,yes
+13,Primera División,res://assets/textures/tournament_logo/13.png,12,3,Liga Profesional de Fútbol,,men,League,1,yes
+14,Primera Nacional,res://assets/textures/tournament_logo/14.png,12,3,Primera Nacional,,men,League,2,yes
+15,Primera B Argentina,res://assets/textures/tournament_logo/15.png,12,3,Argentina Primera B Metropolitana,,men,League,3,yes
+16,Primera C Argentina,res://assets/textures/tournament_logo/16.png,12,3,Argentinian Primera C,,men,League,4,yes
+17,Premier League,res://assets/textures/tournament_logo/17.png,13,9,Armenian Premier League,,men,League,1,yes
+18,First League,res://assets/textures/tournament_logo/18.png,13,9,Armenian First League,,men,League,2,yes
+19,Division di Honor,res://assets/textures/tournament_logo/19.png,14,12,Aruban Division di Honor,,men,League,1,yes
+20,A-League,res://assets/textures/tournament_logo/20.png,16,23,Australian A-League,,men,League,1,yes
+21,Bundesliga,res://assets/textures/tournament_logo/21.png,17,11,Austrian Bundesliga,,men,League,1,yes
+22,Erste Liga,res://assets/textures/tournament_logo/22.png,17,11,Austrian Erste Liga,,men,League,2,yes
+23,Regional League,res://assets/textures/tournament_logo/23.png,17,11,Austrian Regional League,,men,League,3,yes
+24,Landesliga,res://assets/textures/tournament_logo/24.png,17,11,Austrian Landesliga,,men,League,4,yes
+25,Premier League,res://assets/textures/tournament_logo/25.png,18,9,Azerbaijani Premier League,,men,League,1,yes
+26,First Division,res://assets/textures/tournament_logo/26.png,18,9,Azerbaijan First Division,,men,League,2,yes

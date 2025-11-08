@@ -53,5 +53,11 @@ def csv_to_sqlite(csv_path: str, db_path: str, table_name: str, if_exists: str =
 
 
 
+# Add Confederation to SQLite
+# csv_to_sqlite("PFE Database - Confederation.csv", "PFE_Database.db", "Confederation", "replace")
 
-csv_to_sqlite("Wikidata League Info - Territories.csv", "PFE_Database.db", "Territory", "replace")
+# # Add Territory to SQLite
+# csv_to_sqlite("PFE Database - Territory.csv", "PFE_Database.db", "Territory", "replace")
+
+# Add Tournaments to SQLite
+csv_to_sqlite("PFE Database - Tournament.csv", "PFE_Database.db", "Tournament", "replace")
