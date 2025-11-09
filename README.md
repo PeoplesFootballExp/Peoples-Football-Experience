@@ -14,7 +14,7 @@ PFE is still **very early in development**. For now, the following list of featu
 - ⚙️ Choose your country and an AI opponent
 - 📊 Team Formation and Tactics management
 
-Future releases will include many more planned features all dependent on the wishes of the community. As long as the features follow the [Pillars of PFE](docs/PFE_Vault/01_Development/Pillars of People's Football Experience.md), any feature can be added. Some features may include:
+Future releases will include many more planned features all dependent on the wishes of the community. As long as the features follow the [Pillars of PFE](docs/PFE_Vault/01_Development/Pillars%20of%20People's%20Football%20Experience.md), any feature can be added. Some features may include:
 
 - Player management and transfers
 - Coaching staff management and transfer
