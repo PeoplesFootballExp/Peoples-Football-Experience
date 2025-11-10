@@ -11,13 +11,14 @@
             "id": "e5d67d577a22d316",
             "type": "leaf",
             "state": {
-              "type": "bases",
+              "type": "markdown",
               "state": {
-                "file": "02_Design/UI Scenes Index.base",
-                "viewName": "Table"
+                "file": "01_Development/Pillars of People's Football Experience.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-table",
-              "title": "UI Scenes Index"
+              "icon": "lucide-file",
+              "title": "Pillars of People's Football Experience"
             }
           }
         ]
@@ -77,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "50dcf7b17daf14d0",
@@ -195,9 +195,12 @@
   },
   "active": "e5d67d577a22d316",
   "lastOpenFiles": [
+    "01_Development/Tools Used.md",
+    "01_Development/Licensing Philosophy.md",
+    "01_Development/Pillars of People's Football Experience.md",
+    "02_Design/UI Scenes Index.base",
     "Untitled.md",
     "02_Design/UI Scenes Index.md",
-    "02_Design/UI Scenes Index.base",
     "02_Design/Main Menu.md",
     "Templates/Scene Template.md",
     "Templates/Task Template.md",
@@ -209,11 +212,8 @@
     "02_Design/ReadMe.md",
     "01_Development/Dev Blogs/5 - Database Work.md",
     "02_Design/Wikidata Queries.md",
-    "01_Development/Licensing Philosophy.md",
     "01_Development/CONTRIBUTING.md.md",
     "01_Development/ReadMe.md",
-    "01_Development/Pillars of People's Football Experience.md",
-    "01_Development/Tools Used.md",
     "Resources/affinity_logo.png",
     "Resources/google_sheets_logo.png",
     "Resources/python_logo.png",
@@ -232,7 +232,6 @@
     "Resources/inkscape_logo.png",
     "Resources/krita_logo.png",
     "Untitled.base",
-    "05_Tasks/Implement Player Movement.md",
     "Resources",
     "01_Development/Dev Blogs",
     "Untitled 1.base",

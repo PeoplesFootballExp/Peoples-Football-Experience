@@ -82,7 +82,7 @@ Not only will every territory have a domestic league (if they have one in real l
 
 ### Controller Support
 
-While this game main focus is Mobile and PC, controller support is still very important to maintain. Not only does it expand the input options for the players, but it allows a new way to play the game. Controller Support also means that more accessible options such as using the Xbox Adaptive Controller is supported as well as Steam supported controller focused platforms like Steam Deck. This also means that console support may be a possibility in the future but it is currently not a major focus. 
+While this game main focus is Mobile and PC, controller support is still very important to maintain. Not only does it expand the input options for the players, but it allows a new way to play the game. Controller Support also means that more accessible options such as using the Xbox Adaptive Controller is supported as well as Steam supported controller focused platforms like Steam Deck. This also means that console support may be a possibility in the future but it is currently not a major focus. IMPORTANT: Controller support is meant for gameplay for now
 
 ### Device Inclusivity
 
