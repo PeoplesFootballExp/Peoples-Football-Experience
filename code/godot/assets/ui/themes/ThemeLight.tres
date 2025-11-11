@@ -4,4 +4,6 @@
 HBoxContainer/constants/separation = 20
 OptionButton/constants/icon_max_width = 50
 PopupMenu/constants/icon_max_width = 64
+PopupMenu/constants/separator_outline_size = 3
+PopupMenu/constants/v_separation = 10
 VBoxContainer/constants/separation = 20

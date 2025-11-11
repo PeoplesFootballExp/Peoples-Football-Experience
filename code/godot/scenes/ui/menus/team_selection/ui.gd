@@ -192,7 +192,7 @@ ORDER BY
 func _ready() -> void:
 	# Create a new save, only for testing
 	# TODO: Move this to save file selection and creation scene
-	SaveManager.create_new_save(1, "Testing");
+	#SaveManager.create_new_save(1, "Testing");
 	
 	# Activat the current save file, for now just use slot 1
 	# TODO: Move to a save file selection scene
@@ -264,6 +264,9 @@ func _load_confeds() -> void:
 	
 	# Fill the option button
 	Utils.populate_option_button(confed_button, confeds, "name", "logo_path")
+	
+	# Display Blank Option
+	confed_button.text = "Select Confederation..."
 		
 
 func _load_terrs() -> void:
@@ -272,19 +275,25 @@ func _load_terrs() -> void:
 	
 	# Fill Option Button
 	Utils.populate_option_button(terr_button, terrs, "name", "logo_path")
+	
+	# Display Blank Option
+	terr_button.text = "Select Territory..."
 		
 		
 func _load_leagues() -> void:
 	# Get All Tournaments
 	var tours: Array[Dictionary] = DBManager.query_rows(TOUR_QUERY.format({
 		"confed_id": selected_options["Confed"], 
-		"gender": "'men'" if selected_options["Gender"] == 0 else "'women'",
+		"gender": str(selected_options["Gender"]),
 		"terr_id": selected_options["Terr"] if selected_options["Terr"] > 0 else "NULL",
 	}))
 	
 	# Fill Option Button
 	Utils.populate_option_button(league_button, tours, "name", "logo_path")
 		
+	# Display Blank Option
+	league_button.text = "Select League..."
+
 		
 	
 func _load_teams() -> void:
@@ -314,10 +323,11 @@ func _on_territory_selection_item_selected(index: int) -> void:
 	
 	
 func _on_gender_selection_toggled(toggled_on: bool) -> void:
-	if toggled_on:
-		option_selection_made("Gender", 1)
-	else:
-		option_selection_made("Gender", 0)
+	# First, change text of button to reflect change
+	gender_button.text = "Women" if toggled_on else "Men"
+	
+	# Now, we change the remaining hierachy of options
+	option_selection_made("Gender", 1 if toggled_on else 0);
 
 
 func _on_confirm_button_pressed() -> void:

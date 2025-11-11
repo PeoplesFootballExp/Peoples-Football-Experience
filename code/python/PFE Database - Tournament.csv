@@ -1,27 +1,661 @@
 id,name,logo_path,territory_id,confed_id,official_name,code,gender,type,level,is_active
-1,Champions League,res://assets/textures/tournament_logo/1.png,2,20,Afghanistan Champions League,,men,League,1,yes
-2,Superliga,res://assets/textures/tournament_logo/2.png,5,9,Kategoria Superiore,,men,League,1,yes
-3,First Division,res://assets/textures/tournament_logo/3.png,5,9,Kategoria e Parë,,men,League,2,yes
-4,Second Division,res://assets/textures/tournament_logo/4.png,5,9,Kategoria e Dytë,,men,League,3,yes
-5,Ligue 1,res://assets/textures/tournament_logo/5.png,6,16,Algerian Ligue Professionnelle 1,,men,League,1,yes
-6,Ligue 2,res://assets/textures/tournament_logo/6.png,6,16,Algerian Ligue Professionnelle 2,,men,League,2,yes
-7,FFAS Senior League,res://assets/textures/tournament_logo/7.png,7,26,ASFA Soccer League,,men,League,1,yes
-8,Primera Divisió,res://assets/textures/tournament_logo/8.png,8,11,Lliga Nacional de Fútbol,,men,League,1,yes
-9,Segona Divisió,res://assets/textures/tournament_logo/9.png,8,11,Andorran Segona Divisió,,men,League,2,yes
-10,Girabola,res://assets/textures/tournament_logo/10.png,9,18,Campeonato Nacional de Futebol em Séniores Masculinos,,men,League,1,yes
-11,Senior League,res://assets/textures/tournament_logo/11.png,10,12,AFA Senior Male League,,men,League,1,yes
-12,Premier Division,res://assets/textures/tournament_logo/12.png,11,12,Antigua and Barbuda Premier Division,,men,League,1,yes
-13,Primera División,res://assets/textures/tournament_logo/13.png,12,3,Liga Profesional de Fútbol,,men,League,1,yes
-14,Primera Nacional,res://assets/textures/tournament_logo/14.png,12,3,Primera Nacional,,men,League,2,yes
-15,Primera B Argentina,res://assets/textures/tournament_logo/15.png,12,3,Argentina Primera B Metropolitana,,men,League,3,yes
-16,Primera C Argentina,res://assets/textures/tournament_logo/16.png,12,3,Argentinian Primera C,,men,League,4,yes
-17,Premier League,res://assets/textures/tournament_logo/17.png,13,9,Armenian Premier League,,men,League,1,yes
-18,First League,res://assets/textures/tournament_logo/18.png,13,9,Armenian First League,,men,League,2,yes
-19,Division di Honor,res://assets/textures/tournament_logo/19.png,14,12,Aruban Division di Honor,,men,League,1,yes
-20,A-League,res://assets/textures/tournament_logo/20.png,16,23,Australian A-League,,men,League,1,yes
-21,Bundesliga,res://assets/textures/tournament_logo/21.png,17,11,Austrian Bundesliga,,men,League,1,yes
-22,Erste Liga,res://assets/textures/tournament_logo/22.png,17,11,Austrian Erste Liga,,men,League,2,yes
-23,Regional League,res://assets/textures/tournament_logo/23.png,17,11,Austrian Regional League,,men,League,3,yes
-24,Landesliga,res://assets/textures/tournament_logo/24.png,17,11,Austrian Landesliga,,men,League,4,yes
-25,Premier League,res://assets/textures/tournament_logo/25.png,18,9,Azerbaijani Premier League,,men,League,1,yes
-26,First Division,res://assets/textures/tournament_logo/26.png,18,9,Azerbaijan First Division,,men,League,2,yes
+1,Champions League,res://assets/textures/tournament_logo/1.png,2,20,Afghanistan Champions League,,0,1,1,1
+2,Superliga,res://assets/textures/tournament_logo/2.png,5,9,Kategoria Superiore,,0,1,1,1
+3,First Division,res://assets/textures/tournament_logo/3.png,5,9,Kategoria e Parë,,0,1,2,1
+4,Second Division,res://assets/textures/tournament_logo/4.png,5,9,Kategoria e Dytë,,0,1,3,1
+5,Ligue 1,res://assets/textures/tournament_logo/5.png,6,16,Algerian Ligue Professionnelle 1,,0,1,1,1
+6,Ligue 2,res://assets/textures/tournament_logo/6.png,6,16,Algerian Ligue Professionnelle 2,,0,1,2,1
+7,FFAS Senior League,res://assets/textures/tournament_logo/7.png,7,26,ASFA Soccer League,,0,1,1,1
+8,Primera Divisió,res://assets/textures/tournament_logo/8.png,8,11,Lliga Nacional de Fútbol,,0,1,1,1
+9,Segona Divisió,res://assets/textures/tournament_logo/9.png,8,11,Andorran Segona Divisió,,0,1,2,1
+10,Girabola,res://assets/textures/tournament_logo/10.png,9,18,Campeonato Nacional de Futebol em Séniores Masculinos,,0,1,1,1
+11,Senior League,res://assets/textures/tournament_logo/11.png,10,12,AFA Senior Male League,,0,1,1,1
+12,Premier Division,res://assets/textures/tournament_logo/12.png,11,12,Antigua and Barbuda Premier Division,,0,1,1,1
+13,Primera División,res://assets/textures/tournament_logo/13.png,12,3,Liga Profesional de Fútbol,,0,1,1,1
+14,Primera Nacional,res://assets/textures/tournament_logo/14.png,12,3,Primera Nacional,,0,1,2,1
+15,Primera B Argentina,res://assets/textures/tournament_logo/15.png,12,3,Argentina Primera B Metropolitana,,0,1,3,1
+16,Primera C Argentina,res://assets/textures/tournament_logo/16.png,12,3,Argentinian Primera C,,0,1,4,1
+17,Premier League,res://assets/textures/tournament_logo/17.png,13,9,Armenian Premier League,,0,1,1,1
+18,First League,res://assets/textures/tournament_logo/18.png,13,9,Armenian First League,,0,1,2,1
+19,Division di Honor,res://assets/textures/tournament_logo/19.png,14,12,Aruban Division di Honor,,0,1,1,1
+20,A-League,res://assets/textures/tournament_logo/20.png,16,23,Australian A-League,,0,1,1,1
+21,Bundesliga,res://assets/textures/tournament_logo/21.png,17,11,Austrian Bundesliga,,0,1,1,1
+22,Erste Liga,res://assets/textures/tournament_logo/22.png,17,11,Austrian Erste Liga,,0,1,2,1
+23,Regional League,res://assets/textures/tournament_logo/23.png,17,11,Austrian Regional League,,0,1,3,1
+24,Landesliga,res://assets/textures/tournament_logo/24.png,17,11,Austrian Landesliga,,0,1,4,1
+25,Premier League,res://assets/textures/tournament_logo/25.png,18,9,Azerbaijani Premier League,,0,1,1,1
+26,First Division,res://assets/textures/tournament_logo/26.png,18,9,Azerbaijan First Division,,0,1,2,1
+27,Senior League,res://assets/textures/tournament_logo/27.png,19,12,BFA Senior League,,0,1,1,1
+28,Premier League,res://assets/textures/tournament_logo/28.png,20,24,Bahrain Premier League,,0,1,1,1
+29,Second Division,res://assets/textures/tournament_logo/29.png,20,24,Bahrain Second Division,,0,1,2,1
+30,Premier League,res://assets/textures/tournament_logo/30.png,21,22,Bangladesh Premier League,,0,1,1,1
+31,Championship,res://assets/textures/tournament_logo/31.png,21,22,Bangladesh Championship League,,0,1,2,1
+32,Premier League,res://assets/textures/tournament_logo/32.png,22,12,Barbados Premier Division,,0,1,1,1
+33,Division One,res://assets/textures/tournament_logo/33.png,22,12,Barbados Division One,,0,1,2,1
+34,Vyscha Liga,res://assets/textures/tournament_logo/34.png,23,9,Belarus Vyscha Liga,,0,1,1,1
+35,First League,res://assets/textures/tournament_logo/35.png,23,9,Belarusian First League,,0,1,2,1
+36,Pro League,res://assets/textures/tournament_logo/36.png,24,11,Belgian Pro League,,0,1,1,1
+37,Challenger Pro League,res://assets/textures/tournament_logo/37.png,24,11,Belgian Challenger Pro League,,0,1,2,1
+38,Division One,res://assets/textures/tournament_logo/38.png,24,11,Belgian Division 1,,0,1,3,1
+39,Premier League,res://assets/textures/tournament_logo/39.png,25,13,Belize Premier Football League,,0,1,1,1
+40,Ligue 1,res://assets/textures/tournament_logo/40.png,26,19,Benin Championnat National,,0,1,1,1
+41,Premier League,res://assets/textures/tournament_logo/41.png,27,12,Bermuda Premier League,,0,1,1,1
+42,Premier League,res://assets/textures/tournament_logo/42.png,28,22,Bhutan Premier League,,0,1,1,1
+43,Primera División,res://assets/textures/tournament_logo/43.png,29,3,Bolivian Primera División,,0,1,1,1
+44,Divishon Honor,res://assets/textures/tournament_logo/44.png,30,12,Liga FFB,,0,1,1,1
+45,Premier Liga,res://assets/textures/tournament_logo/45.png,31,9,Bosnian Premier Liga,,0,1,1,1
+46,First League,res://assets/textures/tournament_logo/46.png,31,9,Bosnian First League,,0,1,2,1
+47,Premier League,res://assets/textures/tournament_logo/47.png,32,18,Botswana Premier League,,0,1,1,1
+48,Serie A,res://assets/textures/tournament_logo/48.png,33,3,Campeonato Brasileiro Série A,,0,1,1,1
+49,Serie B,res://assets/textures/tournament_logo/49.png,33,3,Campeonato Brasileiro Série B,,0,1,2,1
+50,Serie C,res://assets/textures/tournament_logo/50.png,33,3,Campeonato Brasileiro Série C,,0,1,3,1
+51,Serie D,res://assets/textures/tournament_logo/51.png,33,3,Campeonato Brasileiro Série D,,0,1,4,1
+52,National Football League,res://assets/textures/tournament_logo/52.png,34,12,BVIFA National Football League,,0,1,1,1
+53,Super League,res://assets/textures/tournament_logo/53.png,35,23,Brunei Super League,,0,1,1,1
+54,Parva liga,res://assets/textures/tournament_logo/54.png,36,9,Bulgarian First League,,0,1,1,1
+55,Vtora liga,res://assets/textures/tournament_logo/55.png,36,9,Bulgarian Vtora liga,,0,1,2,1
+56,Ligue 1,res://assets/textures/tournament_logo/56.png,37,19,Burkina Faso 1ere Division,,0,1,1,1
+57,Ligue A,res://assets/textures/tournament_logo/57.png,38,17,Burundi Ligue A,,0,1,1,1
+58,C-League,res://assets/textures/tournament_logo/58.png,39,23,Cambodia C-League,,0,1,1,1
+59,Elite One,res://assets/textures/tournament_logo/59.png,40,15,Championnat du Cameroun de football,,0,1,1,1
+60,Elite Two,res://assets/textures/tournament_logo/60.png,40,15,Cameroon Elite Two ,,0,1,2,1
+61,Premier League,res://assets/textures/tournament_logo/61.png,41,14,Canadian Premier League,,0,1,1,1
+62,National Championship,res://assets/textures/tournament_logo/62.png,42,19,Campeonato Caboverdiano de Futebol,,0,1,1,1
+63,Premier League,res://assets/textures/tournament_logo/63.png,43,12,Cayman Islands League,,0,1,1,1
+64,CAR League,res://assets/textures/tournament_logo/64.png,44,15,Central African Republic League,,0,1,1,1
+65,LINAFOOT,res://assets/textures/tournament_logo/65.png,45,15,Chad Premier League,,0,1,1,1
+66,Primera División,res://assets/textures/tournament_logo/66.png,46,3,Chile Primera Division,,0,1,1,1
+67,Primera B,res://assets/textures/tournament_logo/67.png,46,3,Chile Primera B,,0,1,2,1
+68,Segunda División,res://assets/textures/tournament_logo/68.png,46,3,Chile Segunda División,,0,1,3,1
+69,Super League,res://assets/textures/tournament_logo/69.png,47,21,Chinese Super League,,0,1,1,1
+70,League One,res://assets/textures/tournament_logo/70.png,47,21,China League One,,0,1,2,1
+71,League Two,res://assets/textures/tournament_logo/71.png,47,21,China League Two,,0,1,3,1
+72,Categoría Primera A,res://assets/textures/tournament_logo/72.png,50,3,Colombia Categoría Primera A,,0,1,1,1
+73,Categoría Primera B,res://assets/textures/tournament_logo/73.png,50,3,Colombia Categoría Primera B,,0,1,2,1
+74,Premier League,res://assets/textures/tournament_logo/74.png,51,18,Comoros Premier League,,0,1,1,1
+75,Ligue 1,res://assets/textures/tournament_logo/75.png,52,15,Congo Ligue 1,,0,1,1,1
+76,Liga FPD,res://assets/textures/tournament_logo/76.png,54,13,Costa Rica Liga FPD,,0,1,1,1
+77,Segunda División,res://assets/textures/tournament_logo/77.png,54,13,Costa Rica Segunda División,,0,1,2,1
+78,Prva HNL,res://assets/textures/tournament_logo/78.png,55,9,Croatian First Football League,,0,1,1,1
+79,Druga HNL,res://assets/textures/tournament_logo/79.png,55,9,Croatian Druga HNL,,0,1,2,1
+80,Treća HNL,res://assets/textures/tournament_logo/80.png,55,9,Croatian Treća HNL,,0,1,3,1
+81,Campeonato Nacional de Fútbol,res://assets/textures/tournament_logo/81.png,56,12,Campeonato Nacional de Cuba,,0,1,1,1
+82,Promé Divishon,res://assets/textures/tournament_logo/82.png,57,12,Curaçao Promé Divishon,,0,1,1,1
+83,First Division,res://assets/textures/tournament_logo/83.png,58,10,Cypriot First Division,,0,1,1,1
+84,Second Division,res://assets/textures/tournament_logo/84.png,58,10,Cypriot Second Division,,0,1,2,1
+85,First League,res://assets/textures/tournament_logo/85.png,59,9,Czech First League,,0,1,1,1
+86,National Football League,res://assets/textures/tournament_logo/86.png,59,9,Czech National Football League,,0,1,2,1
+87,Superliga,res://assets/textures/tournament_logo/87.png,60,8,Danish Superliga,,0,1,1,1
+88,1. Division,res://assets/textures/tournament_logo/88.png,60,8,Danish 1st Division,,0,1,2,1
+89,2. Division,res://assets/textures/tournament_logo/89.png,60,8,Danish 2nd Division,,0,1,3,1
+90,3. Division,res://assets/textures/tournament_logo/90.png,60,8,Denmark 3 Division,,0,1,4,1
+91,Premier League,res://assets/textures/tournament_logo/91.png,61,17,Djibouti Premier League,,0,1,1,1
+92,Permiere League,res://assets/textures/tournament_logo/92.png,62,12,Dominica Premiere League,,0,1,1,1
+93,Liga Dominicana de Fútbol,res://assets/textures/tournament_logo/93.png,63,12,Dominican LDF,,0,1,1,1
+94,Ligue 1,res://assets/textures/tournament_logo/94.png,64,15,DR Congo Ligue 1,,0,1,1,1
+95,Primeira Divisão,res://assets/textures/tournament_logo/95.png,65,23,Timor-Leste Primeira Divisão,,0,1,1,1
+96,Serie A,res://assets/textures/tournament_logo/96.png,67,3,Ecuadorian Serie A,,0,1,1,1
+97,Serie B,res://assets/textures/tournament_logo/97.png,67,3,Ecuadorian Serie B,,0,1,2,1
+98,Premier League,res://assets/textures/tournament_logo/98.png,68,16,Egyptian Premier League,,0,1,1,1
+99,Second Division A,res://assets/textures/tournament_logo/99.png,68,16,Egyptian Second Division A,,0,1,2,1
+100,Second Division B,res://assets/textures/tournament_logo/100.png,68,16,Egyptian Second Division B,,0,1,3,1
+101,Primera Division,res://assets/textures/tournament_logo/101.png,69,13,El Salvador Primera Division,,0,1,1,1
+102,Premier League,res://assets/textures/tournament_logo/102.png,70,11,English Premier League,,0,1,1,1
+103,EFL Championship,res://assets/textures/tournament_logo/103.png,70,11,English League Championship,,0,1,2,1
+104,EFL League One,res://assets/textures/tournament_logo/104.png,70,11,English League One,,0,1,3,1
+105,EFL League 2,res://assets/textures/tournament_logo/105.png,70,11,English League Two,,0,1,4,1
+106,National League,res://assets/textures/tournament_logo/106.png,70,11,English National League,,0,1,5,1
+107,National League South,res://assets/textures/tournament_logo/107.png,70,11,English National League South,,0,1,6,1
+108,National League North,res://assets/textures/tournament_logo/108.png,70,11,English National League North,,0,1,6,1
+109,Northern Premier League Premier Division,res://assets/textures/tournament_logo/109.png,70,11,English Northern Premier League Premier Division,,0,1,7,1
+110,Southern Premier League Central Division,res://assets/textures/tournament_logo/110.png,70,11,English Southern Premier League Central Division,,0,1,7,1
+111,Southern League Premier Division South,res://assets/textures/tournament_logo/111.png,70,11,English Southern League Premier Division South,,0,1,7,1
+112,Isthmian League Premier Division,res://assets/textures/tournament_logo/112.png,70,11,English Isthmian League Premier Division,,0,1,7,1
+113,Northern Premier League Division One East,res://assets/textures/tournament_logo/113.png,70,11,English Northern Premier League Division One East,,0,1,8,1
+114,Northern Premier League Division One West,res://assets/textures/tournament_logo/114.png,70,11,English Northern Premier League Division One West,,0,1,8,1
+115,Northern Premier League Division One Midlands,res://assets/textures/tournament_logo/115.png,70,11,English Northern Premier League Division One Midlands,,0,1,8,1
+116,Southern Football League Division One Central,res://assets/textures/tournament_logo/116.png,70,11,English Southern Football League Division One Central,,0,1,8,1
+117,Southern League Division One South,res://assets/textures/tournament_logo/117.png,70,11,English Southern League Division One South,,0,1,8,1
+118,Isthmian League Division One South Central,res://assets/textures/tournament_logo/118.png,70,11,English Isthmian League Division One South Central,,0,1,8,1
+119,Isthmian League Division One North,res://assets/textures/tournament_logo/119.png,70,11,English Isthmian League Division One North,,0,1,8,1
+120,Isthmian League Division One South East,res://assets/textures/tournament_logo/120.png,70,11,English Isthmian League Division One South East,,0,1,8,1
+121,Primera División,res://assets/textures/tournament_logo/121.png,71,15,Equatoguinean Primera División,,0,1,1,1
+122,Premier League,res://assets/textures/tournament_logo/122.png,72,17,Eritrean Premier League,,0,1,1,1
+123,Meistriliiga,res://assets/textures/tournament_logo/123.png,73,8,Estonian Meistriliiga,,0,1,1,1
+124,Esiliiga,res://assets/textures/tournament_logo/124.png,73,8,Estonian Esiliiga,,0,1,2,1
+125,Esiliiga B,res://assets/textures/tournament_logo/125.png,73,8,Estonian Esiliiga B,,0,1,3,1
+126,Premier League,res://assets/textures/tournament_logo/126.png,74,18,Eswatini Premier League,,0,1,1,1
+127,Premier League,res://assets/textures/tournament_logo/127.png,75,17,Ethiopian Premier League,,0,1,1,1
+128,Premier League,res://assets/textures/tournament_logo/128.png,77,8,Faroe Islands Premier League,,0,1,1,1
+129,1. deild,res://assets/textures/tournament_logo/129.png,77,8,Faroe Islands 1. deild,,0,1,2,1
+130,2. deild,res://assets/textures/tournament_logo/130.png,77,8,Faroe Islands 2. deild,,0,1,3,1
+131,Premier League,res://assets/textures/tournament_logo/131.png,79,25,Fijian Premier League,,0,1,1,1
+132,Veikkausliiga,res://assets/textures/tournament_logo/132.png,80,8,Finnish Veikkausliiga,,0,1,1,1
+133,Ykkösliiga,res://assets/textures/tournament_logo/133.png,80,8,Finnish Ykkösliiga,,0,1,2,1
+134,Ykkönen,res://assets/textures/tournament_logo/134.png,80,8,Finnish Ykkönen,,0,1,3,1
+135,Ligue 1,res://assets/textures/tournament_logo/135.png,81,11,French Ligue 1,,0,1,1,1
+136,Ligue 2,res://assets/textures/tournament_logo/136.png,81,11,French Ligue 2,,0,1,2,1
+137,Ligue 3,res://assets/textures/tournament_logo/137.png,81,11,French Championnat National,,0,1,3,1
+138,National 2 Group A,res://assets/textures/tournament_logo/138.png,81,11,French National 2 Group A,,0,1,4,1
+139,National 2 Group B,res://assets/textures/tournament_logo/139.png,81,11,French National 2 Group B,,0,1,4,1
+140,National 2 Group C,res://assets/textures/tournament_logo/140.png,81,11,French National 2 Group C,,0,1,4,1
+141,Régional 1,res://assets/textures/tournament_logo/141.png,81,11,French Guiana Régional 1,,0,1,1,1
+142,Ligue 1,res://assets/textures/tournament_logo/142.png,83,26,Tahiti Ligue 1,,0,1,1,1
+143,Ligue 2,res://assets/textures/tournament_logo/143.png,83,26,Tahiti Ligue 2,,0,1,2,1
+144,Championnat National D1,res://assets/textures/tournament_logo/144.png,84,15,Gabon Championnat National D1,,0,1,1,1
+145,GFA League,res://assets/textures/tournament_logo/145.png,85,19,Gambia GFA League,,0,1,1,1
+146,Erovnuli Liga,res://assets/textures/tournament_logo/146.png,86,9,Georgian Erovnuli Liga,,0,1,1,1
+147,Erovnuli Liga 2,res://assets/textures/tournament_logo/147.png,86,9,Georgian Erovnuli Liga 2,,0,1,2,1
+148,Erovnuli Liga 3,res://assets/textures/tournament_logo/148.png,86,9,Georgian Erovnuli Liga 3,,0,1,3,1
+149,Bundesliga,res://assets/textures/tournament_logo/149.png,87,11,German Bundesliga,,0,1,1,1
+150,2. Bundesliga,res://assets/textures/tournament_logo/150.png,87,11,German 2. Bundesliga,,0,1,2,1
+151,Liga 3,res://assets/textures/tournament_logo/151.png,87,11,Germany Liga 3,,0,1,3,1
+152,Regionalliga Nord,res://assets/textures/tournament_logo/152.png,87,11,German Regionalliga Nord,,0,1,4,1
+153,Regionalliga Nordost,res://assets/textures/tournament_logo/153.png,87,11,German Regionalliga Nordost,,0,1,4,1
+154,Regionalliga West,res://assets/textures/tournament_logo/154.png,87,11,German Regionalliga West,,0,1,4,1
+155,Regionalliga Südwest,res://assets/textures/tournament_logo/155.png,87,11,German Regionalliga Südwest,,0,1,4,1
+156,Regionalliga Bayern,res://assets/textures/tournament_logo/156.png,87,11,German Regionalliga Bayern,,0,1,4,1
+157,Premier League,res://assets/textures/tournament_logo/157.png,88,19,Ghanaian Premier League,,0,1,1,1
+158,National League,res://assets/textures/tournament_logo/158.png,89,10,Gibraltarian National League,,0,1,1,1
+159,GFL First Division,res://assets/textures/tournament_logo/159.png,90,10,Gozo Football League First Division,,0,1,1,1
+160,Superleague Greece,res://assets/textures/tournament_logo/160.png,91,10,Greek Superleague Greece,,0,1,1,1
+161,Super League 2,res://assets/textures/tournament_logo/161.png,91,10,Greek Super League 2,,0,1,2,1
+162,Gamma Ethniki,res://assets/textures/tournament_logo/162.png,91,10,Greek Gamma Ethniki,,0,1,3,1
+163,Football Championship,res://assets/textures/tournament_logo/163.png,92,4,Greenlandic Football Championship,,0,1,1,1
+164,GFA Premier League,res://assets/textures/tournament_logo/164.png,93,12,GFA Premier League,,0,1,1,1
+165,Division d'Honneur,res://assets/textures/tournament_logo/165.png,94,12,Guadeloupe Division d'Honneur,,0,1,1,1
+166,G-League,res://assets/textures/tournament_logo/166.png,95,21,Guam Soccer League,,0,1,1,1
+167,Liga Nacional,res://assets/textures/tournament_logo/167.png,96,13,Guatemala Liga Nacional,,0,1,1,1
+168,Primera División,res://assets/textures/tournament_logo/168.png,96,13,Guatemala Primera División,,0,1,2,1
+169,Priaulx League,res://assets/textures/tournament_logo/169.png,97,11,Guernsey Priaulx League,,0,1,1,1
+170,Ligue 1,res://assets/textures/tournament_logo/170.png,98,19,Guinea Ligue 1,,0,1,1,1
+171,Campeonato Nacional,res://assets/textures/tournament_logo/171.png,99,19,Guinea-Bissau Campeonato Nacional,,0,1,1,1
+172,GFF Elite League,res://assets/textures/tournament_logo/172.png,100,12,GFF Elite League,,0,1,1,1
+173,Ligue Haïtienne,res://assets/textures/tournament_logo/173.png,101,12,Ligue Haïtienne,,0,1,1,1
+174,Liga Nacional de Futbol,res://assets/textures/tournament_logo/174.png,103,13,Honduras Liga Nacional de Futbol,,0,1,1,1
+175,Premier League,res://assets/textures/tournament_logo/175.png,104,21,Hong Kong Premier League,,0,1,1,1
+176,First Division League,res://assets/textures/tournament_logo/176.png,104,21,Hong Kong First Division League,,0,1,2,1
+177,NB I,res://assets/textures/tournament_logo/177.png,105,9,Hungarian NB I,,0,1,1,1
+178,NB II,res://assets/textures/tournament_logo/178.png,105,9,Hungarian NB II,,0,1,2,1
+179,NB III,res://assets/textures/tournament_logo/179.png,105,9,Hungarian NB III,,0,1,3,1
+180,Besta deild karla,res://assets/textures/tournament_logo/180.png,106,8,Icelandic Besta deild karla,,0,1,1,1
+181,1 deild karla,res://assets/textures/tournament_logo/181.png,106,8,Icelandic 1 deild karla,,0,1,2,1
+182,2 deild karla,res://assets/textures/tournament_logo/182.png,106,8,Icelandic 2 deild karla,,0,1,3,1
+183,3 deild karla,res://assets/textures/tournament_logo/183.png,106,8,Icelandic 3 deild karla,,0,1,4,1
+184,4 deild karla,res://assets/textures/tournament_logo/184.png,106,8,Icelandic 4 deild karla,,0,1,5,1
+185,Super League,res://assets/textures/tournament_logo/185.png,107,22,Indian Super League,,0,1,1,1
+186,I-League,res://assets/textures/tournament_logo/186.png,107,22,Indian I-League,,0,1,2,1
+187,I-League 2,res://assets/textures/tournament_logo/187.png,107,22,Indian I-League 2nd Division,,0,1,3,1
+188,I-League 3,res://assets/textures/tournament_logo/188.png,107,22,Indian I-League 3rd Division,,0,1,4,1
+189,Super League,res://assets/textures/tournament_logo/189.png,108,23,Indonesian Super League,,0,1,1,1
+190,Championship,res://assets/textures/tournament_logo/190.png,108,23,Indonesian Championship,,0,1,2,1
+191,Persian Gulf Pro League,res://assets/textures/tournament_logo/191.png,109,20,Iranian Persian Gulf Pro League,,0,1,1,1
+192,Azadegan League,res://assets/textures/tournament_logo/192.png,109,20,Iranian Azadegan League,,0,1,2,1
+193,2nd Division,res://assets/textures/tournament_logo/193.png,109,20,Iran 2nd Division,,0,1,3,1
+194,Stars League,res://assets/textures/tournament_logo/194.png,110,24,Iraq Stars League,,0,1,1,1
+195,Premier Division League,res://assets/textures/tournament_logo/195.png,110,24,Iraq Premier Division League,,0,1,2,1
+196,Premier Division,res://assets/textures/tournament_logo/196.png,111,11,Irish Premier Division,,0,1,1,1
+197,First Division,res://assets/textures/tournament_logo/197.png,111,11,Irish First Division,,0,1,2,1
+198,IMF League,res://assets/textures/tournament_logo/198.png,112,11,Isle of Man Football League,,0,1,1,1
+199,Saturday League,res://assets/textures/tournament_logo/199.png,113,11,Isle of Wight Saturday League,,0,1,1,1
+200,ISF League,res://assets/textures/tournament_logo/200.png,114,10,Isles of Scilly Football League,,0,1,1,1
+201,Premier League,res://assets/textures/tournament_logo/201.png,115,9,Israeli Premier League,,0,1,1,1
+202,Liga Leumit,res://assets/textures/tournament_logo/202.png,115,9,Israeli Liga Leumit,,0,1,2,1
+203,Liga Alef,res://assets/textures/tournament_logo/203.png,115,9,Israeli Liga Alef,,0,1,3,1
+204,Serie A,res://assets/textures/tournament_logo/204.png,116,10,Italian Serie A,,0,1,1,1
+205,Serie B,res://assets/textures/tournament_logo/205.png,116,10,Italian Serie B,,0,1,2,1
+206,Serie C Girone A,res://assets/textures/tournament_logo/206.png,116,10,Italian Serie C Girone A,,0,1,3,1
+207,Serie C Girone B,res://assets/textures/tournament_logo/207.png,116,10,Italian Serie C Girone B,,0,1,3,1
+208,Serie C Girone C,res://assets/textures/tournament_logo/208.png,116,10,Italian Serie C Girone C,,0,1,3,1
+209,Serie D Girone A,res://assets/textures/tournament_logo/209.png,116,10,Italy Serie D Girone A,,0,1,4,1
+210,Serie D Girone B,res://assets/textures/tournament_logo/210.png,116,10,Italy Serie D Girone B,,0,1,4,1
+211,Serie D Girone C,res://assets/textures/tournament_logo/211.png,116,10,Italy Serie D Girone C,,0,1,4,1
+212,Serie D Girone D,res://assets/textures/tournament_logo/212.png,116,10,Italy Serie D Girone D,,0,1,4,1
+213,Serie D Girone E,res://assets/textures/tournament_logo/213.png,116,10,Italy Serie D Girone E,,0,1,4,1
+214,Serie D Girone F,res://assets/textures/tournament_logo/214.png,116,10,Italy Serie D Girone F,,0,1,4,1
+215,Serie D Girone G,res://assets/textures/tournament_logo/215.png,116,10,Italy Serie D Girone G,,0,1,4,1
+216,Serie D Girone H,res://assets/textures/tournament_logo/216.png,116,10,Italy Serie D Girone H,,0,1,4,1
+217,Serie D Girone I,res://assets/textures/tournament_logo/217.png,116,10,Italy Serie D Girone I,,0,1,4,1
+218,Ligue 1,res://assets/textures/tournament_logo/218.png,117,19,Ivory Coast Ligue 1,,0,1,1,1
+219,Premier League,res://assets/textures/tournament_logo/219.png,118,12,Jamaican Premier League,,0,1,1,1
+220,J1 League,res://assets/textures/tournament_logo/220.png,119,21,Japanese J1 League,,0,1,1,1
+221,J2 League,res://assets/textures/tournament_logo/221.png,119,21,Japanese J2 League,,0,1,2,1
+222,J3 League,res://assets/textures/tournament_logo/222.png,119,21,Japanese J3 League,,0,1,3,1
+223,Japan Football League,res://assets/textures/tournament_logo/223.png,119,21,Japan Football League,,0,1,4,1
+224,Football Combination,res://assets/textures/tournament_logo/224.png,120,11,Jersey Football Combination,,0,1,1,1
+225,Pro League,res://assets/textures/tournament_logo/225.png,121,24,Jordanian Pro League,,0,1,1,1
+226,Division 1,res://assets/textures/tournament_logo/226.png,121,24,Jordan League Division 1,,0,1,2,1
+227,Premier League,res://assets/textures/tournament_logo/227.png,122,9,Kazakhstan Premier League,,0,1,1,1
+228,First League,res://assets/textures/tournament_logo/228.png,122,9,Kazakhstan First League,,0,1,2,1
+229,Premier League,res://assets/textures/tournament_logo/229.png,123,17,Kenyan Premier League,,0,1,1,1
+230,National Championship,res://assets/textures/tournament_logo/230.png,124,27,Kiribati National Championship,,0,1,1,1
+231,Superleague,res://assets/textures/tournament_logo/231.png,125,9,Kosovan Superleague,,0,1,1,1
+232,First Football League,res://assets/textures/tournament_logo/232.png,125,9,Kosovo First Football League,,0,1,2,1
+233,Premier League,res://assets/textures/tournament_logo/233.png,126,24,Kuwait Premier League,,0,1,1,1
+234,Division 1,res://assets/textures/tournament_logo/234.png,126,24,Kuwait Division 1,,0,1,2,1
+235,Premier League,res://assets/textures/tournament_logo/235.png,127,20,Kyrgyz Premier League,,0,1,1,1
+236,League Second Level,res://assets/textures/tournament_logo/236.png,127,20,Kyrgyzstan League Second Level,,0,1,2,1
+237,Premier League,res://assets/textures/tournament_logo/237.png,128,23,Lao Premier League,,0,1,1,1
+238,Higher League,res://assets/textures/tournament_logo/238.png,129,8,Latvian Higher League,,0,1,1,1
+239,First League,res://assets/textures/tournament_logo/239.png,129,8,Latvian First League,,0,1,2,1
+240,Second League,res://assets/textures/tournament_logo/240.png,129,8,Latvian Second League,,0,1,3,1
+241,Third League,res://assets/textures/tournament_logo/241.png,129,8,Latvian Third League,,0,1,4,1
+242,Premier League,res://assets/textures/tournament_logo/242.png,130,24,Lebanon Premier League,,0,1,1,1
+243,Second Division,res://assets/textures/tournament_logo/243.png,130,24,Lebanese Second Division,,0,1,2,1
+244,Premier League,res://assets/textures/tournament_logo/244.png,131,18,Lesotho Premier League,,0,1,1,1
+245,First Division,res://assets/textures/tournament_logo/245.png,132,19,Liberian LFA First Division,,0,1,1,1
+246,Premier League,res://assets/textures/tournament_logo/246.png,133,16,Libyan Premier League,,0,1,1,1
+247,A Lyga,res://assets/textures/tournament_logo/247.png,135,8,Lithuanian A Lyga,,0,1,1,1
+248,I Lyga,res://assets/textures/tournament_logo/248.png,135,8,Lithuanian I Lyga,,0,1,2,1
+249,II Lyga,res://assets/textures/tournament_logo/249.png,135,8,Lithuanian I Lyga,,0,1,3,1
+250,National Division,res://assets/textures/tournament_logo/250.png,136,11,Luxembourg National Division,,0,1,1,1
+251,Division of Honour,res://assets/textures/tournament_logo/251.png,136,11,Luxembourg Division of Honour,,0,1,2,1
+252,1. Division,res://assets/textures/tournament_logo/252.png,136,11,Luxembourg 1. Division,,0,1,3,1
+253,Liga de Elite,res://assets/textures/tournament_logo/253.png,137,21,Macau Liga de Elite,,0,1,1,1
+254,2 Divisão,res://assets/textures/tournament_logo/254.png,137,21,Macau 2 Divisão,,0,1,2,1
+255,Pro League,res://assets/textures/tournament_logo/255.png,138,18,Malagasy Pro League,,0,1,1,1
+256,Super League,res://assets/textures/tournament_logo/256.png,140,18,Malawi Super League,,0,1,1,1
+257,Super League,res://assets/textures/tournament_logo/257.png,141,23,Malaysian Super League,,0,1,1,1
+258,Premier League,res://assets/textures/tournament_logo/258.png,141,23,Malaysian Premier League,,0,1,2,1
+259,Dhivehi Premier League,res://assets/textures/tournament_logo/259.png,142,22,Maldives Dhivehi Premier League,,0,1,1,1
+260,Première Division,res://assets/textures/tournament_logo/260.png,143,19,Malian Première Division,,0,1,1,1
+261,Premier League,res://assets/textures/tournament_logo/261.png,144,10,Maltese Premier League,,0,1,1,1
+262,First Division,res://assets/textures/tournament_logo/262.png,144,10,Maltese First Division,,0,1,2,1
+263,National Amateur League,res://assets/textures/tournament_logo/263.png,144,10,Maltese National Amateur League,,0,1,3,1
+264,Championnat National,res://assets/textures/tournament_logo/264.png,146,12,Martinique Championnat National,,0,1,1,1
+265,Premier League,res://assets/textures/tournament_logo/265.png,147,19,Mauritania Premier League,,0,1,1,1
+266,Premier League,res://assets/textures/tournament_logo/266.png,148,18,Mauritian Premier League,,0,1,1,1
+267,Division Honneur,res://assets/textures/tournament_logo/267.png,149,18,Mayotte Division Honneur,,0,1,1,1
+268,Liga MX,res://assets/textures/tournament_logo/268.png,150,14,Mexican Primera League,,0,1,1,1
+269,Ascenso MX,res://assets/textures/tournament_logo/269.png,150,14,Mexican Liga de Expansión MX,,0,1,2,1
+270,Liga Premier,res://assets/textures/tournament_logo/270.png,150,14,Mexican Liga Premier,,0,1,3,1
+271,National Division,res://assets/textures/tournament_logo/271.png,151,9,Moldovan National Division,,0,1,1,1
+272,Liga 1,res://assets/textures/tournament_logo/272.png,151,9,Moldovan Liga 1,,0,1,2,1
+273,Premier League,res://assets/textures/tournament_logo/273.png,153,21,Mongolian Premier League,,0,1,1,1
+274,First League,res://assets/textures/tournament_logo/274.png,153,21,Mongolian First League,,0,1,2,1
+275,Prva CFL,res://assets/textures/tournament_logo/275.png,154,9,Montenegrin Prva CFL,,0,1,1,1
+276,Druga CFL,res://assets/textures/tournament_logo/276.png,154,9,Montenegrin Druga CFL,,0,1,2,1
+277,Botola Pro,res://assets/textures/tournament_logo/277.png,156,16,Moroccan Botola Pro,,0,1,1,1
+278,Botola Pro 2,res://assets/textures/tournament_logo/278.png,156,16,Moroccan Botola Pro 2,,0,1,2,1
+279,Amateur National Championship,res://assets/textures/tournament_logo/279.png,156,16,Moroccan Amateur National Championship,,0,1,3,1
+280,Moçambola,res://assets/textures/tournament_logo/280.png,157,18,Mozambique Moçambola,,0,1,1,1
+281,National League,res://assets/textures/tournament_logo/281.png,158,23,Myanmar National League,,0,1,1,1
+282,National League 2,res://assets/textures/tournament_logo/282.png,158,23,Myanmar National League,,0,1,2,1
+283,Premiership,res://assets/textures/tournament_logo/283.png,159,18,Namibia Premiership,,0,1,1,1
+284,Super League,res://assets/textures/tournament_logo/284.png,161,22,Nepal Super League,,0,1,1,1
+285,Martyr's Memorial A-Division League,res://assets/textures/tournament_logo/285.png,161,22,Nepal Martyr's Memorial A-Division League,,0,1,1,1
+286,Eredivisie,res://assets/textures/tournament_logo/286.png,162,11,Dutch Eredivisie,,0,1,1,1
+287,Eerste Divisie,res://assets/textures/tournament_logo/287.png,162,11,Dutch Eerste Divisie,,0,1,2,1
+288,Tweede Divisie,res://assets/textures/tournament_logo/288.png,162,11,Dutch Tweede Divisie,,0,1,3,1
+289,Derde Divisie Saturday,res://assets/textures/tournament_logo/289.png,162,11,Netherlands Derde Divisie Saturday,,0,1,4,1
+290,Derde Divisie Sunday,res://assets/textures/tournament_logo/290.png,162,11,Netherlands Derde Divisie Sunday,,0,1,4,1
+291,Super Ligue,res://assets/textures/tournament_logo/291.png,163,25,New Caledonia Super Ligue,,0,1,1,1
+292,National League Championship,res://assets/textures/tournament_logo/292.png,164,26,New Zealand National League Championship,,0,1,1,1
+293,Northern League,res://assets/textures/tournament_logo/293.png,164,26,New Zealand Northern League,,0,1,2,1
+294,Central League,res://assets/textures/tournament_logo/294.png,164,26,New Zealand Central League,,0,1,2,1
+295,Southern League,res://assets/textures/tournament_logo/295.png,164,26,New Zealand Southern League,,0,1,2,1
+296,Liga Primera,res://assets/textures/tournament_logo/296.png,165,13,Nicaragua Liga Primera,,0,1,1,1
+297,Super Ligue,res://assets/textures/tournament_logo/297.png,166,19,Niger Super Ligue,,0,1,1,1
+298,Nigerian Professional Football League,res://assets/textures/tournament_logo/298.png,167,19,Nigerian NPFL,,0,1,1,1
+299,National League,res://assets/textures/tournament_logo/299.png,167,19,Nigeria National League,,0,1,2,1
+300,Premier Football League,res://assets/textures/tournament_logo/300.png,170,21,DPR Korea Premier Football League,,0,1,1,1
+301,Prva Liga,res://assets/textures/tournament_logo/301.png,171,9,Macedonian Prva Liga,,0,1,1,1
+302,Vtora Liga,res://assets/textures/tournament_logo/302.png,171,9,Macedonian Vtora Liga,,0,1,2,1
+303,KTFF Süper Lig,res://assets/textures/tournament_logo/303.png,172,10,Northern Cyrpus KTFF Süper Lig,,0,1,1,1
+304,KTFF 1. Lig,res://assets/textures/tournament_logo/304.png,172,10,Northern Cyrpus KTFF 1. Lig,,0,1,2,1
+305,Premiership,res://assets/textures/tournament_logo/305.png,173,11,Northern Irish Premiership,,0,1,1,1
+306,Championship,res://assets/textures/tournament_logo/306.png,173,11,Northern Irish Championship,,0,1,2,1
+307,Premier Intermediate League,res://assets/textures/tournament_logo/307.png,173,11,Northern Irish Premier Intermediate League,,0,1,3,1
+308,Marianas Soccer League 1,res://assets/textures/tournament_logo/308.png,174,21,Marianas Soccer League 1,,0,1,1,1
+309,Eliteserien,res://assets/textures/tournament_logo/309.png,175,8,Norwegian Eliteserien,,0,1,1,1
+310,1. divisjon,res://assets/textures/tournament_logo/310.png,175,8,Norwegian 1. divisjon,,0,1,2,1
+311,2. divisjon,res://assets/textures/tournament_logo/311.png,175,8,Norwegian 2. divisjon,,0,1,3,1
+312,Professional League,res://assets/textures/tournament_logo/312.png,176,24,Oman Professional League,,0,1,1,1
+313,First Division League,res://assets/textures/tournament_logo/313.png,176,24,Oman First Division League,,0,1,2,1
+314,A League,res://assets/textures/tournament_logo/314.png,177,11,Orkney A League,,0,1,1,1
+315,B League,res://assets/textures/tournament_logo/315.png,177,11,Orkney B League,,0,1,2,1
+316,Premier League,res://assets/textures/tournament_logo/316.png,178,22,Pakistan Premier League,,0,1,1,1
+317,West Bank Premier League,res://assets/textures/tournament_logo/317.png,180,24,Palestinian West Bank Premier League,,0,1,1,1
+318,Liga Panamena de Futbol,res://assets/textures/tournament_logo/318.png,181,13,Panama Liga Panamena de Futbol,,0,1,1,1
+319,Liga Nacional de Ascenso,res://assets/textures/tournament_logo/319.png,181,13,Panama Liga Nacional de Ascenso,,0,1,2,1
+320,Premier Soccer League,res://assets/textures/tournament_logo/320.png,182,25,Papua New Guinea Premier Soccer League,,0,1,1,1
+321,Primera Division,res://assets/textures/tournament_logo/321.png,183,3,Paraguayan Primera Division,,0,1,1,1
+322,División Intermedia,res://assets/textures/tournament_logo/322.png,183,3,Paraguayan División Intermedia,,0,1,2,1
+323,Liga 1,res://assets/textures/tournament_logo/323.png,184,3,Peruvian Liga 1,,0,1,1,1
+324,Liga 2,res://assets/textures/tournament_logo/324.png,184,3,Peruvian Liga 2,,0,1,2,1
+325,Football League,res://assets/textures/tournament_logo/325.png,185,23,Philippines Football League,,0,1,1,1
+326,Ekstraklasa,res://assets/textures/tournament_logo/326.png,187,9,Polish Ekstraklasa,,0,1,1,1
+327,I liga,res://assets/textures/tournament_logo/327.png,187,9,Polish I liga,,0,1,2,1
+328,II liga,res://assets/textures/tournament_logo/328.png,187,9,Polish II liga,,0,1,3,1
+329,Liga Portugal,res://assets/textures/tournament_logo/329.png,188,10,Liga Portugal,,0,1,1,1
+330,Liga Portugal 2,res://assets/textures/tournament_logo/330.png,188,10,Liga Portugal 2,,0,1,2,1
+331,Liga 3,res://assets/textures/tournament_logo/331.png,188,10,Portugal Liga 3,,0,1,3,1
+332,Liga Puerto Rico,res://assets/textures/tournament_logo/332.png,189,12,Liga Puerto Rico,,0,1,1,1
+333,Stars League,res://assets/textures/tournament_logo/333.png,190,24,Qatar Stars League,,0,1,1,1
+334,Second Division,res://assets/textures/tournament_logo/334.png,190,24,Qatari Second Division,,0,1,2,1
+335,Premier League,res://assets/textures/tournament_logo/335.png,191,18,Réunion Premier League,,0,1,1,1
+336,Liga I,res://assets/textures/tournament_logo/336.png,192,9,Romanian Liga I,,0,1,1,1
+337,Liga II,res://assets/textures/tournament_logo/337.png,192,9,Romanian Liga II,,0,1,2,1
+338,Premier League,res://assets/textures/tournament_logo/338.png,193,9,Russian Football Premier League,,0,1,1,1
+339,National League,res://assets/textures/tournament_logo/339.png,193,9,Russian Football National League,,0,1,2,1
+340,Division A Gold Group,res://assets/textures/tournament_logo/340.png,193,9,Russia FNL 2 Division A Gold Group,,0,1,3,1
+341,Division A SilverGroup,res://assets/textures/tournament_logo/341.png,193,9,Russia FNL 2 Division A Silver Group,,0,1,3,1
+342,National Soccer League,res://assets/textures/tournament_logo/342.png,194,17,Rwandan National Soccer League,,0,1,1,1
+343,Football League,res://assets/textures/tournament_logo/343.png,197,12,Saint Helena Football League,,0,1,1,1
+344,SKNFA Premier League,res://assets/textures/tournament_logo/344.png,198,12,SKNFA Premier League,,0,1,1,1
+345,SLFA First Division,res://assets/textures/tournament_logo/345.png,199,12,SLFA First Division,,0,1,1,1
+346,Senior League,res://assets/textures/tournament_logo/346.png,200,12,Saint-Martin Senior League,,0,1,1,1
+347,Ligue de Football,res://assets/textures/tournament_logo/347.png,201,12,Saint Pierre et Miquelon Ligue de Football,,0,1,1,1
+348,SVGFF Premier Division,res://assets/textures/tournament_logo/348.png,202,12,SVGFF Premier Division,,0,1,1,1
+349,SVGFF First Division,res://assets/textures/tournament_logo/349.png,202,12,SVGFF First Division,,0,1,2,1
+350,Championships,res://assets/textures/tournament_logo/350.png,203,12,Saint-Barthelemy Championships,,0,1,1,1
+351,Campionato Sammarinese,res://assets/textures/tournament_logo/351.png,205,10,San Marino Campionato Sammarinese,,0,1,1,1
+352,Championship,res://assets/textures/tournament_logo/352.png,206,15,São Tomé and Príncipe Championship,,0,1,1,1
+353,Pro League,res://assets/textures/tournament_logo/353.png,207,24,Saudi-Arabian Pro League,,0,1,1,1
+354,First Division League,res://assets/textures/tournament_logo/354.png,207,24,Saudi First Division League,,0,1,2,1
+355,Second Division League,res://assets/textures/tournament_logo/355.png,207,24,Saudi Second Division League,,0,1,3,1
+356,Third Division League,res://assets/textures/tournament_logo/356.png,207,24,Saudi Third Division League,,0,1,4,1
+357,Premier League,res://assets/textures/tournament_logo/357.png,208,11,Scottish Premier League,,0,1,1,1
+358,Championship,res://assets/textures/tournament_logo/358.png,208,11,Scottish Championship,,0,1,2,1
+359,League 1,res://assets/textures/tournament_logo/359.png,208,11,Scottish League 1,,0,1,3,1
+360,League 2,res://assets/textures/tournament_logo/360.png,208,11,Scottish League 2,,0,1,4,1
+361,Highland League,res://assets/textures/tournament_logo/361.png,208,11,Scottish Highland League,,0,1,5,1
+362,Lowland League,res://assets/textures/tournament_logo/362.png,208,11,Scottish Lowland League,,0,1,5,1
+363,Ligue 1,res://assets/textures/tournament_logo/363.png,209,19,Senegal Ligue 1,,0,1,1,1
+364,Super Liga,res://assets/textures/tournament_logo/364.png,210,9,Serbian Super Liga,,0,1,1,1
+365,Prva Liga,res://assets/textures/tournament_logo/365.png,210,9,Serbian Prva Liga,,0,1,2,1
+366,Premier League,res://assets/textures/tournament_logo/366.png,211,18,Seychelles Premier League,,0,1,1,1
+367,National Premier League,res://assets/textures/tournament_logo/367.png,212,19,Sierra Leone National Premier League,,0,1,1,1
+368,Premier League,res://assets/textures/tournament_logo/368.png,213,23,Singapore Premier League,,0,1,1,1
+369,Premier League,res://assets/textures/tournament_logo/369.png,215,12,Sint Maarten Premier League,,0,1,1,1
+370,First Football League,res://assets/textures/tournament_logo/370.png,216,9,Slovak First Football League,,0,1,1,1
+371,2 Liga,res://assets/textures/tournament_logo/371.png,216,9,Slovakian 2 Liga,,0,1,2,1
+372,3 Liga,res://assets/textures/tournament_logo/372.png,216,9,Slovakian 2 Liga,,0,1,3,1
+373,1. SNL,res://assets/textures/tournament_logo/373.png,217,9,Slovenian 1. SNL,,0,1,1,1
+374,2. SNL,res://assets/textures/tournament_logo/374.png,217,9,Slovenian 2. SNL,,0,1,2,1
+375,3. SNL,res://assets/textures/tournament_logo/375.png,217,9,Slovenian 3. SNL,,0,1,3,1
+376,S-League,res://assets/textures/tournament_logo/376.png,218,25,Solomon Islands S-League,,0,1,1,1
+377,Premier League,res://assets/textures/tournament_logo/377.png,219,17,Somali Premier League,,0,1,1,1
+378,Second League,res://assets/textures/tournament_logo/378.png,219,17,Somali Second League,,0,1,2,1
+379,Premier Soccer League,res://assets/textures/tournament_logo/379.png,221,18,South African Premier Soccer League,,0,1,1,1
+380,National First Division,res://assets/textures/tournament_logo/380.png,221,18,South African National First Division,,0,1,2,1
+381,K League 1,res://assets/textures/tournament_logo/381.png,222,21,South Korean K League 1,,0,1,1,1
+382,K League 2,res://assets/textures/tournament_logo/382.png,222,21,South Korean K League 2,,0,1,2,1
+383,K3 League,res://assets/textures/tournament_logo/383.png,222,21,Korean K3 League,,0,1,3,1
+384,K4 League,res://assets/textures/tournament_logo/384.png,222,21,Korean K4 League,,0,1,4,1
+385,Premier League,res://assets/textures/tournament_logo/385.png,224,17,South Sudan Premier League,,0,1,1,1
+386,La Liga,res://assets/textures/tournament_logo/386.png,226,10,Spanish La Liga,,0,1,1,1
+387,La Liga 2,res://assets/textures/tournament_logo/387.png,226,10,Spanish La Liga 2,,0,1,2,1
+388,Primera División RFEF Group 1,res://assets/textures/tournament_logo/388.png,226,10,Primera División RFEF Group 1,,0,1,3,1
+389,Primera División RFEF Group 2,res://assets/textures/tournament_logo/389.png,226,10,Primera División RFEF Group 2,,0,1,3,1
+390,Spanish Segunda RFEF Group 1,res://assets/textures/tournament_logo/390.png,226,10,Spanish Segunda RFEF,,0,1,4,1
+391,Spanish Segunda RFEF Group 2,res://assets/textures/tournament_logo/391.png,226,10,Spanish Segunda RFEF,,0,1,4,1
+392,Spanish Segunda RFEF Group 3,res://assets/textures/tournament_logo/392.png,226,10,Spanish Segunda RFEF,,0,1,4,1
+393,Spanish Segunda RFEF Group 4,res://assets/textures/tournament_logo/393.png,226,10,Spanish Segunda RFEF,,0,1,4,1
+394,Spanish Segunda RFEF Group 5,res://assets/textures/tournament_logo/394.png,226,10,Spanish Segunda RFEF,,0,1,4,1
+395,Super League,res://assets/textures/tournament_logo/395.png,227,22,Sri Lanka Super League,,0,1,1,1
+396,Champions League,res://assets/textures/tournament_logo/396.png,227,22,Sri Lanka Champions League,,0,1,2,1
+397,Premier League,res://assets/textures/tournament_logo/397.png,228,17,Sudani Premier League,,0,1,1,1
+398,Major League,res://assets/textures/tournament_logo/398.png,229,12,Suriname Major League,,0,1,1,1
+399,SVB Eerste Divisie,res://assets/textures/tournament_logo/399.png,229,12,SVB Eerste Divisie,,0,1,2,1
+400,Allsvenskan,res://assets/textures/tournament_logo/400.png,230,8,Swedish Allsvenskan,,0,1,1,1
+401,Superettan,res://assets/textures/tournament_logo/401.png,230,8,Swedish Superettan,,0,1,2,1
+402,Division 1 North,res://assets/textures/tournament_logo/402.png,230,8,Swedish Division 1 North,,0,1,3,1
+403,Division 1 South,res://assets/textures/tournament_logo/403.png,230,8,Swedish Division 1 South,,0,1,3,1
+404,Super League,res://assets/textures/tournament_logo/404.png,231,11,Swiss Super League,,0,1,1,1
+405,Challenge League,res://assets/textures/tournament_logo/405.png,231,11,Swiss Challenge League,,0,1,2,1
+406,Promotion League,res://assets/textures/tournament_logo/406.png,231,11,Swiss Promotion League,,0,1,3,1
+407,Premier League,res://assets/textures/tournament_logo/407.png,232,24,Syrian Premier League,,0,1,1,1
+408,Premier League,res://assets/textures/tournament_logo/408.png,233,21,Taiwan Football Premier League,,0,1,1,1
+409,Second Division Football League,res://assets/textures/tournament_logo/409.png,233,21,Taiwan Second Division Football League,,0,1,2,1
+410,Vysshaya Liga,res://assets/textures/tournament_logo/410.png,234,20,Tajikistan Vysshaya Liga,,0,1,1,1
+411,Premier League,res://assets/textures/tournament_logo/411.png,235,17,Tanzanian Premier League,,0,1,1,1
+412,Championship League,res://assets/textures/tournament_logo/412.png,235,17,Tanzanian Championship League,,0,1,2,1
+413,League 1 ,res://assets/textures/tournament_logo/413.png,236,23,Thai League 1 ,,0,1,1,1
+414,League 2,res://assets/textures/tournament_logo/414.png,236,23,Thai League 2,,0,1,2,1
+415,Championnat National,res://assets/textures/tournament_logo/415.png,237,19,Togolese Championnat National,,0,1,1,1
+416,Major League,res://assets/textures/tournament_logo/416.png,239,26,Tonga Major League,,0,1,1,1
+417,TT Premier Football League,res://assets/textures/tournament_logo/417.png,241,12,TT Premier Football League,,0,1,1,1
+418,Ligue 1,res://assets/textures/tournament_logo/418.png,243,16,Tunisian Ligue 1,,0,1,1,1
+419,Ligue 2,res://assets/textures/tournament_logo/419.png,243,16,Tunisian Ligue Professionnelle 2,,0,1,2,1
+420,Super Lig,res://assets/textures/tournament_logo/420.png,244,10,Turkish Super Lig,,0,1,1,1
+421,1 Lig,res://assets/textures/tournament_logo/421.png,244,10,Turkish 1 Lig,,0,1,2,1
+422,2 Lig,res://assets/textures/tournament_logo/422.png,244,10,Turkish 2 Lig,,0,1,3,1
+423,3 Lig,res://assets/textures/tournament_logo/423.png,244,10,Turkish 3 Lig,,0,1,4,1
+424,Yokary Liga,res://assets/textures/tournament_logo/424.png,245,20,Turkmenistan Yokary Liga,,0,1,1,1
+425,First League,res://assets/textures/tournament_logo/425.png,245,20,Turkmenistan First League,,0,1,2,1
+426,Provo Premier League,res://assets/textures/tournament_logo/426.png,246,12,Provo Premier League,,0,1,1,1
+427,A-Division,res://assets/textures/tournament_logo/427.png,247,27,Tuvalu A-Division,,0,1,1,1
+428,USVISF Premier League,res://assets/textures/tournament_logo/428.png,248,12,USVISF Premier League,,0,1,1,1
+429,Premier League,res://assets/textures/tournament_logo/429.png,249,17,Ugandan Premier League,,0,1,1,1
+430,FUFA Big League,res://assets/textures/tournament_logo/430.png,249,17,FUFA Big League,,0,1,2,1
+431,Premier League,res://assets/textures/tournament_logo/431.png,250,9,Ukrainian Premier League,,0,1,1,1
+432,First League,res://assets/textures/tournament_logo/432.png,250,9,Ukrainian First League,,0,1,2,1
+433,Second League,res://assets/textures/tournament_logo/433.png,250,9,Ukrainian Second League,,0,1,3,1
+434,Pro League,res://assets/textures/tournament_logo/434.png,251,24,UAE Pro League,,0,1,1,1
+435,First Division League,res://assets/textures/tournament_logo/435.png,251,24,UAE First Division League,,0,1,2,1
+436,Second Division League,res://assets/textures/tournament_logo/436.png,251,24,UAE Second Division League,,0,1,3,1
+437,Major League Soccer,res://assets/textures/tournament_logo/437.png,252,14,American Major League Soccer,,0,1,1,1
+438,USL Championship,res://assets/textures/tournament_logo/438.png,252,14,American USL Championship,,0,1,2,1
+439,USL League One,res://assets/textures/tournament_logo/439.png,252,14,American USL League One,,0,1,3,1
+440,USL League Two,res://assets/textures/tournament_logo/440.png,252,14,American USL League Two,,0,1,4,1
+441,Primera Division,res://assets/textures/tournament_logo/441.png,253,3,Uruguayan Primera Division,,0,1,1,1
+442,Segunda División,res://assets/textures/tournament_logo/442.png,253,3,Uruguayan Segunda División,,0,1,2,1
+443,Primera División Amateur,res://assets/textures/tournament_logo/443.png,253,3,Uruguayan Primera División Amateur,,0,1,3,1
+444,Super League,res://assets/textures/tournament_logo/444.png,254,20,Uzbekistan Super League,,0,1,1,1
+445,Pro League,res://assets/textures/tournament_logo/445.png,254,20,Uzbekistan Pro League,,0,1,2,1
+446,First League,res://assets/textures/tournament_logo/446.png,254,20,Uzbekistan First League,,0,1,3,1
+447,VFF Champions League,res://assets/textures/tournament_logo/447.png,255,25,VFF Champions League,,0,1,1,1
+448,Primera Division,res://assets/textures/tournament_logo/448.png,257,3,Venezuela Primera Division,,0,1,1,1
+449,Segunda Division,res://assets/textures/tournament_logo/449.png,257,3,Venezuelan Segunda Division,,0,1,2,1
+450,V.League 1,res://assets/textures/tournament_logo/450.png,258,23,Vietnamese V.League 1,,0,1,1,1
+451,V.League 2,res://assets/textures/tournament_logo/451.png,258,23,Vietnamese V.League 2,,0,1,2,1
+452,Cymru Premier,res://assets/textures/tournament_logo/452.png,259,11,Welsh Premier League,,0,1,1,1
+453,Welsh Cymru North,res://assets/textures/tournament_logo/453.png,259,11,Welsh Cymru North-South,,0,1,2,1
+454,Welsh Cymru South,res://assets/textures/tournament_logo/454.png,259,11,Welsh Cymru North-South,,0,1,2,1
+455,Yemeni League,res://assets/textures/tournament_logo/455.png,261,24,Yemeni League,,0,1,1,1
+456,Super League,res://assets/textures/tournament_logo/456.png,262,18,Zambia Super League,,0,1,1,1
+457,Nationa Division One,res://assets/textures/tournament_logo/457.png,262,18,Zambia Nationa Division One,,0,1,2,1
+458,Premier League,res://assets/textures/tournament_logo/458.png,263,17,Zanzibar Premier League,,0,1,1,1
+459,Premier Soccer League,res://assets/textures/tournament_logo/459.png,264,18,Zimbabwe Premier Soccer League,,0,1,1,1
+460,Kategoria Superiore Femra,res://assets/textures/tournament_logo/460.png,5,9,Albania Kategoria Superiore Femra,,1,1,1,1
+461,Elite National Championship,res://assets/textures/tournament_logo/461.png,6,16,Algerian Women's Championship,,1,1,1,1
+462,D1 National Championship,res://assets/textures/tournament_logo/462.png,6,16,Algerian Women's D1 National Championship,,1,1,2,1
+463,Primera División A,res://assets/textures/tournament_logo/463.png,12,3,Argentina Campeonato de Fútbol Femenino,,1,1,1,1
+464,Primera División B,res://assets/textures/tournament_logo/464.png,12,3,Argentina Campeonato de Fútbol Femenino de Primera División B,,1,1,2,1
+465,Primera División C,res://assets/textures/tournament_logo/465.png,12,3,Argentina Campeonato de Fútbol Femenino de Primera División C,,1,1,3,1
+466,A-League Women,res://assets/textures/tournament_logo/466.png,16,23,Australia A-League Women,,1,1,1,1
+467,ÖFB Frauen Bundesliga,res://assets/textures/tournament_logo/467.png,17,11,Austria ÖFB Frauen Bundesliga,,1,1,1,1
+468,Women Soccer League,res://assets/textures/tournament_logo/468.png,19,12,Bahamas Women Soccer League,,1,1,1,1
+469,Women's Football League,res://assets/textures/tournament_logo/469.png,20,24,Bahrain Women's Football League,,1,1,1,1
+470,Women's Football League,res://assets/textures/tournament_logo/470.png,21,22,Bangladesh Women's Football League,,1,1,1,1
+471,Premier League,res://assets/textures/tournament_logo/471.png,23,9,Belarusian Premier League,,1,1,1,1
+472,Super League,res://assets/textures/tournament_logo/472.png,24,11,Belgian Women's Super League,,1,1,1,1
+473,First National Division,res://assets/textures/tournament_logo/473.png,24,11,Belgian Women's First National Division,,1,1,2,1
+474,Championship,res://assets/textures/tournament_logo/474.png,26,19,Benin Women's Championship,,1,1,1,1
+475,National League,res://assets/textures/tournament_logo/475.png,28,22,Bhutan Women's National League,,1,1,1,1
+476,Liga Femenina,res://assets/textures/tournament_logo/476.png,29,3,Bolivia Liga Femenina,,1,1,1,1
+477,Premier League,res://assets/textures/tournament_logo/477.png,31,9,Bosnia and Herzegovina Women's Premier League,,1,1,1,1
+478,Championship,res://assets/textures/tournament_logo/478.png,32,18,Botswana Women's Championship,,1,1,1,1
+479,Série A1,res://assets/textures/tournament_logo/479.png,33,3,Brazil Campeonato Brasileiro de Futebol Feminino Série A1,,1,1,1,1
+480,Série A2,res://assets/textures/tournament_logo/480.png,33,3,Brazil Campeonato Brasileiro de Futebol Feminino Série A2,,1,1,2,1
+481,Série A3,res://assets/textures/tournament_logo/481.png,33,3,Brazil Campeonato Brasileiro de Futebol Feminino Série A3,,1,1,3,1
+482,Women's League,res://assets/textures/tournament_logo/482.png,36,9,Bulgarian Women's League,,1,1,1,1
+483,Championship,res://assets/textures/tournament_logo/483.png,37,19,Burkinabé Women's Championship,,1,1,1,1
+484,Ligue A,res://assets/textures/tournament_logo/484.png,38,17,Burundi Women's Championship,,1,1,1,1
+485,Women's League,res://assets/textures/tournament_logo/485.png,39,23,Cambodian Women's League,,1,1,1,1
+486,Championship,res://assets/textures/tournament_logo/486.png,40,15,Cameroonian Women's Championship,,1,1,1,1
+487,Northern Super League,res://assets/textures/tournament_logo/487.png,41,14,Canada Northern Super League,,1,1,1,1
+488,Championship,res://assets/textures/tournament_logo/488.png,42,19,Cape Verdean Women's Championship,,1,1,1,1
+489,Championship,res://assets/textures/tournament_logo/489.png,45,15,Chadian Women's Championship,,1,1,1,1
+490,Campeonato Nacional Fútbol Femenino,res://assets/textures/tournament_logo/490.png,46,3,Chile Campeonato Nacional Fútbol Femenino,,1,1,1,1
+491,Primera B,res://assets/textures/tournament_logo/491.png,46,3,Chile Women's Primera B,,1,1,2,1
+492,Super League,res://assets/textures/tournament_logo/492.png,47,21,Chinese Women's Super League,,1,1,1,1
+493,Women's Football League,res://assets/textures/tournament_logo/493.png,47,21,Chinese Women's Football League,,1,1,2,1
+494,Championship,res://assets/textures/tournament_logo/494.png,51,18,Comorian Women's Championship,,1,1,1,1
+495,Championship,res://assets/textures/tournament_logo/495.png,52,15,Congolese Women's Championship,,1,1,1,1
+496,Premier Division,res://assets/textures/tournament_logo/496.png,54,13,Costa Rican Women's Premier Division,,1,1,1,1
+497,First Football League,res://assets/textures/tournament_logo/497.png,55,9,Croatian Women's First Football League,,1,1,1,1
+498,First Division,res://assets/textures/tournament_logo/498.png,58,10,Cypriot Women's First Division,,1,1,1,1
+499,First League,res://assets/textures/tournament_logo/499.png,59,9,Czech Women's First League,,1,1,1,1
+500,A-Liga,res://assets/textures/tournament_logo/500.png,60,8,Danish A-Liga,,1,1,1,1
+501,B-Liga,res://assets/textures/tournament_logo/501.png,60,8,Danish B-Liga,,1,1,2,1
+502,Championship,res://assets/textures/tournament_logo/502.png,61,17,Djiboutian Women's Championship,,1,1,1,1
+503,Championship,res://assets/textures/tournament_logo/503.png,64,15,DR Congo women's football championship,,1,1,1,1
+504,Superliga Femenina,res://assets/textures/tournament_logo/504.png,67,3,Ecuador Superliga Femenina,,1,1,1,1
+505,Premier League,res://assets/textures/tournament_logo/505.png,68,16,Egyptian Women's Premier League,,1,1,1,1
+506,Primera División Femenina,res://assets/textures/tournament_logo/506.png,69,13,Primera División Femenina de El Salvador,,1,1,1,1
+507,Super League,res://assets/textures/tournament_logo/507.png,70,11,English Women's Super League,,1,1,1,1
+508,Super League 2,res://assets/textures/tournament_logo/508.png,70,11,English Women's Super League 2,,1,1,2,1
+509,FA Women's National League North,res://assets/textures/tournament_logo/509.png,70,11,English FA Women's National League North,,1,1,3,1
+510,FA Women's National League South,res://assets/textures/tournament_logo/510.png,70,11,English FA Women's National League South,,1,1,3,1
+511,Primera División femenina,res://assets/textures/tournament_logo/511.png,71,15,Equatoguinean Primera División femenina,,1,1,1,1
+512,Naiste Meistriliiga,res://assets/textures/tournament_logo/512.png,73,8,Estonian Naiste Meistriliiga,,1,1,1,1
+513,Women's League,res://assets/textures/tournament_logo/513.png,74,18,Eswatini Women's League,,1,1,1,1
+514,Premier League,res://assets/textures/tournament_logo/514.png,75,17,Ethiopian Women's Premier League,,1,1,1,1
+515,1. deild kvinnur,res://assets/textures/tournament_logo/515.png,77,8,Faroe islands 1. deild kvinnur,,1,1,1,1
+516,Super League,res://assets/textures/tournament_logo/516.png,79,25,Fiji Women's Super League,,1,1,1,1
+517,Kansallinen Liiga,res://assets/textures/tournament_logo/517.png,80,8,Finland Kansallinen Liiga,,1,1,1,1
+518,Kansallinen Ykkönen,res://assets/textures/tournament_logo/518.png,80,8,Finland Kansallinen Ykkönen,,1,1,2,1
+519,Première Ligue,res://assets/textures/tournament_logo/519.png,81,11,France Première Ligue,,1,1,1,1
+520,Seconde Ligue,res://assets/textures/tournament_logo/520.png,81,11,France Seconde Ligue,,1,1,2,1
+521,Division 3 Féminine,res://assets/textures/tournament_logo/521.png,81,11,France Division 3 Féminine,,1,1,3,1
+522,Championship,res://assets/textures/tournament_logo/522.png,84,15,Gabonese Women's Championship,,1,1,1,1
+523,GFF Women's League Division One,res://assets/textures/tournament_logo/523.png,85,19,GFF Women's League Division One,,1,1,1,1
+524,Championship,res://assets/textures/tournament_logo/524.png,86,9,Georgia women's football championship,,1,1,1,1
+525,Liga 2,res://assets/textures/tournament_logo/525.png,86,9,Georgian Women's Liga 2,,1,1,2,1
+526,Frauen-Bundesliga,res://assets/textures/tournament_logo/526.png,87,11,Germany Frauen-Bundesliga,,1,1,1,1
+527,2. Frauen-Bundesliga,res://assets/textures/tournament_logo/527.png,87,11,Germany 2. Frauen-Bundesliga,,1,1,2,1
+528,Premier League,res://assets/textures/tournament_logo/528.png,88,19,Ghana Women's Premier League,,1,1,1,1
+529,Women's Football League,res://assets/textures/tournament_logo/529.png,89,10,Gibraltar Women's Football League,,1,1,1,1
+530,A Division,res://assets/textures/tournament_logo/530.png,91,10,Greek Womens A Division,,1,1,1,1
+531,Second National Division,res://assets/textures/tournament_logo/531.png,91,10,Greek Womens Second National Division,,1,1,2,1
+532,G League,res://assets/textures/tournament_logo/532.png,95,21,Guam G League Women,,1,1,1,1
+533,National Women's Football League,res://assets/textures/tournament_logo/533.png,96,13,Guatemala National Women's Football League,,1,1,1,1
+534,League 1,res://assets/textures/tournament_logo/534.png,98,19,Guinea Women's League 1,,1,1,1,1
+535,Championship,res://assets/textures/tournament_logo/535.png,99,19,Guinea-Bissau Women's Championship,,1,1,1,1
+536,Championship,res://assets/textures/tournament_logo/536.png,100,12,Guyana Women's Championship,,1,1,1,1
+537,Women's League,res://assets/textures/tournament_logo/537.png,104,21,Hong Kong Women's League,,1,1,1,1
+538,Női NB I,res://assets/textures/tournament_logo/538.png,105,9,Hungary Női NB I,,1,1,1,1
+539,Besta deild kvenna,res://assets/textures/tournament_logo/539.png,106,8,Iceland Besta deild kvenna,,1,1,1,1
+540,1. deild kvenna,res://assets/textures/tournament_logo/540.png,106,8,Iceland 1. deild kvenna,,1,1,2,1
+541,2. deild kvenna,res://assets/textures/tournament_logo/541.png,106,8,Iceland 2. deild kvenna,,1,1,3,1
+542,Women's League,res://assets/textures/tournament_logo/542.png,107,22,Indian Women's League,,1,1,1,1
+543,Women's League 2,res://assets/textures/tournament_logo/543.png,107,22,Indian Women's League 2,,1,1,2,1
+544,Liga 1 Putri,res://assets/textures/tournament_logo/544.png,108,23,Indonesia Liga 1 Putri,,1,1,1,1
+545,Kowsar Women Football League,res://assets/textures/tournament_logo/545.png,109,20,Iran Kowsar Women Football League,,1,1,1,1
+546,Women's Football League,res://assets/textures/tournament_logo/546.png,110,24,Iraqi Women's Football League,,1,1,1,1
+547,Premier Division,res://assets/textures/tournament_logo/547.png,111,11,Ireland Women's Premier Division,,1,1,1,1
+548,Ligat Nashim,res://assets/textures/tournament_logo/548.png,115,9,Israel Ligat Nashim,,1,1,1,1
+549,Serie A Femminile,res://assets/textures/tournament_logo/549.png,116,10,Italy Serie A Femminile,,1,1,1,1
+550,Serie B Femminile,res://assets/textures/tournament_logo/550.png,116,10,Italy Serie B Femminile,,1,1,2,1
+551,Serie C Femminile,res://assets/textures/tournament_logo/551.png,116,10,Italy Serie C Femminile,,1,1,3,1
+552,Championship,res://assets/textures/tournament_logo/552.png,117,19,Côte d'Ivoire Women's Championship,,1,1,1,1
+553,WE League,res://assets/textures/tournament_logo/553.png,119,21,Japan WE League,,1,1,1,1
+554,Pro League,res://assets/textures/tournament_logo/554.png,121,24,Jordan Women's Pro League,,1,1,1,1
+555,First Division League,res://assets/textures/tournament_logo/555.png,121,24,Jordan Women's First Division League,,1,1,2,1
+556,Championship,res://assets/textures/tournament_logo/556.png,122,9,Kazakhstani women's football championship,,1,1,1,1
+557,Premier League,res://assets/textures/tournament_logo/557.png,123,17,Kenyan Women's Premier League,,1,1,1,1
+558,Superleague,res://assets/textures/tournament_logo/558.png,125,9,Kosovo Women's Football Superleague,,1,1,1,1
+559,Women's League,res://assets/textures/tournament_logo/559.png,126,24,Kuwaiti Women's League,,1,1,1,1
+560,Women's League,res://assets/textures/tournament_logo/560.png,127,20,Kyrgyzstan Women's League,,1,1,1,1
+561,Women's League,res://assets/textures/tournament_logo/561.png,129,8,Latvian Women's League,,1,1,1,1
+562,Women's Football League,res://assets/textures/tournament_logo/562.png,130,24,Lebanese Women's Football League,,1,1,1,1
+563,Super League,res://assets/textures/tournament_logo/563.png,131,18,Lesotho Women's Super League,,1,1,1,1
+564,First Division,res://assets/textures/tournament_logo/564.png,132,19,Liberian Women's First Division,,1,1,1,1
+565,Women's League,res://assets/textures/tournament_logo/565.png,133,16,Libyan Women's League,,1,1,1,1
+566,A Lyga,res://assets/textures/tournament_logo/566.png,135,8,Lithuanian Women's A Lyga,,1,1,1,1
+567,Dames Ligue 1,res://assets/textures/tournament_logo/567.png,136,11,Luxembourg Dames Ligue 1,,1,1,1,1
+568,Women's Football League,res://assets/textures/tournament_logo/568.png,138,18,Malagasy Women's Football League,,1,1,1,1
+569,Women's League,res://assets/textures/tournament_logo/569.png,140,18,Malawi Women's League,,1,1,1,1
+570,National Women's League,res://assets/textures/tournament_logo/570.png,141,23,Malaysia National Women's League,,1,1,1,1
+571,FAM Championship,res://assets/textures/tournament_logo/571.png,142,22,Maldives FAM Women's Football Championship,,1,1,1,1
+572,Championship,res://assets/textures/tournament_logo/572.png,143,19,Malian Women's Championship,,1,1,1,1
+573,Women's League,res://assets/textures/tournament_logo/573.png,144,10,Maltese Women's League,,1,1,1,1
+574,Championship,res://assets/textures/tournament_logo/574.png,147,19,Mauritanian Women's Championship,,1,1,1,1
+575,Women's League,res://assets/textures/tournament_logo/575.png,148,18,Mauritiusian Women's League,,1,1,1,1
+576,Liga MX Femenil,res://assets/textures/tournament_logo/576.png,150,14,Mexico Liga MX Femenil,,1,1,1,1
+577,Top League,res://assets/textures/tournament_logo/577.png,151,9,Moldovan Women Top League,,1,1,1,1
+578,National Football League,res://assets/textures/tournament_logo/578.png,153,21,Mongolia Women's National Football League,,1,1,1,1
+579,Women's League,res://assets/textures/tournament_logo/579.png,154,9,Montenegrin Women's League,,1,1,1,1
+580,Championship D1,res://assets/textures/tournament_logo/580.png,156,16,Moroccan Women's Championship D1,,1,1,1,1
+581,Championship D2,res://assets/textures/tournament_logo/581.png,156,16,Moroccan Women's Championship D2,,1,1,2,1
+582,Primera División Femenina,res://assets/textures/tournament_logo/582.png,157,18,Mozambican Primera División femenina,,1,1,1,1
+583,Women League,res://assets/textures/tournament_logo/583.png,158,23,Myanmar Women League,,1,1,1,1
+584,Super League,res://assets/textures/tournament_logo/584.png,159,18,Namibia Women's Super League,,1,1,1,1
+585,ANFA Women's League,res://assets/textures/tournament_logo/585.png,161,22,Nepal ANFA Women's League,,1,1,1,1
+586,Vrouwen Eredivisie,res://assets/textures/tournament_logo/586.png,162,11,Netherlands Vrouwen Eredivisie,,1,1,1,1
+587,National League,res://assets/textures/tournament_logo/587.png,164,26,New Zealand Women's National League,,1,1,1,1
+588,Campeonato Nacional de Fútbol Femenino,res://assets/textures/tournament_logo/588.png,165,13,Nicaraguan Campeonato Nacional de Fútbol Femenino,,1,1,1,1
+589,Championship,res://assets/textures/tournament_logo/589.png,166,19,Niger Women's Championship,,1,1,1,1
+590,NWFL Premiership,res://assets/textures/tournament_logo/590.png,167,19,Nigeria NWFL Premiership,,1,1,1,1
+591,Premier League,res://assets/textures/tournament_logo/591.png,170,21,DPR Korea Women's Premier League,,1,1,1,1
+592,1. liga,res://assets/textures/tournament_logo/592.png,171,9,Macedonian Women's 1. liga,,1,1,1,1
+593,Premiership,res://assets/textures/tournament_logo/593.png,173,11,Northern Ireland Women's Premiership,,1,1,1,1
+594,Toppserien,res://assets/textures/tournament_logo/594.png,175,8,Norway Toppserien,,1,1,1,1
+595,1. divisjon,res://assets/textures/tournament_logo/595.png,175,8,Norway Women's 1. divisjon,,1,1,2,1
+596,2. divisjon,res://assets/textures/tournament_logo/596.png,175,8,Norway Women's 2. divisjon,,1,1,3,1
+597,National Women's Football Championship,res://assets/textures/tournament_logo/597.png,178,22,Pakistan National Women's Football Championship,,1,1,1,1
+598,Liga de Fútbol Femenino,res://assets/textures/tournament_logo/598.png,181,13,Panama Liga de Fútbol Femenino,,1,1,1,1
+599,Championship,res://assets/textures/tournament_logo/599.png,183,3,Paraguayan Women's Football Championship,,1,1,1,1
+600,Primera División Femenina,res://assets/textures/tournament_logo/600.png,184,3,Peru Primera División Femenina,,1,1,1,1
+601,PFF Women's League,res://assets/textures/tournament_logo/601.png,185,23,Philippines PFF Women's League,,1,1,1,1
+602,Ekstraliga,res://assets/textures/tournament_logo/602.png,187,9,Poland Ekstraliga,,1,1,1,1
+603,I liga,res://assets/textures/tournament_logo/603.png,187,9,Poland I liga,,1,1,2,1
+604,Campeonato Nacional Feminino,res://assets/textures/tournament_logo/604.png,188,10,Portugal Campeonato Nacional Feminino,,1,1,1,1
+605,Campeonato Nacional II Divisão Feminino,res://assets/textures/tournament_logo/605.png,188,10,Portugal Campeonato Nacional II Divisão Feminino,,1,1,2,1
+606,Campeonato Nacional III Divisão Feminino,res://assets/textures/tournament_logo/606.png,188,10,Portugal Campeonato Nacional III Divisão Feminino,,1,1,3,1
+607,Superior Femenino de la Liga Puerto Rico,res://assets/textures/tournament_logo/607.png,189,12,Superior Femenino de la Liga Puerto Rico,,1,1,1,1
+608,Women's Football League,res://assets/textures/tournament_logo/608.png,190,24,Qatar Women's Football League,,1,1,1,1
+609,Liga I,res://assets/textures/tournament_logo/609.png,192,9,Romania Women's Liga I,,1,1,1,1
+610,Liga II,res://assets/textures/tournament_logo/610.png,192,9,Romania Women's Liga II,,1,1,2,1
+611,Championship,res://assets/textures/tournament_logo/611.png,193,9,Russian Women's Football Championship,,1,1,1,1
+612,Women's Football League,res://assets/textures/tournament_logo/612.png,194,17,Rwanda Women's Football League,,1,1,1,1
+613,SVGFF Women's Premier Division,res://assets/textures/tournament_logo/613.png,202,12,SVGFF Women's Premier Division,,1,1,1,1
+614,Premier League,res://assets/textures/tournament_logo/614.png,207,24,Saudi Women's Premier League,,1,1,1,1
+615,First Division League,res://assets/textures/tournament_logo/615.png,207,24,Saudi Women's First Division League,,1,1,2,1
+616,Second Division League,res://assets/textures/tournament_logo/616.png,207,24,Saudi Women's Second Division League,,1,1,3,1
+617,Premier League,res://assets/textures/tournament_logo/617.png,208,11,Scottish Women's Premier League,,1,1,1,1
+618,Championship,res://assets/textures/tournament_logo/618.png,208,11,Scottish Women's Football Championship,,1,1,2,1
+619,Championship,res://assets/textures/tournament_logo/619.png,209,19,Senegalese Women's Championship,,1,1,1,1
+620,Super League,res://assets/textures/tournament_logo/620.png,210,9,Serbian Women's Super League,,1,1,1,1
+621,Women's League,res://assets/textures/tournament_logo/621.png,211,18,Seychelles Women's League,,1,1,1,1
+622,Premier League,res://assets/textures/tournament_logo/622.png,212,19,Sierra Leone Women's Premier League,,1,1,1,1
+623,Premier League,res://assets/textures/tournament_logo/623.png,213,23,Singapore Women's Premier League,,1,1,1,1
+624,First League,res://assets/textures/tournament_logo/624.png,216,9,Slovak Women's First League,,1,1,1,1
+625,Women's League,res://assets/textures/tournament_logo/625.png,217,9,Slovenian Women's League,,1,1,1,1
+626,Premier League,res://assets/textures/tournament_logo/626.png,218,25,Solomon Islands Women's Premier League,,1,1,1,1
+627,SAFA Women's League,res://assets/textures/tournament_logo/627.png,221,18,SAFA Women's League,,1,1,1,1
+628,Sasol Women's League,res://assets/textures/tournament_logo/628.png,221,18,Sasol Women's League,,1,1,2,1
+629,WK League,res://assets/textures/tournament_logo/629.png,222,21,South Korea WK League,,1,1,1,1
+630,Women's National League,res://assets/textures/tournament_logo/630.png,224,17,South Sudan Women's National League,,1,1,1,1
+631,Liga F,res://assets/textures/tournament_logo/631.png,226,10,Spain Liga F,,1,1,1,1
+632,Primera Federación,res://assets/textures/tournament_logo/632.png,226,10,Spain Women's Primera Federación ,,1,1,2,1
+633,Segunda Federación,res://assets/textures/tournament_logo/633.png,226,10,Spain Women's Segunda Federación,,1,1,3,1
+634,Women League,res://assets/textures/tournament_logo/634.png,228,17,Sudanese Women League,,1,1,1,1
+635,Damallsvenskan,res://assets/textures/tournament_logo/635.png,230,8,Sweden Damallsvenskan,,1,1,1,1
+636,Elitettan,res://assets/textures/tournament_logo/636.png,230,8,Sweden Elitettan,,1,1,2,1
+637,Super League,res://assets/textures/tournament_logo/637.png,231,11,Swiss Women's Super League,,1,1,1,1
+638,Mulan Football League,res://assets/textures/tournament_logo/638.png,233,21,Taiwan Mulan Football League,,1,1,1,1
+639,Premier League,res://assets/textures/tournament_logo/639.png,235,17,Tanzanian Women's Premier League,,1,1,1,1
+640,Women's League,res://assets/textures/tournament_logo/640.png,236,23,Thai Women's League,,1,1,1,1
+641,Championship,res://assets/textures/tournament_logo/641.png,237,19,Togolese Women's Championship,,1,1,1,1
+642,TT Women's League Football,res://assets/textures/tournament_logo/642.png,241,12,TT Women's League Football,,1,1,1,1
+643,Championship,res://assets/textures/tournament_logo/643.png,243,16,Tunisian Women's Championship,,1,1,1,1
+644,Super League,res://assets/textures/tournament_logo/644.png,244,10,Turkish Women's Football Super League,,1,1,1,1
+645,First League,res://assets/textures/tournament_logo/645.png,244,10,Turkish Women's Football First League,,1,1,2,1
+646,A-Division,res://assets/textures/tournament_logo/646.png,247,27,Tuvalu Women's A-Division,,1,1,1,1
+647,FUFA Women Super League,res://assets/textures/tournament_logo/647.png,249,17,FUFA Women Super League,,1,1,1,1
+648,FUFA Women Elite League,res://assets/textures/tournament_logo/648.png,249,17,FUFA Women Elite League,,1,1,2,1
+649,Top League,res://assets/textures/tournament_logo/649.png,250,9,Ukrainian Women's Top League,,1,1,1,1
+650,Women's Football League,res://assets/textures/tournament_logo/650.png,251,24,UAE Women's Football League,,1,1,1,1
+651,National Women's Soccer League,res://assets/textures/tournament_logo/651.png,252,14,American NWSL,,1,1,1,1
+652,USL Super League,res://assets/textures/tournament_logo/652.png,252,14,American USL Super League,,1,1,1,1
+653,Campeonato Uruguayo Femenino,res://assets/textures/tournament_logo/653.png,253,3,Uruguay Campeonato Uruguayo Femenino,,1,1,1,1
+654,Campeonato Uruguayo Femenino B',res://assets/textures/tournament_logo/654.png,253,3,Uruguay Campeonato Uruguayo Femenino B,,1,1,2,1
+655,Women's League,res://assets/textures/tournament_logo/655.png,254,20,Uzbekistan Women's League,,1,1,1,1
+656,Liga FUTVE Femenina,res://assets/textures/tournament_logo/656.png,257,3,Venezuela Liga FUTVE Femenina,,1,1,1,1
+657,Women's National League,res://assets/textures/tournament_logo/657.png,258,23,Vietnam Women's National League,,1,1,1,1
+658,Adran Premier,res://assets/textures/tournament_logo/658.png,259,11,Welsh Adran Premier,,1,1,1,1
+659,FAZ Women's Super Division,res://assets/textures/tournament_logo/659.png,262,18,FAZ Women's Super Division,,1,1,1,1
+660,Women's League,res://assets/textures/tournament_logo/660.png,264,18,Zimbabwean Women's League,,1,1,1,1

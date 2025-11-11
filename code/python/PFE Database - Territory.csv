@@ -170,7 +170,7 @@ id,name,logo_path,parent_id,confed_id,official_name,alt_name,code,demonym,is_act
 169,Norfolk Island,res://assets/textures/territory_logo/169.png,16,26,Norfolk Island,,NFK,Norfolk Islander,0,,,528.85,2188,34,60209000,19,5,3,1
 170,North Korea,res://assets/textures/territory_logo/170.png,,21,Democratic People's Republic of Korea,DPR Korea,PRK,North Korean,1,,,1151.05,26298666,120538,15416000000,45,2,1,5
 171,North Macedonia,res://assets/textures/territory_logo/171.png,,9,Republic of North Macedonia,,MKD,Macedonian,1,,,1390.6,1836713,25436,53345000000,52,2,1,5
-172,Northern Cyrpus,res://assets/textures/territory_logo/172.png,58,10,Turkish Republic of Northern Cyprus,,NCP,Turkish Cypriot,0,,,1200.3,382836,3355,4234000000,97,4,1,5
+172,Northern Cyprus,res://assets/textures/territory_logo/172.png,58,10,Turkish Republic of Northern Cyprus,,NCP,Turkish Cypriot,0,,,1200.3,382836,3355,4234000000,97,4,1,5
 173,Northern Ireland,res://assets/textures/territory_logo/173.png,70,11,Northern Ireland,,NIR,Northern Irish,1,,,1366.27,1927855,14330,63300000000,19,4,1,4
 174,Northern Mariana Islands,res://assets/textures/territory_logo/174.png,252,21,Commonwealth of the Northern Mariana Islands,,MNP,Northern Mariana Islander,1,,,900.45,55650,464,1240000000,19,5,3,2
 175,Norway,res://assets/textures/territory_logo/175.png,,8,Kingdom of Norway,,NOR,Norwegian,1,,,1532.14,5601049,385207,606590000000,63,3,1,5

@@ -72,6 +72,7 @@ text_overrun_behavior = 3
 clip_text = true
 expand_icon = true
 fit_to_longest_item = false
+allow_reselect = true
 
 [node name="TerritorySelection" type="OptionButton" parent="UI/FilterPanel"]
 unique_name_in_owner = true
@@ -79,6 +80,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("1_jsmfm")
 expand_icon = true
+allow_reselect = true
 
 [node name="GenderSelection" type="CheckButton" parent="UI/FilterPanel"]
 layout_mode = 2
@@ -92,6 +94,7 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 expand_icon = true
+allow_reselect = true
 
 [node name="SearchBox" type="LineEdit" parent="UI/FilterPanel"]
 layout_mode = 2
