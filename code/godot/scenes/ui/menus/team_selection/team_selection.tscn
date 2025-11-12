@@ -113,27 +113,75 @@ layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 10.0
 
-[node name="TeamGrid" type="GridContainer" parent="UI/ScrollContainer"]
+[node name="TeamSelectionGrid" type="GridContainer" parent="UI/ScrollContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-columns = 6
+columns = 8
 script = ExtResource("3_nhjno")
+
+[node name="MarginContainer" type="MarginContainer" parent="UI"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 3.0
+theme_override_constants/margin_left = 500
+theme_override_constants/margin_right = 500
+
+[node name="TeamSelectedDisplay" type="GridContainer" parent="UI/MarginContainer"]
+layout_mode = 2
+columns = 3
+
+[node name="UserTeamDisplay" type="PanelContainer" parent="UI/MarginContainer/TeamSelectedDisplay"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VersusLabel" type="Label" parent="UI/MarginContainer/TeamSelectedDisplay"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.2
+text = "VS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OppTeamDisplay" type="PanelContainer" parent="UI/MarginContainer/TeamSelectedDisplay"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="UserTeamLabel" type="Label" parent="UI/MarginContainer/TeamSelectedDisplay"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "UserTeam"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Blank" type="Label" parent="UI/MarginContainer/TeamSelectedDisplay"]
+layout_mode = 2
+
+[node name="OppTeamLabel" type="Label" parent="UI/MarginContainer/TeamSelectedDisplay"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Opponent Team"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="FooterPanel" type="HBoxContainer" parent="UI"]
 layout_mode = 2
 size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
 theme = ExtResource("1_jsmfm")
+
+[node name="ReselectButton" type="Button" parent="UI/FooterPanel"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Reselect Team"
 
 [node name="ConfirmButton" type="Button" parent="UI/FooterPanel"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Confirm Team"
-
-[node name="Button" type="Button" parent="UI/FooterPanel"]
-layout_mode = 2
-size_flags_horizontal = 3
-text = "Reselect Team"
 
 [connection signal="pressed" from="UI/HeaderPanel/BackButton" to="UI" method="_on_back_button_pressed"]
 [connection signal="item_selected" from="UI/FilterPanel/ConfedSelection" to="UI" method="_on_confed_selection_item_selected"]
@@ -141,4 +189,5 @@ text = "Reselect Team"
 [connection signal="toggled" from="UI/FilterPanel/TeamTypeSelection" to="UI" method="_on_team_type_selection_toggled"]
 [connection signal="toggled" from="UI/FilterPanel/GenderSelection" to="UI" method="_on_gender_selection_toggled"]
 [connection signal="text_submitted" from="UI/FilterPanel/SearchBox" to="UI" method="_on_search_box_text_submitted"]
+[connection signal="pressed" from="UI/FooterPanel/ReselectButton" to="UI" method="_on_reselect_button_pressed"]
 [connection signal="pressed" from="UI/FooterPanel/ConfirmButton" to="UI" method="_on_confirm_button_pressed"]

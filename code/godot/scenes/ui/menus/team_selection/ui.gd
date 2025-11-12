@@ -23,13 +23,21 @@ var gender_button: CheckButton = $FilterPanel/GenderSelection
 var league_button: OptionButton = %LeagueSelection;
 
 @onready
-var team_grid: GridContainer = $ScrollContainer/TeamGrid
+var team_grid: GridContainer = $ScrollContainer/TeamSelectionGrid
 
 @onready
 var confirm_button: Button = $FooterPanel/ConfirmButton
 
 @onready
 var phase_label: Label = $HeaderPanel/TitleLabel
+
+@onready 
+var user_team_display: PanelContainer = $MarginContainer/TeamSelectedDisplay/UserTeamDisplay
+
+@onready 
+var opp_team_display: PanelContainer = $MarginContainer/TeamSelectedDisplay/OppTeamDisplay
+
+
 
 var search_text: String = "";
 
@@ -54,6 +62,7 @@ const HIERARCHY: Dictionary[String, String] = {
 	"TeamType": "League",
 	"Gender": "League",
 	"League": "Team",
+	"Team": "Team"
 }
 
 
@@ -199,7 +208,7 @@ WHERE
 ORDER BY
     TM.id;
 "
-
+const SIMPLE_TEAM_QUERY: String = "SELECT * FROM Team WHERE id = {team_id}"
 
 func _ready() -> void:
 	# Create a new save, only for testing
@@ -234,30 +243,12 @@ func option_selection_made(option_type: String, new_id: int) -> void:
 				"League":
 					# Load leagues
 					#_load_leagues()
-					_load_teams()
 					option_selection_made("Team", -1);
 				"Team":
 					#load team
 					_load_teams()
 
 
-func _update_team_grid() -> void:
-	var confed_id = selected_options["Confed"]
-	var terr_id = selected_options["Terr"]
-	var gender = selected_options["Gender"]
-	var league_id = selected_options["League"]
-
-	## Fetch teams based on filters
-	#var teams = get_filtered_teams(confed_id, terr_id, gender, league_id)
-#
-	## Update UI
-	#team_grid.populate(teams)
-#
-	## Highlight selections if we’re in CONFIRM_READY phase
-	#if selected_options["Phase"] == "CONFIRM_READY":
-		#team_grid.highlight_team(selected_options["UserTeam"], Color.GREEN)
-		#team_grid.highlight_team(selected_options["OppTeam"], Color.RED)
-	
 func _update_phase_ui() -> void:
 	match selected_options["Phase"]:
 		SelectionPhase.SELECT_PLAYER:
@@ -281,7 +272,7 @@ func _load_confeds() -> void:
 	
 	# Display Blank Option
 	confed_button.text = "Select Confederation..."
-		
+
 
 func _load_terrs() -> void:
 	# Get all territories (or filter by confed_id)
@@ -292,8 +283,8 @@ func _load_terrs() -> void:
 	
 	# Display Blank Option
 	terr_button.text = "Select Territory..."
-		
-		
+
+
 func _load_leagues() -> void:
 	# Get All Tournaments
 	var tours: Array[Dictionary] = DBManager.query_rows(TOUR_QUERY.format({
@@ -309,8 +300,7 @@ func _load_leagues() -> void:
 	# Display Blank Option
 	league_button.text = "Select League..."
 
-		
-	
+
 func _load_teams() -> void:
 	# Get All Teams
 	var teams: Array[Dictionary] = DBManager.query_rows(TEAM_QUERY.format({
@@ -323,10 +313,43 @@ func _load_teams() -> void:
 	}))
 	
 	# Fill Option Button
-	Utils.populate_team_grid(team_grid, TEAM_TILE, teams, "name", "logo_path", true);
+	populate_team_grid(team_grid, TEAM_TILE, teams, "name", "logo_path", true);
 		
 	# Display Blank Option
 	league_button.text = "Select League..."
+
+
+func populate_team_grid(grid: GridContainer, tile: PackedScene, data: Array[Dictionary], data_text: String, data_icon_path: String, replace := true ) -> void:
+	# Validate Field Strings
+	if data_text == "" or data_icon_path == "":
+		return
+		
+	# Clear Option Button itemlist if desired
+	if replace:
+		for child in grid.get_children():
+			child.queue_free()
+	
+	# Iterate through data, each row being a dictionary
+	for row in data:
+		## Add selection tile
+		var tile_scene = tile.instantiate();
+		tile_scene.get_child(0).connect("pressed", Callable(self, "_on_team_tile_pressed").bind(row["id"]))
+		grid.add_child(tile_scene)
+		
+		# Load Icon, if any, else ignore
+		var icon = AssetManager.load_asset(row[data_icon_path], true);confed_button
+		tile_scene.set_tile_and_icon(row["name"], icon)
+		
+		# Connect signal here
+				
+		# Set Metadata
+		#tile_scene.metadata = row["id"];
+		
+	
+	return
+
+func _on_team_tile_pressed(team_id: int) -> void:
+	selected_options["Team"] = team_id;
 
 ## Go Back to Previous Scene
 func _on_back_button_pressed() -> void:
@@ -350,7 +373,7 @@ func _on_territory_selection_item_selected(index: int) -> void:
 	
 	# TODO: Write function to populate tournament option button
 	
-	
+## Gender Filter Toggled
 func _on_gender_selection_toggled(toggled_on: bool) -> void:
 	# First, change text of button to reflect change
 	gender_button.text = "Women" if toggled_on else "Men"
@@ -368,7 +391,16 @@ func _on_confirm_button_pressed() -> void:
 				return
 			selected_options["UserTeam"] = team_id
 			selected_options["Phase"] = SelectionPhase.SELECT_OPPONENT
-			print("User team confirmed:", team_id)
+			#print("User team confirmed:", team_id)
+			var tile_scene = TEAM_TILE.instantiate();
+			user_team_display.add_child(tile_scene)
+			
+			var data = DBManager.query_rows(SIMPLE_TEAM_QUERY.format({"team_id" = team_id}))
+			
+			# Load Icon, if any, else ignore
+			var icon = AssetManager.load_asset(data[0]["logo_path"], false)
+			tile_scene.set_tile_and_icon(data[0]["name"], icon)
+			
 			_update_phase_ui()
 
 		SelectionPhase.SELECT_OPPONENT:
@@ -379,6 +411,17 @@ func _on_confirm_button_pressed() -> void:
 			selected_options["OppTeam"] = team_id
 			selected_options["Phase"] = SelectionPhase.READY
 			print("Opponent team confirmed:", team_id)
+			
+			var tile_scene = TEAM_TILE.instantiate();
+			opp_team_display.add_child(tile_scene)
+			
+			var data = DBManager.query_rows(SIMPLE_TEAM_QUERY.format({"team_id" = team_id}))
+			
+			# Load Icon, if any, else ignore
+			var icon = AssetManager.load_asset(data[0]["logo_path"], false)
+			tile_scene.set_tile_and_icon(data[0]["name"], icon)
+			
+			
 			_update_phase_ui()
 
 		SelectionPhase.READY:
@@ -404,3 +447,33 @@ func _on_search_box_text_submitted(new_text: String) -> void:
 	search_text = new_text;
 	
 	_load_teams()
+
+
+func _on_reselect_button_pressed() -> void:
+	match selected_options["Phase"]:
+		SelectionPhase.SELECT_OPPONENT:
+			# Go back to SELECT_PLAYER phase
+			selected_options["Phase"] = SelectionPhase.SELECT_PLAYER
+			selected_options["UserTeam"] = -1
+			
+			# Clear UI
+			for child in user_team_display.get_children():
+				child.queue_free()
+
+			print("Returning to Player Team Selection Phase.")
+			_update_phase_ui()
+
+		SelectionPhase.READY:
+			# Go back to SELECT_OPPONENT phase
+			selected_options["Phase"] = SelectionPhase.SELECT_OPPONENT
+			selected_options["OppTeam"] = -1
+
+			# Clear opponent team UI
+			for child in opp_team_display.get_children():
+				child.queue_free()
+
+			print("Returning to Opponent Selection Phase.")
+			_update_phase_ui()
+
+		_:
+			print("Nothing to reselect at this phase.")
