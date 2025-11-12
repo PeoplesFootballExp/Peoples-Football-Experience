@@ -1,11 +1,9 @@
----
-Scene Name: Team Selection
----
 
 **Date:** 2025-10-27
 **Author(s):** Eddie  
 **Version:** Pre-Alpha
 **Tags**: #dev-blog
+**Links:** [[Development]]
 
 ---
 

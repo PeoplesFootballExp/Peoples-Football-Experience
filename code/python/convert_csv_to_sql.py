@@ -61,3 +61,6 @@ csv_to_sqlite("PFE Database - Territory.csv", "PFE_Database.db", "Territory", "r
 
 # Add Tournaments to SQLite
 csv_to_sqlite("PFE Database - Tournament.csv", "PFE_Database.db", "Tournament", "replace")
+
+# Add Teams to SQLite
+csv_to_sqlite("PFE Database - Team.csv", "PFE_Database.db", "Team", "replace")

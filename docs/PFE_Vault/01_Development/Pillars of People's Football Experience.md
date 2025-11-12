@@ -70,7 +70,7 @@ The open source nature allows any addition that the community wants to be added 
 
 > Truly owning a game means being able to customize it any way you see fit - People's Football Experience
 
-## **4. Inclusive and Accessibile** 
+## **4. Inclusive and Accessible** 
 
 ### All Territories Included
 

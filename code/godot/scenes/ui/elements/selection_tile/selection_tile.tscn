@@ -63,17 +63,6 @@ vertical_alignment = 1
 text_overrun_behavior = 3
 max_lines_visible = 1
 
-[node name="SubText" type="Label" parent="TeamButton/MarginContainer/VBox"]
-unique_name_in_owner = true
-visible = false
-layout_mode = 2
-size_flags_vertical = 3
-text = "26 Teams"
-horizontal_alignment = 1
-vertical_alignment = 1
-text_overrun_behavior = 3
-max_lines_visible = 1
-
 [node name="OutfieldSection" type="HBoxContainer" parent="TeamButton/MarginContainer/VBox"]
 visible = false
 layout_mode = 2

@@ -13,7 +13,5 @@ func set_title(title: String) -> void:
 	TITLE.text = title;
 	return
 
-
-func sort_tiles_by_text() -> void:
-	pass
+func 
 	

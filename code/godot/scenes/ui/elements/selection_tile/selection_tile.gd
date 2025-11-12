@@ -4,8 +4,6 @@ extends Control
 var ICON: TextureRect = %Icon;
 @onready 
 var TEXT: Label = %Text;
-@onready
-var SUBTEXT: Label = %SubText
 
 @onready
 var ATTACK_AVERAGE: Label = %AttackAverage
@@ -21,16 +19,13 @@ var OUTFIELD_SECTIONS: HBoxContainer = $TeamButton/MarginContainer/VBox/Outfield
 var SECTION_AVERAGES: HBoxContainer = $TeamButton/MarginContainer/VBox/SectionAverages
 
 
-
-var grid_index: int = -1;
-
+var metadata: int = 0;
 
 
-func set_tile(input_text: String, input_texture: Texture, input_subtext:= "") -> void:
+func set_tile_and_icon(input_text: String, input_texture: Texture) -> void:
 	# We simply put these images and text into the Tile
 	ICON.texture = input_texture;
 	TEXT.text = input_text;
-	SUBTEXT.text = input_subtext;
 	
 	
 func set_averages(attack: int, mid: int, defense: int) -> void:

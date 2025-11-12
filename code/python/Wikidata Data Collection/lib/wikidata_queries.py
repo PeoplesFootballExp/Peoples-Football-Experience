@@ -171,6 +171,137 @@ NATION_QUERY_TEMPLATE = """
     }}
 """
 
+# Template Query: get nations in confederation
+CONFED_NATIONS_QUERY_TEMPLATE = """
+    SELECT ?association ?associationLabel ?country ?countryLabel ?confederationLabel WHERE {{
+        wd:{confederation_qid} wdt:P355 ?association.
+
+        OPTIONAL {{ ?association wdt:P1001 ?p1001. }}
+        OPTIONAL {{ ?association wdt:P17 ?p17. }}
+        BIND(COALESCE(?p1001, ?p17) AS ?country)
+
+        BIND(wd:{confederation_qid} AS ?confederation)
+
+        # Get English labels for all items, including confederation
+        SERVICE wikibase:label {{ bd:serviceParam wikibase:language 'en'. }}
+        }}
+    ORDER BY ?countryLabel ?associationLabel
+    """
+
+# Gather Countries Members from Confederations
+def get_confed_member_terrs(confed_qid: str) -> pl.DataFrame:
+    """
+    Fetches raw Wikidata information about the territories member of a confederation by its Q-ID.
+    
+    Parameters:
+        confed_qid (str): Wikidata Q-ID of the confederation
+
+    Returns:
+        pl.DataFrame: Raw data as a Polars DataFrame
+    """
+    query = CONFED_NATIONS_QUERY_TEMPLATE.format(confederation_qid=confed_qid)
+
+    return run_sparql(query)
+
+def get_all_confed_member_terrs(confed_qids: List[str], delay: float = 15.0):
+    """
+    Fetches raw Wikidata data for multiple confeds and combines them into a single DataFrame.
+    
+    Parameters:
+        confed_qids (List[str]): List of Wikidata Q-IDs (e.g., ["Q30", "Q145"])
+        delay (float): Delay in seconds between requests to avoid overloading Wikidata
+        
+    Returns:
+        pl.DataFrame: Combined DataFrame for all confed territory members
+    """
+    all_dfs = []
+    
+    for qid in confed_qids:
+        try:
+            df = get_confed_member_terrs(qid)  # Uses the existing single-nation function
+            if not df.is_empty():
+                all_dfs.append(df)
+        except Exception as e:
+            print(f"Error querying nation {qid}: {e}")
+        
+        time.sleep(delay)  # polite delay
+    
+    if all_dfs:
+        return pl.concat(all_dfs, rechunk=True)
+    else:
+        return pl.DataFrame()  # return empty if nothing succeeded
+
+
+# Gather Nation Data
+def get_nation_data(territory_qid: str) -> pl.DataFrame:
+    """
+    Fetches raw Wikidata information about a nation (territory) by its Q-ID.
+    
+    Parameters:
+        territory_qid (str): Wikidata Q-ID of the country/territory (ex "Q851" for USA)
+    
+    Returns:
+        pl.DataFrame: Raw data as a Polars DataFrame
+    """
+    query = NATION_QUERY_TEMPLATE.format(territory_qid=territory_qid)
+    NATION_SCHEMA = {
+        "territory": pl.Utf8,
+        "territoryLabel": pl.Utf8,
+        "official_name": pl.Utf8,
+        "demonym": pl.Utf8,
+        "national_anthem": pl.Utf8,
+        "country": pl.Utf8,
+        "geoshape": pl.Utf8,
+        "coordinates": pl.Utf8,
+        "population": pl.Utf8,
+        "population_point_in_time": pl.Utf8,
+        "gdp_nominal": pl.Utf8,
+        "gdp_point_in_time": pl.Utf8,
+        "language": pl.Utf8,
+        "languageLabel": pl.Utf8,
+        "language_number_of_speakers": pl.Utf8,
+        "language_characteristic": pl.Utf8,
+        "area": pl.Utf8,
+        "area_point_in_time": pl.Utf8,
+        "flag": pl.Utf8,
+        "flag_start_time": pl.Utf8,
+        "flag_end_time": pl.Utf8,
+        "iso_alpha3": pl.Utf8
+    }
+
+    return run_sparql(query=query, schema=NATION_SCHEMA) 
+
+def get_multiple_nations_data(territory_qids: List[str], delay: float = 15.0) -> pl.DataFrame:
+    """
+    Fetches raw Wikidata data for multiple nations and combines them into a single DataFrame.
+    
+    Parameters:
+        territory_qids (List[str]): List of Wikidata Q-IDs (e.g., ["Q30", "Q145"])
+        delay (float): Delay in seconds between requests to avoid overloading Wikidata
+        
+    Returns:
+        pl.DataFrame: Combined DataFrame for all nations
+    """
+    all_dfs = []
+    
+    for qid in territory_qids:
+        try:
+            df = get_nation_data(qid)  # Uses the existing single-nation function
+            if not df.is_empty():
+                all_dfs.append(df)
+        except Exception as e:
+            print(f"Error querying nation {qid}: {e}")
+        
+        time.sleep(delay)  # polite delay
+    
+    if all_dfs:
+        return pl.concat(all_dfs, rechunk=True)
+    else:
+        return pl.DataFrame()  # return empty if nothing succeeded
+    
+
+
+
 # Gather Team Data
 def get_team_data(team_qid: str) -> pl.DataFrame:
     """
@@ -247,71 +378,5 @@ def get_multiple_teams_data(team_qids: List[str], delay: float = 15.0) -> pl.Dat
     else:
         return pl.DataFrame()  # return empty if nothing succeeded
 
-# Gather Nation Data
-def get_nation_data(territory_qid: str) -> pl.DataFrame:
-    """
-    Fetches raw Wikidata information about a nation (territory) by its Q-ID.
-    
-    Parameters:
-        territory_qid (str): Wikidata Q-ID of the country/territory (ex "Q851" for USA)
-    
-    Returns:
-        pl.DataFrame: Raw data as a Polars DataFrame
-    """
-    query = NATION_QUERY_TEMPLATE.format(territory_qid=territory_qid)
-    NATION_SCHEMA = {
-        "territory": pl.Utf8,
-        "territoryLabel": pl.Utf8,
-        "official_name": pl.Utf8,
-        "demonym": pl.Utf8,
-        "national_anthem": pl.Utf8,
-        "country": pl.Utf8,
-        "geoshape": pl.Utf8,
-        "coordinates": pl.Utf8,
-        "population": pl.Utf8,
-        "population_point_in_time": pl.Utf8,
-        "gdp_nominal": pl.Utf8,
-        "gdp_point_in_time": pl.Utf8,
-        "language": pl.Utf8,
-        "languageLabel": pl.Utf8,
-        "language_number_of_speakers": pl.Utf8,
-        "language_characteristic": pl.Utf8,
-        "area": pl.Utf8,
-        "area_point_in_time": pl.Utf8,
-        "flag": pl.Utf8,
-        "flag_start_time": pl.Utf8,
-        "flag_end_time": pl.Utf8,
-        "iso_alpha3": pl.Utf8
-    }
 
-    return run_sparql(query=query, schema=NATION_SCHEMA) 
-
-def get_multiple_nations_data(territory_qids: List[str], delay: float = 15.0) -> pl.DataFrame:
-    """
-    Fetches raw Wikidata data for multiple nations and combines them into a single DataFrame.
-    
-    Parameters:
-        territory_qids (List[str]): List of Wikidata Q-IDs (e.g., ["Q30", "Q145"])
-        delay (float): Delay in seconds between requests to avoid overloading Wikidata
-        
-    Returns:
-        pl.DataFrame: Combined DataFrame for all nations
-    """
-    all_dfs = []
-    
-    for qid in territory_qids:
-        try:
-            df = get_nation_data(qid)  # Uses the existing single-nation function
-            if not df.is_empty():
-                all_dfs.append(df)
-        except Exception as e:
-            print(f"Error querying nation {qid}: {e}")
-        
-        time.sleep(delay)  # polite delay
-    
-    if all_dfs:
-        return pl.concat(all_dfs, rechunk=True)
-    else:
-        return pl.DataFrame()  # return empty if nothing succeeded
-    
-
+# 

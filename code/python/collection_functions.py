@@ -184,14 +184,18 @@ if __name__ == "__main__":
     confederation_qids = ["Q35572", "Q58733", "Q160549", "Q168360", "Q83276", "Q180344"] # All confederations
 
     # 
-    df_members = fetch_all_confederation_members(confederation_ids= confederation_qids)
+    df_members = fetch_confederation_members(confederation_qids[0])
 
     # For Python 3.7+ you can set stdout encoding
     sys.stdout.reconfigure(encoding='utf-8')
 
+
+    print(df_members.get_column("country"))
+
+    
     # Print
     print(df_members)
 
     # Save to SQL
-    save_dataframe_to_sqlite(df_members, "data_collection/data_collected/football.db")
+    # save_dataframe_to_sqlite(df_members, "data_collection/data_collected/football.db")
     

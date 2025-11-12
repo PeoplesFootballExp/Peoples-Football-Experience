@@ -4,7 +4,7 @@ enum SelectionPhase { SELECT_PLAYER, SELECT_OPPONENT, READY }
 var selection_phase = SelectionPhase.SELECT_PLAYER
 
 const MAIN_SCENE: String = "res://scenes/main/main_menu.tscn";
-
+const TEAM_TILE: PackedScene = preload("res://scenes/ui/elements/selection_tile/selection_tile.tscn");
 
 ## Buttons
 @onready 
@@ -14,13 +14,16 @@ var confed_button: OptionButton = %ConfedSelection;
 var terr_button: OptionButton = %TerritorySelection;
 
 @onready
+var teamtype_button: CheckButton = $FilterPanel/TeamTypeSelection
+
+@onready
 var gender_button: CheckButton = $FilterPanel/GenderSelection
 
 @onready
 var league_button: OptionButton = %LeagueSelection;
 
 @onready
-var team_grid: GridContainer = $ScrollContainer/GridContainer
+var team_grid: GridContainer = $ScrollContainer/TeamGrid
 
 @onready
 var confirm_button: Button = $FooterPanel/ConfirmButton
@@ -28,13 +31,16 @@ var confirm_button: Button = $FooterPanel/ConfirmButton
 @onready
 var phase_label: Label = $HeaderPanel/TitleLabel
 
+var search_text: String = "";
+
 
 
 ## Selection Options
 var selected_options: Dictionary[String, int] = {
 	"Confed": 1, # ID of 1 is of the world
 	"Terr": -1, # -1 means none selected
-	"Gender": 0, # Men is 0, Women is 1
+	"Gender": 0, # Men is 0, Women is 1 
+	"TeamType": 0, # Club Team is 0, National team is 1
 	"League": -1, # -1 means none selected
 	"Phase": selection_phase, # 0 is selecting user, 1 selecting opp, and 2 confirmed
 	"Team": -1,
@@ -45,6 +51,7 @@ var selected_options: Dictionary[String, int] = {
 const HIERARCHY: Dictionary[String, String] = {
 	"Confed": "Terr",
 	"Terr": "League",
+	"TeamType": "League",
 	"Gender": "League",
 	"League": "Team",
 }
@@ -94,9 +101,10 @@ const TOUR_QUERY: String = "
 	INNER JOIN
 	    Territory TR ON T.territory_id = TR.id -- Tournaments link to Territories
 	WHERE
-	    -- 3. Always filter by Gender
+	    -- 3. Always filter by Gender AND TeamType
 	    -- Note: T.gender is an INTEGER, so 'men' or 'women' might need to be replaced with 0 or 1.
 	    T.gender = {gender}
+		AND T.team_type = {team_type}
 	    
 	    -- 2. Conditional filter based on territory/confederation priority
 	    AND (
@@ -120,11 +128,12 @@ const TOUR_QUERY: String = "
 	    T.id;
 "
 
-const TEAM_QUERY: String = "WITH RECURSIVE
+const TEAM_QUERY: String = "
+WITH RECURSIVE
     -- 1. Get the target confederation and all its children/descendants
     confed_tree (confed_id) AS (
         -- Anchor Member
-        SELECT C.id FROM Confederation C WHERE C.id = :confed_id
+        SELECT C.id FROM Confederation C WHERE C.id = {confed_id}
 
         UNION ALL
 
@@ -140,47 +149,50 @@ FROM
     Team TM
 INNER JOIN
     Territory TR ON TM.territory_id = TR.id -- Team to Territory link
-LEFT JOIN 
-    Team_Tournament TT ON TM.id = TT.team_id -- ASSUMPTION: Team to Tournament link (required for :league_id filter)
 WHERE
-    -- 5. Always filter by Gender
-    TM.gender = :gender
+    -- =================================================================
+    -- A. MANDATORY BASE FILTERS (Always applied)
+    -- =================================================================
     
-    -- 1-4. Conditional filter block enforcing priority
+    -- 1. Only active teams
+    TM.is_active = 1
+    
+    -- 2. Only top-level teams (no reserves or youth teams)
+    AND TM.parent_id IS NULL
+    
+    -- 3. Filter by Team Type (e.g., 0 for Club, 1 for National)
+    AND TM.team_type = {team_type}
+    
+    -- 4. Filter by Gender
+    AND TM.gender = {gender}
+    
+    -- =================================================================
+    -- B. CONDITIONAL PRIORITY FILTERS (Applies ONE of the following)
+    -- =================================================================
     AND (
-        -- --- PRIORITY 1: SEARCH FILTER (Overrides all other geographic/league filters) ---
+        -- --- PRIORITY 1: SEARCH FILTER (Overrides all) ---
         -- If search term is provided, filter by name LIKE and ignore the rest of the block.
-        (:team_search_term IS NOT NULL AND TM.name LIKE '%' || :team_search_term || '%')
+        ({search_text} IS NOT NULL AND TM.name LIKE {search_text} || '%')
         
         OR 
         
-        -- --- PRIORITY 2-4: NO SEARCH TERM SELECTED (Execute if :team_search_term IS NULL) ---
-        (:team_search_term IS NULL AND (
+        -- --- PRIORITY 2/3: NO SEARCH TERM SELECTED (Execute if :team_search_term IS NULL) ---
+        ({search_text} IS NULL AND (
         
-            -- --- PRIORITY 2: LEAGUE FILTER ---
-            -- If :league_id is provided, filter by tournament_id.
-            (:league_id IS NOT NULL AND TT.tournament_id = :league_id)
+            -- --- PRIORITY 2: TERRITORY FILTER ---
+            -- If :territory_id is provided, filter by territory and ignore confed logic.
+            ({terr_id} IS NOT NULL AND TM.territory_id = {terr_id})
             
             OR
             
-            -- --- PRIORITY 3/4: NO LEAGUE SELECTED (Execute if :league_id IS NULL) ---
-            (:league_id IS NULL AND (
-                
-                -- --- PRIORITY 3: TERRITORY FILTER ---
-                -- If :territory_id is provided, filter by territory.
-                (:territory_id IS NOT NULL AND TM.territory_id = :territory_id)
-                
+            -- --- PRIORITY 3: CONFEDERATION FILTER (NO TERRITORY/LEAGUE) ---
+            -- Execute this block ONLY if :territory_id IS NULL
+            ({terr_id} IS NULL AND (
+                -- CASE A: World Confed (ID 1) selected, no geographic filter.
+                {confed_id} = 1 
                 OR
-                
-                -- --- PRIORITY 4: CONFEDERATION FILTER (NO TERRITORY/LEAGUE) ---
-                -- Execute this block ONLY if :territory_id IS NULL
-                (:territory_id IS NULL AND (
-                    -- CASE A: World Confed (ID 1) selected, no geographic filter.
-                    :confed_id = 1 
-                    OR
-                    -- CASE B: Specific Confed selected, filter by recursive tree.
-                    TR.confed_id IN (SELECT confed_id FROM confed_tree)
-                ))
+                -- CASE B: Specific Confed selected, filter by recursive tree.
+                TR.confed_id IN (SELECT confed_id FROM confed_tree)
             ))
         ))
     )
@@ -204,7 +216,8 @@ func _ready() -> void:
 	# Populate the confed and terr option buttons with all options
 	_load_confeds()
 	_load_terrs()
-	_load_leagues()
+	#_load_leagues()
+	_load_teams()
 
 
 func option_selection_made(option_type: String, new_id: int) -> void:
@@ -220,7 +233,8 @@ func option_selection_made(option_type: String, new_id: int) -> void:
 					option_selection_made("Terr", -1);
 				"League":
 					# Load leagues
-					_load_leagues()
+					#_load_leagues()
+					_load_teams()
 					option_selection_made("Team", -1);
 				"Team":
 					#load team
@@ -285,6 +299,7 @@ func _load_leagues() -> void:
 	var tours: Array[Dictionary] = DBManager.query_rows(TOUR_QUERY.format({
 		"confed_id": selected_options["Confed"], 
 		"gender": str(selected_options["Gender"]),
+		"team_type": str(selected_options["TeamType"]),
 		"terr_id": selected_options["Terr"] if selected_options["Terr"] > 0 else "NULL",
 	}))
 	
@@ -297,7 +312,21 @@ func _load_leagues() -> void:
 		
 	
 func _load_teams() -> void:
-	pass
+	# Get All Teams
+	var teams: Array[Dictionary] = DBManager.query_rows(TEAM_QUERY.format({
+		"confed_id": selected_options["Confed"], 
+		"gender": str(selected_options["Gender"]),
+		"team_type": str(selected_options["TeamType"]),
+		"terr_id": selected_options["Terr"] if selected_options["Terr"] > 0 else "NULL",
+		"search_text": "'{text}'".format({"text": search_text}) if search_text.length() > 0  else "NULL"
+		
+	}))
+	
+	# Fill Option Button
+	Utils.populate_team_grid(team_grid, TEAM_TILE, teams, "name", "logo_path", true);
+		
+	# Display Blank Option
+	league_button.text = "Select League..."
 
 ## Go Back to Previous Scene
 func _on_back_button_pressed() -> void:
@@ -358,3 +387,20 @@ func _on_confirm_button_pressed() -> void:
 				return
 			# TODO: Now we can switch scenes to Match or 
 			# Team Management Scene Before Playing
+
+
+func _on_team_type_selection_toggled(toggled_on: bool) -> void:
+	# First, change text of button to reflect change
+	teamtype_button.text = "National Teams" if toggled_on else "Club Teams"
+	
+	# Now, we change the remaining hierachy of options
+	option_selection_made("TeamType", 1 if toggled_on else 0);
+
+
+
+
+
+func _on_search_box_text_submitted(new_text: String) -> void:
+	search_text = new_text;
+	
+	_load_teams()

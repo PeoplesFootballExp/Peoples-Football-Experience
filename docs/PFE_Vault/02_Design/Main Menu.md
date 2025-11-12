@@ -1,8 +1,8 @@
 ## 📘 Overview
 
-Scene Name:
-Purpose:
-Inputs:
+Scene Name: MainMenu
+Purpose: Serve as the first scene everyone sees. Must allow every other scene to be accessed one way or another. 
+Inputs: 
 Outputs:
 Linked Managers:
 

@@ -10,6 +10,8 @@
 ## 🏟️ Overview
 *A short paragraph summarizing the blog post.*  
 
+Continued with work with the database. I have fully collected the data I wanted to collect to test the team selection page. Looking into the future, I got different leagues for both men and women around the world. Also developed a working hierarchy system that works inside the option buttons in the scene, allowing a simple way to ensure the options update correctly based on previous 
+
 
 
 ---
