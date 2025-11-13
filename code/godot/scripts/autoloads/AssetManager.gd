@@ -10,8 +10,13 @@ extends Node
 enum AssetType {FLAG,TEAMLOGO,CONFEDLOGO,KIT,TOURLOGO};
 
 
+# Temporary Cache: Useful for constantly changing textures but can save time for cache hits
+# Sort of like a FIFO cache
+const MAX_CACHE_SIZE = 200
+var _temp_cache: Dictionary[String, CompressedTexture2D] = {}
 
-var cache := {}  # optional runtime cache for fast access
+# Permenent Cache,useful for consistent data for an entire scene 
+var _perm_cache: Dictionary[String, CompressedTexture2D] = {}  # optional runtime cache for fast access
 
 # ---------------------------------
 # Move an asset from res:// to user:// (e.g., database, save files)
@@ -40,14 +45,25 @@ func move_to_user(path_res: String, type: AssetType, overwrite := false) -> Stri
 # ---------------------------------
 # Load a resource (cached optional)
 # ---------------------------------
-func load_asset(path: String, use_cache := true):
-	if use_cache and cache.has(path):
-		return cache[path]
+func load_asset(path: String, use_cache := false):
+	if use_cache and _perm_cache.has(path):
+		return _perm_cache[path]
+		
+	if _temp_cache.has(path):
+		return _temp_cache[path]
+
 
 	var res = load(path)
 	if res:
 		if use_cache:
-			cache[path] = res
+			_perm_cache[path] = res
+			return res
+		
+		if _temp_cache.size() >= MAX_CACHE_SIZE:
+			var key_to_remove: String = _temp_cache.keys()[0]
+			_temp_cache.erase(key_to_remove)
+		_temp_cache[path] = res
+			
 		return res
 	else:
 		push_error("AssetManager: Failed to load %s" % path)
@@ -57,9 +73,6 @@ func load_asset(path: String, use_cache := true):
 # ---------------------------------
 # Preload commonly used assets on startup
 # ---------------------------------
-func preload_essentials():
-	cache["logo"] = load("res://ui/logo.png")
-	cache["font_main"] = load("res://fonts/main_font.tres")
-	cache["theme_dark"] = load("res://themes/dark_theme.tres")
-	cache["theme_light"] = load("res://themes/light_theme.tres")
-	print("AssetManager: Essentials preloaded.")
+func preload_confed_logos() -> void:
+	
+	pass

@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://cajnq2r74qtnh"]
+[gd_scene load_steps=6 format=3 uid="uid://cajnq2r74qtnh"]
 
 [ext_resource type="Theme" uid="uid://dmjkkbdbwavds" path="res://assets/ui/themes/ThemeLight.tres" id="1_jsmfm"]
 [ext_resource type="Script" uid="uid://d1nmo0qdi84lh" path="res://scenes/ui/menus/team_selection/ui.gd" id="2_00fsc"]
 [ext_resource type="Script" uid="uid://5q7k21gs3drt" path="res://scenes/ui/menus/team_selection/team_display.gd" id="3_nhjno"]
+[ext_resource type="PackedScene" uid="uid://dkw7cmhd50wfc" path="res://scenes/ui/elements/selection_tile/selection_tile.tscn" id="4_ly1mq"]
 
 [sub_resource type="GDScript" id="GDScript_ambex"]
 script/source = "extends Control
@@ -119,6 +120,8 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 columns = 8
 script = ExtResource("3_nhjno")
+scroll_container_path = NodePath("..")
+tile_scene = ExtResource("4_ly1mq")
 
 [node name="MarginContainer" type="MarginContainer" parent="UI"]
 layout_mode = 2
