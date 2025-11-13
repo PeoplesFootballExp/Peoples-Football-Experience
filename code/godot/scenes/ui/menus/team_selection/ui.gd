@@ -88,6 +88,59 @@ WHERE l1.level = 1
 ;
 "
 
+const ALL_TEAM_QUERY: String = "WITH RECURSIVE team_confed_ancestry AS (
+    -- Anchor Member: Start with all Active, Top-Level Teams from Active Territories
+    SELECT
+        TM.id,
+        TM.name,
+        TM.logo_path,
+        TM.territory_id,
+        TM.gender,
+        TM.team_type,
+        TR.confed_id AS starting_confed_id,
+        C.id AS current_confed_id,
+        C.parent_id,
+        C.level
+    FROM Team TM
+    INNER JOIN Territory TR ON TM.territory_id = TR.id
+    INNER JOIN Confederation C ON TR.confed_id = C.id
+    WHERE 
+        TM.is_active = 1            -- Only active teams
+        AND TM.parent_id IS NULL    -- Only top-level teams (no youth/reserves)
+        AND TR.is_active = 1        -- Only teams from active territories
+
+    UNION ALL
+
+    -- Recursive Member: Trace the hierarchy UP to the parent Confederation
+    SELECT
+        TCA.id,
+        TCA.name,
+        TCA.logo_path,
+        TCA.territory_id,
+        TCA.gender,
+        TCA.team_type,
+        TCA.starting_confed_id,
+        C.id AS current_confed_id,
+        C.parent_id,
+        C.level
+    FROM team_confed_ancestry TCA
+    INNER JOIN Confederation C ON TCA.parent_id = C.id
+    -- Stop recursion when we reach the World Confed (Level 0, which has parent_id IS NULL)
+    WHERE TCA.parent_id IS NOT NULL 
+)
+SELECT
+    TCA.id,
+    TCA.name,
+    TCA.logo_path,
+    TCA.territory_id,
+    TCA.gender,
+    TCA.team_type,
+    TCA.current_confed_id AS confed_id
+FROM team_confed_ancestry TCA
+-- Only select the row where the recursion reached the Level 1 Confed
+WHERE TCA.level = 1 
+ORDER BY TCA.id;"
+
 ## Query to get tournaments dependent on filter options (Confed, Terr, TeamType, and Gender)
 const TOUR_QUERY: String = "
 	WITH RECURSIVE
@@ -237,10 +290,6 @@ var _selected_options: Dictionary[String, int] = {
 }
 
 
-var _confed_data_cache: Array[Dictionary]
-var _territory_data_cache: Array[Dictionary]
-var _league_data_cache: Array[Dictionary]
-
 # --------------------------------------
 # @onready variables
 # --------------------------------------
@@ -295,7 +344,6 @@ func _ready() -> void:
 	# Initiate the DB Connection
 	DBManager.init_db(SaveManager.get_active_db_path());
 	
-	cache_data()
 	
 	# Populate the confed and terr option buttons with all options
 	_load_confeds()
@@ -304,20 +352,9 @@ func _ready() -> void:
 	_load_teams()
 
 
-func cache_data() -> void:
-	# First, query and cache all continental confederations (Level 1 Confeds Only) 
-	_confed_data_cache = DBManager.query_rows(CONFED_QUERY)
+func _prepare_grid() -> void:
+	pass
 	
-	# Now, get all territories with level 1 confed_id added
-	_territory_data_cache = DBManager.query_rows(ALL_TERR_QUERY)
-	
-	# Now get all leagues and cache
-	#_league_data_cache = DBManaer.query_rows()
-	
-	# Now, get all teams with 
-	
-	return
-
 
 # --------------------------------------
 # Hierarchy Function, Recursively walks down the hierarchy, updating 
@@ -330,7 +367,6 @@ func option_selection_made(option_type: String, new_id: int) -> void:
 	
 	# Carry out options resets
 	if HIERARCHY.has(option_type):
-			#_reset_lower_option(dependent_option)
 			match HIERARCHY[option_type]:
 				"Terr":
 					_load_terrs()
@@ -362,8 +398,10 @@ func _update_phase_ui() -> void:
 
 ## Load Confederation Option Button, done once in the _ready() function
 func _load_confeds() -> void:
+	var confeds: Array[Dictionary] = DBManager.query_rows(CONFED_QUERY)
+	
 	# Populate it
-	Utils.populate_option_button(confed_button, _confed_data_cache, "name", "logo_path", true, true)
+	Utils.populate_option_button(confed_button, confeds, "name", "logo_path", true, true)
 	
 	# Display Blank Option
 	confed_button.text = "Select Confederation..."
@@ -374,14 +412,10 @@ func _load_confeds() -> void:
 ## Load Territories Option Button, dependent on Selected Options: Confederation
 func _load_terrs() -> void:
 	# Else, filter territories by confed choosen (opposite so we know which to make invisible)
-	var terrs_filtered: Array[Dictionary]
-	if _selected_options["Confed"] == 1:
-		terrs_filtered = _territory_data_cache
-	else:
-		terrs_filtered = _territory_data_cache.filter(func(terr): return terr["confed_id"] == _selected_options["Confed"])
+	var terrs: Array[Dictionary] = DBManager.query_rows(TERRITORY_QUERY.format([str(_selected_options["Confed"])]));
 
 	# Fill Option Button
-	Utils.populate_option_button(terr_button, terrs_filtered, "name", "logo_path", true, true)
+	Utils.populate_option_button(terr_button, terrs, "name", "logo_path", true, true)
 	
 	# Display Blank Option
 	terr_button.text = "Select Territory..."

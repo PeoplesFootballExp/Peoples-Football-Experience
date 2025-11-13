@@ -11,14 +11,10 @@
             "id": "d6fb919e91b6d8b0",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01_Development/Dev Blogs/6 - League Selection.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "6 - League Selection"
+              "title": "New tab"
             }
           }
         ]
@@ -195,8 +191,8 @@
   },
   "active": "d6fb919e91b6d8b0",
   "lastOpenFiles": [
-    "01_Development/Dev Blogs/5 - Database Work.md",
     "01_Development/Dev Blogs/6 - League Selection.md",
+    "01_Development/Dev Blogs/5 - Database Work.md",
     "01_Development/Pillars of People's Football Experience.md",
     "01_Development/Development.md",
     "01_Development/Dev Blogs/1 - Laying the Foundations Again.md",
