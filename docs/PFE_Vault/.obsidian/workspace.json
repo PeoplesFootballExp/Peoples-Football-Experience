@@ -11,10 +11,14 @@
             "id": "d6fb919e91b6d8b0",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "01_Development/Image Formats and Sizing.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Image Formats and Sizing"
             }
           }
         ]
@@ -191,6 +195,7 @@
   },
   "active": "d6fb919e91b6d8b0",
   "lastOpenFiles": [
+    "01_Development/Image Formats and Sizing.md",
     "01_Development/Dev Blogs/6 - League Selection.md",
     "01_Development/Dev Blogs/5 - Database Work.md",
     "01_Development/Pillars of People's Football Experience.md",
@@ -223,7 +228,6 @@
     "Templates/Task Template.md",
     "02_Design/Signal Naming Convention.md",
     "02_Design/ReadMe.md",
-    "01_Development/ReadMe.md",
     "Resources/affinity_logo.png",
     "Resources/google_sheets_logo.png",
     "Resources/python_logo.png",
