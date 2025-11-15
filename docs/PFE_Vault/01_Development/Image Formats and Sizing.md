@@ -25,6 +25,17 @@ Loading times is important for a UI heavy game where textures can be loaded dyna
 
 Regardless of the image format in the res:// folder, the user:// image format must be in WebP as it has the fastest load times in Godot. Being designed for websites, WebP is built in fast decoding and encoding time in mind. This means, images will be loaded just slightly faster than PNGs. 
 
+
+## Image Dimensions
+
+
+| Type of File     | Ideal Width | Ideal Height | Color Depth | Format res:// | Format user:// |
+| ---------------- | ----------- | ------------ | ----------- | ------------- | -------------- |
+| Any Type of Logo | 256         | 256          | 32          | jxl           | webp           |
+| Territory Flag   | 256         | 384          | 32          | jxl           | webp           |
+
+
+
 ## Conclusion
 
 To save memory space and speed up image loading times, we shall use WebP images in the user:// folder. For the res:// folder, we can either use WebP or ideally JPEG XL images. 
