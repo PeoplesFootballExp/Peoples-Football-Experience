@@ -1,10 +1,10 @@
 [package]
-name = "pfe_rust"
+name = "img2jxl"
 version = "0.1.0"
 edition = "2024"
 
-[lib]
-crate-type = ["cdylib"]
-
 [dependencies]
-godot = "0.4.0"   # For integration with Godot
+image = "0.25"  # Used for generic image manipulation and pixel formats
+webp = "0.3.1"    # Used for WebP encoding
+jxl-oxide = { version = "0.12", features = ["image"] } # Pure Rust JXL decoder
+rayon = "1.8"
