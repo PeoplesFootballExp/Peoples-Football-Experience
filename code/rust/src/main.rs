@@ -160,8 +160,8 @@ pub fn convert_assets_to_webp(
 }
 
 fn main() {
-    let source_path = Path::new("G:/My Drive/Assets/2D Assets/Game 2D Assets/Testing"); // Assuming this path now contains your PNG files too
-    let webp_path = Path::new("C:/Rust/2D Asset WebP From PNG/");
+    let source_path = Path::new(""); // Assuming this path now contains your PNG files too
+    let webp_path = Path::new("");
     
     // Renamed function to reflect it now handles both types
     match convert_assets_to_webp(source_path, webp_path, 90.0) { 
