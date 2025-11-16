@@ -41,7 +41,7 @@ fn encode_to_webp(image: DynamicImage, output_path: &Path) -> TaskResult {
     std::fs::write(output_path, lossy_image.as_bytes())
         .map_err(|e| Box::new(e) as Box<dyn std::error::Error + Send>)?;
     
-    println!("Saved: {}", output_path.display());
+    // println!("Saved: {}", output_path.display());
     Ok(())
 }
 
@@ -65,11 +65,11 @@ fn process_png_file(input_path: PathBuf, output_path: PathBuf) -> TaskResult {
 }
 
 
-// --- JXL CONVERSION FUNCTION (RENAMED) ---
+// --- JXL CONVERSION FUNCTION ---
 
 /// Handles the decoding of one JXL file and saves it as a WebP file.
 fn process_jxl_file(input_path: PathBuf, output_path: PathBuf) -> TaskResult {
-    println!("Processing JXL: {}", input_path.file_name().unwrap_or_default().to_string_lossy());
+    // println!("Processing JXL: {}", input_path.file_name().unwrap_or_default().to_string_lossy());
     
     // 1. Ensure output directory exists
     let parent_dir = output_path.parent().ok_or_else(|| custom_error("Invalid output path directory"))?;
@@ -114,7 +114,7 @@ pub fn convert_assets_to_webp(
                 
                 let conversion_fn: Option<fn(PathBuf, PathBuf) -> TaskResult> = match ext.as_str() {
                     "jxl" => Some(process_jxl_file),
-                    "png" => Some(process_png_file), // NEW: Handler for PNG
+                    "png" => Some(process_png_file),
                     _ => None,
                 };
                 
@@ -160,11 +160,11 @@ pub fn convert_assets_to_webp(
 }
 
 fn main() {
-    let source_path = Path::new(""); // Assuming this path now contains your PNG files too
-    let webp_path = Path::new("");
+    let source_path = Path::new("G:/My Drive/Assets/2D Asset JXL 90 Quality/"); // Assuming this path now contains your PNG files too
+    let webp_path = Path::new("C:/Assets Testing/2D Assets WebP");
     
     // Renamed function to reflect it now handles both types
-    match convert_assets_to_webp(source_path, webp_path, 90.0) { 
+    match convert_assets_to_webp(source_path, webp_path, 100.0) { 
         Ok(_) => {}, 
         Err(e) => eprintln!("\nFatal initialization error: {}", e),
     }

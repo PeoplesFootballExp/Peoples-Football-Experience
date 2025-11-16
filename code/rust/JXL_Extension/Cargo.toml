@@ -1,0 +1,8 @@
+[package]
+name = "JXL_Extension"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+godot = "0.4.2"
+jxl-oxide = "0.12.5"
