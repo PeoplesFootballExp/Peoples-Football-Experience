@@ -6,13 +6,9 @@ extends Node
 ## between res:// and user://
 ## ---------------------------------
 
-
-enum AssetType {FLAG,TEAMLOGO,CONFEDLOGO,KIT,TOURLOGO};
-
-
 # Temporary Cache: Useful for constantly changing textures but can save time for cache hits
 # Sort of like a FIFO cache
-const MAX_CACHE_SIZE = 200
+const MAX_CACHE_SIZE = 1000
 var _temp_cache: Dictionary[String, CompressedTexture2D] = {}
 
 # Permenent Cache,useful for consistent data for an entire scene 
@@ -21,7 +17,7 @@ var _perm_cache: Dictionary[String, CompressedTexture2D] = {}  # optional runtim
 # ---------------------------------
 # Move an asset from res:// to user:// (e.g., database, save files)
 # ---------------------------------
-func move_to_user(path_res: String, type: AssetType, overwrite := false) -> String:
+func move_to_user(path_res: String, overwrite := false) -> String:
 	var filename = path_res.get_file()
 	var user_path = "user://%s" % filename
 

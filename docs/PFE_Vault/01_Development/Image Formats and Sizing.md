@@ -45,6 +45,10 @@ Texture Arrays are great for textures that are all the same size and image forma
 
 While we may not be able to reduce the loading time of an individual image lower, we can decrease the amount of time the game is stalled by the image loading. For one, we can asynchronously access the image, reducing the stuttering that many games see from image accessing. This is perfect for single core devices, as we can use the single core multiple threads to reduce stuttering. For multi core devices, we can achieve even faster load times by loading in the images in parallel, reducing the total time spent loading all the images even if we can't reduce the single image loading time down any further. Even for mobile, most smartphones these days have around the range of 6-10 cores, with some older phones have as little as 1 or 4 cores.
 
+### Method 5: Loading from res:// instead of user://
+
+According to the official Godot Docs, it seems that there are some small optimizations when reading images imported directly into the res:// project folder. After extensive testing, both in debug mode and from a exported executable, res:// loading does seem to be slightly faster than loading from user:// but user:// is fast enough (usually just a few ms slower) compared to res:// loading, allowing us to continue using the user:// folder. Regardless, if we truly want to squeeze out a couple of loading times, we can switch to res:// folder asset loading. 
+
 ## Image Dimensions
 
 
