@@ -335,7 +335,7 @@ var opp_team_display: PanelContainer = $MarginContainer/TeamSelectedDisplay/OppT
 func _ready() -> void:
 	# Create a new save, only for testing
 	# TODO: Move this to save file selection and creation scene
-	#SaveManager.create_new_save(1, "Testing");
+	SaveManager.create_new_save(1, "Testing");
 	
 	# Activate the current save file, for now just use slot 1
 	# TODO: Move to a save file selection scene
@@ -473,7 +473,7 @@ func populate_team_grid(grid: GridContainer, tile: PackedScene, data: Array[Dict
 		grid.add_child(tile_scene)
 		
 		# Load Icon, if any, else ignore
-		var icon = AssetManager.load_asset(row[data_icon_path], true);confed_button
+		var icon = AssetManager.load_asset(row[data_icon_path], true);
 		if icon:
 			tile_scene.set_tile_and_icon(row["name"], icon)
 

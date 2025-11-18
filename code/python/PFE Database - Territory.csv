@@ -1,265 +1,265 @@
 id,name,logo_path,parent_id,confed_id,official_name,alt_name,code,demonym,is_active,league_elo,global_elo,national_elo,population,area,gdp,language_id,climate_id,hemisphere_id,enthusiasm
-1,Abkhazia,res://assets/textures/territory_logo/1.png,86,9,Republic of Abkhazia,,ABH,Abkhazian,0,,,750.3,244000,8665,1200000000,1,1,1,5
-2,Afghanistan,res://assets/textures/territory_logo/2.png,,20,Islamic Emirate of Afghanistan,,AFG,Afghan,1,,,991.19,42650000,652864,91668000000,68,2,1,4
-3,Akrotiri and Dhekelia,res://assets/textures/territory_logo/3.png,70,10,Sovereign Base Areas of Akrotiri and Dhekelia,,AAD,Akrotiri Dhekelian,0,,,600.3,18195,254,5400000000,19,4,1,5
-4,Aland Islands,res://assets/textures/territory_logo/4.png,80,8,Åland,,ALA,Ålander,0,,,700.3,30654,1580,1600000000,90,4,1,5
-5,Albania,res://assets/textures/territory_logo/5.png,,9,Republic of Albania,,ALB,Albanian,1,,,1401.34,2402113,28748,63080000000,2,2,1,5
-6,Algeria,res://assets/textures/territory_logo/6.png,,16,People's Democratic Republic of Algeria,,ALG,Algerian,1,,,1510.26,47400000,2381741,875330000000,3,1,1,5
-7,American Samoa,res://assets/textures/territory_logo/7.png,252,26,American Samoa,,ASA,American Samoan,1,,,883.17,44620,77,709000000,76,5,3,2
-8,Andorra,res://assets/textures/territory_logo/8.png,,11,Principality of Andorra,,AND,Andorran,1,,,955.1,87486,467,6001000000,12,2,1,4
-9,Angola,res://assets/textures/territory_logo/9.png,,18,Republic of Angola,,ANG,Angolan,1,,,1267.45,39040039,1246700,402160000000,73,5,3,5
-10,Anguilla,res://assets/textures/territory_logo/10.png,70,12,Anguilla,,AIA,Aguillan,1,,,758.52,15753,91,311000000,19,5,3,3
-11,Antigua and Barbuda,res://assets/textures/territory_logo/11.png,,12,Antigua and Barbuda,,ATG,Antigua and Barbudan,1,,,992.38,100772,440,3300000000,19,5,3,3
-12,Argentina,res://assets/textures/territory_logo/12.png,,3,Argentine Republic,,ARG,Argentian,1,,,1872.43,46735004,2780085,1493000000000,86,4,2,5
-13,Armenia,res://assets/textures/territory_logo/13.png,,9,Republic of Armenia,,ARM,Armenian,1,,,1204.7,3081100,29743,74407000000,4,2,1,5
-14,Aruba,res://assets/textures/territory_logo/14.png,162,12,Country of Aruba,,ARU,Aruban,1,,,861.16,108880,180,5502000000,67,1,3,5
-15,Ascension Island,res://assets/textures/territory_logo/15.png,70,19,Ascension Island,,ACI,Ascension Islander,0,,,645.03,806,88,31100000,19,1,3,5
-16,Australia,res://assets/textures/territory_logo/16.png,,23,Commonwealth of Australia,,AUS,Australian,1,,,1584.02,28113200,7688287,1980000000000,19,1,2,2
-17,Austria,res://assets/textures/territory_logo/17.png,,11,Republic of Austria,,AUT,Austrian,1,,,1586.98,9027999,83879,682860000000,28,4,1,5
-18,Azerbaijan,res://assets/textures/territory_logo/18.png,,9,Republic of Azerbaijan,,AZE,Azerbaijani,1,,,1142.25,10353296,86600,272000000000,5,1,1,4
-19,Bahamas,res://assets/textures/territory_logo/19.png,,12,Commonwealth of the Bahamas,,BAH,Bahamian,1,,,807.36,412628,13943,18989000000,20,5,3,3
-20,Bahrain,res://assets/textures/territory_logo/20.png,,24,Kingdom of Bahrain,,BHR,Bahraini,1,,,1267.16,1463265,786,105600000000,3,1,1,5
-21,Bangladesh,res://assets/textures/territory_logo/21.png,,22,People's Republic of Bangladesh,,BAN,Bangladeshi,1,,,894.06,171466990,148460,1780000000000,8,5,3,4
-22,Barbados,res://assets/textures/territory_logo/22.png,,12,Barbados,,BRB,Barbadian,1,,,919.97,281998,439,5436000000,19,5,3,3
-23,Belarus,res://assets/textures/territory_logo/23.png,,9,Republic of Belarus,,BLR,Belarusian,1,,,1212.78,9109280,207600,221186000000,7,2,1,5
-24,Belgium,res://assets/textures/territory_logo/24.png,,11,Kingdom of Belgium,,BEL,Belgian,1,,,1740.01,11825551,30689,889833000000,17,4,1,5
-25,Belize,res://assets/textures/territory_logo/25.png,,13,Belize,,BLZ,Belizean,1,,,904.45,397483,22966,6414000000,19,5,3,5
-26,Benin,res://assets/textures/territory_logo/26.png,,19,Republic of Benin,,BEN,Beninese,1,,,1259.39,13754688,114763,59241000000,26,5,3,5
-27,Bermuda,res://assets/textures/territory_logo/27.png,,12,Bermuda,,BER,Bermudan,1,,,976.75,63913,53,7484000000,19,5,3,4
-28,Bhutan,res://assets/textures/territory_logo/28.png,,22,Kingdom of Bhutan,,BHU,Bhutanese,1,,,876.56,777486,38394,14110000000,18,4,1,3
-29,Bolivia,res://assets/textures/territory_logo/29.png,,3,Plurinational State of Bolivia,,BOL,Bolivian,1,,,1334.55,11365333,1098581,144098000000,86,5,3,5
-30,Bonaire,res://assets/textures/territory_logo/30.png,162,12,Bonaire,,BOE,Bonairean,1,,,760.93,26552,288,628000000,67,5,3,5
-31,Bosnia and Herzegovina,res://assets/textures/territory_logo/31.png,,9,Bosnia and Herzegovina,Bosnia,BIH,Bosnian,1,,,1341.36,2904256,51209,78650000000,78,4,1,5
-32,Botswana,res://assets/textures/territory_logo/32.png,,18,Republic of Botswana,,BOT,Motswana,1,,,1084.56,2359609,581730,54647000000,19,1,3,5
-33,Brazil,res://assets/textures/territory_logo/33.png,,3,Federative Republic of Brazil,,BRA,Brazilian,1,,,1758.85,213421037,8515767,4958000000000,73,5,3,5
-34,British Virgin Islands,res://assets/textures/territory_logo/34.png,70,12,Virgin Islands,,VGB,Virgin Islander,1,,,765.41,30030,153,500000000,19,5,3,3
-35,Brunei,res://assets/textures/territory_logo/35.png,,23,Brunei Darussalam,,BRU,Bruneians,1,,,881.74,466227,5765,43830000000,54,5,3,5
-36,Bulgaria,res://assets/textures/territory_logo/36.png,,9,Republic of Bulgaria,,BUL,Bulgarian,1,,,1263.07,6437360,110993,264699000000,10,2,1,5
-37,Burkina Faso,res://assets/textures/territory_logo/37.png,,19,Burkina Faso,,BFA,Burkinabé,1,,,1398.05,22489126,274223,72820000000,59,1,3,5
-38,Burundi,res://assets/textures/territory_logo/38.png,,17,Republic of Burundi,,BDI,Burundian,1,,,1060.22,14151540,27834,13980000000,44,5,3,5
-39,Cambodia,res://assets/textures/territory_logo/39.png,,23,Kingdom of Cambodia,,CAM,Cambodian,1,,,910.21,17638801,181035,150050000000,42,5,3,5
-40,Cameroon,res://assets/textures/territory_logo/40.png,,15,Republic of Cameroon,,CMR,Cameroonians,1,,,1453.71,30987821,475442,173034000000,26,5,3,5
-41,Canada,res://assets/textures/territory_logo/41.png,,14,Canada,,CAN,Candians,1,,,1554.63,41651653,9984670,2730000000000,19,2,1,3
-42,Cape Verde,res://assets/textures/territory_logo/42.png,,19,Republic of Cabo Verde,Cabo Verde,CPV,Cape Verdean,1,,,1364.26,593149,4033,5717000000,73,1,3,5
-43,Cayman Islands,res://assets/textures/territory_logo/43.png,70,12,Cayman Islands,,CAY,Cayman Islander,1,,,853.37,87866,259,7139000000,19,5,3,5
-44,Central African Republic,res://assets/textures/territory_logo/44.png,,15,Central African Republic,,CTA,Central African,1,,,1083.57,5650957,622984,5678000000,26,5,3,5
-45,Chad,res://assets/textures/territory_logo/45.png,,15,Republic of Chad,,CHA,Chadian,1,,,913.87,19093595,1280000,32375000000,3,1,3,5
-46,Chile,res://assets/textures/territory_logo/46.png,,3,Republic of Chile,,CHI,Chilean,1,,,1446.93,19629588,756101,674388000000,86,4,2,5
-47,China,res://assets/textures/territory_logo/47.png,,21,People's Republic of China,PR China,CHN,Chinese,1,,,1249.06,1408280000,9596961,41016000000000,87,4,1,3
-48,Christmas Island,res://assets/textures/territory_logo/48.png,16,23,Territory of Christmas Island,,CMI,Christmas Islander,0,,,500,1692,135,52000000,19,5,3,1
-49,Cocos Islands,res://assets/textures/territory_logo/49.png,16,23,Territory of Cocos (Keeling) Islands,Cocos (Keeling) Islands,COI,Coco Islander,0,,,500,593,14,11012550,54,5,3,1
-50,Colombia,res://assets/textures/territory_logo/50.png,,3,Republic of Colombia,,COL,Colombian,1,,,1695.72,52695952,1141748,1042000000000,86,5,3,5
-51,Comoros,res://assets/textures/territory_logo/51.png,,18,Union of the Comoros,,COM,Comorian,1,,,1180.18,883075,2035,3432000000,13,5,3,5
-52,Congo,res://assets/textures/territory_logo/52.png,,15,Republic of the Congo,Congo-Brazzaville,CGO,Congolese,1,,,1105.96,6228784,343000,42760000000,26,5,3,5
-53,Cook Islands,res://assets/textures/territory_logo/53.png,,26,Cook Islands,,COK,Cook Islander,1,,,877.53,15040,236,384000000,19,5,3,3
-54,Costa Rica,res://assets/textures/territory_logo/54.png,,13,Republic of Costa Rica,,CRC,Costa Rican,1,,,1483.74,5044197,51179,169034000000,86,5,3,5
-55,Croatia,res://assets/textures/territory_logo/55.png,,9,Republic of Croatia,,CRO,Croatian,1,,,1710.15,3861967,56561,198310000000,78,2,1,5
-56,Cuba,res://assets/textures/territory_logo/56.png,,12,Republic of Cuba,,CUB,Cuban,1,,,975.34,10966038,110860,254865000000,86,5,3,3
-57,Curaçao,res://assets/textures/territory_logo/57.png,,12,Country of Curaçao,,CUW,Curaçaoan,1,,,1295.52,155826,444,5500000000,67,1,3,3
-58,Cyprus,res://assets/textures/territory_logo/58.png,,10,Republic of Cyprus,,CYP,Cypriot,1,,,1137.43,932272,9251,61501000000,30,1,1,5
-59,Czechia,res://assets/textures/territory_logo/59.png,,9,Czech Republic,,CZE,Czech,1,,,1484.68,10900555,78871,619881000000,14,4,1,4
-60,Denmark,res://assets/textures/territory_logo/60.png,,8,Kingdom of Denmark,Danish Realm,DEN,Danish,1,,,1641.02,6001008,43094,533752000000,15,4,1,5
-61,Djibouti,res://assets/textures/territory_logo/61.png,,17,Republic of Djibouti,,DJI,Djiboutian,1,,,847.89,1066809,23200,7193000000,85,1,3,5
-62,Dominica,res://assets/textures/territory_logo/62.png,,12,Commonwealth of Dominica,,DMA,Dominican,1,,,901.37,72412,750,688000000,19,5,3,2
-63,Dominican Republic,res://assets/textures/territory_logo/63.png,,12,Dominican Republic,,DOM,Dominican,1,,,1073.54,11532151,48671,334292000000,86,5,3,3
-64,DR Congo,res://assets/textures/territory_logo/64.png,,15,Democratic Republic of the Congo,Congo-Kinshasa,COD,Congolese,1,,,1421.32,112832473,2345409,200760000000,26,5,3,5
-65,Timor-Leste,res://assets/textures/territory_logo/65.png,,23,Democratic Republic of Timor-Leste,East Timor,TLS,Timorese,1,,,840.27,1354662,14950,6970000000,73,5,3,5
-66,Easter Island,res://assets/textures/territory_logo/66.png,46,26,Easter Island,,EAI,Easter Islander,0,,,670.39,7750,163,120000000,86,5,3,5
-67,Ecuador,res://assets/textures/territory_logo/67.png,,3,Republic of Ecuador,,ECU,Ecuadorian,1,,,1589.72,17483326,283561,268100000000,86,5,3,5
-68,Egypt,res://assets/textures/territory_logo/68.png,,16,Arab Republic of Egypt,,EGY,Egyptian,1,,,1525.31,109450000,1010408,2372000000000,3,1,1,5
-69,El Salvador,res://assets/textures/territory_logo/69.png,,13,Republic of El Salvador,,SLV,Salvadoran,1,,,1247.77,6029976,21041,88323000000,86,5,3,5
-70,England,res://assets/textures/territory_logo/70.png,,11,England,,ENG,English,1,,,1824.3,58620101,132932,2113000000000,19,4,1,5
-71,Equatorial Guinea,res://assets/textures/territory_logo/71.png,,15,Republic of Equatorial Guinea,,EQG,Equatoguinean,1,,,1229.91,1795834,28050,33001000000,86,5,3,5
-72,Eritrea,res://assets/textures/territory_logo/72.png,,17,State of Eritrea,,ERI,Eritrean,1,,,934.29,3536000,120000,6369000000,93,1,3,4
-73,Estonia,res://assets/textures/territory_logo/73.png,,8,Republic of Estonia,,EST,Estonian,1,,,1122.25,1373101,45335,68240000000,21,2,1,4
-74,Eswatini,res://assets/textures/territory_logo/74.png,,18,Kingdom of Eswatini,Swaziland,SWZ,Swazi,1,,,1010.52,1236126,17364,13797000000,89,5,3,5
-75,Ethiopia,res://assets/textures/territory_logo/75.png,,17,Federal Democratic Republic of Ethiopia,,ETH,Ethiopian,1,,,1055.36,109499000,1104300,486830000000,64,1,3,5
-76,Falkland Islands,res://assets/textures/territory_logo/76.png,70,3,Falkland Islands,The Falklands,FKI,Falkland Islander,0,,,800.36,3662,12173,228500000,19,3,2,3
-77,Faroe Islands,res://assets/textures/territory_logo/77.png,60,8,Faroe Islands,Faroes,FRO,Faroe Islander,1,,,1132.41,54885,1393,3126000000,22,3,1,5
-78,Federated States of Micronesia,res://assets/textures/territory_logo/78.png,,27,Federated States of Micronesia,Micronesia,FSM,Micronesian,0,,,704.5,104468,702,451000000,19,5,3,2
-79,Fiji,res://assets/textures/territory_logo/79.png,,25,Republic of Fiji,,FIJ,Fijian,1,,,1035.11,926276,18274,15152000000,23,5,3,3
-80,Finland,res://assets/textures/territory_logo/80.png,,8,Republic of Finland,,FIN,Finnish,1,,,1360.27,5635971,338455,373160000000,25,3,1,3
-81,France,res://assets/textures/territory_logo/81.png,,11,French Republic,,FRA,French,1,,,1862.71,68605616,632702,4504000000000,26,4,1,5
-82,French Guiana,res://assets/textures/territory_logo/82.png,81,12,French Guiana,Guyane,GUF,French Guianan,1,,,840.56,292354,84000,4562000000,26,5,3,5
-83,French Polynesia,res://assets/textures/territory_logo/83.png,81,26,French Polynesia,,TAH,French Polynesian,1,,,1019.04,278786,4167,6007000000,26,5,3,5
-84,Gabon,res://assets/textures/territory_logo/84.png,,15,Gabonese Republic,,GAB,Gabonese,1,,,1329.91,2397368,267668,41922000000,26,5,3,5
-85,The Gambia,res://assets/textures/territory_logo/85.png,,19,Republic of the Gambia,,GAM,Gambian,1,,,1162.12,2422712,11300,7502000000,19,5,3,5
-86,Georgia,res://assets/textures/territory_logo/86.png,,9,Georgia,,GEO,Georgian,1,,,1365.92,3657000,69700,113580000000,27,4,1,5
-87,Germany,res://assets/textures/territory_logo/87.png,,11,Federal Republic of Germany,,GER,German,1,,,1713.3,83491249,357114,6154000000000,28,4,1,5
-88,Ghana,res://assets/textures/territory_logo/88.png,,19,Republic of Ghana,,GHA,Ghanaian,1,,,1356.4,35039451,240000,295120000000,19,5,3,5
-89,Gibraltar,res://assets/textures/territory_logo/89.png,70,10,Gibraltar,,GIB,Gibraltarian,1,,,823.32,34003,7,1640000000,19,4,1,5
-90,Gozo,res://assets/textures/territory_logo/90.png,144,10,Gozo,,GZO,Gozitans,0,,,678.34,39287,67,869000000,55,4,1,5
-91,Greece,res://assets/textures/territory_logo/91.png,,10,Hellenic Republic,,GRE,Greek,1,,,1472.99,10400720,131957,466945000000,30,4,1,5
-92,Greenland,res://assets/textures/territory_logo/92.png,60,4,Greenland,,GRL,Greenlander,0,,,749.58,56831,2166086,4480000000,31,3,1,5
-93,Grenada,res://assets/textures/territory_logo/93.png,,12,Grenada,,GRN,Grenadian,1,,,986.48,114621,344,2300000000,19,5,3,3
-94,Guadeloupe,res://assets/textures/territory_logo/94.png,81,12,Guadeloupe,,GLP,Guadeloupean,1,,,928.74,378561,1628,9462000000,26,5,3,5
-95,Guam,res://assets/textures/territory_logo/95.png,252,21,Guam,,GUM,Guamanian,1,,,823.08,168801,210,5800000000,19,5,3,2
-96,Guatemala,res://assets/textures/territory_logo/96.png,,13,Republic of Guatemala,,GUA,Guatemalan,1,,,1241.52,17980803,108889,278508000000,86,5,3,5
-97,Guernsey,res://assets/textures/territory_logo/97.png,70,11,Guernsey,,GGY,Guernseyman,0,,,925.24,63950,62,3272000000,19,4,1,4
-98,Guinea,res://assets/textures/territory_logo/98.png,,19,Republic of Guinea,,GUI,Guinean,1,,,1305.22,13986179,245857,75050000000,26,5,3,5
-99,Guinea-Bissau,res://assets/textures/territory_logo/99.png,,19,Republic of Guinea-Bissau,,GNB,Bissau-Guinean,1,,,1108.09,2080000,36125,6620000000,73,5,3,5
-100,Guyana,res://assets/textures/territory_logo/100.png,,12,Co-operative Republic of Guyana,,GUY,Guyanese,1,,,1037.34,835986,214969,75294000000,19,5,3,3
-101,Haiti,res://assets/textures/territory_logo/101.png,,12,Republic of Haiti,,HAI,Haitian,1,,,1268.32,11470261,27700,38200000000,32,5,3,5
-102,Hawaii,res://assets/textures/territory_logo/102.png,252,4,Hawaii,,HWI,Hawaiian,0,,,793.45,1446146,10931,117600000000,19,5,3,1
-103,Honduras,res://assets/textures/territory_logo/103.png,,13,Republic of Honduras,,HON,Honduran,1,,,1396.23,9571352,112492,75030000000,86,5,3,5
-104,Hong Kong,res://assets/textures/territory_logo/104.png,47,21,Hong Kong,,HKG,Hongkonger,1,,,1052.54,7498100,2754,589810000000,87,5,3,5
-105,Hungary,res://assets/textures/territory_logo/105.png,,9,Hungary,,HUN,Hungarian,1,,,1504.92,9584627,93030,469647000000,36,4,1,5
-106,Iceland,res://assets/textures/territory_logo/106.png,,8,Iceland,,ISL,Icelander,1,,,1344.84,391810,103125,31076000000,37,3,1,5
-107,India,res://assets/textures/territory_logo/107.png,,22,Republic of India,,IND,Indian,1,,,1096.65,1428627663,3287263,17647000000000,35,5,1,3
-108,Indonesia,res://assets/textures/territory_logo/108.png,,23,Republic of Indonesia,,IDN,Indonesian,1,,,1144.73,284438782,1904569,5009000000000,38,5,3,5
-109,Iran,res://assets/textures/territory_logo/109.png,,20,Islamic Republic of Iran,Persia,IRN,Iranian,1,,,1618.28,92417681,1648195,1746000000000,69,1,1,5
-110,Iraq,res://assets/textures/territory_logo/110.png,,24,Republic of Iraq,,IRQ,Iraqi,1,,,1428.69,46118793,438317,690090000000,3,1,1,5
-111,Ireland,res://assets/textures/territory_logo/111.png,,11,Republic of Ireland,,IRL,Irish,1,,,1401.18,5380300,70273,736730000000,19,4,1,3
-112,Isle of Man,res://assets/textures/territory_logo/112.png,70,11,Isle of Man,Mann,IOM,Manx,0,,,835.43,84523,574,7931000000,19,4,1,3
-113,Isle of Wight,res://assets/textures/territory_logo/113.png,70,11,Isle of Wight,,IOW,Vectian,0,,,846.75,141660,380,3100000000,19,4,1,4
-114,Isles of Scilly,res://assets/textures/territory_logo/114.png,70,10,Isles of Scilly,,SCI,Scillonian,0,,,683.46,2366,16,9500000000,19,4,1,4
-115,Israel,res://assets/textures/territory_logo/115.png,,9,State of Israel,,ISR,Israeli,1,,,1324.57,10119400,22072,567550000000,34,1,1,5
-116,Italy,res://assets/textures/territory_logo/116.png,,10,Italian Republic,,ITA,Italian,1,,,1717.15,58934177,301340,3719000000000,39,4,1,5
-117,Ivory Coast,res://assets/textures/territory_logo/117.png,,19,Republic of Côte d'Ivoire,Côte d'Ivoire,CIV,Ivorian,1,,,1491.78,31500000,322462,202647000000,26,5,3,5
-118,Jamaica,res://assets/textures/territory_logo/118.png,,12,Jamaica,,JAM,Jamaican,1,,,1367.18,2824913,10991,33775000000,19,5,3,3
-119,Japan,res://assets/textures/territory_logo/119.png,,21,Japan,,JPN,Japanese,1,,,1645.34,123360000,377975,6758000000000,40,2,1,3
-120,Jersey,res://assets/textures/territory_logo/120.png,70,11,Bailiwick of Jersey,,JER,Jersey Islanders,0,,,794.03,103267,119,4570000000,19,4,1,4
-121,Jordan,res://assets/textures/territory_logo/121.png,,24,Hashemite Kingdom of Jordan,,JOR,Jordanian,1,,,1380.87,11484805,89342,132092000000,3,1,1,5
-122,Kazakhstan,res://assets/textures/territory_logo/122.png,,9,Republic of Kazakhstan,,KAZ,Kazakh,1,,,1168.47,20286084,2724900,904500000000,41,2,1,5
-123,Kenya,res://assets/textures/territory_logo/123.png,,17,Republic of Kenya,,KEN,Kenyan,1,,,1185.55,52428290,580367,401970000000,88,1,3,5
-124,Kiribati,res://assets/textures/territory_logo/124.png,,27,Republic of Kiribati,,KIR,I-Kiribati,1,,,803.56,121388,811,297000000,29,5,3,5
-125,Kosovo,res://assets/textures/territory_logo/125.png,,9,Republic of Kosovo,,KOS,Kosovar,1,,,1284.73,1585566,10887,29723000000,2,2,1,5
-126,Kuwait,res://assets/textures/territory_logo/126.png,,24,State of Kuwait,,KUW,Kuwaiti,1,,,1096.82,4985716,17818,260500000000,3,1,1,5
-127,Kyrgyzstan,res://assets/textures/territory_logo/127.png,,20,Kyrgyz Republic,,KGZ,Kyrgyz,1,,,1201.22,7300000,200105,55200000000,47,2,1,5
-128,Laos,res://assets/textures/territory_logo/128.png,,23,Lao People's Democratic Republic,,LAO,Lao,1,,,877.05,7953556,236800,78850000000,48,5,3,5
-129,Latvia,res://assets/textures/territory_logo/129.png,,8,Republic of Latvia,,LVA,Latvian,1,,,1084.26,1842226,64589,78421000000,49,4,1,2
-130,Lebanon,res://assets/textures/territory_logo/130.png,,24,Republic of Lebanon,,LBN,Lebanese,1,,,1184.68,5364482,10452,78233000000,3,4,1,4
-131,Lesotho,res://assets/textures/territory_logo/131.png,,18,Kingdom of Lesotho,,LES,Mosotho,1,,,1069.83,2210646,30355,6915000000,79,4,2,5
-132,Liberia,res://assets/textures/territory_logo/132.png,,19,Republic of Liberia,,LBR,Liberian,1,,,1084.46,5437249,43000,11420000000,19,5,3,5
-133,Libya,res://assets/textures/territory_logo/133.png,,16,State of Libya,,LBY,Libyan,1,,,1177.77,7361263,1759541,123990000000,3,1,1,5
-134,Liechtenstein,res://assets/textures/territory_logo/134.png,,11,Principality of Liechtenstein,,LIE,Liechtensteiner,1,,,801.99,41232,160,7172000000,28,2,1,5
-135,Lithuania,res://assets/textures/territory_logo/135.png,,8,Republic of Lithuania,,LTU,Lithuanian,1,,,1055.58,2897430,65300,161454000000,50,4,1,3
-136,Luxembourg,res://assets/textures/territory_logo/136.png,,11,Grand Duchy of Luxembourg,,LUX,Luxembourger,1,,,1231.8,681973,2586,106505000000,51,2,1,5
-137,Macau,res://assets/textures/territory_logo/137.png,47,21,Macau,Macao,MAC,Macau,1,,,865.29,712651,172,92995000000,87,5,3,4
-138,Madagascar,res://assets/textures/territory_logo/138.png,,18,Republic of Madagascar,,MAD,Malagasy,1,,,1193.48,31964956,592796,56754000000,53,5,3,5
-139,Madeira,res://assets/textures/territory_logo/139.png,188,10,Autonomous Region of Madeira,,MDR,Madeiran,0,,,837.56,250769,801,6989000000,73,4,1,5
-140,Malawi,res://assets/textures/territory_logo/140.png,,18,Republic of Malawi,,MWI,Malawian,1,,,1129.89,21240689,118484,37919000000,19,5,3,5
-141,Malaysia,res://assets/textures/territory_logo/141.png,,23,Malaysia,,MAS,Malaysian,1,,,1161.53,34564810,330803,1470000000000,54,5,3,5
-142,Maldives,res://assets/textures/territory_logo/142.png,,22,Republic of Maldives,,MDV,Maldivian,1,,,954.53,601269,298,13867000000,16,5,3,5
-143,Mali,res://assets/textures/territory_logo/143.png,,19,Republic of Mali,,MLI,Malian,1,,,1455.78,21990607,1240192,72740000000,6,1,3,5
-144,Malta,res://assets/textures/territory_logo/144.png,,10,Republic of Malta,,MLT,Maltese,1,,,979.18,519562,316,36870000000,55,4,1,5
-145,Marshall Islands,res://assets/textures/territory_logo/145.png,,27,Republic of the Marshall Islands,,MAL,Marshallese,0,,,500,42418,181,215000000,56,5,3,3
-146,Martinique,res://assets/textures/territory_logo/146.png,81,12,Martinique,,MTQ,Marinican,1,,,835.6,349925,1128,9082000000,26,5,3,5
-147,Mauritania,res://assets/textures/territory_logo/147.png,,19,Islamic Republic of Mauritania,,MTN,Mauritanian,1,,,1179.2,4328040,1030000,40060000000,3,1,3,5
-148,Mauritius,res://assets/textures/territory_logo/148.png,,18,Republic of Mauritius,,MRI,Mauritian,1,,,915.51,1235260,2040,42810000000,57,5,3,5
-149,Mayotte,res://assets/textures/territory_logo/149.png,81,18,Department of Mayotte,,MAY,Mahoran,0,,,639.4,320901,374,2932000000,26,5,3,5
-150,Mexico,res://assets/textures/territory_logo/150.png,,14,United Mexican States,,MEX,Mexican,1,,,1682.52,131946900,1971550,3396000000000,86,1,1,5
-151,Moldova,res://assets/textures/territory_logo/151.png,,9,Republic of Moldova,,MDA,Moldovan,1,,,1020.2,2381325,33843,46651000000,74,2,1,5
-152,Monaco,res://assets/textures/territory_logo/152.png,,11,Principality of Monaco,,MON,Monégasque,0,,,500,38423,2084,8924000000,26,4,1,5
-153,Mongolia,res://assets/textures/territory_logo/153.png,,21,Mongolia,,MNG,Mongolian,1,,,879.75,3504741,1564116,73280000000,58,1,1,2
-154,Montenegro,res://assets/textures/territory_logo/154.png,,9,Montenegro,,MNE,Montenegrin,1,,,1297.88,623327,13883,17431000000,78,2,1,3
-155,Montserrat,res://assets/textures/territory_logo/155.png,70,12,Montserrat,,MSR,Montserratian,1,,,916.75,4390,102,63000000,19,5,3,3
-156,Morocco,res://assets/textures/territory_logo/156.png,,16,Kingdom of Morocco,,MAR,Moroccan,1,,,1710.11,37493183,446550,424870000000,3,1,1,5
-157,Mozambique,res://assets/textures/territory_logo/157.png,,18,Republic of Mozambique,,MOZ,Mozambican,1,,,1227.53,34881007,801590,61950000000,73,5,3,5
-158,Myanmar,res://assets/textures/territory_logo/158.png,,23,Republic of the Union of Myanmar,Burma,MYA,Burmese,1,,,990.81,55770232,676579,326890000000,11,5,3,5
-159,Namibia,res://assets/textures/territory_logo/159.png,,18,Republic of Namibia,,NAM,Namibian,1,,,1162.79,3022401,825615,37730000000,19,1,3,5
-160,Nauru,res://assets/textures/territory_logo/160.png,,27,Republic of Nauru,,NAU,Nauruan,0,,,500,11919,21,132000000,60,5,3,2
-161,Nepal,res://assets/textures/territory_logo/161.png,,22,Federal Democratic Republic of Nepal,,NEP,Nepali,1,,,909.32,31122387,147516,169120000000,61,4,1,5
-162,Netherlands,res://assets/textures/territory_logo/162.png,,11,Kingdom of the Netherlands,,NED,Dutch,1,,,1759.96,18459900,41865,1526000000000,17,4,1,5
-163,New Caledonia,res://assets/textures/territory_logo/163.png,81,25,New Caledonia,,NCL,New Caledonian,1,,,1042.62,271407,18575,9480000000,26,5,3,5
-164,New Zealand,res://assets/textures/territory_logo/164.png,,26,New Zealand,,NZL,New Zealander,1,,,1283.3,5334680,263310,298670000000,19,4,2,2
-165,Nicaragua,res://assets/textures/territory_logo/165.png,,13,Republic of Nicaragua,,NCA,Nicaraguan,1,,,1106.83,6676948,130375,56697000000,86,5,3,2
-166,Niger,res://assets/textures/territory_logo/166.png,,19,Republic of the Niger,,NIG,Nigerien,1,,,1187,26342784,1267000,21870000000,33,1,3,5
-167,Nigeria,res://assets/textures/territory_logo/167.png,,19,Federal Republic of Nigeria,,NGA,Nigerian,1,,,1495.46,236747130,923769,1580000000000,19,5,3,5
-168,Niue,res://assets/textures/territory_logo/168.png,164,26,Niue,,NIU,Niuean,0,,,535.39,1937,261,18700000,62,5,3,2
-169,Norfolk Island,res://assets/textures/territory_logo/169.png,16,26,Norfolk Island,,NFK,Norfolk Islander,0,,,528.85,2188,34,60209000,19,5,3,1
-170,North Korea,res://assets/textures/territory_logo/170.png,,21,Democratic People's Republic of Korea,DPR Korea,PRK,North Korean,1,,,1151.05,26298666,120538,15416000000,45,2,1,5
-171,North Macedonia,res://assets/textures/territory_logo/171.png,,9,Republic of North Macedonia,,MKD,Macedonian,1,,,1390.6,1836713,25436,53345000000,52,2,1,5
-172,Northern Cyprus,res://assets/textures/territory_logo/172.png,58,10,Turkish Republic of Northern Cyprus,,NCP,Turkish Cypriot,0,,,1200.3,382836,3355,4234000000,97,4,1,5
-173,Northern Ireland,res://assets/textures/territory_logo/173.png,70,11,Northern Ireland,,NIR,Northern Irish,1,,,1366.27,1927855,14330,63300000000,19,4,1,4
-174,Northern Mariana Islands,res://assets/textures/territory_logo/174.png,252,21,Commonwealth of the Northern Mariana Islands,,MNP,Northern Mariana Islander,1,,,900.45,55650,464,1240000000,19,5,3,2
-175,Norway,res://assets/textures/territory_logo/175.png,,8,Kingdom of Norway,,NOR,Norwegian,1,,,1532.14,5601049,385207,606590000000,63,3,1,5
-176,Oman,res://assets/textures/territory_logo/176.png,,24,Sultanate of Oman,,OMA,Omani,1,,,1312.32,5494691,309500,231160000000,3,1,3,5
-177,Orkney,res://assets/textures/territory_logo/177.png,70,11,Orkney,Orkney Islands,OKY,Orknian,0,,,683.48,22020,382,579000000,19,4,1,5
-178,Pakistan,res://assets/textures/territory_logo/178.png,,22,Islamic Republic of Pakistan,,PAK,Pakistani,1,,,837.09,241499431,881913,1580000000000,35,1,1,3
-179,Palau,res://assets/textures/territory_logo/179.png,,27,Republic of Palau,,PLW,Paluan,0,,,692.57,18024,459,308000000,66,5,3,3
-180,Palestine,res://assets/textures/territory_logo/180.png,,24,State of Palestine,,PLE,Palestinian,1,,,1230.55,5483450,6020,36391000000,3,1,1,5
-181,Panama,res://assets/textures/territory_logo/181.png,,13,Republic of Panama,,PAN,Panamanian,1,,,1528.21,4337768,75417,195279000000,86,5,3,3
-182,Papua New Guinea,res://assets/textures/territory_logo/182.png,,25,Independent State of Papua New Guinea,,PNG,Papua New Guinean,1,,,969.17,11781559,462840,41810000000,94,5,3,3
-183,Paraguay,res://assets/textures/territory_logo/183.png,,3,Republic of Paraguay,,PAR,Paraguayan,1,,,1498.15,6413627,406752,136442000000,86,5,3,5
-184,Peru,res://assets/textures/territory_logo/184.png,,3,Republic of Peru,,PER,Peruvian,1,,,1464.05,34352720,1285216,643050000000,86,5,3,5
-185,Philippines,res://assets/textures/territory_logo/185.png,,23,Republic of the Philippines,,PHI,Filipino,1,,,1081.44,112719484,300000,1488000000000,24,5,3,1
-186,Pitcairn Islands,res://assets/textures/territory_logo/186.png,70,26,"Pitcairn, Henderson, Ducie and Oeno Islands",,PCI,Pitkern,0,,,500,35,47,217000,71,5,3,1
-187,Poland,res://assets/textures/territory_logo/187.png,,9,Republic of Poland,,POL,Polish,1,,,1523.84,38036118,312696,2019000000000,72,4,1,5
-188,Portugal,res://assets/textures/territory_logo/188.png,,10,Portuguese Republic,,POR,Portuguese,1,,,1778,10749635,92230,535210000000,73,4,1,5
-189,Puerto Rico,res://assets/textures/territory_logo/189.png,252,12,Commonwealth of Puerto Rico,,PUR,Puerto Rican,1,,,1020.07,3203295,13792,158019000000,86,5,3,2
-190,Qatar,res://assets/textures/territory_logo/190.png,,24,State of Qatar,,QAT,Qatari,1,,,1461.6,3173024,11581,378080000000,3,1,1,5
-191,Réunion,res://assets/textures/territory_logo/191.png,81,18,Réunion,,REU,Réunionese,1,,,925.95,896175,2511,23200000000,26,5,3,5
-192,Romania,res://assets/textures/territory_logo/192.png,,9,Romania,,ROU,Romanian,1,,,1480.13,19036031,238397,919881000000,74,2,1,5
-193,Russia,res://assets/textures/territory_logo/193.png,,9,Russian Federation,,RUS,Russian,1,,,1530.95,146028325,17098246,7143000000000,75,3,1,5
-194,Rwanda,res://assets/textures/territory_logo/194.png,,17,Republic of Rwanda,,RWA,Rwandan,1,,,1117.78,13623302,26798,58120000000,43,5,3,5
-195,Saba,res://assets/textures/territory_logo/195.png,162,12,Saba,,SAB,Saban,0,,,739.53,2158,13,52000000,17,5,3,4
-196,Sahrawi Republic,res://assets/textures/territory_logo/196.png,156,16,Sahrawi Arab Democratic Republic,Western Sahara,WSH,Sahrawi,0,,,847.58,200000,266000,908900000,3,1,1,5
-197,Saint Helena,res://assets/textures/territory_logo/197.png,70,12,Saint Helena,St Helena,SHL,Saint Helenian,0,,,683.48,4439,121,39300000,19,5,3,5
-198,Saint Kitts and Nevis,res://assets/textures/territory_logo/198.png,,12,Federation of Saint Kitts and Nevis,St. Kitts and Nevis,SKN,Kittitian,1,,,1041.53,47606,261,1800000000,19,5,3,5
-199,Saint Lucia,res://assets/textures/territory_logo/199.png,,12,Saint Lucia,St. Lucia,LCA,Saint Lucian,1,,,990.69,178696,617,3452000000,46,5,3,4
-200,Saint Martin,res://assets/textures/territory_logo/200.png,81,12,Saint Martin,St. Martin,MAF,Saint Martiner,1,,,673.49,73777,88,1735000000,26,5,3,5
-201,Saint Pierre and Miquelon,res://assets/textures/territory_logo/201.png,81,12,Territorial Collectivity of Saint Pierre and Miquelon,St. Pierre and Miquelon,SPM,Saint-Pierrais,0,,,784.03,5819,240,240000000,26,2,2,5
-202,Saint Vincent and the Grenadines,res://assets/textures/territory_logo/202.png,,12,Saint Vincent and the Grenadines,Saint Vincent,VIN,Vincentian Grenadinian,1,,,962.43,110872,389,2000000000,19,5,3,3
-203,Saint-Barthélemy,res://assets/textures/territory_logo/203.png,81,12,Collectivité territoriale de Saint-Barthélemy,St. Barts,BLM,Barthélemois,0,,,568.3,10967,25,487000000,26,5,3,1
-204,Samoa,res://assets/textures/territory_logo/204.png,,26,Independent State of Samoa,,SAM,Samoan,1,,,876.41,205557,2831,1225000000,76,5,3,1
-205,San Marino,res://assets/textures/territory_logo/205.png,,10,Republic of San Marino,,SMR,Sammarinese,1,,,727.95,34042,61,2978000000,39,4,1,5
-206,São Tomé and Príncipe,res://assets/textures/territory_logo/206.png,,15,Democratic Republic of São Tomé and Príncipe,,STP,São Toméan,1,,,871.63,220372,964,1000000000,73,5,3,5
-207,Saudi Arabia,res://assets/textures/territory_logo/207.png,,24,Kingdom of Saudi Arabia,,KSA,Saudi,1,,,1427.37,32175224,2149690,2230000000000,3,1,1,5
-208,Scotland,res://assets/textures/territory_logo/208.png,70,11,Scotland,,SCO,Scottish,1,,,1504.2,5546900,80231,223400000000,19,4,1,5
-209,Senegal,res://assets/textures/territory_logo/209.png,,19,Republic of Senegal,,SEN,Senegalese,1,,,1650.61,18847519,196722,105428000000,26,1,3,3
-210,Serbia,res://assets/textures/territory_logo/210.png,,9,Republic of Serbia,,SRB,Serbian,1,,,1507.84,6567783,88499,216220000000,77,2,1,5
-211,Seychelles,res://assets/textures/territory_logo/211.png,,18,Republic of Seychelles,,SEY,Seychellois,1,,,805.33,121355,457,4175000000,80,5,3,5
-212,Sierra Leone,res://assets/textures/territory_logo/212.png,,19,Republic of Sierra Leone,,SLE,Sierra Leonean,1,,,1149.1,8460512,73252,32510000000,19,5,3,5
-213,Singapore,res://assets/textures/territory_logo/213.png,,23,Republic of Singapore,,SGP,Singaporean,1,,,1030.49,6110200,736,952600000000,54,5,3,5
-214,Sint Eustatius,res://assets/textures/territory_logo/214.png,162,12,Sint Eustatius,Statia,SEU,Sint Eustatian,0,,,649.5,3270,21,50000000,17,5,3,4
-215,Sint Maarten,res://assets/textures/territory_logo/215.png,162,12,Sint Maarten,,SXM,Sint Maartener,1,,,784.39,58477,34,1436000000,17,5,3,5
-216,Slovakia,res://assets/textures/territory_logo/216.png,,9,Slovak Republic,,SVK,Slovak,1,,,1483.35,5413813,49035,256710000000,83,4,1,5
-217,Slovenia,res://assets/textures/territory_logo/217.png,,9,Republic of Slovenia,,SVN,Slovene,1,,,1462.93,2130850,20271,122985000000,84,2,1,5
-218,Solomon Islands,res://assets/textures/territory_logo/218.png,,25,Solomon Islands,The Solomons,SOL,Solomon Islander,1,,,1045.58,734887,28896,1680000000,70,5,3,5
-219,Somalia,res://assets/textures/territory_logo/219.png,,17,Federal Republic of Somalia,,SOM,Somali,1,,,818.59,19280850,637657,32500000000,85,1,3,5
-220,Somaliland,res://assets/textures/territory_logo/220.png,219,17,Republic of Somaliland,,SLD,Somalilander,0,,,748.45,6200000,177000,3782000000,85,1,3,5
-221,South Africa,res://assets/textures/territory_logo/221.png,,18,Republic of South Africa,,RSA,South African,1,,,1423.17,63015904,1221037,1030000000000,103,4,2,5
-222,South Korea,res://assets/textures/territory_logo/222.png,,21,Republic of Korea,,KOR,South Korean,1,,,1593.92,52081799,100363,3363000000000,45,2,1,5
-223,South Ossetia,res://assets/textures/territory_logo/223.png,86,9,Republic of South Ossetia,State of Alania,SOS,South Ossetian,0,,,683.48,56520,3885,52000000,65,4,1,5
-224,South Sudan,res://assets/textures/territory_logo/224.png,,17,Republic of South Sudan,,SSD,South Sudanese,1,,,978.7,12703714,644329,13600000000,19,5,3,5
-225,Sovereign Military Order of Malta,res://assets/textures/territory_logo/225.png,144,10,"Sovereign Military Hospitaller Order of Saint John of Jerusalem, of Rhodes and of Malta",Order of Malta,SMM,Sovereign Maltan,0,,,500,13191,0,0,39,2,1,1
-226,Spain,res://assets/textures/territory_logo/226.png,,10,Kingdom of Spain,,ESP,Spanish,1,,,1880.76,49315949,506030,2829000000000,86,2,1,5
-227,Sri Lanka,res://assets/textures/territory_logo/227.png,,22,Democratic Socialist Republic of Sri Lanka,,SRI,Sri Lankan,1,,,862.17,21763170,67240,98900000000,82,5,3,2
-228,Sudan,res://assets/textures/territory_logo/228.png,,17,Republic of the Sudan,,SDN,Sudanese,1,,,1157.11,50467278,1886068,117770000000,3,1,3,5
-229,Suriname,res://assets/textures/territory_logo/229.png,,12,Republic of Suriname,,SUR,Surinamese,1,,,1135.89,632638,165940,14743000000,17,5,3,5
-230,Sweden,res://assets/textures/territory_logo/230.png,,8,Kingdom of Sweden,,SWE,Swedish,1,,,1496.99,10588230,450295,799680000000,90,3,1,5
-231,Switzerland,res://assets/textures/territory_logo/231.png,,11,Swiss Confederation,,SUI,Swiss,1,,,1653.32,9060598,41285,881083000000,28,4,1,5
-232,Syria,res://assets/textures/territory_logo/232.png,,24,Syrian Arab Republic,,SYR,Syrian,1,,,1274.16,25902673,185180,50280000000,3,1,1,5
-233,Taiwan,res://assets/textures/territory_logo/233.png,,21,Republic of China,Chinese Taipai,TPE,Taiwanese,1,,,947.64,23396049,36197,1966000000000,87,4,1,1
-234,Tajikistan,res://assets/textures/territory_logo/234.png,,20,Republic of Tajikistan,,TJK,Tajikistani,1,,,1220.21,10786734,143100,59415000000,91,1,1,5
-235,Tanzania,res://assets/textures/territory_logo/235.png,,17,United Republic of Tanzania,,TAN,Tanzanian,1,,,1187.08,67462121,947303,293590000000,88,5,3,5
-236,Thailand,res://assets/textures/territory_logo/236.png,,23,Kingdom of Thailand,,THA,Thai,1,,,1235.36,65975198,513120,1850000000000,92,5,3,5
-237,Togo,res://assets/textures/territory_logo/237.png,,19,Togolese Republic,,TOG,Togolese,1,,,1140.35,9583381,56785,33050000000,26,5,3,5
-238,Tokelau,res://assets/textures/territory_logo/238.png,164,26,Tokelau,,TOK,Toklauan,0,,,500,2608,10,9406225,95,5,3,2
-239,Tonga,res://assets/textures/territory_logo/239.png,,26,Kingdom of Tonga,,TGA,Tongan,1,,,835.64,100209,748,655000000,96,5,3,1
-240,Transnistria,res://assets/textures/territory_logo/240.png,151,9,Pridnestrovian Moldavian Republic,Pridnestrovie,TRN,Transnistrian,0,,,1104.56,367776,4163,1201000000,75,2,1,5
-241,Trinidad and Tobago,res://assets/textures/territory_logo/241.png,,12,Republic of Trinidad and Tobago,Trinidad,TRI,Trinidadians and Tobagonians,1,,,1229.9,1508635,5131,43658000000,19,5,3,3
-242,Tristan da Cunha,res://assets/textures/territory_logo/242.png,70,18,Tristan da Cunha,Tristan,TDC,Tristanian,0,,,500,238,207,31000000,19,5,2,5
-243,Tunisia,res://assets/textures/territory_logo/243.png,,16,Republic of Tunisia,,TUN,Tunisian,1,,,1490.8,11972169,163610,183730000000,3,1,1,5
-244,Turkey,res://assets/textures/territory_logo/244.png,,10,Republic of Türkiye,Türkiye,TUR,Turkish,1,,,1570.18,85664944,783562,3770000000000,97,2,1,5
-245,Turkmenistan,res://assets/textures/territory_logo/245.png,,20,Turkmenistan,,TKM,Turkmenistani,1,,,1078.09,7057841,491210,186110000000,98,1,1,5
-246,Turks and Caicos Islands,res://assets/textures/territory_logo/246.png,70,12,Turks and Caicos Islands,,TCA,Turks and Caicos Islander,1,,,803.98,49309,948,924583000,19,5,3,3
-247,Tuvalu,res://assets/textures/territory_logo/247.png,,27,Tuvalu,,TUV,Tuvaluan,1,,,683.67,10643,25,68603000,99,5,3,5
-248,U.S. Virgin Islands,res://assets/textures/territory_logo/248.png,252,12,Virgin Islands of the United States,United States Virgin Islands,VIR,Virgin Islander,1,,,779.71,87146,133,4068000000,19,5,3,2
-249,Uganda,res://assets/textures/territory_logo/249.png,,17,Republic of Uganda,,UGA,Ugandan,1,,,1287.75,49283041,241038,187110000000,19,5,3,5
-250,Ukraine,res://assets/textures/territory_logo/250.png,,9,Ukraine,,UKR,Ukrainian,1,,,1555.36,32862000,603628,690059000000,100,2,1,5
-251,United Arab Emirates,res://assets/textures/territory_logo/251.png,,24,United Arab Emirates,Emirates,UGA,Emirati,1,,,1379.93,11027129,83600,905230000000,3,1,1,5
-252,United States,res://assets/textures/territory_logo/252.png,,14,United States of America,America,USA,American,1,,,1673.49,340110988,3796742,30616000000000,19,2,1,2
-253,Uruguay,res://assets/textures/territory_logo/253.png,,3,Oriental Republic of Uruguay,,URU,Uruguayan,1,,,1677.57,3499451,176215,107946000000,86,4,2,5
-254,Uzbekistan,res://assets/textures/territory_logo/254.png,,20,Republic of Uzbekistan,,UZB,Uzbek,1,,,1452.34,38000269,448978,469840000000,101,1,1,5
-255,Vanuatu,res://assets/textures/territory_logo/255.png,,25,Republic of Vanuatu,,VAN,Ni-Vanuatu,1,,,991.59,335908,12189,1002000000,9,5,3,5
-256,Vatican City,res://assets/textures/territory_logo/256.png,,10,Vatican City State,The Vatican,VAT,Vatican,0,,,500,882,1,14859970,39,4,1,1
-257,Venezuela,res://assets/textures/territory_logo/257.png,,3,Bolivarian Republic of Venezuela,,VEN,Venezuelan,1,,,1463.27,30518260,916445,223984000000,86,5,3,3
-258,Vietnam,res://assets/textures/territory_logo/258.png,,23,Socialist Republic of Vietnam,,VIE,Vietnamese,1,,,1183.62,100300000,331344,1786000000000,102,5,3,5
-259,Wales,res://assets/textures/territory_logo/259.png,70,11,Wales,,WAL,Welsh,1,,,1518.81,3186581,21218,92800000000,19,4,1,5
-260,Wallis and Futuna,res://assets/textures/territory_logo/260.png,81,26,Territory of the Wallis and Futuna Islands,,WLF,Wallisian,0,,,683.85,11151,142,212000000,26,5,3,1
-261,Yemen,res://assets/textures/territory_logo/261.png,,24,Republic of Yemen,,YEM,Yemeni,1,,,1040.13,42091194,455503,69960000000,3,1,3,5
-262,Zambia,res://assets/textures/territory_logo/262.png,,18,Republic of Zambia,,ZAM,Zambian,1,,,1268.6,20216029,752617,83687000000,19,4,3,5
-263,Zanzibar,res://assets/textures/territory_logo/263.png,235,17,Zanzibar,,ZAN,Zanzibari,1,,,984.57,1889773,2462,3750000000,88,5,3,5
-264,Zimbabwe,res://assets/textures/territory_logo/264.png,,18,Republic of Zimbabwe,,ZIM,Zimbabwean,1,,,1125.55,16868409,390757,93870000000,81,5,3,5
+1,Abkhazia,user://assets/textures/territory_logo/1.webp,86,9,Republic of Abkhazia,,ABH,Abkhazian,0,,,750.3,244000,8665,1200000000,1,1,1,5
+2,Afghanistan,user://assets/textures/territory_logo/2.webp,,20,Islamic Emirate of Afghanistan,,AFG,Afghan,1,,,991.19,42650000,652864,91668000000,68,2,1,4
+3,Akrotiri and Dhekelia,user://assets/textures/territory_logo/3.webp,70,10,Sovereign Base Areas of Akrotiri and Dhekelia,,AAD,Akrotiri Dhekelian,0,,,600.3,18195,254,5400000000,19,4,1,5
+4,Aland Islands,user://assets/textures/territory_logo/4.webp,80,8,Åland,,ALA,Ålander,0,,,700.3,30654,1580,1600000000,90,4,1,5
+5,Albania,user://assets/textures/territory_logo/5.webp,,9,Republic of Albania,,ALB,Albanian,1,,,1401.34,2402113,28748,63080000000,2,2,1,5
+6,Algeria,user://assets/textures/territory_logo/6.webp,,16,People's Democratic Republic of Algeria,,ALG,Algerian,1,,,1510.26,47400000,2381741,875330000000,3,1,1,5
+7,American Samoa,user://assets/textures/territory_logo/7.webp,252,26,American Samoa,,ASA,American Samoan,1,,,883.17,44620,77,709000000,76,5,3,2
+8,Andorra,user://assets/textures/territory_logo/8.webp,,11,Principality of Andorra,,AND,Andorran,1,,,955.1,87486,467,6001000000,12,2,1,4
+9,Angola,user://assets/textures/territory_logo/9.webp,,18,Republic of Angola,,ANG,Angolan,1,,,1267.45,39040039,1246700,402160000000,73,5,3,5
+10,Anguilla,user://assets/textures/territory_logo/10.webp,70,12,Anguilla,,AIA,Aguillan,1,,,758.52,15753,91,311000000,19,5,3,3
+11,Antigua and Barbuda,user://assets/textures/territory_logo/11.webp,,12,Antigua and Barbuda,,ATG,Antigua and Barbudan,1,,,992.38,100772,440,3300000000,19,5,3,3
+12,Argentina,user://assets/textures/territory_logo/12.webp,,3,Argentine Republic,,ARG,Argentian,1,,,1872.43,46735004,2780085,1493000000000,86,4,2,5
+13,Armenia,user://assets/textures/territory_logo/13.webp,,9,Republic of Armenia,,ARM,Armenian,1,,,1204.7,3081100,29743,74407000000,4,2,1,5
+14,Aruba,user://assets/textures/territory_logo/14.webp,162,12,Country of Aruba,,ARU,Aruban,1,,,861.16,108880,180,5502000000,67,1,3,5
+15,Ascension Island,user://assets/textures/territory_logo/15.webp,70,19,Ascension Island,,ACI,Ascension Islander,0,,,645.03,806,88,31100000,19,1,3,5
+16,Australia,user://assets/textures/territory_logo/16.webp,,23,Commonwealth of Australia,,AUS,Australian,1,,,1584.02,28113200,7688287,1980000000000,19,1,2,2
+17,Austria,user://assets/textures/territory_logo/17.webp,,11,Republic of Austria,,AUT,Austrian,1,,,1586.98,9027999,83879,682860000000,28,4,1,5
+18,Azerbaijan,user://assets/textures/territory_logo/18.webp,,9,Republic of Azerbaijan,,AZE,Azerbaijani,1,,,1142.25,10353296,86600,272000000000,5,1,1,4
+19,Bahamas,user://assets/textures/territory_logo/19.webp,,12,Commonwealth of the Bahamas,,BAH,Bahamian,1,,,807.36,412628,13943,18989000000,20,5,3,3
+20,Bahrain,user://assets/textures/territory_logo/20.webp,,24,Kingdom of Bahrain,,BHR,Bahraini,1,,,1267.16,1463265,786,105600000000,3,1,1,5
+21,Bangladesh,user://assets/textures/territory_logo/21.webp,,22,People's Republic of Bangladesh,,BAN,Bangladeshi,1,,,894.06,171466990,148460,1780000000000,8,5,3,4
+22,Barbados,user://assets/textures/territory_logo/22.webp,,12,Barbados,,BRB,Barbadian,1,,,919.97,281998,439,5436000000,19,5,3,3
+23,Belarus,user://assets/textures/territory_logo/23.webp,,9,Republic of Belarus,,BLR,Belarusian,1,,,1212.78,9109280,207600,221186000000,7,2,1,5
+24,Belgium,user://assets/textures/territory_logo/24.webp,,11,Kingdom of Belgium,,BEL,Belgian,1,,,1740.01,11825551,30689,889833000000,17,4,1,5
+25,Belize,user://assets/textures/territory_logo/25.webp,,13,Belize,,BLZ,Belizean,1,,,904.45,397483,22966,6414000000,19,5,3,5
+26,Benin,user://assets/textures/territory_logo/26.webp,,19,Republic of Benin,,BEN,Beninese,1,,,1259.39,13754688,114763,59241000000,26,5,3,5
+27,Bermuda,user://assets/textures/territory_logo/27.webp,,12,Bermuda,,BER,Bermudan,1,,,976.75,63913,53,7484000000,19,5,3,4
+28,Bhutan,user://assets/textures/territory_logo/28.webp,,22,Kingdom of Bhutan,,BHU,Bhutanese,1,,,876.56,777486,38394,14110000000,18,4,1,3
+29,Bolivia,user://assets/textures/territory_logo/29.webp,,3,Plurinational State of Bolivia,,BOL,Bolivian,1,,,1334.55,11365333,1098581,144098000000,86,5,3,5
+30,Bonaire,user://assets/textures/territory_logo/30.webp,162,12,Bonaire,,BOE,Bonairean,1,,,760.93,26552,288,628000000,67,5,3,5
+31,Bosnia and Herzegovina,user://assets/textures/territory_logo/31.webp,,9,Bosnia and Herzegovina,Bosnia,BIH,Bosnian,1,,,1341.36,2904256,51209,78650000000,78,4,1,5
+32,Botswana,user://assets/textures/territory_logo/32.webp,,18,Republic of Botswana,,BOT,Motswana,1,,,1084.56,2359609,581730,54647000000,19,1,3,5
+33,Brazil,user://assets/textures/territory_logo/33.webp,,3,Federative Republic of Brazil,,BRA,Brazilian,1,,,1758.85,213421037,8515767,4958000000000,73,5,3,5
+34,British Virgin Islands,user://assets/textures/territory_logo/34.webp,70,12,Virgin Islands,,VGB,Virgin Islander,1,,,765.41,30030,153,500000000,19,5,3,3
+35,Brunei,user://assets/textures/territory_logo/35.webp,,23,Brunei Darussalam,,BRU,Bruneians,1,,,881.74,466227,5765,43830000000,54,5,3,5
+36,Bulgaria,user://assets/textures/territory_logo/36.webp,,9,Republic of Bulgaria,,BUL,Bulgarian,1,,,1263.07,6437360,110993,264699000000,10,2,1,5
+37,Burkina Faso,user://assets/textures/territory_logo/37.webp,,19,Burkina Faso,,BFA,Burkinabé,1,,,1398.05,22489126,274223,72820000000,59,1,3,5
+38,Burundi,user://assets/textures/territory_logo/38.webp,,17,Republic of Burundi,,BDI,Burundian,1,,,1060.22,14151540,27834,13980000000,44,5,3,5
+39,Cambodia,user://assets/textures/territory_logo/39.webp,,23,Kingdom of Cambodia,,CAM,Cambodian,1,,,910.21,17638801,181035,150050000000,42,5,3,5
+40,Cameroon,user://assets/textures/territory_logo/40.webp,,15,Republic of Cameroon,,CMR,Cameroonians,1,,,1453.71,30987821,475442,173034000000,26,5,3,5
+41,Canada,user://assets/textures/territory_logo/41.webp,,14,Canada,,CAN,Candians,1,,,1554.63,41651653,9984670,2730000000000,19,2,1,3
+42,Cape Verde,user://assets/textures/territory_logo/42.webp,,19,Republic of Cabo Verde,Cabo Verde,CPV,Cape Verdean,1,,,1364.26,593149,4033,5717000000,73,1,3,5
+43,Cayman Islands,user://assets/textures/territory_logo/43.webp,70,12,Cayman Islands,,CAY,Cayman Islander,1,,,853.37,87866,259,7139000000,19,5,3,5
+44,Central African Republic,user://assets/textures/territory_logo/44.webp,,15,Central African Republic,,CTA,Central African,1,,,1083.57,5650957,622984,5678000000,26,5,3,5
+45,Chad,user://assets/textures/territory_logo/45.webp,,15,Republic of Chad,,CHA,Chadian,1,,,913.87,19093595,1280000,32375000000,3,1,3,5
+46,Chile,user://assets/textures/territory_logo/46.webp,,3,Republic of Chile,,CHI,Chilean,1,,,1446.93,19629588,756101,674388000000,86,4,2,5
+47,China,user://assets/textures/territory_logo/47.webp,,21,People's Republic of China,PR China,CHN,Chinese,1,,,1249.06,1408280000,9596961,41016000000000,87,4,1,3
+48,Christmas Island,user://assets/textures/territory_logo/48.webp,16,23,Territory of Christmas Island,,CMI,Christmas Islander,0,,,500,1692,135,52000000,19,5,3,1
+49,Cocos Islands,user://assets/textures/territory_logo/49.webp,16,23,Territory of Cocos (Keeling) Islands,Cocos (Keeling) Islands,COI,Coco Islander,0,,,500,593,14,11012550,54,5,3,1
+50,Colombia,user://assets/textures/territory_logo/50.webp,,3,Republic of Colombia,,COL,Colombian,1,,,1695.72,52695952,1141748,1042000000000,86,5,3,5
+51,Comoros,user://assets/textures/territory_logo/51.webp,,18,Union of the Comoros,,COM,Comorian,1,,,1180.18,883075,2035,3432000000,13,5,3,5
+52,Congo,user://assets/textures/territory_logo/52.webp,,15,Republic of the Congo,Congo-Brazzaville,CGO,Congolese,1,,,1105.96,6228784,343000,42760000000,26,5,3,5
+53,Cook Islands,user://assets/textures/territory_logo/53.webp,,26,Cook Islands,,COK,Cook Islander,1,,,877.53,15040,236,384000000,19,5,3,3
+54,Costa Rica,user://assets/textures/territory_logo/54.webp,,13,Republic of Costa Rica,,CRC,Costa Rican,1,,,1483.74,5044197,51179,169034000000,86,5,3,5
+55,Croatia,user://assets/textures/territory_logo/55.webp,,9,Republic of Croatia,,CRO,Croatian,1,,,1710.15,3861967,56561,198310000000,78,2,1,5
+56,Cuba,user://assets/textures/territory_logo/56.webp,,12,Republic of Cuba,,CUB,Cuban,1,,,975.34,10966038,110860,254865000000,86,5,3,3
+57,Curaçao,user://assets/textures/territory_logo/57.webp,,12,Country of Curaçao,,CUW,Curaçaoan,1,,,1295.52,155826,444,5500000000,67,1,3,3
+58,Cyprus,user://assets/textures/territory_logo/58.webp,,10,Republic of Cyprus,,CYP,Cypriot,1,,,1137.43,932272,9251,61501000000,30,1,1,5
+59,Czechia,user://assets/textures/territory_logo/59.webp,,9,Czech Republic,,CZE,Czech,1,,,1484.68,10900555,78871,619881000000,14,4,1,4
+60,Denmark,user://assets/textures/territory_logo/60.webp,,8,Kingdom of Denmark,Danish Realm,DEN,Danish,1,,,1641.02,6001008,43094,533752000000,15,4,1,5
+61,Djibouti,user://assets/textures/territory_logo/61.webp,,17,Republic of Djibouti,,DJI,Djiboutian,1,,,847.89,1066809,23200,7193000000,85,1,3,5
+62,Dominica,user://assets/textures/territory_logo/62.webp,,12,Commonwealth of Dominica,,DMA,Dominican,1,,,901.37,72412,750,688000000,19,5,3,2
+63,Dominican Republic,user://assets/textures/territory_logo/63.webp,,12,Dominican Republic,,DOM,Dominican,1,,,1073.54,11532151,48671,334292000000,86,5,3,3
+64,DR Congo,user://assets/textures/territory_logo/64.webp,,15,Democratic Republic of the Congo,Congo-Kinshasa,COD,Congolese,1,,,1421.32,112832473,2345409,200760000000,26,5,3,5
+65,Timor-Leste,user://assets/textures/territory_logo/65.webp,,23,Democratic Republic of Timor-Leste,East Timor,TLS,Timorese,1,,,840.27,1354662,14950,6970000000,73,5,3,5
+66,Easter Island,user://assets/textures/territory_logo/66.webp,46,26,Easter Island,,EAI,Easter Islander,0,,,670.39,7750,163,120000000,86,5,3,5
+67,Ecuador,user://assets/textures/territory_logo/67.webp,,3,Republic of Ecuador,,ECU,Ecuadorian,1,,,1589.72,17483326,283561,268100000000,86,5,3,5
+68,Egypt,user://assets/textures/territory_logo/68.webp,,16,Arab Republic of Egypt,,EGY,Egyptian,1,,,1525.31,109450000,1010408,2372000000000,3,1,1,5
+69,El Salvador,user://assets/textures/territory_logo/69.webp,,13,Republic of El Salvador,,SLV,Salvadoran,1,,,1247.77,6029976,21041,88323000000,86,5,3,5
+70,England,user://assets/textures/territory_logo/70.webp,,11,England,,ENG,English,1,,,1824.3,58620101,132932,2113000000000,19,4,1,5
+71,Equatorial Guinea,user://assets/textures/territory_logo/71.webp,,15,Republic of Equatorial Guinea,,EQG,Equatoguinean,1,,,1229.91,1795834,28050,33001000000,86,5,3,5
+72,Eritrea,user://assets/textures/territory_logo/72.webp,,17,State of Eritrea,,ERI,Eritrean,1,,,934.29,3536000,120000,6369000000,93,1,3,4
+73,Estonia,user://assets/textures/territory_logo/73.webp,,8,Republic of Estonia,,EST,Estonian,1,,,1122.25,1373101,45335,68240000000,21,2,1,4
+74,Eswatini,user://assets/textures/territory_logo/74.webp,,18,Kingdom of Eswatini,Swaziland,SWZ,Swazi,1,,,1010.52,1236126,17364,13797000000,89,5,3,5
+75,Ethiopia,user://assets/textures/territory_logo/75.webp,,17,Federal Democratic Republic of Ethiopia,,ETH,Ethiopian,1,,,1055.36,109499000,1104300,486830000000,64,1,3,5
+76,Falkland Islands,user://assets/textures/territory_logo/76.webp,70,3,Falkland Islands,The Falklands,FKI,Falkland Islander,0,,,800.36,3662,12173,228500000,19,3,2,3
+77,Faroe Islands,user://assets/textures/territory_logo/77.webp,60,8,Faroe Islands,Faroes,FRO,Faroe Islander,1,,,1132.41,54885,1393,3126000000,22,3,1,5
+78,Federated States of Micronesia,user://assets/textures/territory_logo/78.webp,,27,Federated States of Micronesia,Micronesia,FSM,Micronesian,0,,,704.5,104468,702,451000000,19,5,3,2
+79,Fiji,user://assets/textures/territory_logo/79.webp,,25,Republic of Fiji,,FIJ,Fijian,1,,,1035.11,926276,18274,15152000000,23,5,3,3
+80,Finland,user://assets/textures/territory_logo/80.webp,,8,Republic of Finland,,FIN,Finnish,1,,,1360.27,5635971,338455,373160000000,25,3,1,3
+81,France,user://assets/textures/territory_logo/81.webp,,11,French Republic,,FRA,French,1,,,1862.71,68605616,632702,4504000000000,26,4,1,5
+82,French Guiana,user://assets/textures/territory_logo/82.webp,81,12,French Guiana,Guyane,GUF,French Guianan,1,,,840.56,292354,84000,4562000000,26,5,3,5
+83,French Polynesia,user://assets/textures/territory_logo/83.webp,81,26,French Polynesia,,TAH,French Polynesian,1,,,1019.04,278786,4167,6007000000,26,5,3,5
+84,Gabon,user://assets/textures/territory_logo/84.webp,,15,Gabonese Republic,,GAB,Gabonese,1,,,1329.91,2397368,267668,41922000000,26,5,3,5
+85,The Gambia,user://assets/textures/territory_logo/85.webp,,19,Republic of the Gambia,,GAM,Gambian,1,,,1162.12,2422712,11300,7502000000,19,5,3,5
+86,Georgia,user://assets/textures/territory_logo/86.webp,,9,Georgia,,GEO,Georgian,1,,,1365.92,3657000,69700,113580000000,27,4,1,5
+87,Germany,user://assets/textures/territory_logo/87.webp,,11,Federal Republic of Germany,,GER,German,1,,,1713.3,83491249,357114,6154000000000,28,4,1,5
+88,Ghana,user://assets/textures/territory_logo/88.webp,,19,Republic of Ghana,,GHA,Ghanaian,1,,,1356.4,35039451,240000,295120000000,19,5,3,5
+89,Gibraltar,user://assets/textures/territory_logo/89.webp,70,10,Gibraltar,,GIB,Gibraltarian,1,,,823.32,34003,7,1640000000,19,4,1,5
+90,Gozo,user://assets/textures/territory_logo/90.webp,144,10,Gozo,,GZO,Gozitans,0,,,678.34,39287,67,869000000,55,4,1,5
+91,Greece,user://assets/textures/territory_logo/91.webp,,10,Hellenic Republic,,GRE,Greek,1,,,1472.99,10400720,131957,466945000000,30,4,1,5
+92,Greenland,user://assets/textures/territory_logo/92.webp,60,4,Greenland,,GRL,Greenlander,0,,,749.58,56831,2166086,4480000000,31,3,1,5
+93,Grenada,user://assets/textures/territory_logo/93.webp,,12,Grenada,,GRN,Grenadian,1,,,986.48,114621,344,2300000000,19,5,3,3
+94,Guadeloupe,user://assets/textures/territory_logo/94.webp,81,12,Guadeloupe,,GLP,Guadeloupean,1,,,928.74,378561,1628,9462000000,26,5,3,5
+95,Guam,user://assets/textures/territory_logo/95.webp,252,21,Guam,,GUM,Guamanian,1,,,823.08,168801,210,5800000000,19,5,3,2
+96,Guatemala,user://assets/textures/territory_logo/96.webp,,13,Republic of Guatemala,,GUA,Guatemalan,1,,,1241.52,17980803,108889,278508000000,86,5,3,5
+97,Guernsey,user://assets/textures/territory_logo/97.webp,70,11,Guernsey,,GGY,Guernseyman,0,,,925.24,63950,62,3272000000,19,4,1,4
+98,Guinea,user://assets/textures/territory_logo/98.webp,,19,Republic of Guinea,,GUI,Guinean,1,,,1305.22,13986179,245857,75050000000,26,5,3,5
+99,Guinea-Bissau,user://assets/textures/territory_logo/99.webp,,19,Republic of Guinea-Bissau,,GNB,Bissau-Guinean,1,,,1108.09,2080000,36125,6620000000,73,5,3,5
+100,Guyana,user://assets/textures/territory_logo/100.webp,,12,Co-operative Republic of Guyana,,GUY,Guyanese,1,,,1037.34,835986,214969,75294000000,19,5,3,3
+101,Haiti,user://assets/textures/territory_logo/101.webp,,12,Republic of Haiti,,HAI,Haitian,1,,,1268.32,11470261,27700,38200000000,32,5,3,5
+102,Hawaii,user://assets/textures/territory_logo/102.webp,252,4,Hawaii,,HWI,Hawaiian,0,,,793.45,1446146,10931,117600000000,19,5,3,1
+103,Honduras,user://assets/textures/territory_logo/103.webp,,13,Republic of Honduras,,HON,Honduran,1,,,1396.23,9571352,112492,75030000000,86,5,3,5
+104,Hong Kong,user://assets/textures/territory_logo/104.webp,47,21,Hong Kong,,HKG,Hongkonger,1,,,1052.54,7498100,2754,589810000000,87,5,3,5
+105,Hungary,user://assets/textures/territory_logo/105.webp,,9,Hungary,,HUN,Hungarian,1,,,1504.92,9584627,93030,469647000000,36,4,1,5
+106,Iceland,user://assets/textures/territory_logo/106.webp,,8,Iceland,,ISL,Icelander,1,,,1344.84,391810,103125,31076000000,37,3,1,5
+107,India,user://assets/textures/territory_logo/107.webp,,22,Republic of India,,IND,Indian,1,,,1096.65,1428627663,3287263,17647000000000,35,5,1,3
+108,Indonesia,user://assets/textures/territory_logo/108.webp,,23,Republic of Indonesia,,IDN,Indonesian,1,,,1144.73,284438782,1904569,5009000000000,38,5,3,5
+109,Iran,user://assets/textures/territory_logo/109.webp,,20,Islamic Republic of Iran,Persia,IRN,Iranian,1,,,1618.28,92417681,1648195,1746000000000,69,1,1,5
+110,Iraq,user://assets/textures/territory_logo/110.webp,,24,Republic of Iraq,,IRQ,Iraqi,1,,,1428.69,46118793,438317,690090000000,3,1,1,5
+111,Ireland,user://assets/textures/territory_logo/111.webp,,11,Republic of Ireland,,IRL,Irish,1,,,1401.18,5380300,70273,736730000000,19,4,1,3
+112,Isle of Man,user://assets/textures/territory_logo/112.webp,70,11,Isle of Man,Mann,IOM,Manx,0,,,835.43,84523,574,7931000000,19,4,1,3
+113,Isle of Wight,user://assets/textures/territory_logo/113.webp,70,11,Isle of Wight,,IOW,Vectian,0,,,846.75,141660,380,3100000000,19,4,1,4
+114,Isles of Scilly,user://assets/textures/territory_logo/114.webp,70,10,Isles of Scilly,,SCI,Scillonian,0,,,683.46,2366,16,9500000000,19,4,1,4
+115,Israel,user://assets/textures/territory_logo/115.webp,,9,State of Israel,,ISR,Israeli,1,,,1324.57,10119400,22072,567550000000,34,1,1,5
+116,Italy,user://assets/textures/territory_logo/116.webp,,10,Italian Republic,,ITA,Italian,1,,,1717.15,58934177,301340,3719000000000,39,4,1,5
+117,Ivory Coast,user://assets/textures/territory_logo/117.webp,,19,Republic of Côte d'Ivoire,Côte d'Ivoire,CIV,Ivorian,1,,,1491.78,31500000,322462,202647000000,26,5,3,5
+118,Jamaica,user://assets/textures/territory_logo/118.webp,,12,Jamaica,,JAM,Jamaican,1,,,1367.18,2824913,10991,33775000000,19,5,3,3
+119,Japan,user://assets/textures/territory_logo/119.webp,,21,Japan,,JPN,Japanese,1,,,1645.34,123360000,377975,6758000000000,40,2,1,3
+120,Jersey,user://assets/textures/territory_logo/120.webp,70,11,Bailiwick of Jersey,,JER,Jersey Islanders,0,,,794.03,103267,119,4570000000,19,4,1,4
+121,Jordan,user://assets/textures/territory_logo/121.webp,,24,Hashemite Kingdom of Jordan,,JOR,Jordanian,1,,,1380.87,11484805,89342,132092000000,3,1,1,5
+122,Kazakhstan,user://assets/textures/territory_logo/122.webp,,9,Republic of Kazakhstan,,KAZ,Kazakh,1,,,1168.47,20286084,2724900,904500000000,41,2,1,5
+123,Kenya,user://assets/textures/territory_logo/123.webp,,17,Republic of Kenya,,KEN,Kenyan,1,,,1185.55,52428290,580367,401970000000,88,1,3,5
+124,Kiribati,user://assets/textures/territory_logo/124.webp,,27,Republic of Kiribati,,KIR,I-Kiribati,1,,,803.56,121388,811,297000000,29,5,3,5
+125,Kosovo,user://assets/textures/territory_logo/125.webp,,9,Republic of Kosovo,,KOS,Kosovar,1,,,1284.73,1585566,10887,29723000000,2,2,1,5
+126,Kuwait,user://assets/textures/territory_logo/126.webp,,24,State of Kuwait,,KUW,Kuwaiti,1,,,1096.82,4985716,17818,260500000000,3,1,1,5
+127,Kyrgyzstan,user://assets/textures/territory_logo/127.webp,,20,Kyrgyz Republic,,KGZ,Kyrgyz,1,,,1201.22,7300000,200105,55200000000,47,2,1,5
+128,Laos,user://assets/textures/territory_logo/128.webp,,23,Lao People's Democratic Republic,,LAO,Lao,1,,,877.05,7953556,236800,78850000000,48,5,3,5
+129,Latvia,user://assets/textures/territory_logo/129.webp,,8,Republic of Latvia,,LVA,Latvian,1,,,1084.26,1842226,64589,78421000000,49,4,1,2
+130,Lebanon,user://assets/textures/territory_logo/130.webp,,24,Republic of Lebanon,,LBN,Lebanese,1,,,1184.68,5364482,10452,78233000000,3,4,1,4
+131,Lesotho,user://assets/textures/territory_logo/131.webp,,18,Kingdom of Lesotho,,LES,Mosotho,1,,,1069.83,2210646,30355,6915000000,79,4,2,5
+132,Liberia,user://assets/textures/territory_logo/132.webp,,19,Republic of Liberia,,LBR,Liberian,1,,,1084.46,5437249,43000,11420000000,19,5,3,5
+133,Libya,user://assets/textures/territory_logo/133.webp,,16,State of Libya,,LBY,Libyan,1,,,1177.77,7361263,1759541,123990000000,3,1,1,5
+134,Liechtenstein,user://assets/textures/territory_logo/134.webp,,11,Principality of Liechtenstein,,LIE,Liechtensteiner,1,,,801.99,41232,160,7172000000,28,2,1,5
+135,Lithuania,user://assets/textures/territory_logo/135.webp,,8,Republic of Lithuania,,LTU,Lithuanian,1,,,1055.58,2897430,65300,161454000000,50,4,1,3
+136,Luxembourg,user://assets/textures/territory_logo/136.webp,,11,Grand Duchy of Luxembourg,,LUX,Luxembourger,1,,,1231.8,681973,2586,106505000000,51,2,1,5
+137,Macau,user://assets/textures/territory_logo/137.webp,47,21,Macau,Macao,MAC,Macau,1,,,865.29,712651,172,92995000000,87,5,3,4
+138,Madagascar,user://assets/textures/territory_logo/138.webp,,18,Republic of Madagascar,,MAD,Malagasy,1,,,1193.48,31964956,592796,56754000000,53,5,3,5
+139,Madeira,user://assets/textures/territory_logo/139.webp,188,10,Autonomous Region of Madeira,,MDR,Madeiran,0,,,837.56,250769,801,6989000000,73,4,1,5
+140,Malawi,user://assets/textures/territory_logo/140.webp,,18,Republic of Malawi,,MWI,Malawian,1,,,1129.89,21240689,118484,37919000000,19,5,3,5
+141,Malaysia,user://assets/textures/territory_logo/141.webp,,23,Malaysia,,MAS,Malaysian,1,,,1161.53,34564810,330803,1470000000000,54,5,3,5
+142,Maldives,user://assets/textures/territory_logo/142.webp,,22,Republic of Maldives,,MDV,Maldivian,1,,,954.53,601269,298,13867000000,16,5,3,5
+143,Mali,user://assets/textures/territory_logo/143.webp,,19,Republic of Mali,,MLI,Malian,1,,,1455.78,21990607,1240192,72740000000,6,1,3,5
+144,Malta,user://assets/textures/territory_logo/144.webp,,10,Republic of Malta,,MLT,Maltese,1,,,979.18,519562,316,36870000000,55,4,1,5
+145,Marshall Islands,user://assets/textures/territory_logo/145.webp,,27,Republic of the Marshall Islands,,MAL,Marshallese,0,,,500,42418,181,215000000,56,5,3,3
+146,Martinique,user://assets/textures/territory_logo/146.webp,81,12,Martinique,,MTQ,Marinican,1,,,835.6,349925,1128,9082000000,26,5,3,5
+147,Mauritania,user://assets/textures/territory_logo/147.webp,,19,Islamic Republic of Mauritania,,MTN,Mauritanian,1,,,1179.2,4328040,1030000,40060000000,3,1,3,5
+148,Mauritius,user://assets/textures/territory_logo/148.webp,,18,Republic of Mauritius,,MRI,Mauritian,1,,,915.51,1235260,2040,42810000000,57,5,3,5
+149,Mayotte,user://assets/textures/territory_logo/149.webp,81,18,Department of Mayotte,,MAY,Mahoran,0,,,639.4,320901,374,2932000000,26,5,3,5
+150,Mexico,user://assets/textures/territory_logo/150.webp,,14,United Mexican States,,MEX,Mexican,1,,,1682.52,131946900,1971550,3396000000000,86,1,1,5
+151,Moldova,user://assets/textures/territory_logo/151.webp,,9,Republic of Moldova,,MDA,Moldovan,1,,,1020.2,2381325,33843,46651000000,74,2,1,5
+152,Monaco,user://assets/textures/territory_logo/152.webp,,11,Principality of Monaco,,MON,Monégasque,0,,,500,38423,2084,8924000000,26,4,1,5
+153,Mongolia,user://assets/textures/territory_logo/153.webp,,21,Mongolia,,MNG,Mongolian,1,,,879.75,3504741,1564116,73280000000,58,1,1,2
+154,Montenegro,user://assets/textures/territory_logo/154.webp,,9,Montenegro,,MNE,Montenegrin,1,,,1297.88,623327,13883,17431000000,78,2,1,3
+155,Montserrat,user://assets/textures/territory_logo/155.webp,70,12,Montserrat,,MSR,Montserratian,1,,,916.75,4390,102,63000000,19,5,3,3
+156,Morocco,user://assets/textures/territory_logo/156.webp,,16,Kingdom of Morocco,,MAR,Moroccan,1,,,1710.11,37493183,446550,424870000000,3,1,1,5
+157,Mozambique,user://assets/textures/territory_logo/157.webp,,18,Republic of Mozambique,,MOZ,Mozambican,1,,,1227.53,34881007,801590,61950000000,73,5,3,5
+158,Myanmar,user://assets/textures/territory_logo/158.webp,,23,Republic of the Union of Myanmar,Burma,MYA,Burmese,1,,,990.81,55770232,676579,326890000000,11,5,3,5
+159,Namibia,user://assets/textures/territory_logo/159.webp,,18,Republic of Namibia,,NAM,Namibian,1,,,1162.79,3022401,825615,37730000000,19,1,3,5
+160,Nauru,user://assets/textures/territory_logo/160.webp,,27,Republic of Nauru,,NAU,Nauruan,0,,,500,11919,21,132000000,60,5,3,2
+161,Nepal,user://assets/textures/territory_logo/161.webp,,22,Federal Democratic Republic of Nepal,,NEP,Nepali,1,,,909.32,31122387,147516,169120000000,61,4,1,5
+162,Netherlands,user://assets/textures/territory_logo/162.webp,,11,Kingdom of the Netherlands,,NED,Dutch,1,,,1759.96,18459900,41865,1526000000000,17,4,1,5
+163,New Caledonia,user://assets/textures/territory_logo/163.webp,81,25,New Caledonia,,NCL,New Caledonian,1,,,1042.62,271407,18575,9480000000,26,5,3,5
+164,New Zealand,user://assets/textures/territory_logo/164.webp,,26,New Zealand,,NZL,New Zealander,1,,,1283.3,5334680,263310,298670000000,19,4,2,2
+165,Nicaragua,user://assets/textures/territory_logo/165.webp,,13,Republic of Nicaragua,,NCA,Nicaraguan,1,,,1106.83,6676948,130375,56697000000,86,5,3,2
+166,Niger,user://assets/textures/territory_logo/166.webp,,19,Republic of the Niger,,NIG,Nigerien,1,,,1187,26342784,1267000,21870000000,33,1,3,5
+167,Nigeria,user://assets/textures/territory_logo/167.webp,,19,Federal Republic of Nigeria,,NGA,Nigerian,1,,,1495.46,236747130,923769,1580000000000,19,5,3,5
+168,Niue,user://assets/textures/territory_logo/168.webp,164,26,Niue,,NIU,Niuean,0,,,535.39,1937,261,18700000,62,5,3,2
+169,Norfolk Island,user://assets/textures/territory_logo/169.webp,16,26,Norfolk Island,,NFK,Norfolk Islander,0,,,528.85,2188,34,60209000,19,5,3,1
+170,North Korea,user://assets/textures/territory_logo/170.webp,,21,Democratic People's Republic of Korea,DPR Korea,PRK,North Korean,1,,,1151.05,26298666,120538,15416000000,45,2,1,5
+171,North Macedonia,user://assets/textures/territory_logo/171.webp,,9,Republic of North Macedonia,,MKD,Macedonian,1,,,1390.6,1836713,25436,53345000000,52,2,1,5
+172,Northern Cyprus,user://assets/textures/territory_logo/172.webp,58,10,Turkish Republic of Northern Cyprus,,NCP,Turkish Cypriot,0,,,1200.3,382836,3355,4234000000,97,4,1,5
+173,Northern Ireland,user://assets/textures/territory_logo/173.webp,70,11,Northern Ireland,,NIR,Northern Irish,1,,,1366.27,1927855,14330,63300000000,19,4,1,4
+174,Northern Mariana Islands,user://assets/textures/territory_logo/174.webp,252,21,Commonwealth of the Northern Mariana Islands,,MNP,Northern Mariana Islander,1,,,900.45,55650,464,1240000000,19,5,3,2
+175,Norway,user://assets/textures/territory_logo/175.webp,,8,Kingdom of Norway,,NOR,Norwegian,1,,,1532.14,5601049,385207,606590000000,63,3,1,5
+176,Oman,user://assets/textures/territory_logo/176.webp,,24,Sultanate of Oman,,OMA,Omani,1,,,1312.32,5494691,309500,231160000000,3,1,3,5
+177,Orkney,user://assets/textures/territory_logo/177.webp,70,11,Orkney,Orkney Islands,OKY,Orknian,0,,,683.48,22020,382,579000000,19,4,1,5
+178,Pakistan,user://assets/textures/territory_logo/178.webp,,22,Islamic Republic of Pakistan,,PAK,Pakistani,1,,,837.09,241499431,881913,1580000000000,35,1,1,3
+179,Palau,user://assets/textures/territory_logo/179.webp,,27,Republic of Palau,,PLW,Paluan,0,,,692.57,18024,459,308000000,66,5,3,3
+180,Palestine,user://assets/textures/territory_logo/180.webp,,24,State of Palestine,,PLE,Palestinian,1,,,1230.55,5483450,6020,36391000000,3,1,1,5
+181,Panama,user://assets/textures/territory_logo/181.webp,,13,Republic of Panama,,PAN,Panamanian,1,,,1528.21,4337768,75417,195279000000,86,5,3,3
+182,Papua New Guinea,user://assets/textures/territory_logo/182.webp,,25,Independent State of Papua New Guinea,,PNG,Papua New Guinean,1,,,969.17,11781559,462840,41810000000,94,5,3,3
+183,Paraguay,user://assets/textures/territory_logo/183.webp,,3,Republic of Paraguay,,PAR,Paraguayan,1,,,1498.15,6413627,406752,136442000000,86,5,3,5
+184,Peru,user://assets/textures/territory_logo/184.webp,,3,Republic of Peru,,PER,Peruvian,1,,,1464.05,34352720,1285216,643050000000,86,5,3,5
+185,Philippines,user://assets/textures/territory_logo/185.webp,,23,Republic of the Philippines,,PHI,Filipino,1,,,1081.44,112719484,300000,1488000000000,24,5,3,1
+186,Pitcairn Islands,user://assets/textures/territory_logo/186.webp,70,26,"Pitcairn, Henderson, Ducie and Oeno Islands",,PCI,Pitkern,0,,,500,35,47,217000,71,5,3,1
+187,Poland,user://assets/textures/territory_logo/187.webp,,9,Republic of Poland,,POL,Polish,1,,,1523.84,38036118,312696,2019000000000,72,4,1,5
+188,Portugal,user://assets/textures/territory_logo/188.webp,,10,Portuguese Republic,,POR,Portuguese,1,,,1778,10749635,92230,535210000000,73,4,1,5
+189,Puerto Rico,user://assets/textures/territory_logo/189.webp,252,12,Commonwealth of Puerto Rico,,PUR,Puerto Rican,1,,,1020.07,3203295,13792,158019000000,86,5,3,2
+190,Qatar,user://assets/textures/territory_logo/190.webp,,24,State of Qatar,,QAT,Qatari,1,,,1461.6,3173024,11581,378080000000,3,1,1,5
+191,Réunion,user://assets/textures/territory_logo/191.webp,81,18,Réunion,,REU,Réunionese,1,,,925.95,896175,2511,23200000000,26,5,3,5
+192,Romania,user://assets/textures/territory_logo/192.webp,,9,Romania,,ROU,Romanian,1,,,1480.13,19036031,238397,919881000000,74,2,1,5
+193,Russia,user://assets/textures/territory_logo/193.webp,,9,Russian Federation,,RUS,Russian,1,,,1530.95,146028325,17098246,7143000000000,75,3,1,5
+194,Rwanda,user://assets/textures/territory_logo/194.webp,,17,Republic of Rwanda,,RWA,Rwandan,1,,,1117.78,13623302,26798,58120000000,43,5,3,5
+195,Saba,user://assets/textures/territory_logo/195.webp,162,12,Saba,,SAB,Saban,0,,,739.53,2158,13,52000000,17,5,3,4
+196,Sahrawi Republic,user://assets/textures/territory_logo/196.webp,156,16,Sahrawi Arab Democratic Republic,Western Sahara,WSH,Sahrawi,0,,,847.58,200000,266000,908900000,3,1,1,5
+197,Saint Helena,user://assets/textures/territory_logo/197.webp,70,12,Saint Helena,St Helena,SHL,Saint Helenian,0,,,683.48,4439,121,39300000,19,5,3,5
+198,Saint Kitts and Nevis,user://assets/textures/territory_logo/198.webp,,12,Federation of Saint Kitts and Nevis,St. Kitts and Nevis,SKN,Kittitian,1,,,1041.53,47606,261,1800000000,19,5,3,5
+199,Saint Lucia,user://assets/textures/territory_logo/199.webp,,12,Saint Lucia,St. Lucia,LCA,Saint Lucian,1,,,990.69,178696,617,3452000000,46,5,3,4
+200,Saint Martin,user://assets/textures/territory_logo/200.webp,81,12,Saint Martin,St. Martin,MAF,Saint Martiner,1,,,673.49,73777,88,1735000000,26,5,3,5
+201,Saint Pierre and Miquelon,user://assets/textures/territory_logo/201.webp,81,12,Territorial Collectivity of Saint Pierre and Miquelon,St. Pierre and Miquelon,SPM,Saint-Pierrais,0,,,784.03,5819,240,240000000,26,2,2,5
+202,Saint Vincent and the Grenadines,user://assets/textures/territory_logo/202.webp,,12,Saint Vincent and the Grenadines,Saint Vincent,VIN,Vincentian Grenadinian,1,,,962.43,110872,389,2000000000,19,5,3,3
+203,Saint-Barthélemy,user://assets/textures/territory_logo/203.webp,81,12,Collectivité territoriale de Saint-Barthélemy,St. Barts,BLM,Barthélemois,0,,,568.3,10967,25,487000000,26,5,3,1
+204,Samoa,user://assets/textures/territory_logo/204.webp,,26,Independent State of Samoa,,SAM,Samoan,1,,,876.41,205557,2831,1225000000,76,5,3,1
+205,San Marino,user://assets/textures/territory_logo/205.webp,,10,Republic of San Marino,,SMR,Sammarinese,1,,,727.95,34042,61,2978000000,39,4,1,5
+206,São Tomé and Príncipe,user://assets/textures/territory_logo/206.webp,,15,Democratic Republic of São Tomé and Príncipe,,STP,São Toméan,1,,,871.63,220372,964,1000000000,73,5,3,5
+207,Saudi Arabia,user://assets/textures/territory_logo/207.webp,,24,Kingdom of Saudi Arabia,,KSA,Saudi,1,,,1427.37,32175224,2149690,2230000000000,3,1,1,5
+208,Scotland,user://assets/textures/territory_logo/208.webp,70,11,Scotland,,SCO,Scottish,1,,,1504.2,5546900,80231,223400000000,19,4,1,5
+209,Senegal,user://assets/textures/territory_logo/209.webp,,19,Republic of Senegal,,SEN,Senegalese,1,,,1650.61,18847519,196722,105428000000,26,1,3,3
+210,Serbia,user://assets/textures/territory_logo/210.webp,,9,Republic of Serbia,,SRB,Serbian,1,,,1507.84,6567783,88499,216220000000,77,2,1,5
+211,Seychelles,user://assets/textures/territory_logo/211.webp,,18,Republic of Seychelles,,SEY,Seychellois,1,,,805.33,121355,457,4175000000,80,5,3,5
+212,Sierra Leone,user://assets/textures/territory_logo/212.webp,,19,Republic of Sierra Leone,,SLE,Sierra Leonean,1,,,1149.1,8460512,73252,32510000000,19,5,3,5
+213,Singapore,user://assets/textures/territory_logo/213.webp,,23,Republic of Singapore,,SGP,Singaporean,1,,,1030.49,6110200,736,952600000000,54,5,3,5
+214,Sint Eustatius,user://assets/textures/territory_logo/214.webp,162,12,Sint Eustatius,Statia,SEU,Sint Eustatian,0,,,649.5,3270,21,50000000,17,5,3,4
+215,Sint Maarten,user://assets/textures/territory_logo/215.webp,162,12,Sint Maarten,,SXM,Sint Maartener,1,,,784.39,58477,34,1436000000,17,5,3,5
+216,Slovakia,user://assets/textures/territory_logo/216.webp,,9,Slovak Republic,,SVK,Slovak,1,,,1483.35,5413813,49035,256710000000,83,4,1,5
+217,Slovenia,user://assets/textures/territory_logo/217.webp,,9,Republic of Slovenia,,SVN,Slovene,1,,,1462.93,2130850,20271,122985000000,84,2,1,5
+218,Solomon Islands,user://assets/textures/territory_logo/218.webp,,25,Solomon Islands,The Solomons,SOL,Solomon Islander,1,,,1045.58,734887,28896,1680000000,70,5,3,5
+219,Somalia,user://assets/textures/territory_logo/219.webp,,17,Federal Republic of Somalia,,SOM,Somali,1,,,818.59,19280850,637657,32500000000,85,1,3,5
+220,Somaliland,user://assets/textures/territory_logo/220.webp,219,17,Republic of Somaliland,,SLD,Somalilander,0,,,748.45,6200000,177000,3782000000,85,1,3,5
+221,South Africa,user://assets/textures/territory_logo/221.webp,,18,Republic of South Africa,,RSA,South African,1,,,1423.17,63015904,1221037,1030000000000,103,4,2,5
+222,South Korea,user://assets/textures/territory_logo/222.webp,,21,Republic of Korea,,KOR,South Korean,1,,,1593.92,52081799,100363,3363000000000,45,2,1,5
+223,South Ossetia,user://assets/textures/territory_logo/223.webp,86,9,Republic of South Ossetia,State of Alania,SOS,South Ossetian,0,,,683.48,56520,3885,52000000,65,4,1,5
+224,South Sudan,user://assets/textures/territory_logo/224.webp,,17,Republic of South Sudan,,SSD,South Sudanese,1,,,978.7,12703714,644329,13600000000,19,5,3,5
+225,Sovereign Military Order of Malta,user://assets/textures/territory_logo/225.webp,144,10,"Sovereign Military Hospitaller Order of Saint John of Jerusalem, of Rhodes and of Malta",Order of Malta,SMM,Sovereign Maltan,0,,,500,13191,0,0,39,2,1,1
+226,Spain,user://assets/textures/territory_logo/226.webp,,10,Kingdom of Spain,,ESP,Spanish,1,,,1880.76,49315949,506030,2829000000000,86,2,1,5
+227,Sri Lanka,user://assets/textures/territory_logo/227.webp,,22,Democratic Socialist Republic of Sri Lanka,,SRI,Sri Lankan,1,,,862.17,21763170,67240,98900000000,82,5,3,2
+228,Sudan,user://assets/textures/territory_logo/228.webp,,17,Republic of the Sudan,,SDN,Sudanese,1,,,1157.11,50467278,1886068,117770000000,3,1,3,5
+229,Suriname,user://assets/textures/territory_logo/229.webp,,12,Republic of Suriname,,SUR,Surinamese,1,,,1135.89,632638,165940,14743000000,17,5,3,5
+230,Sweden,user://assets/textures/territory_logo/230.webp,,8,Kingdom of Sweden,,SWE,Swedish,1,,,1496.99,10588230,450295,799680000000,90,3,1,5
+231,Switzerland,user://assets/textures/territory_logo/231.webp,,11,Swiss Confederation,,SUI,Swiss,1,,,1653.32,9060598,41285,881083000000,28,4,1,5
+232,Syria,user://assets/textures/territory_logo/232.webp,,24,Syrian Arab Republic,,SYR,Syrian,1,,,1274.16,25902673,185180,50280000000,3,1,1,5
+233,Taiwan,user://assets/textures/territory_logo/233.webp,,21,Republic of China,Chinese Taipai,TPE,Taiwanese,1,,,947.64,23396049,36197,1966000000000,87,4,1,1
+234,Tajikistan,user://assets/textures/territory_logo/234.webp,,20,Republic of Tajikistan,,TJK,Tajikistani,1,,,1220.21,10786734,143100,59415000000,91,1,1,5
+235,Tanzania,user://assets/textures/territory_logo/235.webp,,17,United Republic of Tanzania,,TAN,Tanzanian,1,,,1187.08,67462121,947303,293590000000,88,5,3,5
+236,Thailand,user://assets/textures/territory_logo/236.webp,,23,Kingdom of Thailand,,THA,Thai,1,,,1235.36,65975198,513120,1850000000000,92,5,3,5
+237,Togo,user://assets/textures/territory_logo/237.webp,,19,Togolese Republic,,TOG,Togolese,1,,,1140.35,9583381,56785,33050000000,26,5,3,5
+238,Tokelau,user://assets/textures/territory_logo/238.webp,164,26,Tokelau,,TOK,Toklauan,0,,,500,2608,10,9406225,95,5,3,2
+239,Tonga,user://assets/textures/territory_logo/239.webp,,26,Kingdom of Tonga,,TGA,Tongan,1,,,835.64,100209,748,655000000,96,5,3,1
+240,Transnistria,user://assets/textures/territory_logo/240.webp,151,9,Pridnestrovian Moldavian Republic,Pridnestrovie,TRN,Transnistrian,0,,,1104.56,367776,4163,1201000000,75,2,1,5
+241,Trinidad and Tobago,user://assets/textures/territory_logo/241.webp,,12,Republic of Trinidad and Tobago,Trinidad,TRI,Trinidadians and Tobagonians,1,,,1229.9,1508635,5131,43658000000,19,5,3,3
+242,Tristan da Cunha,user://assets/textures/territory_logo/242.webp,70,18,Tristan da Cunha,Tristan,TDC,Tristanian,0,,,500,238,207,31000000,19,5,2,5
+243,Tunisia,user://assets/textures/territory_logo/243.webp,,16,Republic of Tunisia,,TUN,Tunisian,1,,,1490.8,11972169,163610,183730000000,3,1,1,5
+244,Turkey,user://assets/textures/territory_logo/244.webp,,10,Republic of Türkiye,Türkiye,TUR,Turkish,1,,,1570.18,85664944,783562,3770000000000,97,2,1,5
+245,Turkmenistan,user://assets/textures/territory_logo/245.webp,,20,Turkmenistan,,TKM,Turkmenistani,1,,,1078.09,7057841,491210,186110000000,98,1,1,5
+246,Turks and Caicos Islands,user://assets/textures/territory_logo/246.webp,70,12,Turks and Caicos Islands,,TCA,Turks and Caicos Islander,1,,,803.98,49309,948,924583000,19,5,3,3
+247,Tuvalu,user://assets/textures/territory_logo/247.webp,,27,Tuvalu,,TUV,Tuvaluan,1,,,683.67,10643,25,68603000,99,5,3,5
+248,U.S. Virgin Islands,user://assets/textures/territory_logo/248.webp,252,12,Virgin Islands of the United States,United States Virgin Islands,VIR,Virgin Islander,1,,,779.71,87146,133,4068000000,19,5,3,2
+249,Uganda,user://assets/textures/territory_logo/249.webp,,17,Republic of Uganda,,UGA,Ugandan,1,,,1287.75,49283041,241038,187110000000,19,5,3,5
+250,Ukraine,user://assets/textures/territory_logo/250.webp,,9,Ukraine,,UKR,Ukrainian,1,,,1555.36,32862000,603628,690059000000,100,2,1,5
+251,United Arab Emirates,user://assets/textures/territory_logo/251.webp,,24,United Arab Emirates,Emirates,UGA,Emirati,1,,,1379.93,11027129,83600,905230000000,3,1,1,5
+252,United States,user://assets/textures/territory_logo/252.webp,,14,United States of America,America,USA,American,1,,,1673.49,340110988,3796742,30616000000000,19,2,1,2
+253,Uruguay,user://assets/textures/territory_logo/253.webp,,3,Oriental Republic of Uruguay,,URU,Uruguayan,1,,,1677.57,3499451,176215,107946000000,86,4,2,5
+254,Uzbekistan,user://assets/textures/territory_logo/254.webp,,20,Republic of Uzbekistan,,UZB,Uzbek,1,,,1452.34,38000269,448978,469840000000,101,1,1,5
+255,Vanuatu,user://assets/textures/territory_logo/255.webp,,25,Republic of Vanuatu,,VAN,Ni-Vanuatu,1,,,991.59,335908,12189,1002000000,9,5,3,5
+256,Vatican City,user://assets/textures/territory_logo/256.webp,,10,Vatican City State,The Vatican,VAT,Vatican,0,,,500,882,1,14859970,39,4,1,1
+257,Venezuela,user://assets/textures/territory_logo/257.webp,,3,Bolivarian Republic of Venezuela,,VEN,Venezuelan,1,,,1463.27,30518260,916445,223984000000,86,5,3,3
+258,Vietnam,user://assets/textures/territory_logo/258.webp,,23,Socialist Republic of Vietnam,,VIE,Vietnamese,1,,,1183.62,100300000,331344,1786000000000,102,5,3,5
+259,Wales,user://assets/textures/territory_logo/259.webp,70,11,Wales,,WAL,Welsh,1,,,1518.81,3186581,21218,92800000000,19,4,1,5
+260,Wallis and Futuna,user://assets/textures/territory_logo/260.webp,81,26,Territory of the Wallis and Futuna Islands,,WLF,Wallisian,0,,,683.85,11151,142,212000000,26,5,3,1
+261,Yemen,user://assets/textures/territory_logo/261.webp,,24,Republic of Yemen,,YEM,Yemeni,1,,,1040.13,42091194,455503,69960000000,3,1,3,5
+262,Zambia,user://assets/textures/territory_logo/262.webp,,18,Republic of Zambia,,ZAM,Zambian,1,,,1268.6,20216029,752617,83687000000,19,4,3,5
+263,Zanzibar,user://assets/textures/territory_logo/263.webp,235,17,Zanzibar,,ZAN,Zanzibari,1,,,984.57,1889773,2462,3750000000,88,5,3,5
+264,Zimbabwe,user://assets/textures/territory_logo/264.webp,,18,Republic of Zimbabwe,,ZIM,Zimbabwean,1,,,1125.55,16868409,390757,93870000000,81,5,3,5

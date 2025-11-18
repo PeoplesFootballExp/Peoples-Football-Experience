@@ -1,14 +1,14 @@
 [gd_scene load_steps=3 format=3 uid="uid://dkw7cmhd50wfc"]
 
 [ext_resource type="Script" uid="uid://tm621f7hhke8" path="res://scenes/ui/elements/selection_tile/selection_tile.gd" id="1_4yma0"]
-[ext_resource type="Texture2D" uid="uid://djhq8576v0bwq" path="res://assets/textures/confed_logo/5.png" id="2_4yma0"]
+[ext_resource type="Texture2D" uid="uid://bplprem6togi0" path="res://assets/textures/confed_logo/5.webp" id="2_4yma0"]
 
 [node name="Control" type="Control"]
 custom_minimum_size = Vector2(160, 160)
 layout_mode = 3
 anchors_preset = 0
-offset_right = 1000.0
-offset_bottom = 1000.0
+offset_right = 160.0
+offset_bottom = 160.0
 size_flags_horizontal = 3
 script = ExtResource("1_4yma0")
 
