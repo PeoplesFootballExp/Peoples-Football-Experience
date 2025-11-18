@@ -25,3 +25,5 @@ grow_vertical = 2
 text = "Hello!"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Game Clock" type="Timer" parent="."]
