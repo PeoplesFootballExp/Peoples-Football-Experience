@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://cy23mqv04hvli"]
+
+[ext_resource type="Script" uid="uid://bx8vxa4ia015m" path="res://scenes/match/match_state_manager.gd" id="1_yqfj7"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MatchStateManager" type="Node3D" parent="."]
+script = ExtResource("1_yqfj7")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="UI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Hello!"
+horizontal_alignment = 1
+vertical_alignment = 1
