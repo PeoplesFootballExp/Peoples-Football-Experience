@@ -13,6 +13,7 @@ enum MatchState {
 	HALF_TIME = 4,
 	FULL_TIME = 5,
 	PENALTY_SHOOTOUT = 6,
+	COMPLETED = 7,
 }
 
 ## Match Events: What can trigger a transition between states
@@ -45,19 +46,51 @@ enum DeadBallType {
 var current_state: int = MatchState.SETUP
 var current_deadball_type: int = DeadBallType.NONE
 var current_phase: int = MatchPhase.FIRST_HALF
+
+# Score managed
 var home_score: int = 0;
 var away_score: int = 0;
-@export var game_clock: Timer;
 
+# Timing Components
+var game_clock: float = 0.0
+var added_time: float = 0.0;
+@export var simulation_speed_factor: float = 1.0
+@export var time_increment: float = 0.5;
+
+
+
+# Match Variables 
+var team_in_possession: int;
+
+func _process(delta: float) -> void:
+	# Only run speed factored speed if we are in an active state
+	if current_state == MatchState.IN_PLAY:
+		# Determine how many "ticks" to simulate based on real time
+		var simulated_time_step: float = delta * simulation_speed_factor
+		
+		# Advance the simulation clock
+		game_clock += simulated_time_step
+		
+		# Process the FSM state using the advanced time
+		_process_state()
+
+func _process_state():
+	pass
 
 func transition_state(event: MatchEvent, deadball_type := DeadBallType.NONE) -> void:
 	# First, we simply transition to the next state
 	var next_state: MatchState = current_state
 	
 	match current_state:
+		# Start Match
 		MatchState.SETUP:
 			if event == MatchEvent.START_KICKOFF:
 				next_state = MatchState.IN_PLAY
-			
+		
+		# Match Interruption
+		MatchState.IN_PLAY:
+			if event == MatchEvent.BALL_OUT_SIDELINE:
+				#TODO: Find a way to check last possession, regardless, we enter throw in state
+				next_state = MatchState.DEAD_BALL
 	
 	pass
