@@ -1,7 +1,9 @@
 ---
+
 kanban-plugin: board
 Scene Name: Main Menu
 Godot Path: res://ui
+
 ---
 
 ## Backlog
@@ -32,12 +34,12 @@ Godot Path: res://ui
 
 ## In Progress
 
-- [ ] Create Main Menu Scene
-- [ ] Create Country Selection Scene
 
 
 ## Review
 
+- [ ] Create Main Menu Scene
+- [ ] Create Country Selection Scene
 
 
 ## Done
