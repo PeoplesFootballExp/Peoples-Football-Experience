@@ -1,96 +1,62 @@
-extends Node3D
+extends Node
 class_name MatchManager
 
-enum MatchPhase {FIRST_HALF, SECOND_HALF, ET_FIRST_HALF, ET_SECOND_HALF, PENALTIES}
+signal state_changed(state_name, state_data)
 
-
-## The Match States for the FSM. 
-enum MatchState {
-	SETUP = 0,
-	IN_PLAY = 1,
-	DEAD_BALL = 2,
-	GOAL_SCORED = 3,
-	HALF_TIME = 4,
-	FULL_TIME = 5,
-	PENALTY_SHOOTOUT = 6,
-	COMPLETED = 7,
+enum MatchPhase {
+	FIRST_HALF = 0,
+	SECOND_HALF = 1,
+	ET_FIRST_HALF = 2,
+	ET_SECOND_HALF = 3,
 }
 
-## Match Events: What can trigger a transition between states
-enum MatchEvent {
-	START_KICKOFF = 0,
-	BALL_OUT_SIDELINE = 1,
-	BALL_OUT_GOALLINE = 2,
-	FOUL_COMMITTED = 3,
-	GOAL_CONFIRMED = 4,
-	DEADBALL_COMPLETED = 5,
-	END_OF_HALF_WHISTLE = 6,
-}
+# --- MATCH DATA (Context for States to Read/Write) ---
+var home_score: int = 0
+var away_score: int = 0
+var match_time: float = 0.0
+var current_period: int = MatchPhase.FIRST_HALF
+var is_knockout: bool = true # Does this match require Extra Time and Penalties?
 
-## Dead Ball Types: How the ball is out of play
-enum DeadBallType {
-	NONE = 0,
-	THROW_IN = 1,
-	CORNER_KICK = 2,
-	FREE_KICK = 3,
-	PENALTY = 4,
-	GOAL_KICK = 5,
-	DROP_BALL = 6,
-}
+# --- STATE MACHINE ---
+var current_state: MatchState = null
 
+# Preload all state instances. The manager owns these instances.
+# NOTE: ALl of these Resources will be saved in res://scripts/resources/match_states
+var state_pre_match: MatchState;
+var state_dead_ball: MatchState;
+var state_in_play: MatchState;
+var state_goal: MatchState;
+var state_break: MatchState;
+var state_penalties: MatchState;
+var state_completed: MatchState;
 
-# -------------------------------------
-# State Variables
-# -------------------------------------
+func _ready():
+	# Start the FSM at the initial state
+	transition_to(state_pre_match)
 
-var current_state: int = MatchState.SETUP
-var current_deadball_type: int = DeadBallType.NONE
-var current_phase: int = MatchPhase.FIRST_HALF
+func _process(delta):
+	if current_state:
+		# Ask the current state if it wants to transition
+		var next_state = current_state.process(delta)
+		if next_state:
+			transition_to(next_state)
 
-# Score managed
-var home_score: int = 0;
-var away_score: int = 0;
+func _unhandled_input(event):
+	if current_state:
+		# Pass input event to the current state
+		var next_state = current_state.handle_input(event)
+		if next_state:
+			transition_to(next_state)
 
-# Timing Components
-var game_clock: float = 0.0
-var added_time: float = 0.0;
-@export var simulation_speed_factor: float = 1.0
-@export var time_increment: float = 0.5;
-
-
-
-# Match Variables 
-var team_in_possession: int;
-
-func _process(delta: float) -> void:
-	# Only run speed factored speed if we are in an active state
-	if current_state == MatchState.IN_PLAY:
-		# Determine how many "ticks" to simulate based on real time
-		var simulated_time_step: float = delta * simulation_speed_factor
-		
-		# Advance the simulation clock
-		game_clock += simulated_time_step
-		
-		# Process the FSM state using the advanced time
-		_process_state()
-
-func _process_state():
-	pass
-
-func transition_state(event: MatchEvent, deadball_type := DeadBallType.NONE) -> void:
-	# First, we simply transition to the next state
-	var next_state: MatchState = current_state
+# --- CORE TRANSITION FUNCTION ---
+func transition_to(new_state: MatchState, data: Dictionary = {}):
+	if current_state:
+		# 1. Exit the old state, breaking the circular reference (manager = null)
+		current_state.exit()
 	
-	match current_state:
-		# Start Match
-		MatchState.SETUP:
-			if event == MatchEvent.START_KICKOFF:
-				next_state = MatchState.IN_PLAY
-		
-		# Match Interruption
-		MatchState.IN_PLAY:
-			if event == MatchEvent.BALL_OUT_SIDELINE:
-				#TODO: Find a way to check last possession, regardless, we enter throw in state
-				next_state = MatchState.DEAD_BALL
+	current_state = new_state
 	
-	pass
+	if current_state:
+		# 2. Enter the new state, passing a reference to self (the manager)
+		pass
+		
