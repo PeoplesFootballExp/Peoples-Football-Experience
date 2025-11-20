@@ -1,8 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://cy23mqv04hvli"]
+[gd_scene load_steps=7 format=3 uid="uid://cy23mqv04hvli"]
 
 [ext_resource type="Script" uid="uid://bx8vxa4ia015m" path="res://scenes/match/match_state_manager.gd" id="1_yqfj7"]
 [ext_resource type="Script" uid="uid://rgxchxusiuj" path="res://scenes/match/physics_system.gd" id="2_klj7n"]
-[ext_resource type="PackedScene" uid="uid://deqswq2nmeviw" path="res://scenes/match/ball/ball.tscn" id="3_h1ndw"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_h1ndw"]
 rough = true
@@ -28,9 +27,6 @@ script = ExtResource("2_klj7n")
 [node name="AnalyticsSystem" type="Node3D" parent="."]
 
 [node name="LoggingSystem" type="Node3D" parent="."]
-
-[node name="RigidBody3D" parent="." instance=ExtResource("3_h1ndw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4829868, 0)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 physics_material_override = SubResource("PhysicsMaterial_h1ndw")
