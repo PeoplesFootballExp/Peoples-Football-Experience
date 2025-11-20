@@ -1,7 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://cy23mqv04hvli"]
+[gd_scene load_steps=8 format=3 uid="uid://cy23mqv04hvli"]
 
 [ext_resource type="Script" uid="uid://bx8vxa4ia015m" path="res://scenes/match/match_state_manager.gd" id="1_yqfj7"]
 [ext_resource type="Script" uid="uid://rgxchxusiuj" path="res://scenes/match/physics_system.gd" id="2_klj7n"]
+[ext_resource type="PackedScene" uid="uid://deqswq2nmeviw" path="res://scenes/match/ball/ball.tscn" id="3_h1ndw"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_h1ndw"]
+rough = true
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_h1ndw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h1ndw"]
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_nudob"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -18,3 +28,25 @@ script = ExtResource("2_klj7n")
 [node name="AnalyticsSystem" type="Node3D" parent="."]
 
 [node name="LoggingSystem" type="Node3D" parent="."]
+
+[node name="RigidBody3D" parent="." instance=ExtResource("3_h1ndw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4829868, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_h1ndw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+shape = SubResource("WorldBoundaryShape3D_h1ndw")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
+material_override = SubResource("StandardMaterial3D_h1ndw")
+mesh = SubResource("PlaneMesh_nudob")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.9094685, 0.4157729, 0, -0.4157729, 0.9094685, 0, 0.7625451, 1.3245462)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.04490967, 0.9989911, 0, -0.9989911, -0.04490967, 1.5224172, 10.591241, 0)
+light_energy = 16.0
+
+[connection signal="state_changed" from="MatchStateManager" to="PhysicsSystem" method="_on_match_state_manager_state_changed"]

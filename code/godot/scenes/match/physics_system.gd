@@ -9,3 +9,9 @@ extends Node3D
 
 # Away Players
 @export var away_players: Array[CharacterBody3D];
+
+
+
+
+func _on_match_state_manager_state_changed(state_name: Variant, state_data: Variant) -> void:
+	pass

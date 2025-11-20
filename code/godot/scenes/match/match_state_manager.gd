@@ -87,7 +87,7 @@ func _ready():
 	# Start the FSM at the initial state
 	transition_to(state_pre_match)
 
-func _process(delta):
+func _process(delta: float):
 	if current_state:
 		# Ask the current state if it wants to transition
 		var next_state = current_state.process(delta)
