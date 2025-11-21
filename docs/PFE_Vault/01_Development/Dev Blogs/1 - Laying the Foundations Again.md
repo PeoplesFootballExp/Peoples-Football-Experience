@@ -1,3 +1,10 @@
+---
+Scene Name: Team Selection Menu
+Godot Path: res://scenes/ui/menus/team_selection/team_selection.tscn
+documentation: "[[Team Selection Menu]]"
+Scene Complexity: 3
+Scene Type: UI
+---
 
 **Date:** 2025-10-27
 **Author(s):** Eddie  

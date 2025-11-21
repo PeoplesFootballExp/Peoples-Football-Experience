@@ -1,5 +1,9 @@
 ---
 Scene Name: Selection Tile
+Godot Path: res://scenes/ui/elements/selection_tile/selection_tile.tscn
+Scene Complexity: 1
+Scene Type: UI Element
+documentation: "[[Selection Tile]]"
 ---
 ### 🎯 Purpose
 

@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "52973c63a2f7d5ab",
+        "id": "6e5690f83f160a5d",
         "type": "tabs",
         "children": [
           {
-            "id": "d6fb919e91b6d8b0",
+            "id": "d2e17cfd0b6312fa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Design/Main Menu.md",
+                "file": "01_Development/Dev Blogs/7 - Moving on to Match Scene.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Main Menu"
+              "title": "7 - Moving on to Match Scene"
             }
           }
         ]
@@ -193,38 +193,41 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "d6fb919e91b6d8b0",
+  "active": "d2e17cfd0b6312fa",
   "lastOpenFiles": [
-    "02_Design/PFE Database documentation.md",
-    "01_Development/Licensing Philosophy.md",
-    "01_Development/Pillars of People's Football Experience.md",
-    "02_Design/Choosing Save System for PFE.md",
-    "02_Design/Team Table Documentation.md",
-    "02_Design/Team Selection Menu.md",
-    "02_Design/Main Menu.md",
-    "Resources/main_menu_wireframe.png",
-    "02_Design/Player Actions.md",
-    "02_Design/Player Attributes.md",
-    "02_Design/Signal Reference.md",
-    "02_Design/ReadMe.md",
-    "01_Development/ReadMe.md",
-    "05_Tasks/00_PFE_Kanban_Board.md",
-    "01_Development/Image Formats and Sizing.md",
-    "01_Development/Dev Blogs/6 - League Selection.md",
-    "01_Development/Dev Blogs/5 - Database Work.md",
-    "01_Development/Development.md",
     "01_Development/Dev Blogs/1 - Laying the Foundations Again.md",
+    "01_Development/Dev Blogs/3 - Github Repo Created.md",
     "01_Development/Dev Blogs/2 - Building the Base.md",
     "01_Development/Dev Blogs/4 - Started Godot Project.md",
-    "01_Development/Dev Blogs/3 - Github Repo Created.md",
-    "01_Development/CONTRIBUTING.md.md",
-    "Templates/Dev Blog Template.md",
+    "01_Development/Dev Blogs/5 - Database Work.md",
+    "01_Development/Dev Blogs/7 - Moving on to Match Scene.md",
+    "01_Development/Dev Blogs/6 - League Selection.md",
+    "01_Development/Development.md",
+    "02_Design/Team Selection Menu.md",
+    "02_Design/Wikidata Queries.md",
+    "02_Design/Team Table Documentation.md",
+    "02_Design/PFE Database documentation.md",
+    "02_Design/Choosing Save System for PFE.md",
+    "02_Design/Autoload Index.base",
+    "02_Design/Main Menu.md",
+    "02_Design/Match Scene.md",
+    "02_Design/Scenes Index.base",
+    "Templates/Scene Template.md",
+    "02_Design/ReadMe.md",
+    "02_Design/Player Attributes.md",
+    "02_Design/Player Actions.md",
+    "02_Design/Selection Tile.md",
     "Untitled.md",
+    "Resources/Selection Tile Wireframe.png",
+    "Templates/Dev Blog Template.md",
+    "Untitled 1.md",
+    "02_Design/Signal Reference.md",
+    "02_Design/Autoloads.md",
+    "01_Development/Licensing Philosophy.md",
+    "Resources/main_menu_wireframe.png",
     "Areas/Untitled",
     "Untitled.base",
     "Areas",
-    "02_Design/Wikidata Queries.md",
-    "02_Design/UI Scenes Index.base",
     "Resources/PFE Banner.png",
     "Resources/PFE Banner.af~lock~",
     "Resources/PFE Banner.af",
@@ -235,11 +238,9 @@
     "Resources/sqlite_logo.png",
     "Resources/penpot_logo.png",
     "Resources/aseprite_logo.png",
-    "Resources/blender_logo.png",
     "Resources",
     "01_Development/Dev Blogs",
     "Untitled 1.base",
-    "Plugins",
     "01_Planning/Untitled.canvas"
   ]
 }

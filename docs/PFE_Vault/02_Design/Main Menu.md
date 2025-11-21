@@ -1,11 +1,11 @@
 ## 📘 Overview
 
-Scene Name: MainMenu
-Purpose: Serve as the first scene everyone sees. Must allow every other scene to be accessed one way or another. 
-Inputs: None, first scene to load
-Outputs: Settings Scene, Team Selection Scene, Credits Scene, Quit to Desktop
-Linked Managers: AssetManager, SceneManager
-
+**Scene Name**: MainMenu
+**Purpose**: Serve as the first scene everyone sees. Must allow every other scene to be accessed one way or another. 
+**Inputs**: None, first scene to load
+**Outputs:** Settings Scene, Team Selection Scene, Credits Scene, Quit to Desktop
+**Linked Managers**: AssetManager, SceneManager
+#scene 
 ## Wireframe/Mockup
 
 

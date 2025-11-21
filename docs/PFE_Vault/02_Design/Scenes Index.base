@@ -6,7 +6,14 @@ views:
     order:
       - Scene Name
       - Godot Path
+      - documentation
+      - Scene Complexity
+      - Scene Type
     sort:
+      - property: Scene Name
+        direction: ASC
+      - property: Godot Path
+        direction: ASC
       - property: file.name
         direction: ASC
   - type: cards

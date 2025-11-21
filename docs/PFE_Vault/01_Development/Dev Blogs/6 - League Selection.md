@@ -1,7 +1,7 @@
 
-**Date:** YYYY-MM-DD  
-**Author(s):** <Your Name / Contributors>  
-**Version:** <Optional, e.g., v0.1 MVP>
+**Date:** 2025-11-12
+**Author(s):** Eddie
+**Version:** v0.1 MVP
 **Tags**: #dev-blog
 **Links:** [[Development]]
 
