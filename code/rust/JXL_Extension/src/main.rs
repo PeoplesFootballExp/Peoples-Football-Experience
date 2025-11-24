@@ -5,3 +5,6 @@ use jxl_oxide::*;
 
 // --- GDExtension Module Implementation ---
 // Defines the entry point for the Rust GDExtension.
+fn main() {
+    
+}
