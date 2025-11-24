@@ -1,3 +1,6 @@
+---
+Scene Complexity:
+---
 
 **Date:** 2025-10-22
 **Author(s):** Eddie 

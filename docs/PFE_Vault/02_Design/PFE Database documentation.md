@@ -1,29 +1,18 @@
 ## Summary
-
+#database
   
 
 - [Introduction](#introduction)
-
 - [Database Type](#database-type)
-
 - [Table Structure](#table-structure)
-
     - [Confederation](#confederation)
-
     - [Territory](#territory)
-
     - [City](#city)
-
     - [Tournament](#tournament)
-
     - [Team](#team)
-
     - [Climate](#climate)
-
     - [Hemisphere](#hemisphere)
-
 - [Relationships](#relationships)
-
 - [Database Diagram](#database-diagram)
 
   
@@ -191,7 +180,6 @@ CREATE TABLE IF NOT EXISTS "Hemisphere" (
 ### Confederation
 
   
-
 | Name        | Type          | Settings                      | References                    | Note                           |
 
 |-------------|---------------|-------------------------------|-------------------------------|--------------------------------|

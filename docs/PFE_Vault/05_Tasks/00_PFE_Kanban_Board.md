@@ -1,9 +1,10 @@
 ---
-
 kanban-plugin: board
 Scene Name: Main Menu
-Godot Path: res://ui
-
+Godot Path: res://scenes/main/main_menu.tscn
+documentation: "[[Main Menu]]"
+Scene Complexity: 1
+Scene Type: Main
 ---
 
 ## Backlog
