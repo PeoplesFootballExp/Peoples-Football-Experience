@@ -159,13 +159,13 @@ pub fn convert_assets_to_webp(
     Ok(())
 }
 
-fn main() {
-    let source_path = Path::new("G:/My Drive/Assets/2D Asset JXL 90 Quality/"); // Assuming this path now contains your PNG files too
-    let webp_path = Path::new("C:/Assets Testing/2D Assets WebP");
+// fn main() {
+//     let source_path = Path::new("G:/My Drive/Assets/2D Asset JXL 90 Quality/"); // Assuming this path now contains your PNG files too
+//     let webp_path = Path::new("C:/Assets Testing/2D Assets WebP");
     
-    // Renamed function to reflect it now handles both types
-    match convert_assets_to_webp(source_path, webp_path, 100.0) { 
-        Ok(_) => {}, 
-        Err(e) => eprintln!("\nFatal initialization error: {}", e),
-    }
-}
+//     // Renamed function to reflect it now handles both types
+//     match convert_assets_to_webp(source_path, webp_path, 100.0) { 
+//         Ok(_) => {}, 
+//         Err(e) => eprintln!("\nFatal initialization error: {}", e),
+//     }
+// }
