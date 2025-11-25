@@ -7,7 +7,7 @@ use bevy_ecs::prelude::Component;
 /// entities as a Player entity but also serves to store a unique ID that can be persisted 
 /// in an external database
 #[derive(Component)]
-pub struct PlayerID {
+pub struct PlayerIDComponent {
     pub id: u32,
 }
 
@@ -16,7 +16,7 @@ pub struct PlayerID {
 /// entities as a Territory entity but also serves to store a unique ID that can be persisted 
 /// in an external database
 #[derive(Component)]
-pub struct TerritoryID {
+pub struct TerritoryIDComponent {
     pub id: u32,
 }
 
@@ -25,7 +25,7 @@ pub struct TerritoryID {
 /// entities as a Confederation entity but also serves to store a unique ID that can be persisted 
 /// in an external database
 #[derive(Component)]
-pub struct ConfederationID {
+pub struct ConfederationIDComponent {
     pub id: u32,
 }
 
@@ -34,7 +34,7 @@ pub struct ConfederationID {
 /// entities as a City entity but also serves to store a unique ID that can be persisted 
 /// in an external database
 #[derive(Component)]
-pub struct CityID {
+pub struct CityIDComponent {
     pub id: u32,
 }
 
@@ -46,7 +46,7 @@ pub struct CityID {
 /// entities as a Manager entity but also serves to store a unique ID that can be persisted 
 /// in an external database
 #[derive(Component)]
-pub struct ManagerID {
+pub struct ManagerIDComponent {
     pub id: u32,
 }
 
@@ -55,7 +55,7 @@ pub struct ManagerID {
 /// entities as a Stadium entity but also serves to store a unique ID that can be persisted 
 /// in an external database
 #[derive(Component)]
-pub struct StadiumID {
+pub struct StadiumIDComponent {
     pub id: u32,
 }
 

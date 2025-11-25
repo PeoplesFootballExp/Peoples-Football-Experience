@@ -1,7 +1,7 @@
 use bevy_ecs::prelude::Component;
 
 #[derive(Component)]
-pub struct ImageAsset {
+pub struct ImageAssetComponent {
     // The path to the image used for the entity. These images can range from flags, logos, to even
     // player pictures. 
     pub image_path: String,
