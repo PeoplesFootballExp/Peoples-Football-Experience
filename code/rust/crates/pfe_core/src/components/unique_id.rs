@@ -1,7 +1,5 @@
 use bevy_ecs::prelude::Component;
 
-
-
 /// The Unique ID for all entities of type Player. For an entity to be of type Player,
 /// it must have this component present. In essence, this component serves to both tag
 /// entities as a Player entity but also serves to store a unique ID that can be persisted 
@@ -37,9 +35,6 @@ pub struct ConfederationIDComponent {
 pub struct CityIDComponent {
     pub id: u32,
 }
-
-
-
 
 /// The Unique ID for all entities of type Manager. For an entity to be of type Manager,
 /// it must have this component present. In essence, this component serves to both tag
