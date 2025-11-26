@@ -62,7 +62,26 @@ pub struct StadiumRefComponent {
     pub id: u32,
 }
 
+#[derive(Component)]
+pub struct HemisphereRefComponent {
+    pub id: u32,
+}
 
+#[derive(Component)]
+pub struct ClimateRefComponent {
+    pub id: u32,
+}
+
+
+#[derive(Component)]
+pub struct InjuryRefComponent {
+    pub id: u32,
+}
+
+#[derive(Component)]
+pub struct LanguageComponent {
+    pub id: u32,
+}
 
 
 

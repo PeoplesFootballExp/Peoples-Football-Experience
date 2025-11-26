@@ -65,9 +65,9 @@ pub struct BirthdayComponent {
 }
 
 // The Priorities of the Team Entity. These are measured
-// in ranges of 1 to 5
+// in ranges of 1 to 100
 #[derive(Component)]
-pub struct TeamPrioritiesComponent {
+pub struct PrioritiesComponent {
     // The priority of the ensuring youth academies
     // being good and producing youth prospects
     pub youth_development: u8,
