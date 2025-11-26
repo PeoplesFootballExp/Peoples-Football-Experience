@@ -2,17 +2,20 @@ use bevy_ecs::prelude::*;
 
 
 #[derive(Component)]
-pub struct NamesComponent {
+pub struct IdentityComponent {
     // The commonly used name for the entity. For example, a nickname used by a famous football player
     pub name: String,
     // The official name of an entity. Typically less commonly used or longer than the commonly used name
     pub official_name: String,
     // An optional third name for an entity. Commonly used for territories 
     pub alt_name: Option<String>,
-    // The unique, short code (e.g., "MUN")
-    pub code: Option<String>,
     // The optional demonym for the entity especially if it is a territory
     pub demonym: Option<String>
+}
+
+// Short Abbreviated Name for the entity
+pub struct CodeComponent {
+    pub code: String,
 }
 
 /// This component serves as a tag to show when something is in a hierarchal tree (e.g league pyramid,
