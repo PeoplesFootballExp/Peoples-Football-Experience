@@ -1,18 +1,21 @@
 #database
-# Requirements For Our Save System
+
+# Choosing a Save System
+
+## Requirements For Our Save System
 
 The following are the requirements that we need for our save system.
 
-1. Scaleable: Able to handle lots of data
+1. Scalable: Able to handle lots of data
 2. Secure: As Secure as possible, as users should be able to save data
-3. Serverless: As a single player first game there everything should be saved on user's device
+3. Serverless: As a single player game, everything should be saved on user's device
 4. Performant: Able to handle fast writing and reading
-5. Reliable: Most not corrupt data or can easily be backed up
-# What are the options to save info in Godot?
+5. Reliable: Must not corrupt data or can easily be backed up
+## What are the options to save info in Godot?
 
 In Godot, there are a lot of different ways to save information about the game. Since each "save" of football will need to save the state of the footballing world, we will need a way to save everything for each individual world of football. Godot has various ways to implement save files for games. The main three are to use FileAccess, Configfile, and Resources.
 
-## File Access:
+### File Access:
 
 This file is mainly used by saving and loading variables from either a plain text file or a binary file. This system is natively supported by Godot. This system, while easy to quickly implement and iterate, can become complex very quickly and does not allow easy editable files nor exportable to other systems outside of Godot
 
@@ -24,7 +27,7 @@ This file is mainly used by saving and loading variables from either a plain tex
     - **Not Human-Readable:** The output is in Godot's internal binary format.
     - **Can Have Versioning Challenges:** Changes to complex data structures might still require careful handling when loading older saves.
 
-## ConfigFile:
+### ConfigFile:
 
 The `ConfigFile` class is designed for storing configuration-like data in an INI-style format. It's suitable for saving settings, preferences, or simple game state data that can be represented as key-value pairs within sections.
 
@@ -39,7 +42,7 @@ The `ConfigFile` class is designed for storing configuration-like data in an INI
     - **Limited Data Type Handling (compared to `store_var`):** While it handles basic types well, it's not as comprehensive as `store_var()` for all possible Godot variants.
     - **Doesn't Preserve Comments on Save:** While you can include comments in a manually created config file, they will be lost if you save the `ConfigFile` object back to the file.
 
-## Resources:
+### Resources:
 
 Godot's Resource system is a powerful way to manage data assets. You can define custom resources (scripts that extend `Resource`) to hold your game state data. These resources can then be saved and loaded directly using `ResourceSaver.save()` and `ResourceLoader.load()`.
 
@@ -56,7 +59,7 @@ Godot's Resource system is a powerful way to manage data assets. You can define 
     - **Not Ideal for All Data:** Primarily designed for data assets and can be less intuitive for saving transient game state that doesn't map cleanly to a Resource structure.
 
 
-# Options Outside Godot
+## Options Outside Godot
 
 There are a various other systems that can work well with Godot to save information. These are text-based or structured text formats that are widely used for data interchange. You would typically collect your game data into a structure (like a Dictionary or Array in Godot), serialize it into one of these formats using a library, and save it using Godot's `FileAccess`. Loading involves reading the file and parsing the data back into your game's data structures.
 
@@ -102,9 +105,9 @@ The following are the pros and cons for various different file formats
         - **Manual Type Handling:** All data is essentially stored as strings, requiring manual conversion to appropriate types when loading.
         - **Issues with Special Characters:** Commas, tabs, or newlines within the data itself can cause parsing problems unless properly handled (e.g., quoting).
 
-# Chosen System For Save System
+## Chosen System For Save System
 
-The system that PFE will use is SQLite. This system is a database system that like other SQL systems like PostgreSQL or MySQL, allows for efficient storing or information, enforcing schemas, and fast queries. However, unlike most other SQL flavors, SQLite saves information on the user's local device. For this reason, SQLite is VERY commonly used in everything from browsers, mobile applications, embedded systems, and even other video games. Below are the big pros and cons of 
+The system that PFE will use is SQLite. This system is a database system that like other SQL systems like PostgreSQL or MySQL, allows for efficient storing of information, enforcing schemas, and fast queries. However, unlike most other SQL flavors, SQLite saves information on the user's local device. For this reason, SQLite is VERY commonly used in everything from browsers, mobile applications, embedded systems, and even other video games. Below are the big pros and cons of 
 
 SQLite
 
@@ -128,4 +131,31 @@ SQLite will also serve as the query system as we can use it to query all our dat
 SQLite can also be extended to another SQL server system such as MySQL when multiplayer is eventually added. Not to mention, even without multiplayer, this system can be more easily extended to include new features or data we need to save. 
 
 Designing the database correctly is very important and documentation of the entire system is important for testing, debugging, and future extensions.
+
+
+# SQLite Usage
+
+Now that SQLite has been chosen for this project's permanent save system, this section will cover how it will be used and other systems that may be used. 
+
+## Usage
+
+SQLite will be mainly used for data that will commonly change through a save in our game. This includes things such as
+
+- Players and Player data
+- Match Statistics
+- Financial Data for Clubs or Players
+- Teams and Team data
+
+and so much more! So anything that can be changed during a game will be classified in documentation as "Dynamic". Dynamic data is defined as anything that can be changed during a save. All dynamic data will be saved in tables in a SQL database separate from Static data. Static data is anything defined as data that can NOT change once a save is started. The data can be changed by the player before a save is started, but once it starts they will remain static. This is done in order to maintain stability of the underlying systems of the world. Static data can be things such as 
+
+- First and Last names the game uses for Name generation
+- Countries the save contains
+- Climate Definition
+- Tournament Rules
+
+All static data will be stored separately from Dynamic Data but how it will be stored is subject to change. For right now, I believe the best option is to store the Static Data inside its own separate SQL Database. 
+
+For some entities it will be easily to either keep it fully in the static or dynamic database. But for some entities, they will have BOTH static and dynamic attributes. For these instances, the static and dynamic tables will be split into two separate tables in the two databases. 
+
+
 
