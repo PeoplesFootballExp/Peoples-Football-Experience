@@ -1,11 +1,12 @@
 [package]
-name = "ECS_Brain"
+name = "pfe_core"
 version = "0.1.0"
 edition = "2024"
 
 [dependencies]
 bevy_ecs = "0.17.3"
 polars = { version = "0.52.0", features = [
+    "default",
     "lazy",        # Enables the LazyFrame API (essential for query optimization)
     "sql",
 ]}
