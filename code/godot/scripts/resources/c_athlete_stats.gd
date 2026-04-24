@@ -1,0 +1,2 @@
+class_name AthleteStats
+extends Resource
