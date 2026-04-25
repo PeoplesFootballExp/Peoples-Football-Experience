@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://2j8hc5vyrfl1"]
+[gd_scene format=3 uid="uid://2j8hc5vyrfl1"]
 
 [ext_resource type="Script" uid="uid://cjkgd1rm6t65q" path="res://scenes/match/player/attribute_system.gd" id="1_cwfjy"]
+[ext_resource type="Script" uid="uid://cvxfa4p752ck6" path="res://scenes/match/player/input_system.gd" id="2_hjy7b"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2cyv3"]
 
@@ -9,18 +10,19 @@ albedo_color = Color(0.037521772, 0.2753775, 1, 1)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_6wsa6"]
 
-[node name="CharacterBody3D" type="CharacterBody3D"]
+[node name="CharacterBody3D" type="CharacterBody3D" unique_id=37482400]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2059119849]
 shape = SubResource("CapsuleShape3D_2cyv3")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=385345031]
 material_override = SubResource("StandardMaterial3D_2cyv3")
 mesh = SubResource("CapsuleMesh_6wsa6")
 
-[node name="AttributeSystem" type="Node3D" parent="."]
+[node name="AttributeSystem" type="Node3D" parent="." unique_id=946304781]
 script = ExtResource("1_cwfjy")
 
-[node name="InputSystem" type="Node3D" parent="."]
+[node name="InputSystem" type="Node3D" parent="." unique_id=914715576]
+script = ExtResource("2_hjy7b")
 
-[node name="AISystem" type="Node3D" parent="."]
+[node name="AISystem" type="Node3D" parent="." unique_id=1552255654]
