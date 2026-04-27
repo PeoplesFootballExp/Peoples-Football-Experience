@@ -11,7 +11,7 @@ signal power_updated(percent: float)
 # --- Configuration ---
 @export var tap_window: float = 0.18      # Time window for a double-tap
 @export var power_max_time: float = 0.8   # Time to reach 100% power
-@export var deadzone: float = 0.15        # Joystick deadzone
+@export var deadzone: float = 0.30        # Joystick deadzone
 
 # --- Internal State ---
 enum PressState { IDLE, PENDING, POWERING }

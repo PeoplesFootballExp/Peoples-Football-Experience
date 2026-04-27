@@ -2,7 +2,22 @@ extends Node
 
 ## The InputRouter is an Autoload (Singleton) that acts as a gatekeeper.
 ## It ensures that raw inputs are sent to the correct high-level system.
+## This autoload supports up to 8 players local multiplayer. Only 1 keyboard
+## and any number of gamepads.
 
+
+## The internal reference to the Input Interpreter of the currently controlled
+## football player 
+var _keyboard_device: Control = null
+
+## The internal references to the various Input Interpreters of all currently
+## controller football players. 
+## Keys: Device ID of input device
+## Values: Reference to Input Interpreter
+var _gamepad_devices: Dictionary[int, Control]
+
+## The different types of targets for input. Main ones controlled here are during
+## InputTarget.GAMEPLAY and InputTarget.CUTSCENE
 enum InputTarget {
 	NONE,
 	GAMEPLAY,
@@ -11,15 +26,7 @@ enum InputTarget {
 }
 
 # Current state of the input focus
-var current_target: InputTarget = InputTarget.UI
-
-# References to the active controllers
-# These will be set by your MatchManager when a game starts
-var active_human_controller = null
-var active_ui_root = null
-
-var last_button: InputEvent = null
-
+var _current_target: InputTarget = InputTarget.UI
 
 
 func _ready():
@@ -28,40 +35,52 @@ func _ready():
 
 ## Use this function to swap focus (e.g., when the whistle blows)
 func set_input_target(target: InputTarget):
-	current_target = target
-	print("InputRouter: Focus shifted to ", InputTarget.keys()[target])
+	_current_target = target
+	return
 
 ## The _unhandled_input ensures we don't steal inputs that 
 ## UI elements (like buttons) have already consumed.
 func _unhandled_input(event: InputEvent):
-	last_button = event
-	match current_target:
+	match _current_target:
 		InputTarget.GAMEPLAY:
 			_route_to_gameplay(event)
 		InputTarget.UI:
-			_route_to_ui(event)
-		InputTarget.CUTSCENE:
-			# Only allow "Skip" button or ignore all
-			if event.is_action_pressed("ui_cancel"):
-				_skip_cutscene()
+			return
+		#InputTarget.CUTSCENE:
+			## Only allow "Skip" button or ignore all
+			#if event.is_action_pressed("tm_run") and event.is_action_pressed("tm_short"):
+				#_skip_cutscene()
 
 func _route_to_gameplay(event: InputEvent):
-	if active_human_controller:
-		# We pass the raw event to the HumanController's state machine
-		# (The Pending/Hold/Double-tap logic)
-		active_human_controller.process_raw_input(event)
-	else:
-		push_warning("InputRouter: Gameplay focus active but no HumanController assigned!")
+	# Check if Device was saved, if not, then add to device list 
+	if !_gamepad_devices.has(event.device):
+		print("Device not Registered")
+		
+	
+	_gamepad_devices[event.device].process_raw_input(event)
+	
+	
+	
+	
+	
+	
+	
+	#if active_human_controller:
+		## We pass the raw event to the HumanController's state machine
+		## (The Pending/Hold/Double-tap logic)
+		#active_human_controller.process_raw_input(event)
+	#else:
+		#push_warning("InputRouter: Gameplay focus active but no HumanController assigned!")
 
-func _route_to_ui(event: InputEvent):
-	# Standard Godot UI usually handles itself via _input, 
-	# but you can add custom global UI shortcuts here (e.g. F12 for screenshot)
-	pass
 
-func _skip_cutscene():
-	# Trigger signal to MatchManager to skip
-	print("InputRouter: Skipping cutscene...")
-
-# Helper to register the controller from the MatchManager
-func register_human_controller(controller_node):
-	active_human_controller = controller_node
+#
+#func _skip_cutscene():
+	## Trigger signal to MatchManager to skip
+	#print("InputRouter: Skipping cutscene...")
+#
+## Helper to register the controller from the MatchManager
+func register_input_interpreter(device_id: int, controller_node: Control) -> void:
+	if device_id == 0:
+		_keyboard_device = controller_node
+		
+	_gamepad_devices[device_id] = controller_node
