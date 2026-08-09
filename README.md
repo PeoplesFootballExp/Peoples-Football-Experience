@@ -51,6 +51,8 @@ To download and run the game locally:
 - **Data**: [SQLite](https://sqlite.org/)
 - **Platform Targets:** PC and Mobile (no console support planned yet)
 
+Due to the planned scale of the game, the game's architectural decisions are made with maintainability, customization, and scalability in mind. The game will have a Data-Oriented Design (DOD) with an Entity Component System (ECS) back end in Rust. From the start, localization is taken into consideration with data neutral code being the standard from the start. 
+
 ## 5. Contributing 
 We welcome **everyone** - developers, designers, data gatherers, artists, translators, documentators, and even football enthusiasts.
 To get involved:
