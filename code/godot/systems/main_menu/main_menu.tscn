@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://ua2s27x8hj0x"]
+
+[ext_resource type="Script" uid="uid://igi3t4pqtnwy" path="res://scenes/main/main_menu.gd" id="1_aptbf"]
+[ext_resource type="Texture2D" uid="uid://bl32p46fp2x5o" path="res://assets/textures/IMG_4744.jpeg" id="2_afucf"]
+
+[node name="MainNode" type="Control" unique_id=1318310403]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_aptbf")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1723634565]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_afucf")
+flip_h = true
+
+[node name="HBox" type="HBoxContainer" parent="." unique_id=823831628]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginCon" type="MarginContainer" parent="HBox" unique_id=1128498285]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 200
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 200
+
+[node name="ButtonVBox" type="VBoxContainer" parent="HBox/MarginCon" unique_id=128534576]
+layout_mode = 2
+
+[node name="PlayMatchButton" type="Button" parent="HBox/MarginCon/ButtonVBox" unique_id=1958151964]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Play Match"
+
+[node name="SettingsButton" type="Button" parent="HBox/MarginCon/ButtonVBox" unique_id=2053948564]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Settings"
+
+[node name="CreditsButton" type="Button" parent="HBox/MarginCon/ButtonVBox" unique_id=14410833]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Credits"
+
+[node name="ExitGameButton" type="Button" parent="HBox/MarginCon/ButtonVBox" unique_id=893116040]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Exit Game
+"
+
+[node name="MarginContainer" type="MarginContainer" parent="HBox" unique_id=1308608636]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+size_flags_stretch_ratio = 2.0
+theme_override_constants/margin_top = 20
+
+[node name="Title" type="Label" parent="HBox/MarginContainer" unique_id=571547747]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "People's Football Experience"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ConfirmationDialog" type="ConfirmationDialog" parent="." unique_id=1320248640]
+oversampling_override = 1.0
+initial_position = 1
+size = Vector2i(327, 100)
+ok_button_text = "Exit Game"
+dialog_text = "Are you sure you want to exit the game?"
+cancel_button_text = "Return to Game"
+
+[connection signal="pressed" from="HBox/MarginCon/ButtonVBox/PlayMatchButton" to="." method="_on_play_match_button_pressed"]
+[connection signal="pressed" from="HBox/MarginCon/ButtonVBox/ExitGameButton" to="." method="_on_exit_game_button_pressed"]
+[connection signal="canceled" from="ConfirmationDialog" to="." method="_on_cancel_dialog_canceled"]
+[connection signal="confirmed" from="ConfirmationDialog" to="." method="_on_confirmation_dialog_confirmed"]

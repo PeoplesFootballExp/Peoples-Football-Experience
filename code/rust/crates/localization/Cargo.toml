@@ -6,4 +6,4 @@ repository.workspace = true
 
 [dependencies]
 fluent = "0.17.0"
-unic_langid = "0.9.6"
+unic-langid = "0.9.6"

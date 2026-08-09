@@ -6,3 +6,4 @@ repository.workspace = true
 
 [dependencies]
 localization = { path = "../../crates/localization" }
+layered_content_pipeline = { path = "../../crates/layered_content_pipeline" }

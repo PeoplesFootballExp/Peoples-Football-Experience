@@ -1,28 +1,61 @@
+# ======================================================
 # Godot 4+ specific ignores
+# ======================================================
 .godot/
 .nomedia
 
+# ======================================================
 # Godot-specific ignores
+# ======================================================
 .import/
 export.cfg
 export_credentials.cfg
 *.tmp
 
-
+# ======================================================
 # Mono-specific ignores
+# ======================================================
 .mono/
 data_*/
 mono_crash.*.json
 
+# ======================================================
 # Editor-specific
+# ======================================================
 .vscode/
 .idea/
 
-# Exclude all files in the assets directory
-code/godot/assets/*
+# ======================================================
+# Exclude all asset files
+# ======================================================
 
-# Keep the assets folder structure in Git
-!code/godot/assets/.gitkeep
+# 2D Textures
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+
+# Vector Graphics
+*.svg
+*.svgz
+
+# 3D Models
+*.glb
+*.gltf
+
+# Audio assets
+*.mp4
+*.wav
+
+# Custom Fonts
+*.ttf
+*.otf
+
+# ======================================================
+# EXCEPTION: Placeholders and Base UI
+# ======================================================
+!shared/placeholders/**
 
 # Rust
 target/

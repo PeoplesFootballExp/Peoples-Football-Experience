@@ -6,7 +6,7 @@ pub fn print_name() {
     println!("Hello, Its Eduardo");
 }
 
-pub mod localization;
+// pub mod localization;
 
 #[cfg(test)]
 mod tests {

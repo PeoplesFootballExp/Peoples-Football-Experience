@@ -15,9 +15,8 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="People's Football Experience"
-run/main_scene="res://scenes/main/node_2d.tscn"
 config/features=PackedStringArray("4.7", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://shared/placeholders/icon.svg"
 
 [autoload]
 

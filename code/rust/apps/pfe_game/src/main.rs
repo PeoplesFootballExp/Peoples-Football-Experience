@@ -1,5 +1,5 @@
-use localization;
+use layered_content_pipeline;
 
 fn main() {
-    localization::print_name();
+    layered_content_pipeline::print_manifest();
 }
