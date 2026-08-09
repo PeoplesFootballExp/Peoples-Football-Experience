@@ -1,6 +1,5 @@
-
-
+use localization;
 
 fn main() {
-    println!("Hello, world!");
+    localization::print_name();
 }

@@ -450,7 +450,7 @@ function getAPIBaseURL(languageCode) {
 
 // src/API/mediawiki.ts
 async function getWikiArticles(query, languageCode, wiki, limit) {
-  const url = `https://${languageCode}.${wiki.toLowerCase()}.org/w/api.php?format=json&action=opensearch&profile=fuzzy&redirects=resolve&limit=${limit != null ? limit : 10}&search=` + encodeURIComponent(query);
+  const url = getAPIBaseURL2(wiki, languageCode) + `&action=opensearch&profile=fuzzy&redirects=resolve&limit=${limit != null ? limit : 10}&search=` + encodeURIComponent(query);
   const response = await fetchData(url);
   if (!response) return null;
   return response[1].map((title, index) => ({
@@ -458,6 +458,15 @@ async function getWikiArticles(query, languageCode, wiki, limit) {
     url: response[3][index],
     languageCode
   }));
+}
+async function getWikiArticleCategories(titles, languageCode, wiki) {
+  const url = getAPIBaseURL2(wiki, languageCode) + "&action=query&prop=categories&cllimit=500&clshow=!hidden&titles=" + titlesToURLParameter(titles);
+  const response = await fetchData(url);
+  if (!response.query) return null;
+  return sortResponsesByTitle(titles, Object.values(response.query.pages)).map((page) => page.categories || null).map((v) => v.map((c) => c.title.split(":")[1]).join(", "));
+}
+function getAPIBaseURL2(wiki, languageCode) {
+  return `https://${languageCode}.${wiki.toLowerCase()}.org/w/api.php?format=json`;
 }
 
 // src/utils/searchModal.ts
@@ -597,22 +606,31 @@ var TemplateModal = class extends import_obsidian3.SuggestModal {
 // src/utils/generateInsert.ts
 var import_obsidian4 = require("obsidian");
 async function generateInsert(settings, article, wiki, content, selection) {
-  var _a, _b, _c, _d, _e, _f;
+  var _a, _b, _c, _d, _e, _f, _g, _h;
   const title = settings.prioritizeArticleTitle || selection === "" ? article.title : selection;
   let insert = content.replaceAll("{title}", title).replaceAll("{url}", article.url).replaceAll("{language}", languages[article.languageCode]).replaceAll("{languageCode}", article.languageCode);
+  if (wiki != "Wikivoyage") {
+    if (content.includes("{categories}")) {
+      const categories = (_b = (_a = await getWikiArticleCategories([article.title], settings.language, wiki)) == null ? void 0 : _a[0]) != null ? _b : null;
+      insert = insert.replaceAll("{categories}", categories != null ? categories : "");
+      if (!categories) new import_obsidian4.Notice("Could not fetch the articles categories.");
+    }
+  } else {
+    insert = insert.replaceAll("{categories}", "");
+  }
   if (wiki == "Wikipedia") {
     if (content.includes("{description}")) {
-      const description = (_b = (_a = await getWikipediaArticleDescriptions([article.title], settings.language)) == null ? void 0 : _a[0]) != null ? _b : null;
+      const description = (_d = (_c = await getWikipediaArticleDescriptions([article.title], settings.language)) == null ? void 0 : _c[0]) != null ? _d : null;
       insert = insert.replaceAll("{description}", description != null ? description : "");
       if (!description) new import_obsidian4.Notice("Could not fetch the articles description.");
     }
     if (content.includes("{intro}")) {
-      const intro = (_d = (_c = await getWikipediaArticleIntros([article.title], settings.language, settings.cleanupIntros)) == null ? void 0 : _c[0]) != null ? _d : null;
+      const intro = (_f = (_e = await getWikipediaArticleIntros([article.title], settings.language, settings.cleanupIntros)) == null ? void 0 : _e[0]) != null ? _f : null;
       insert = insert.replaceAll("{intro}", intro != null ? intro : "");
       if (!intro) new import_obsidian4.Notice("Could not fetch the articles introduction.");
     }
     if (content.includes("{thumbnail}") || content.includes("{thumbnailUrl}")) {
-      const thumbnailUrl = (_f = (_e = await getWikipediaArticleThumbnails([article.title], settings.language)) == null ? void 0 : _e[0]) != null ? _f : null;
+      const thumbnailUrl = (_h = (_g = await getWikipediaArticleThumbnails([article.title], settings.language)) == null ? void 0 : _g[0]) != null ? _h : null;
       insert = insert.replaceAll(
         "{thumbnail}",
         thumbnailUrl ? `![${article.title} Thumbnail${settings.thumbnailWidth ? ` | ${settings.thumbnailWidth}` : ""}](${thumbnailUrl})` : ""
@@ -2638,8 +2656,8 @@ var WikipediaHelperSettingTab = class extends import_obsidian10.PluginSettingTab
 // src/commands/openArticles.ts
 var import_obsidian11 = require("obsidian");
 var OpenArticleModal = class extends SearchModal {
-  constructor(app2, settings, wiki, plugin) {
-    super(app2, settings, wiki);
+  constructor(plugin, app2, settings, wiki, editor) {
+    super(app2, settings, wiki, editor);
     __publicField(this, "workspace");
     __publicField(this, "plugin");
     this.workspace = app2.workspace;
@@ -2658,9 +2676,9 @@ var OpenArticleModal = class extends SearchModal {
     } else if (!this.settings.showedWebviewerMessage && import_obsidian11.Platform.isDesktopApp) {
       const modal = new import_obsidian11.Modal(this.app);
       modal.onClose = () => this.onChooseSuggestion(article);
-      modal.titleEl.setText("Wikipedia Search plugin \u2665 Web viewer plugin");
-      modal.contentEl.innerHTML = `The Wikipedia Search plugin integrates with the Web viewer core plugin to enable you to open articles directly inside of Obsidian! You just need to enable it. It does the heavy lifting of loading the website itself in Obsidian. In this case the Wikipedia Search plugin just provides the search functionality. Using the Web viewer plugin is completely optional but I highly recommend you check it out! Without it enabled all articles will be opened in your default browser. Note: This will only be shown to you once but you can always find the information later in the README on GitHub as well. ~ Murphy :)<br><br>
-			<b>tl;dr: Enable the Web viewer plugin (Settings > Core plugins > Web viewer) to open Wikipedia articles directly inside of Obsidian!</b>`;
+      modal.titleEl.setText("Wikipedia Helper plugin \u2665 Web viewer plugin");
+      modal.contentEl.innerHTML = `The Wikipedia Helper plugin integrates with the Web viewer core plugin to enable you to open articles directly inside of Obsidian! You just need to enable it. It does the heavy lifting of loading the website itself in Obsidian. In this case the Wikipedia Helper plugin just provides the search functionality. Using the Web viewer plugin is completely optional but I highly recommend you check it out! Without it enabled all articles will be opened in your default browser. Note: This will only be shown to you once. ~ Murphy :)<br><br>
+			<b>tl;dr: Enable the Web viewer plugin (Settings > Core plugins > Web viewer) to open Wiki articles directly inside of Obsidian!</b>`;
       modal.open();
       this.settings.showedWebviewerMessage = true;
       this.plugin.saveSettings();
@@ -2756,16 +2774,6 @@ var WikipediaHelperPlugin = class extends import_obsidian13.Plugin {
     console.log("Loading Wikipedia Helper plugin");
     await this.loadSettings();
     this.addCommand({
-      id: "link-wikipedia-article",
-      name: "Link Wikipedia Article",
-      editorCallback: (editor) => new LinkArticleModal(this.app, this.settings, "Wikipedia", editor).open()
-    });
-    this.addCommand({
-      id: "open-wikipedia-article",
-      name: "Open Wikipedia Article",
-      callback: () => new OpenArticleModal(this.app, this.settings, "Wikipedia", this).open()
-    });
-    this.addCommand({
       id: "create-wikipedia-article-note",
       name: "Create Wikipedia Article Note",
       callback: () => {
@@ -2780,7 +2788,7 @@ var WikipediaHelperPlugin = class extends import_obsidian13.Plugin {
     this.addRibbonIcon(
       "wikipedia",
       "Open Article",
-      () => new OpenArticleModal(this.app, this.settings, "Wikipedia", this).open()
+      () => new OpenArticleModal(this, this.app, this.settings, "Wikipedia").open()
     );
     for (const wiki of wikilist) {
       this.addCommand({
@@ -2791,7 +2799,16 @@ var WikipediaHelperPlugin = class extends import_obsidian13.Plugin {
       this.addCommand({
         id: `open-${wiki.toLowerCase()}-article`,
         name: `Open ${wiki} Article`,
-        callback: () => new OpenArticleModal(this.app, this.settings, wiki, this).open()
+        callback: () => {
+          var _a;
+          return new OpenArticleModal(
+            this,
+            this.app,
+            this.settings,
+            wiki,
+            (_a = this.app.workspace.activeEditor) == null ? void 0 : _a.editor
+          ).open();
+        }
       });
     }
     this.addSettingTab(new WikipediaHelperSettingTab(this.app, this));

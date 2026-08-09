@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "d1cc16cfb9941470",
+    "id": "d50b1bbb82f1a2ba",
     "type": "split",
     "children": [
       {
-        "id": "25c32a463d15161c",
+        "id": "e0f0f894f49c0cb3",
         "type": "tabs",
         "children": [
           {
-            "id": "8f61a5bffdc789cc",
+            "id": "54dfb84cfc24d03c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02_Design/Input System.md",
+                "file": "01_Development/Virtual File System.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Input System"
+              "title": "Virtual File System"
             }
           }
         ]
@@ -27,33 +27,35 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "7d9da50fef0ec7df",
+    "id": "29bcde3f29ed0652",
     "type": "split",
     "children": [
       {
-        "id": "1b8c48b20a78067f",
+        "id": "3283c66f71c9e95c",
         "type": "tabs",
         "children": [
           {
-            "id": "74815dfdd15768a7",
+            "id": "af5f9e1e871ed3e9",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
             }
           },
           {
-            "id": "d5b3654104fca01f",
+            "id": "781a048706dc278a",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#dev-blog",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +67,7 @@
             }
           },
           {
-            "id": "d583d1c8190a64aa",
+            "id": "c1461ae04823122c",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,50 +80,50 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 387.50722885131836
   },
   "right": {
-    "id": "50dcf7b17daf14d0",
+    "id": "314c77e92b702703",
     "type": "split",
     "children": [
       {
-        "id": "bf62d0adedd01f5e",
+        "id": "9bcc14f83e677ca3",
         "type": "tabs",
         "children": [
           {
-            "id": "83656f999f632659",
+            "id": "66b3c62ed1c7fb77",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "05 - Literature/Module 3 - Behavior and Stimuli.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Module 3 - Behavior and Stimuli"
             }
           },
           {
-            "id": "0d0c433223298aaf",
+            "id": "546b8ca5faab58b2",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "10_Templates/ReadMe.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from ReadMe"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "5ada63cc53b3320f",
+            "id": "6eeaecf42d586283",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -136,111 +138,165 @@
             }
           },
           {
-            "id": "7bee6a8a94456e85",
+            "id": "004e0166feb2a0b2",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "10_Templates/ReadMe.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of ReadMe"
+              "title": "Outline"
             }
           },
           {
-            "id": "bebf38ceac1e04c4",
+            "id": "84aaed079b071fa7",
             "type": "leaf",
             "state": {
               "type": "footnotes",
+              "state": {},
+              "icon": "lucide-file-signature",
+              "title": "Footnotes"
+            }
+          },
+          {
+            "id": "1048c38bf4536666",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
               "state": {
-                "file": "05_Tasks/00_Football Game Tasks.md"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               },
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "a46f0baf478b63af",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "advanced-tables-toolbar"
+            }
+          },
+          {
+            "id": "83d0553c8ebf391a",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
+          },
+          {
+            "id": "7fae929cd986eb32",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "lucide-ghost",
+              "title": "review-queue-list-view"
+            }
+          },
+          {
+            "id": "bce372ecf8f619ab",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 7
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "audio-recorder:Start/stop recording": false,
       "markdown-importer:Open format converter": false,
       "publish:Publish changes...": false,
+      "workspaces:Manage workspace layouts": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-full-calendar:Open Full Calendar": false,
       "obsidian-kanban:Create new board": false,
+      "wikipedia-search:Open Article": false,
       "omnisearch:Omnisearch": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
       "pdf-plus:PDF++: Toggle auto-copy": false,
       "pdf-plus:PDF++: Toggle auto-focus": false,
       "pdf-plus:PDF++: Toggle auto-paste": false,
-      "wikipedia-search:Open Article": false,
-      "obsidian-full-calendar:Open Full Calendar": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "74815dfdd15768a7",
+  "active": "83d0553c8ebf391a",
   "lastOpenFiles": [
-    "Resources/Input System Basic Schematic.png",
-    "Input System Diagram.png",
-    "Resources/Input System Diagram.png",
-    "02_Design/Input System.md",
-    "02_Design/Autoload Index.base",
-    "02_Design/Match Scene.md",
-    "02_Design/Save System for PFE.md",
-    "02_Design/Player Actions.md",
-    "02_Design/PFE Database documentation.md",
-    "02_Design/Team Table Documentation.md",
-    "02_Design/Team Selection Menu.md",
-    "02_Design/Signal Reference.md",
-    "02_Design/Selection Tile.md",
-    "02_Design/Scenes Index.base",
-    "02_Design/Player Attributes.md",
-    "02_Design/ReadMe.md",
-    "02_Design/Main Menu.md",
-    "02_Design/ECS.md",
-    "Resources/sqlite_logo.png",
-    "Resources/python_logo.png",
-    "Resources/rust_mascot.png",
-    "Resources/rust_programming_logo.png",
-    "Resources/Selection Tile Wireframe.png",
-    "Resources/Obsidian_Logo.png",
-    "Resources/penpot_logo.png",
-    "Resources/PFE Banner.png",
-    "02_Design/Wikidata Queries.md",
-    "02_Design/Storage.md",
-    "01_Development/Dev Blogs/7 - Moving on to Match Scene.md",
-    "01_Development/Dev Blogs/1 - Laying the Foundations Again.md",
-    "01_Development/Dev Blogs/3 - Github Repo Created.md",
-    "01_Development/Dev Blogs/2 - Building the Base.md",
-    "01_Development/Dev Blogs/4 - Started Godot Project.md",
-    "01_Development/Dev Blogs/5 - Database Work.md",
-    "01_Development/Dev Blogs/6 - League Selection.md",
-    "01_Development/Development.md",
-    "Templates/Scene Template.md",
-    "Untitled.md",
-    "Areas/Untitled",
-    "Untitled.base",
-    "Areas",
-    "Resources/PFE Banner.af~lock~",
-    "Resources/PFE Banner.af",
-    "Resources",
-    "01_Development/Dev Blogs",
-    "Untitled 1.base",
-    "01_Planning/Untitled.canvas"
+    "01_Development/Localization.md",
+    "01_Development/Virtual File System.md",
+    "01_Development/Tools Used.md",
+    "01_Development/Pillars of People's Football Experience.md",
+    "01_Development/People's Football Experience - Game Design Document.md",
+    "01_Development/Image Formats and Sizing.md",
+    "01_Development/GNU General Public License v3.0.md",
+    "01_Development/GNU.md",
+    "01_Development/CONTRIBUTING.md.md",
+    "01_Development/Licensing Philosophy.md",
+    "Consonants.md",
+    "Vowels.md",
+    "03 - Resources/Textbooks/Fundamentals of phonetics - A practical guide for students.pdf",
+    "image-1.png",
+    "03 - Resources/Images/English Vowel Mnemonic Chart.png",
+    "03 - Resources/Images/American English Diphthongs Glide Map.png",
+    "03 - Resources/Images/American English Diphthongs.png",
+    "03 - Resources/Images/Vowel Quadrilateral for American English.png",
+    "03 - Resources/Images/Vowels in English.png",
+    "03 - Resources/Textbooks/Foundations of Speech and Hearing - Anatomy and Physiology.pdf",
+    "Spinal Reflexes and Descending Motor Pathways.md",
+    "06 - Permanent/Brainstem and Cranial Nerves.md",
+    "03 - Resources/Textbooks/Singing Exact English.pdf",
+    "06 - Permanent/Brain Structures, Hemispheric Specialization, and Brainstem Structures.md",
+    "06 - Permanent/Cerebral Hemispheres.md",
+    "06 - Permanent/Subcortical Nuclei and Cerebellum.md",
+    "03 - Resources/Images/Spinal Cord and Spinal Nerves.png",
+    "03 - Resources/Images/Cranial Nerve VII Nucleus.png",
+    "image.png",
+    "03 - Resources/Images/Dorsal View of Nuclei of Cranial Nerves.png",
+    "06 - Permanent/Meninges, Ventricles, and Blood Supply.md",
+    "06 - Permanent/Introduction To Anatomy and Physiology.md",
+    "06 - Permanent/Joints.md",
+    "06 - Permanent/Neurons and Neurophysiology.md",
+    "01 - Areas/Phonetics.md",
+    "01 - Areas/Sign Language.md",
+    "01 - Areas/Physiology.md",
+    "01 - Areas/Anatomy.md",
+    "03 - Resources/Images",
+    "05 - Literature/Module 3 - Behavior and Stimuli.md",
+    "03 - Resources/Textbooks",
+    "Untitled",
+    "08 - Templates",
+    "07- Archive",
+    "06 - Permanent",
+    "05 - Literature",
+    "Untitled.canvas",
+    "03 - Resources/Untitled.canvas"
   ]
 }
