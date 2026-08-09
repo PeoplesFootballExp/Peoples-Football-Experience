@@ -1,0 +1,72 @@
+# =================================================================
+# GLOBAL ATHLETE TUNING CONFIGURATION
+# Units: Metric (Meters, Seconds, Kilograms)
+# =================================================================
+
+[locomotion_limits]
+# Absolute ceilings for the physics engine. 
+# 10.5 m/s is roughly 37.8 km/h (Elite Professional Pace).
+best_sprint_speed_ms = 10.5
+worst_sprint_speed_ms = 6.5
+
+# Jogging should be roughly 55-60% of sprint speed.
+best_jog_speed_ms = 6.0
+worst_jog_speed_ms = 4.0
+
+# Acceleration defines how "snappy" the controls feel.
+# High values (40+) feel like arcade games; low values (15-20) feel like simulations.
+best_acceleration_ms2 = 40.0
+worst_acceleration_ms2 = 15.0
+best_deceleration_ms2 = 55.0
+worst_deceleration_ms2 = 20.0
+
+# Rotational speed at a standstill (Degrees per second)
+best_turn_speed_ds = 900.0   # Extremely "twitchy" (Messi/Neymar)
+worst_turn_speed_ds = 450.0  # Heavy/Lumbering
+
+# How much a player's height penalizes their turn speed, accounting for
+# player's differing center of mass
+height_agility_penalty_factor = 0.15
+
+# Modifier for moving sideways/backwards (ex: jockeying)
+lateral_speed_mult = 0.65
+backward_speed_mult = 0.50
+
+[aerial_physics]
+# The vertical heights from floor to feet (m)
+best_jumping_distance_m = 0.85
+worst_jumping_distance_m = 0.20
+
+# To account for running start to jump, add a bit extra height to jump
+best_running_multiplier = 1.2
+worst_running_multiplier = 1.0
+
+# The amount weight is taken into account for aerial duels
+physicality_modifier = 0.35
+
+[collisions]
+# Strength of the "push" when two players collide
+jostle_force_scalar = 15.0
+# Minimum mass difference to trigger a "shoulder barge" stumble
+stumble_mass_diff = 12.0
+
+
+[goalkeeper_limits]
+# Defines the physical reach of the GK logic in the simulation.
+best_dive_distance_m = 3.2
+worst_dive_distance_m = 1.8
+
+# Aspect ratio of the reach volume (Width vs Height)
+# 1.0 = Perfect sphere, 0.7 = flatter oval (realistic)
+reach_vertical_ratio = 0.75
+
+# Latency before the GK AI can trigger a save state
+best_reaction_time_sec = 0.10
+worst_reaction_time_sec = 0.50
+
+# How much velocity is lost when a ball is "parried"
+parry_restitution_coeff = 0.45
+
+# How long it takes for the GK to recover from a dive
+best_recovery_speed_s = 0.6
+worst_recovery_speed_s = 1.8

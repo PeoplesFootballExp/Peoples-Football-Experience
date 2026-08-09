@@ -8,8 +8,6 @@ export.cfg
 export_credentials.cfg
 *.tmp
 
-# Imported translations (automatically generated from CSV files)
-*.translation
 
 # Mono-specific ignores
 .mono/
@@ -20,7 +18,11 @@ mono_crash.*.json
 .vscode/
 .idea/
 
+# Exclude all files in the assets directory
+code/godot/assets/*
+
+# Keep the assets folder structure in Git
+!code/godot/assets/.gitkeep
+
 # Rust
 target/
-
-

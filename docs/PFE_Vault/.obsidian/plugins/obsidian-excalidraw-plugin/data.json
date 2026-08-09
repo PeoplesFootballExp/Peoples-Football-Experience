@@ -1,4 +1,6 @@
 {
+  "copyLinkToElemenetAnchorTo100": false,
+  "copyFrameLinkByName": false,
   "disableDoubleClickTextEditing": false,
   "folder": "Excalidraw",
   "cropFolder": "",
@@ -38,6 +40,8 @@
   "overrideObsidianFontSize": false,
   "dynamicStyling": "colorful",
   "isLeftHanded": false,
+  "desktopUIMode": "tray",
+  "tabletUIMode": "compact",
   "iframeMatchExcalidrawTheme": true,
   "matchTheme": false,
   "matchThemeAlways": false,
@@ -70,7 +74,8 @@
   "showSecondOrderLinks": true,
   "focusOnFileTab": true,
   "openInMainWorkspace": true,
-  "showLinkBrackets": true,
+  "showLinkBrackets": false,
+  "syncElementLinkWithText": false,
   "allowCtrlClick": true,
   "forceWrap": false,
   "pageTransclusionCharLimit": 200,
@@ -107,7 +112,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.16.1",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.19.0",
     "libraryItems": []
   },
   "imageElementNotice": true,
@@ -118,9 +123,7 @@
   "mdBorderColor": "Black",
   "mdCSS": "",
   "scriptEngineSettings": {},
-  "defaultTrayMode": true,
-  "compactModeOnTablets": true,
-  "previousRelease": "2.16.1",
+  "previousRelease": "2.19.0",
   "showReleaseNotes": true,
   "compareManifestToPluginVersion": true,
   "showNewVersionNotification": true,
@@ -129,6 +132,7 @@
   "taskboneEnabled": false,
   "taskboneAPIkey": "",
   "pinnedScripts": [],
+  "sidepanelTabs": [],
   "customPens": [
     {
       "type": "default",
@@ -483,6 +487,7 @@
   "aiEnabled": true,
   "openAIAPIToken": "",
   "openAIDefaultTextModel": "gpt-3.5-turbo-1106",
+  "openAIDefaultTextModelMaxTokens": 4096,
   "openAIDefaultVisionModel": "gpt-4o",
   "openAIDefaultImageGenerationModel": "dall-e-3",
   "openAIURL": "https://api.openai.com/v1/chat/completions",
@@ -809,5 +814,6 @@
     "customPaperColor": "#ffffff",
     "alignment": "center",
     "margin": "normal"
-  }
+  },
+  "disableContextMenu": false
 }

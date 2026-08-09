@@ -8,21 +8,28 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "tag:#dev-blog  ",
+      "query": "tag:#Lingustics  ",
       "color": {
         "a": 1,
-        "rgb": 14701138
+        "rgb": 5429216
       }
     },
     {
-      "query": "tag:#scene",
+      "query": "tag:#Music",
       "color": {
         "a": 1,
-        "rgb": 14725458
+        "rgb": 11752160
+      }
+    },
+    {
+      "query": "tag:#Science  ",
+      "color": {
+        "a": 1,
+        "rgb": 6021202
       }
     }
   ],
-  "collapse-display": true,
+  "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": 0,
   "nodeSizeMultiplier": 1,
@@ -32,6 +39,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1.0522144195263667,
+  "scale": 0.9645832165020036,
   "close": true
 }
