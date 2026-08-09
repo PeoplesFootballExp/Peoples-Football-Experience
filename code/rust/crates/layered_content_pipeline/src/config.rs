@@ -1,64 +1,72 @@
 use enum_map::{Enum, EnumMap};
-use godot::classes::FileAccess;
-use godot::classes::file_access::ModeFlags;
-use godot::prelude::*;
-use serde::Deserialize;
+use rustc_hash::FxHashMap;
+use serde::{Deserialize, Deserializer};
+use std::collections::HashMap;
+use uuid::Uuid;
 
-const MANIFEST_PATH: &str = "res://assets/manifest.toml";
-
-#[derive(Debug, Deserialize, Clone, Copy, Enum)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Deserialize, Enum)]
 pub enum AssetType {
-    ClubLogo,
-    ClubKit,
-    PlayerPortrait,
-    ManagerPortrait,
+    TeamLogo,
+    TeamKit,
+    TeamChant,
+    TerritoryFlag,
+    PersonPortrait,
     StadiumModel,
-    StadiumSponsorBoard,
-    PitchTexture,
-    AudioChant,
+    TournamentScoreboard,
+    PersonHead,
+    PersonArm,
+    PersonLeg,
+    PersonFacialHair,
+    PersonHair,
+    PersonShirt,
+    PersonPant,
+    PersonShoe,
+    PersonGlove,
 }
 
 #[derive(Debug, Deserialize, Clone)]
 pub struct PipelineLocations {
+    #[serde(rename = "Base")]
     pub base: String,
+    #[serde(rename = "Mod")]
     pub mods: String,
+    #[serde(rename = "Global")]
     pub global: String,
+    #[serde(rename = "Save")]
     pub save: String,
 }
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Deserialize, Clone)]
 pub struct PipelineConfig {
     pub locations: PipelineLocations,
     pub formats: EnumMap<AssetType, String>,
     pub categories: EnumMap<AssetType, String>,
     pub fallback: EnumMap<AssetType, String>,
+
+    // Convert string keys to u128 on-the-fly during Serde parsin
+    #[serde(deserialize_with = "deserialize_uuid_assets")]
+    pub assets: FxHashMap<u128, String>,
 }
 
-#[derive(Debug, Deserialize)]
-pub struct ManifestConfig {
-    pub locations: String,
-    pub formats: String,
-    pub categories: String,
-    pub fallbacks: String,
-}
+/// Custom deserializer that parses string UUID keys directly into u128 FxHashMap
+fn deserialize_uuid_assets<'de, D>(deserializer: D) -> Result<FxHashMap<u128, String>, D::Error>
+where
+    D: Deserializer<'de>,
+{
+    let raw_map = HashMap::<String, String>::deserialize(deserializer)?;
+    let mut assets = FxHashMap::with_capacity_and_hasher(raw_map.len(), Default::default());
 
-impl ManifestConfig {
-    pub fn load_manifest_via_godot() -> Result<ManifestConfig, String> {
-        let gpath = GString::from(MANIFEST_PATH);
-
-        if let Some(file) = FileAccess::open(&gpath, ModeFlags::READ) {
-            let toml_content = file.get_as_text().to_string();
-            ManifestConfig::from_toml(&toml_content).map_err(|e| format!("TOML Parse Error: {}", e))
-        } else {
-            let err_code = FileAccess::get_open_error();
-            Err(format!(
-                "Godot FileAccess failed to open '{}'. Error code: {:?}",
-                MANIFEST_PATH, err_code
-            ))
-        }
+    for (key, val) in raw_map {
+        let uuid = Uuid::parse_str(&key).map_err(serde::de::Error::custom)?;
+        assets.insert(uuid.as_u128(), val);
     }
 
-    pub fn from_toml(content: &str) -> Result<Self, toml::de::Error> {
-        toml::from_str(content)
+    Ok(assets)
+}
+
+impl PipelineConfig {
+    /// Deserializes TOML directly in a single pass
+    pub fn from_toml(toml_str: &str) -> Result<Self, toml::de::Error> {
+        toml::from_str(toml_str)
     }
 }

@@ -59,3 +59,19 @@ mono_crash.*.json
 
 # Rust
 target/
+
+# Auto-detect text files and normalize line endings to LF in the repo
+* text=auto eol=lf
+
+# Explicitly ensure code and config files use LF
+*.rs text eol=lf
+*.toml text eol=lf
+*.gd text eol=lf
+*.tscn text eol=lf
+*.tres text eol=lf
+
+# Keep binary files raw
+*.png binary
+*.webp binary
+*.gltf binary
+*.bin binary
