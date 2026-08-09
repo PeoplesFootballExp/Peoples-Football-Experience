@@ -1,4 +1,4 @@
-use layered_content_pipeline::config::*;
+use vfs::config::*;
 
 fn main() {
     let manifest_toml = r#"
