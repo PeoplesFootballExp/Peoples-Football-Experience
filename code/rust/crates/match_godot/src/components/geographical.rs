@@ -52,16 +52,16 @@ pub struct ClimateAttComponent {
 
 #[derive(Component)]
 pub struct EloComponent {
-    // The ELO for the country in continental rankings. Usually a 
-    // measure of the territory's top league. OPTIONAL as territory 
+    // The ELO for the country in continental rankings. Usually a
+    // measure of the territory's top league. OPTIONAL as territory
     // may not have a league system at all.
     pub league_elo: Option<f32>,
     // The ELO for the country in a global setting. Useful for rankin
-    // territory's relative ranking to the entire world. OPTIONAL as 
+    // territory's relative ranking to the entire world. OPTIONAL as
     // the territory may not have a league system at all.
     pub global_elo: Option<f32>,
-    // The ELO for the country's national team. Synonymous to FIFA's 
-    // National Team Rankings. Mandatory for every territory as every 
+    // The ELO for the country's national team. Synonymous to FIFA's
+    // National Team Rankings. Mandatory for every territory as every
     // active territory will automatically have a national team.
     pub national_elo: f32,
 }
@@ -108,9 +108,4 @@ pub struct EnthusiasmComponent {
 
 // A quick bool check if a city is the capital of a territory
 #[derive(Component)]
-pub struct IsCapitalComponent {
-
-}
-
-
-
+pub struct IsCapitalComponent {}

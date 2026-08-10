@@ -1,16 +1,15 @@
 use bevy_ecs::prelude::*;
 
-
 #[derive(Component)]
 pub struct IdentityComponent {
     // The commonly used name for the entity. For example, a nickname used by a famous football player
     pub name: String,
     // The official name of an entity. Typically less commonly used or longer than the commonly used name
     pub official_name: String,
-    // An optional third name for an entity. Commonly used for territories 
+    // An optional third name for an entity. Commonly used for territories
     pub alt_name: Option<String>,
     // The optional demonym for the entity especially if it is a territory
-    pub demonym: Option<String>
+    pub demonym: Option<String>,
 }
 
 // Short Abbreviated Name for the entity
@@ -50,10 +49,10 @@ pub struct ColorsComponent {
     // secondary color, also a packed u32
     pub secondary_color: Option<u32>,
     // Teritary Color, also packed u32
-    pub tertiary_color: Option<u32>, 
+    pub tertiary_color: Option<u32>,
 }
 
-/// The Birthday of the entity 
+/// The Birthday of the entity
 #[derive(Component)]
 pub struct BirthdayComponent {
     // The Year, mandatory value
@@ -88,6 +87,5 @@ pub struct PrioritiesComponent {
     pub international_success: u8,
     // Continental Success is how important winning continental
     // tournaments are for the team
-    pub continental_success: u8, 
+    pub continental_success: u8,
 }
-
