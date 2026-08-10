@@ -5,3 +5,25 @@ edition.workspace = true
 repository.workspace = true
 
 [dependencies]
+
+# Core Database
+rusqlite = { version = "0.40.2", features = [
+    "bundled",
+    "session",
+    "chrono",
+    "uuid",
+    "functions",
+    "hooks"
+] }
+
+# Data Mapping & types
+serde = { version = "1.0.229", features = ["derive"] }
+rustc-hash = "2.1.3"
+uuid = { version = "1.24.0", features = ["v4", "serde"] }
+chrono = { version = "0.4.45", features = ["serde"] }
+
+# Crate Error Handling
+thiserror = "2.0.20"
+
+# Logging
+tracing = "0.1.44"

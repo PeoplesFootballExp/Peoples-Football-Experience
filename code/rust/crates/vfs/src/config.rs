@@ -7,7 +7,10 @@ use uuid::Uuid;
 #[derive(Debug, Clone, Copy, PartialEq, Eq, Hash, Deserialize, Enum)]
 pub enum AssetType {
     TeamLogo,
-    TeamKit,
+    TeamKitHome,
+    TeamKitAway,
+    TeamKitThird,
+    TeamKitGoalKeeper,
     TeamChant,
     TerritoryFlag,
     PersonPortrait,
