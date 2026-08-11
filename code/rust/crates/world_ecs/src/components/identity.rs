@@ -2,14 +2,21 @@ use bevy_ecs::prelude::*;
 
 #[derive(Component)]
 pub struct IdentityComponent {
-    // The commonly used name for the entity. For example, a nickname used by a famous football player
-    pub name: String,
-    // The official name of an entity. Typically less commonly used or longer than the commonly used name
-    pub official_name: String,
-    // An optional third name for an entity. Commonly used for territories
-    pub alt_name: Option<String>,
-    // The optional demonym for the entity especially if it is a territory
-    pub demonym: Option<String>,
+    // The primary given name of the person
+    pub given_primary: ,
+
+    // The secondary given name of the person
+    pub given_secondary: u32,
+
+    // The primary family name of the person, usually the default last name used in game.
+    pub family_primary: u32,
+
+    // The secondary family name of the person, usually only used for string
+    pub family_secondary: u32,
+
+    // The mononym of the person, usually only in cases where the player is
+    // of Brazilian or Portuguese origin. Examples are "Pele", "Zico", "Ronaldo"
+    pub mononym: u32,
 }
 
 // Short Abbreviated Name for the entity

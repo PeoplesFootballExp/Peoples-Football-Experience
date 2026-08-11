@@ -25,6 +25,7 @@ The following attributes detail how well a player executes actions involving the
 | Corners     | Accuracy and curve on corner kicks                                              |
 | Penalties   | Composure and Accuracy when taking penalty kicks                                |
 | Long Throws | Distance and accuracy of long-distance throws-ins                               |
+| Skill Moves | The ability of the player to perform skill moves (0-5)                          |
 
 
 # Mental Ability
@@ -50,18 +51,21 @@ The following attributes detail how well a player executes actions involving the
 # Physical Ability
 
 
-| Attribute       | General Function                                                             |
-| --------------- | ---------------------------------------------------------------------------- |
-| Pace            | Maximum speed reached while running without the ball                         |
-| Acceleration    | How quickly a player reaches their top speed from a standstill               |
-| Agility         | Ease and speed of changing direction and twisting                            |
-| Balance         | Ability to remain steady on their feet when dribbling or being tackled       |
-| Strength        | Physical power used to win contested balls or shield the ball from opponents |
-| Jumping Reach   | Maximum height a player can reach with their head when jumping               |
-| Stamina         | Ability to maintain physical effort throughout the match without fatigue     |
-| Natural Fitness | Rate of recovery between matches and resistance to losing condition          |
-| Height          | Player height (in cm) - influences aerial duels                              |
-| Weight          | Player weight (in kg) - influences strength contests and balance             |
+| Attribute        | General Function                                                             |
+| ---------------- | ---------------------------------------------------------------------------- |
+| Pace             | Maximum speed reached while running without the ball                         |
+| Acceleration     | How quickly a player reaches their top speed from a standstill               |
+| Agility          | Ease and speed of changing direction and twisting                            |
+| Balance          | Ability to remain steady on their feet when dribbling or being tackled       |
+| Strength         | Physical power used to win contested balls or shield the ball from opponents |
+| Jumping Reach    | Maximum height a player can reach with their head when jumping               |
+| Stamina          | Ability to maintain physical effort throughout the match without fatigue     |
+| Natural Fitness  | Rate of recovery between matches and resistance to losing condition          |
+| Height           | Player height (in cm) - influences aerial duels                              |
+| Weight           | Player weight (in kg) - influences strength contests and balance             |
+| Injury Proneness | The propensity to become injuried during matches                             |
+| Dominant Foot    | Which foot is the dominant foot, 0 for right and 1 for left                  |
+| Weak Foot        | How strong of a weak foot does the player have (0-5)                         |
 
 # Goal Keepers Specifics
 
@@ -77,3 +81,27 @@ The following attributes detail how well a player executes actions involving the
 | Keeper Positioning | Ability to position themselves correctly to cover the goal against shots                    |
 | Command of Area    | Authority and effectiveness in organizing the defense and claiming balls within the box     |
 | Eccentricity       | Tendency to take ricks or engage in unconventional actions (e.g. rushing out aggressively ) |
+# Personality 
+
+All of these attributes influence the player's decisions outside of the general match loop. These dictate how the player acts, talks, and moves through the world of football.
+
+| Attribute         | General Function                                                                                                |
+| ----------------- | --------------------------------------------------------------------------------------------------------------- |
+| Ambition          | Desire to play at the highest level, win trophies, and get consistent playing time                              |
+| Professionalism   | Discipline in training, dietary habits, and response to club fine systems. Impacts career longevity             |
+| Loyalty           | Resistance to turning down contracts or forcing transfers to bigger clubs                                       |
+| Pressure Handling | Performance resilience during high-stress scenarios (cup finals, relegation battles, crucial penalties.)        |
+| Temperament       | Ability to remain calm under provoke/frustration (prevents red cards, locker room outbursts, or media tantrums) |
+| Adaptability      | Speed at which player settles into a new country, culture, league, or team language                             |
+| Sportsmanship     | Propensity for fair play (kicking ball out for injured player, avoiding diving, etc)                            |
+|                   |                                                                                                                 |
+
+# Other Attributes
+
+
+| Attribute | General Function                                                                                    |
+| --------- | --------------------------------------------------------------------------------------------------- |
+| Stamina   | Short term energy pool during a 90 minute match                                                     |
+| Sharpness | Medium term ability from playing consecutive macthes; impacts touch and timing                      |
+| Fatigue   | Long term weariness that builds up across a season, reducing max stamina and increasing injury risk |
+|           |                                                                                                     |
