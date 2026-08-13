@@ -50,5 +50,20 @@ name-pos-rm = Right Midfielder
 
 name-pos-cf = Center Forward
     .short = CF
-    .desc =
+    .desc = A versatile forward who often drops slightly to link up with the midfield, pull defenders out of position, and create space for the attackers.
     .plural = Center Forwards
+
+name-pos-st = Striker
+    .short = ST
+    .desc = The focal point of the attack, often being the closest player to the opponents goal. Responsible primarily for scoring goals.
+    .plural = Strikers
+
+name-pos-rw = Right Winger
+    .short = RW
+    .desc = An advanced wide player attacking down the right flank, looking to beat defenses and provide crosses or shoot.
+    .plural = Right Wingers
+
+name-pos-lw = Left Winger
+    .short = LW
+    .desc = An advanced wide player attacking down the left flank, looking to beat defenses and provide crosses or shoot.
+    .plural = Left Wingers
