@@ -1,11 +1,11 @@
 
-**Status:** `Backlog | To Do | In Progress | Review | Done 
-**Type:** #gameplay | #ai | #ui | #assets | #tech | #testing | #docs
-**Priority:** #critical | #moderate | #polish | #optional`  
-**Effort:** #short`(≤1 day)` | #medium`(2–6 days)` | #long `(1–2 weeks+)`  
-**Created:** {{Date}}  
-**Last Updated:** {{Date}}  
-**Owner:** {{Your Name or Team Member}}  
+**Status:**  To Do
+**Type:** #gameplay 
+**Priority:** #critical   
+**Effort:** #short`(≤1 day)`  
+**Created:** 2026-08-19  
+**Last Updated:** 2026-08-19  
+**Owner:** Eddie 
 **Related GitHub Issue (if any):** 
 
 
@@ -14,11 +14,8 @@
 ## Overview
 Briefly describe the **goal** of this task and what it adds to the game.
 
-> _Example:_  
-> Implement player movement and ball control using Unity physics.  
-> Core gameplay feature for the MVP phase.
-
-
+- To create the core entity and components of the players in the match engine
+- Decide what information is relevant for the player in the match engine, here the smaller is better
 
 ---
 
@@ -29,6 +26,7 @@ This helps remind you (or future collaborators) of the reasoning behind it.
 > _Example:_  
 > The player movement system is the foundation for all in-game actions. It needs to feel responsive, intuitive, and work across controllers and keyboards.
 
+This task is needed to set the ground work for the player and its data inside the match scene. The entire match engine logic is dependent on this 
 
 
 ---
@@ -50,11 +48,10 @@ List out the **specific elements** or deliverables that define this task.
 Concrete, actionable steps for completing the task.  
 Mark them off as you go.
 
-- [ ] Step 1: {{First action — e.g., create new Godot scene}}
-- [ ] Step 2: {{Add required scripts, logic, or art assets}}
-- [ ] Step 3: {{Integrate with existing systems (e.g., physics, AI)}}
-- [ ] Step 4: {{Run internal test and debug issues}}
-- [ ] Step 5: {{Document implementation in Dev Wiki}}
+- [ ] Step 1: Design the player entity and its components
+- [ ] Step 2: Ensure the entity is as small as possible in memory
+- [ ] Step 3: Start planning the systems that would interact with different components of this player entity
+
 
 > ⏳ **Tip:** Use `Ctrl + Enter` to check off tasks as you progress.
 
@@ -63,11 +60,7 @@ Mark them off as you go.
 ## Dependencies
 List what this task depends on or what depends on it.
 
-| Type         | Task/Link                       | Status        |
-| ------------ | ------------------------------- | ------------- |
-| **Requires** | [[Task - Input System]]         | ✅ Done        |
-| **Requires** | [[Task - Animation Controller]] | ⏳ Pending     |
-| **Blocks**   | [[Task - Stamina System]]       | ❌ Not Started |
+As of right now, no dependencies
 
 
 ---
@@ -75,14 +68,6 @@ List what this task depends on or what depends on it.
 ## Testing & QA Checklist
 Ensure this task is **verified and functional** before moving to “Review.”
 
-- [ ] Confirm expected behavior in play mode  
-- [ ] Check performance and FPS impact  
-- [ ] Validate on multiple screen sizes/resolutions  
-- [ ] Verify interactions with other systems  
-- [ ] Gather playtest feedback  
-- [ ] Update documentation with final behavior
-
-> ✅ Move task to **Review** once all checks pass.
 
 ---
 
@@ -91,8 +76,8 @@ Use this section during peer/self-review or testing.
 
 | Reviewer | Date     | Notes                       |
 | -------- | -------- | --------------------------- |
-| {{Name}} | {{Date}} | {{Observation or feedback}} |
-| {{Name}} | {{Date}} | {{Observation or feedback}} |
+| {{Name}} | 2026-08-19 | {{Observation or feedback}} |
+| {{Name}} | 2026-08-19 | {{Observation or feedback}} |
 
 
 ---
@@ -107,15 +92,14 @@ Define what “**Done**” means clearly, so you know when to stop tweaking.
 > - Code is committed and reviewed.  
 > - Task marked as `#done`.
 
+Player Entity is create and is can be added to the Bevy ECS model for the match. 
 
 ---
 
 ## Documentation & Resources
 Link to any design docs, reference materials, or related systems.
 
-- [[System – Match Engine]]
-- [[Design – Player Controls]]
-
+[[01_Development/Player Entity]]
 
 ---
 
@@ -133,13 +117,11 @@ Once completed, reflect briefly on what worked or didn’t.
 ## 🧾 Status Log (Optional)
 Track the evolution of the task as it moves between Kanban columns.
 
-| Date | Status | Notes |
-|------|---------|-------|
-| {{Date}} | Backlog | Added as idea after AI meeting |
-| {{Date}} | To Do | Scheduled for Sprint 02 |
-| {{Date}} | In Progress | Working on Rigidbody tuning |
-| {{Date}} | Review | Sent for feedback |
-| {{Date}} | Done | Approved and merged into build 0.3.2 |
+| Date       | Status  | Notes                                     |
+| ---------- | ------- | ----------------------------------------- |
+| 2026-08-19 | Backlog | Added as first task to start Match Engine |
+| 2026-08-19 | To Do   | Scheduled for current sprint              |
+
 
 
 
