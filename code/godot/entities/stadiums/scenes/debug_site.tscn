@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b8eejr0om5udf"]
+
+[ext_resource type="PackedScene" uid="uid://4rq3gjcs5bub" path="res://entities/player/scenes/player.tscn" id="1_efkgt"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qudme"]
+size = Vector3(100, 1, 100)
+
+[node name="DebugSite" type="StaticBody3D" unique_id=1295080617]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1829972667]
+shape = SubResource("BoxShape3D_qudme")
+debug_color = Color(0.9979641, 0, 0.16447875, 0.41960785)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1938166081]
+transform = Transform3D(1, 0, 0, 0, 0.7224563, 0.69141656, 0, -0.69141656, 0.7224563, 0, 21.347603, 42.67179)
+
+[node name="Player" parent="." unique_id=788295144 instance=ExtResource("1_efkgt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
