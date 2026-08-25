@@ -1,7 +1,8 @@
 [package]
 name = "JXL_Extension"
 version = "0.1.0"
-edition = "2024"
+edition.workspace = true
+repository.workspace = true
 
 [dependencies]
 godot = "0.4.2"

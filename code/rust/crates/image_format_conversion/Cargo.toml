@@ -1,7 +1,8 @@
 [package]
 name = "img2jxl"
 version = "0.1.0"
-edition = "2024"
+edition.workspace = true
+repository.workspace = true
 
 [dependencies]
 image = "0.25"  # Used for generic image manipulation and pixel formats
