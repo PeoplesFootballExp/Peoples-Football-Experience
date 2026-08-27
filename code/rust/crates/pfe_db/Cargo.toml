@@ -7,14 +7,14 @@ repository.workspace = true
 [dependencies]
 
 # Core Database
-rusqlite = { version = "0.40.2", features = [
-    "bundled",
-    "session",
-    "chrono",
-    "uuid",
-    "functions",
-    "hooks"
-] }
+# rusqlite = { version = "0.40.2", features = [
+#     "bundled",
+#     "session",
+#     "chrono",
+#     "uuid",
+#     "functions",
+#     "hooks"
+# ] }
 
 # Data Mapping & types
 serde = { version = "1.0.229", features = ["derive"] }

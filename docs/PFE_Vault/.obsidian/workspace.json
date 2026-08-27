@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_Development/Player Entity.md",
+                "file": "02_Design/Input System.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Player Entity"
+              "title": "Input System"
             }
           }
         ]
@@ -250,12 +250,12 @@
   },
   "active": "b1a0fc301bd6b234",
   "lastOpenFiles": [
-    "05_Tasks/Create Player Entity.md",
+    "02_Design/Governing Bodies.md",
     "01_Development/Player Entity.md",
+    "05_Tasks/Create Player Entity.md",
     "05_Tasks/00_PFE_Kanban_Board.md",
     "Create Player Entity.md",
     "Templates/Task Template.md",
-    "02_Design/Governing Bodies.md",
     "02_Design/ECS.md",
     "English_football_pyramid_08_2024.png",
     "04_Wiki/Governing Bodies.md",

@@ -2,8 +2,13 @@
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ka23v"]
 
-[node name="Player" type="CharacterBody3D" unique_id=788295144]
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ka23v"]
+
+[node name="Player" type="Player" unique_id=151257064]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=357259325]
 shape = SubResource("CapsuleShape3D_ka23v")
 debug_color = Color(0.8767056, 0.51139176, 1, 0.41960785)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1606592848]
+mesh = SubResource("CapsuleMesh_ka23v")

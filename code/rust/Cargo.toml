@@ -1,7 +1,8 @@
+
 [workspace]
 members = [
     "crates/*",
-    "apps/pfe_game",
+    "app/pfe_game",
     # add other crates here
 ]
 resolver = "2"
