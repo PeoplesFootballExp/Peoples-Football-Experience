@@ -6,8 +6,7 @@ version = 4
 name = "JXL_Extension"
 version = "0.1.0"
 dependencies = [
- "godot 0.4.5",
- "jxl-oxide",
+ "jxl",
 ]
 
 [[package]]
@@ -89,6 +88,12 @@ dependencies = [
  "quote",
  "syn 2.0.119",
 ]
+
+[[package]]
+name = "array-init"
+version = "2.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "3d62b7694a562cdf5a74227903507c56ab2cc8bdd1f781ed5cb4cf9c9f810bfc"
 
 [[package]]
 name = "arrayvec"
@@ -305,7 +310,7 @@ dependencies = [
  "downcast-rs",
  "erased-serde",
  "foldhash",
- "glam 0.32.1",
+ "glam",
  "indexmap",
  "serde",
  "smallvec",
@@ -880,12 +885,6 @@ dependencies = [
 
 [[package]]
 name = "gdextension-api"
-version = "0.3.3"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5383f33a2772746bbc83e5b0480862dd1eedfd0518b976f37f3db11c81e71a6a"
-
-[[package]]
-name = "gdextension-api"
 version = "0.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3489a9e7463353467db3cfe3eb12de31c9b6200e4f928bde4959bf5db5b31d2f"
@@ -925,12 +924,6 @@ dependencies = [
 
 [[package]]
 name = "glam"
-version = "0.30.10"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "19fc433e8437a212d1b6f1e68c7824af3aed907da60afa994e7f542d18d12aa9"
-
-[[package]]
-name = "glam"
 version = "0.32.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f70749695b063ecbf6b62949ccccde2e733ec3ecbbd71d467dca4e5c6c97cca0"
@@ -946,31 +939,12 @@ checksum = "e4eba85ea1d0a966a983acd07deee566e67395d2d96b6fb39e62b5a833f1eb0b"
 
 [[package]]
 name = "godot"
-version = "0.4.5"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5599d03afd17a511e11d0bf9e06c88d4095a9120f10cf00a74f50b300f53413e"
-dependencies = [
- "godot-core 0.4.5",
- "godot-macros 0.4.5",
-]
-
-[[package]]
-name = "godot"
 version = "0.5.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e21dfe3a0c8c253cb293a4f915f2359fdb4cf45a4d0557cb1841ea99aae4edfb"
 dependencies = [
- "godot-core 0.5.5",
- "godot-macros 0.5.5",
-]
-
-[[package]]
-name = "godot-bindings"
-version = "0.4.5"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f38b6e65306c05e3c3f0131ee8dbf7394691e53268d72019007ec20687f2280f"
-dependencies = [
- "gdextension-api 0.3.3",
+ "godot-core",
+ "godot-macros",
 ]
 
 [[package]]
@@ -979,14 +953,8 @@ version = "0.5.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7ce6fed360f27cc44ee188246880bb842cdb96bf13aec1d0ec31cccfa50b1cf6"
 dependencies = [
- "gdextension-api 0.5.1",
+ "gdextension-api",
 ]
-
-[[package]]
-name = "godot-cell"
-version = "0.4.5"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "738efef92fdcf1d92f0ed5a29c6f3cdce58e64029d08928c20e08771e1239c16"
 
 [[package]]
 name = "godot-cell"
@@ -996,42 +964,15 @@ checksum = "edc4695597110f27de8f0adbdf3afd01692e3596cc89de2aaa2a42d31b93bfc4"
 
 [[package]]
 name = "godot-codegen"
-version = "0.4.5"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "00b9a59f603f354c54d83fb74071209203d0ebe396b2419acc731c90ebf94680"
-dependencies = [
- "godot-bindings 0.4.5",
- "heck",
- "nanoserde",
- "proc-macro2",
- "quote",
- "regex",
-]
-
-[[package]]
-name = "godot-codegen"
 version = "0.5.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "08409103fba47d9cb5b64dcb0b679b06ba3153d9c96d5e918bb97f065d553c60"
 dependencies = [
- "godot-bindings 0.5.5",
+ "godot-bindings",
  "heck",
  "nanoserde",
  "proc-macro2",
  "quote",
-]
-
-[[package]]
-name = "godot-core"
-version = "0.4.5"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "989e80dfb58d2048ae0dca60bec32129dc1f96510f904b992ad170d84e950c33"
-dependencies = [
- "glam 0.30.10",
- "godot-bindings 0.4.5",
- "godot-cell 0.4.5",
- "godot-codegen 0.4.5",
- "godot-ffi 0.4.5",
 ]
 
 [[package]]
@@ -1040,23 +981,11 @@ version = "0.5.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "40ab630dbc7ce797f09eda29025ebadab1b700778c988ad19c47bddc51874a90"
 dependencies = [
- "glam 0.32.1",
- "godot-bindings 0.5.5",
- "godot-cell 0.5.5",
- "godot-codegen 0.5.5",
- "godot-ffi 0.5.5",
-]
-
-[[package]]
-name = "godot-ffi"
-version = "0.4.5"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6237b26c52c5baa6566705a73cd8804ea4ef83a666540939dd5a4e068c242666"
-dependencies = [
- "godot-bindings 0.4.5",
- "godot-codegen 0.4.5",
- "godot-macros 0.4.5",
- "libc",
+ "glam",
+ "godot-bindings",
+ "godot-cell",
+ "godot-codegen",
+ "godot-ffi",
 ]
 
 [[package]]
@@ -1065,21 +994,9 @@ version = "0.5.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "18c296047c042d74828b2cb2e71bbadd22dd4ff98346c696b6c0a4a5decbf57f"
 dependencies = [
- "godot-bindings 0.5.5",
- "godot-codegen 0.5.5",
+ "godot-bindings",
+ "godot-codegen",
  "libc",
-]
-
-[[package]]
-name = "godot-macros"
-version = "0.4.5"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d696b67ba99ff7d75e07546b04c3a711651d2c9e5851c9225dea3b64f8bb5af6"
-dependencies = [
- "godot-bindings 0.4.5",
- "proc-macro2",
- "quote",
- "venial",
 ]
 
 [[package]]
@@ -1088,7 +1005,7 @@ version = "0.5.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c9ffca7ec0dfad5885a96b3819b3dafc1014c36d2931464f96d9ab0bee87b52e"
 dependencies = [
- "godot-bindings 0.5.5",
+ "godot-bindings",
  "proc-macro2",
  "quote",
  "venial",
@@ -1315,6 +1232,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "jxl"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7b36e70efc347a34540f61ae91b7dc304ab0bb69bd6ac62fae182389c2788016"
+dependencies = [
+ "array-init",
+ "byteorder",
+ "jxl_macros",
+ "jxl_simd",
+ "jxl_transforms",
+ "num-derive",
+ "num-traits",
+ "thiserror",
+]
+
+[[package]]
 name = "jxl-bitstream"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1495,11 +1428,37 @@ dependencies = [
 ]
 
 [[package]]
+name = "jxl_macros"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "96f637cf167445cc64f12f59869e2d2dd4225f1db7e37ec33d1738c2c334d448"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn 2.0.119",
+]
+
+[[package]]
+name = "jxl_simd"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7fb521e862fff1898373196c7c884f563210d2dba066d5dc08f36fc6cab35f17"
+
+[[package]]
+name = "jxl_transforms"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "77097b14a98fa6f8bde99bd16dcd19e15a8ecceaba42a8d539138090e92dcf27"
+dependencies = [
+ "jxl_simd",
+]
+
+[[package]]
 name = "layered_content_pipeline"
 version = "0.1.0"
 dependencies = [
  "enum-map",
- "godot 0.5.5",
+ "godot",
  "rustc-hash",
  "serde",
  "toml",
@@ -1595,7 +1554,7 @@ version = "0.1.0"
 dependencies = [
  "bevy_ecs",
  "fastrand",
- "godot 0.5.5",
+ "godot",
  "rand",
 ]
 
@@ -2557,7 +2516,7 @@ name = "vfs"
 version = "0.1.0"
 dependencies = [
  "enum-map",
- "godot 0.5.5",
+ "godot",
  "rustc-hash",
  "serde",
  "toml",
