@@ -4,5 +4,5 @@ compatibility_minimum = 4.1
 reloadable = true
 
 [libraries]
-windows.debug.x86_64 =   "res://../rust/target/debug/pfe_rust.dll"
-windows.release.x86_64 = "res://../rust/target/release/pfe_rust.dll"
+windows.debug.x86_64 =   "res://../rust/target/debug/pfe_game.dll"
+windows.release.x86_64 = "res://../rust/target/release/pfe_game.dll"

@@ -4,6 +4,11 @@ version = "0.1.0"
 edition.workspace = true
 repository.workspace = true
 
+[lib]
+crate-type = ["cdylib"]
+path = "src/lib.rs"
+
 [dependencies]
+godot = "0.5.5"
 localization = { path = "../../crates/localization" }
 vfs = { path = "../../crates/vfs" }

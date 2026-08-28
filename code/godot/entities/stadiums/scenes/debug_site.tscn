@@ -5,6 +5,9 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_qudme"]
 size = Vector3(100, 1, 100)
 
+[sub_resource type="BoxMesh" id="BoxMesh_ka23v"]
+size = Vector3(100, 1, 100)
+
 [node name="DebugSite" type="StaticBody3D" unique_id=1295080617]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1829972667]
@@ -16,3 +19,11 @@ transform = Transform3D(1, 0, 0, 0, 0.7224563, 0.69141656, 0, -0.69141656, 0.722
 
 [node name="Player" parent="." unique_id=788295144 instance=ExtResource("1_efkgt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=109541518]
+mesh = SubResource("BoxMesh_ka23v")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1032683745]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 63.336784, 0)
+light_color = Color(0.991031, 0.9782043, 0.73177886, 1)
+shadow_enabled = true
