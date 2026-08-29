@@ -6,7 +6,7 @@ class_name MatchState
 
 
 # We use a reference to the manager to access score/time/players
-var manager: MatchManager
+#var manager: MatchManager
 
 
 @export_category("Helper States")
@@ -75,27 +75,27 @@ enum MatchEvent {
 
 
 # --- VIRTUAL METHODS  ---
-
-# Called when entering the state
-func enter(_manager: MatchManager, _data: Dictionary = {}):
-	manager = _manager
-	_on_enter(_data)
-	return
-
-# Called when exiting the state
-func exit(_data: Dictionary):
-	_on_exit(_data)
-	manager = null # CRITICAL: Breaks the circular dependency
-	
-
-# Process loop (Logic)
-func process(delta: float) -> MatchState:
-	return null # Return null to stay in current state, or a new State to transition
-
-# Input handling
-func handle_input(event: InputEvent) -> MatchState:
-	return null
-
-# --- INTERNAL IMPLEMENTATION ---
-func _on_enter(_data: Dictionary) -> void: pass
-func _on_exit(_data: Dictionary) -> void: pass
+#
+## Called when entering the state
+#func enter(_manager: MatchManager, _data: Dictionary = {}):
+	#manager = _manager
+	#_on_enter(_data)
+	#return
+#
+## Called when exiting the state
+#func exit(_data: Dictionary):
+	#_on_exit(_data)
+	#manager = null # CRITICAL: Breaks the circular dependency
+	#
+#
+## Process loop (Logic)
+#func process(delta: float) -> MatchState:
+	#return null # Return null to stay in current state, or a new State to transition
+#
+## Input handling
+#func handle_input(event: InputEvent) -> MatchState:
+	#return null
+#
+## --- INTERNAL IMPLEMENTATION ---
+#func _on_enter(_data: Dictionary) -> void: pass
+#func _on_exit(_data: Dictionary) -> void: pass

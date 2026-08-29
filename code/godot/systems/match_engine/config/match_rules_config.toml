@@ -1,0 +1,36 @@
+
+[FieldOfPlay]
+
+[FieldofPlay.surface]
+hue_degrees_min = 80.0
+hue_degrees_max = 160.0
+saturation_percent_min = 0.20
+value_min = 0.15
+
+[FieldofPlay.markings]
+center_circle_radius_meters = 9.15
+maximum_width_meters = 0.12
+
+[FieldOfPlay.dimensions]
+touchline_minimum_meters = 90
+touchline_maximum_meters = 120
+goal_line_minimum_meters = 45
+goal_line_maximum_meters = 90
+
+[FieldofPlay.dimensions_international]
+touchline_minimum_meters = 100
+touchline_maximum_meters = 110
+goal_line_minimum_meters = 64
+goal_line_maximum_meters = 75
+
+[FieldofPlay.goal_area]
+width_meters = 18.8
+width_from_goalpost_meters = 5.5
+length_meters = 5.5
+
+[FieldofPlay.penalty_area]
+width_meters = 40.32
+width_from_goalpost_meters = 16.5
+length_meters = 16.5
+penalty_mark_from_goalline_meters = 11
+penalty_area_arch_radius_meters = 9.15

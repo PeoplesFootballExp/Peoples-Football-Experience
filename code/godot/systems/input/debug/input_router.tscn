@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://brctdmeihaor0"]
 
-[ext_resource type="Script" uid="uid://cpev8idnu3f4x" path="res://shared/debug/graph_edit.gd" id="1_rfmpn"]
+[ext_resource type="Script" uid="uid://cpev8idnu3f4x" path="res://systems/input/debug/graph_edit.gd" id="1_i2u1g"]
 
 [node name="Control" type="Control" unique_id=811026445]
 layout_mode = 3
@@ -26,7 +26,7 @@ size_flags_vertical = 3
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 4.0
-script = ExtResource("1_rfmpn")
+script = ExtResource("1_i2u1g")
 
 [node name="GraphNode" type="GraphNode" parent="VBoxContainer/GraphEdit" unique_id=1808328008]
 layout_mode = 0

@@ -3,6 +3,7 @@ extends RefCounted
 
 
 
+
 var player_index: int = 0
 var action: StringName = &""
 var core_button: StringName = &""
