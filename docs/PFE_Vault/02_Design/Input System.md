@@ -39,6 +39,27 @@ Given the limitations outlined above, there are some creative things we can do t
 
 ### Core Actions
 
+At the moment, I am thinking of following a similar system to FIFA, where there are four main actions a player can perform. These core actions are the following
+1. Ground Pass: A regular pass to a teammate where the ball stays on the ground
+2. Shoot: A strong shot towards the opponent's net or to simply clear the ball out
+3. Lofted Pass: A pass to a teammate where the ball gets lifted into the air.
+4. Through Ball: A pass to a teammate where the ball ends up slightly ahead of the player, allowing the teammate to run into the pass.
+
+Of course, these core actions are only true when the player is currently attacking, when defending, these core actions contextually switch to the following core actions
+1. Jockey: Pressing this button, leads to the player facing the player
+2. Tackle:
+3. Slide Tackle:
+4. GK Rush:
+
+## Full Button Breakdown
+
+
+| Button 1      | Button 2 | Button 3 | Action |
+| ------------- | -------- | -------- | ------ |
+| Left Joystick |          |          |        |
+
+
+
 
 
 

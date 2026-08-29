@@ -27,3 +27,13 @@ layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 4.0
 script = ExtResource("1_rfmpn")
+
+[node name="GraphNode" type="GraphNode" parent="VBoxContainer/GraphEdit" unique_id=1808328008]
+layout_mode = 0
+offset_left = 454.0
+offset_top = 392.0
+offset_right = 655.0
+offset_bottom = 513.0
+mouse_filter = 1
+position_offset = Vector2(454, 392)
+title = "Input Router"

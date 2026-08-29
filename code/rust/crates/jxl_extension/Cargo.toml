@@ -6,3 +6,4 @@ repository.workspace = true
 
 [dependencies]
 jxl = "0.6.0"
+jxl-encoder = "0.3.1"
