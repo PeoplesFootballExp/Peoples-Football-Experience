@@ -34,3 +34,81 @@ width_from_goalpost_meters = 16.5
 length_meters = 16.5
 penalty_mark_from_goalline_meters = 11
 penalty_area_arch_radius_meters = 9.15
+
+[FieldofPlay.corner_area]
+radius_meters = 1
+
+[FieldofPlay.flagposts]
+height_minimum_meters = 1.5
+
+[FieldofPlay.technical_area]
+distance_minimum_touchline_meters = 1
+
+[FieldOfPlay.goals]
+# The inside width and height of the goal posts and crossbars
+inside_width_meters = 7.32
+inside_height_meters = 2.44
+
+# Enforce GoalPost and Crossbar are white using HSV color space
+saturation_max = 0.12
+value_min = 0.70
+
+# Maximum width of the goalposts themselves
+goalposts_maximum_width_meters = 0.12
+
+
+[FieldOfPlay.commercial_advertising]
+minimum_distance_touchlines_meters = 1
+minimum_distance_goalnets_meters = 1
+
+[TheBall]
+
+[TheBall.qualities_and_measurement]
+# Circumferences of the ball
+minimum_circumference_meters = 0.68
+maximum_circumference_meters = 0.70
+
+# Weight of the ball
+minimum_weight_kg = 0.410
+maximum_weight_kg = 0.450
+
+# Air Pressure of the ball
+minimum_air_pressure_pa = 58_840
+maximum_air_pressure_pa = 107_873
+
+[ThePlayers]
+
+[ThePlayers.number_of_players]
+minimum_on_field_players = 7
+maximum_on_field_players = 11
+
+number_required_goalkeepers = 1
+
+[ThePlayers.number_of_substitutions]
+# Default maximum number of substitutions per match and number of windows
+maximum_substitutions_per_match = 5
+maximum_substiutions_windows = 3
+
+# In extra time, teams gain an additional substitution window
+extra_time_additional_sub_window = 1
+
+# In the pause between full time and extra time OR the half time of the extra time,
+# subs used here do NOT count towards the number of substitution windoes used
+et_pre_break_sub_window = false
+et_halftime_sub_window = false
+
+# In International Matches, number of substitutions per match is limited to 8 but if
+# both teams reach an agreement before the match starts, they can use up to 11 substitutions
+int_maximum_substitutions_per_match = 8
+agreement_substitution_limit = 11
+
+# Return Subs only allowed in youth, veterans, disability and grassroot football. But not in professional Football.
+return_subs_allowed = false
+
+[ThePlayers.substitutions_procedure]
+maximum_walking_off_time_seconds = 10
+
+[ThePlayers.offences_and_sanctions]
+# When a player does not leave the field within the 10 seconds, they can get booked and the player being subbed on
+# is prevented from entering the field for at least 60 seconds and then waiting for stoppage
+walking_off_time_exceeded_punishment_seconds = 60
