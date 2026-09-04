@@ -5,11 +5,20 @@ extends Node
 ## This autoload supports up to 8 players local multiplayer. Only 1 keyboard
 ## and any number of gamepads.
 
+const MAX_PLAYERS: int = 8
+
 ## The internal references to the various Input Interpreters of all currently
 ## controller football players. 
 ## Keys: Device ID of input device
 ## Values: Reference to Input Interpreter
 var _gamepad_devices: Dictionary[int, InputInterpreter]
+
+## The internal tracker for the players in the same device. Since there
+## are a maximum of eight players, there are only eight slots here.
+## The value in each index represents the Device ID for that player slot. 
+var _players_devices: Array[int] = [];
+var _number_of_players: int = 0
+
 
 signal created_interpreter(int);
 
@@ -30,6 +39,12 @@ var _current_target: InputTarget = InputTarget.UI
 
 
 func _ready():
+	# Pre Allocate array slots up to MAX_PLAYERS
+	_players_devices.resize(MAX_PLAYERS)
+	
+	# Listen for hardware connection/disconnection events
+	Input.joy_connection_changed.connect(_on_joy_connection_changed)
+	
 	# Initial focus is usually the Main Menu (UI)
 	set_input_target(InputTarget.UI)
 
@@ -52,47 +67,52 @@ func _get_event_device_id(event: InputEvent) -> int:
 		
 	return event.device
 
-
 ## The _unhandled_input ensures we don't steal inputs that 
 ## UI elements (like buttons) have already consumed.
 func _unhandled_input(event: InputEvent):
+	# Get Device ID of the input
 	var device_id: int = _get_event_device_id(event)
-	match _current_target:
-		InputTarget.GAMEPLAY:
-			_route_to_gameplay(event)
-		InputTarget.UI:
-			if !_gamepad_devices.has(device_id):
-				register_input_interpreter(device_id);
-			
-		InputTarget.CUTSCENE:
-			# Only allow "Skip" button or ignore all
-			if event.is_action_pressed("mod_lofted") and event.is_action_pressed("mod_curled"):
-				_skip_cutscene()
-				
-	print(event.as_text())
-
-func _route_to_gameplay(event: InputEvent):
-	# Check if Device was saved, if not, then add to device list 
-	if !_gamepad_devices.has(event.device):
-		print("Device not Registered")
-		
 	
-	print(event.as_text())
+	# First, lets check if the device ID is registered.
+	var player_id = _players_devices.find(device_id)
+	if player_id == -1:
+		# Since we don't have it registered, we register it
+		register_new_player(_number_of_players, device_id)
+		player_id = _number_of_players - 1
 	
-
-func _skip_cutscene():
-	# Trigger signal to MatchManager to skip
-	print("InputRouter: Skipping cutscene...")
+	# Else, since we already have it registered, send input to 
+	# input interpreter
+	print(player_id, ":" , device_id)
+	
 
 ## Helper to register the controller from the MatchManager
-func register_input_interpreter(device_id: int) -> void:
+func register_new_player(player_id: int, device_id: int) -> void:
+	# Register Device Id to player id
+	_players_devices[player_id] = device_id
+	
 	# Create a new Input Interpreter
 	var new_interpreter = InputInterpreter.new();
 	
 	# Save it to the router dictionary
 	_gamepad_devices[device_id] = new_interpreter
 	
+	# Increment the number of players
+	_number_of_players += 1
+	
 	# Send signal for debugging purposes
 	emit_signal("created_interpreter", device_id)
+
+func _auto_bind_gamepad(device_id: int) ->void:
+	pass
+
+func _on_joy_connection_changed(device_id: int, connected: bool) -> void:
+	if connected:
+		_auto_bind_gamepad(device_id)
+		return
 	
+	if _gamepad_devices.has(device_id):
+		var slot: int = _players_devices[device_id]
+
 	
+
+		

@@ -21,12 +21,6 @@ config/icon="res://shared/placeholders/icon.svg"
 
 [autoload]
 
-PhantomCameraManager="*uid://duq6jhf6unyis"
-SceneManager="*res://scripts/autoloads/SceneManager.gd"
-AssetManager="*res://scripts/autoloads/AssetManager.gd"
-SaveManager="*res://scripts/autoloads/SaveManager.gd"
-DBManager="*res://scripts/autoloads/DBManager.gd"
-ImGuiRoot="*uid://dugmpnsxaagba"
 InputRouter="*uid://mnj6jfsnja40"
 
 [display]
@@ -35,10 +29,6 @@ window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/size/borderless=true
 window/stretch/mode="canvas_items"
-
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/GDScript_formatter/plugin.cfg", "res://addons/godot-sqlite/plugin.cfg", "res://addons/gut/plugin.cfg", "res://addons/imgui-godot/plugin.cfg", "res://addons/phantom_camera/plugin.cfg", "res://addons/spin_button/plugin.cfg")
 
 [input]
 

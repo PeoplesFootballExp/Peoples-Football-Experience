@@ -1,7 +1,0 @@
-[gd_scene format=3 uid="uid://bhj5gn641sc42"]
-
-[ext_resource type="Texture2D" uid="uid://bfmmamnh1p88u" path="res://shared/placeholders/icon.svg" id="1_gmhrq"]
-
-[node name="Sprite" type="Player"]
-position = Vector2(558, 366)
-texture = ExtResource("1_gmhrq")
